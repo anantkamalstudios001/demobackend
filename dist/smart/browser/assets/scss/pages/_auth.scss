@@ -9,9 +9,23 @@
   }
 }
 
+// .left-img {
+//   height: 100%;
+//   width: 100%;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   background-size: cover;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 30px 15px;
+//   position: relative;
+//   z-index: 1;
+// }
 .left-img {
-  height: 100%;
   width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-image: url('assets/images/pages/bg-01.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -19,9 +33,8 @@
   align-items: center;
   justify-content: center;
   padding: 30px 15px;
-  position: relative;
-  z-index: 1;
 }
+
 
 .left-content {
   display: flex;

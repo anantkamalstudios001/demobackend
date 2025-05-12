@@ -648,7 +648,7 @@
       "role": ["Admin"],
       "submenu": [
         {
-          "path": "/admin/notices/contact-information-editor",
+          "path": "/admin/notices/add-notice",
           "title": "MENUITEMS.NOTICES.LIST.ADD-NOTICE",
           "iconType": "",
           "icon": "",
@@ -660,7 +660,7 @@
           "submenu": []
         },
         {
-          "path": "/admin/notices/contact-form-submission-viewer",
+          "path": "/admin/notices/view-notices",
           "title": "MENUITEMS.NOTICES.LIST.VIEW-NOTICES",
           "iconType": "",
           "icon": "",
@@ -672,7 +672,7 @@
           "submenu": []
         },
         {
-          "path": "/admin/notices/campus-map-embed-editor",
+          "path": "/admin/notices/expired-notices",
           "title": "MENUITEMS.NOTICES.LIST.EXPIRED-NOTICES",
           "iconType": "",
           "icon": "",
