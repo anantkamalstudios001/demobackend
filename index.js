@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3000;
 
 // Serve static files for all subdomains and adminpanel
 app.use((req, res, next) => {
@@ -14,15 +14,18 @@ app.use((req, res, next) => {
     host.startsWith('bed.') ||
     host.startsWith('polytechnic.') ||
     host.startsWith('mba.') ||
-    host.startsWith('publicschool.') ||
-    host.startsWith('school.')
+    host.startsWith('publicschool.')
   ) {
     express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
   } else if (host.startsWith('school.')) {
     express.static(path.join(__dirname, 'school'))(req, res, next);
   } else if (host.startsWith('adminpanel.')) {
     express.static(path.join(__dirname, 'dist', 'smart', 'browser'))(req, res, next);
-  } else {
+  } else if (host.startsWith('centraladmin.')) { 
+    express.static(path.join(__dirname, 'centraladmin', 'centraladmin', 'browser'))(req, res, next);
+  }
+    else
+  {
     // Default for main domain (localhost)
     express.static(path.join(__dirname, 'university'))(req, res, next);
   }
@@ -53,6 +56,10 @@ app.get('*', (req, res) => {
     host.startsWith('school.')
   ) {
     res.sendFile(path.join(__dirname,'school', 'index.html'));
+  } else if (
+    host.startsWith('centraladmin.')
+  ) {
+    res.sendFile(path.join(__dirname,'centraladmin', 'centraladmin', 'browser',  'index.html'));
   }
   else {
     res.sendFile(path.join(__dirname, 'university', 'index.html'));
