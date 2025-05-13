@@ -3,54 +3,60 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 80;
 
-// Serve static files for all subdomains
+// Serve static files for all subdomains and adminpanel
 app.use((req, res, next) => {
   const host = req.headers.host;
 
-  if (host.startsWith('pharmacy.')) {
+  if (
+    host.startsWith('pharmacy.') ||
+    host.startsWith('iti.') ||
+    host.startsWith('engineering.') ||
+    host.startsWith('bed.') ||
+    host.startsWith('polytechnic.') ||
+    host.startsWith('mba.') ||
+    host.startsWith('publicschool.') ||
+    host.startsWith('school.')
+  ) {
     express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
-  } else if (host.startsWith('iti.')) {
-    express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
-  } else if (host.startsWith('engineering.')) {
-    express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
-  } else if (host.startsWith('bed.')) {
-    express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
-  } else if (host.startsWith('polytechnic.')) {
-    express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
-  } else if (host.startsWith('mba.')) {
-    express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
-  } else if (host.startsWith('publicschool.')) {
-    express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
-  } else {
-    // Default: serve static files for the main site
+  } else if (host.startsWith('school.')) {
+    express.static(path.join(__dirname, 'school'))(req, res, next);
+  } else if (host.startsWith('adminpanel.')) {
     express.static(path.join(__dirname, 'dist', 'smart', 'browser'))(req, res, next);
+  } else {
+    // Default for main domain (localhost)
+    express.static(path.join(__dirname, 'university'))(req, res, next);
   }
 });
 
-// Serve `index.html` for the root of main domain
+// Serve university index.html for main localhost
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'smart', 'browser', 'index.html'));
+  res.sendFile(path.join(__dirname, 'university', 'index.html'));
 });
 
-// Handle SPA routing for all other paths
+// Serve adminpanel index
 app.get('*', (req, res) => {
   const host = req.headers.host;
 
-  
-  let appDir;
-  if (host.startsWith('bed.')) {
-    appDir = 'bed';
-  } else if (host.startsWith('engineering.')) {
-    appDir = 'engineering';
-  } else if (host.startsWith('iti.')) {
-    appDir = 'iti';
-  } else if (host.startsWith('mba.')) {
-    appDir = 'mba';
-  } else {
-    appDir = 'smart';  // Default for the main site
+  if (host.startsWith('adminpanel.')) {
+    res.sendFile(path.join(__dirname, 'dist', 'smart', 'browser', 'index.html'));
+  } else if (
+    host.startsWith('pharmacy.') ||
+    host.startsWith('iti.') ||
+    host.startsWith('engineering.') ||
+    host.startsWith('bed.') ||
+    host.startsWith('polytechnic.') ||
+    host.startsWith('mba.') ||
+    host.startsWith('publicschool.')
+  ) {
+    res.sendFile(path.join(__dirname, 'engineering', 'browser', 'index.html'));
+  } else if (
+    host.startsWith('school.')
+  ) {
+    res.sendFile(path.join(__dirname,'school', 'index.html'));
   }
-
-  res.sendFile(path.join(__dirname, 'dist', appDir, 'browser', 'index.html'));
+  else {
+    res.sendFile(path.join(__dirname, 'university', 'index.html'));
+  }
 });
 
 app.listen(PORT, () => {
