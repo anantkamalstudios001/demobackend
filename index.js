@@ -13,11 +13,10 @@ app.use((req, res, next) => {
     host.startsWith('engineering.') ||
     host.startsWith('bed.') ||
     host.startsWith('polytechnic.') ||
-    host.startsWith('mba.') ||
-    host.startsWith('publicschool.')
+    host.startsWith('mba.')
   ) {
     express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
-  } else if (host.startsWith('school.')) {
+  } else if (host.startsWith('publicschool.')) {
     express.static(path.join(__dirname, 'school'))(req, res, next);
   } else if (host.startsWith('adminpanel.')) {
     express.static(path.join(__dirname, 'dist', 'smart', 'browser'))(req, res, next);
@@ -48,12 +47,11 @@ app.get('*', (req, res) => {
     host.startsWith('engineering.') ||
     host.startsWith('bed.') ||
     host.startsWith('polytechnic.') ||
-    host.startsWith('mba.') ||
-    host.startsWith('publicschool.')
+    host.startsWith('mba.')
   ) {
     res.sendFile(path.join(__dirname, 'engineering', 'browser', 'index.html'));
   } else if (
-    host.startsWith('school.')
+    host.startsWith('publicschool.')
   ) {
     res.sendFile(path.join(__dirname,'school', 'index.html'));
   } else if (
