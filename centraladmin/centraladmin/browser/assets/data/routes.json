@@ -1,19 +1,6 @@
 {
   "routes": [
     {
-      "path": "",
-      "title": "MENUITEMS.MAIN.TEXT",
-      "iconType": "",
-      "icon": "",
-      "class": "",
-      "groupTitle": true,
-      "badge": "",
-      "badgeClass": "",
-      "role": ["All"],
-      "submenu": []
-    },
-
-    {
       "path": "admin/dashboard/website-management",
       "title": "MENUITEMS.DASHBOARD.TEXT",
       "iconType": "",
@@ -582,12 +569,6 @@
       "submenu": []
     },
 
-
-
-
-
-
-
     
     {
       "path": "contacts",
@@ -602,20 +583,6 @@
       "submenu": []
     },
 
-    
-
-
-
-
-
-
-
-
-    
-
-
-
-    
 
     {
       "path": "",

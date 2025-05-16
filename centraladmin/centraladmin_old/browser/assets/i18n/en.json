@@ -1,0 +1,147 @@
+{
+  "LOGIN": {
+    "TITLE": "Welcome to Smart"
+  },
+  "MENUITEMS": {
+    "MAIN": {
+      "TEXT": "Main"
+    },
+    "BRAHMAVALLEY-MAIN": {
+      "TEXT": "Brahmavalley Main",
+      "LIST": {
+        "EDIT-PAGES": "Edit Pages",
+        "MEDIA-UPLOADS": "Media Uploads",
+        "SEO-SETTINGS": "SEO Settings",
+        "QUICK-LINKS-MANAGER" : "Quick Links Manager"
+      }
+    },
+    "DASHBOARD": {
+      "TEXT": "Dashboard"
+    },
+    "BVIM": {
+      "TEXT": "BVIM (Institute of Management)",
+      "LIST": {
+            "EDIT-PAGES" : "Edit Pages",
+            "COURSE-MANAGEMENT": "Course Management",
+            "FACULTY-UPLOADS": "Faculty Uploads"
+      }
+    },
+    "INSTITUTES": {
+      "TEXT": "Institutes",
+      "LIST": {
+        "MBA": "MBA",
+        "ENGINEERING": "Engineering",
+        "PHARMACY": "Pharmacy",
+        "POLYTECHNIC": "Polytechnic",
+        "ITI": "ITI",
+        "PUBLIC-SCHOOL" : "Public School",
+        "B-ED" : "B.Ed"
+      }
+    },
+    "USER-MANAGEMENT": {
+      "TEXT": "User Management",
+      "LIST": {
+        "ADMIN-USERS": "Admin Users",
+        "FACULTY-STAFF-USERS": "Faculty/Staff Users",
+        "STUDENT-REGISTRATIONS": "Student Registrations"
+      }
+    },
+    "ADMISSION-ENQUIRIES": {
+      "TEXT": "Admission Enquiries",
+      "LIST": {
+        "NEW-ENQUIRIES": "New Enquiries",
+        "APPLICATION-STATUS": "Application Status",
+        "DOWNLOAD-FORMS": "Download Forms"
+      }
+    },
+    "REPORTS": {
+      "TEXT": "Reports",
+      "LIST": {
+        "WEBSITE-VISITORS": "Website Visitors",
+        "LEAD-REPORTS": "Lead Reports",
+        "APPLICATION-REPORTS": "Application Reports"
+      }
+    },
+    "SETTINGS": {
+      "TEXT": "Settings",
+      "LIST": {
+        "WEBSITE-SETTING": "Website Settings",
+        "SEO-&-ANALYTICS": "SEO & Analytics",
+        "BACKUP-&-RESTORE": "Backup & Restore"
+      }
+    },
+    "HOLIDAY": {
+      "TEXT": "Holiday",
+      "LIST": {
+        "ALL-HOLIDAY": "All Holiday",
+        "ADD-HOLIDAY": "Add Holiday",
+        "EDIT-HOLIDAY": "Edit Holiday"
+      }
+    },
+    "FEES": {
+      "TEXT": "Fees",
+      "LIST": {
+        "ALL-FEES": "All Fees",
+        "ADD-FEES": "Add fees",
+        "EDIT-FEES": "Edit fees",
+        "FEES-TYPE": "Fees Type",
+        "FEES-DISCOUNT": "Fees Discount",
+        "FEE-RECEIPT": "Fee Receipt"
+      }
+    },
+    "CLASS": {
+      "TEXT": "Class",
+      "LIST": {
+        "CLASS-LIST": "Class List",
+        "CLASS-TIMETABLE": "Class Timetable"
+      }
+    },
+    "HOSTEL": {
+      "TEXT": "Hostel",
+      "LIST": {
+        "ROOM-LIST": "Room List",
+        "ROOM-TYPE": "Room Type"
+      }
+    },
+    "CMS-Manager": {
+      "TEXT": "CMS Manager",
+      "LIST": {
+        "NEWS-&-EVENTS" : "News & Events",
+        "PHOTO-GALLERY" : "Photo Gallery",
+        "NOTICE-BOARD" : "Notice Board"
+      }
+    },
+    "TEACHER": {
+      "TEXT": "Teacher",
+      "LIST": {
+        "DASHBOARD": "Dashboard",
+        "LECTURES": "Lectures",
+        "LEAVE-REQUEST": "Leave Request",
+        "EXAM-SCHEDULE": "Exam Schedule",
+        "SETTINGS": "Settings"
+      }
+    },
+    "STUDENT": {
+      "TEXT": "Student",
+      "LIST": {
+        "DASHBOARD": "Dashboard",
+        "HOMEWORK": "Homework",
+        "LEAVE-REQUEST": "Leave Request",
+        "TIME-TABLE": "Time Table",
+        "SETTINGS": "Settings"
+      }
+    },
+    "APPS": {
+      "TEXT": "Apps"
+    },
+    "CALENDAR": {
+      "TEXT": "Calendar"
+    },
+    "TASK": {
+      "TEXT": "Task"
+    },
+    "CONTACTS": {
+      "TEXT": "Contacts"
+    }
+  }
+}
