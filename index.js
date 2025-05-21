@@ -8,17 +8,36 @@ app.use((req, res, next) => {
   const host = req.headers.host;
 
   if (
-    host.startsWith('pharmacy.') ||
-    host.startsWith('iti.') ||
-    host.startsWith('engineering.') ||
-    host.startsWith('bed.') ||
-    host.startsWith('polytechnic.') ||
-    host.startsWith('mba.')
-  ) {
-    express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
-  } else if (host.startsWith('publicschool.')) {
-    express.static(path.join(__dirname, 'school'))(req, res, next);
-  } else if (host.startsWith('adminpanel.')) {
+    // host.startsWith('pharmacy.') ||
+    // host.startsWith('iti.') ||
+    host.startsWith('engineering.')
+    // host.startsWith('bed.')
+    // host.startsWith('polytechnic.')
+    // host.startsWith('mba.')
+  ) { 
+  express.static(path.join(__dirname, 'engineering', 'browser'))(req, res, next);
+  } else if (host.startsWith('pharmacy.')) {
+    express.static(path.join(__dirname, 'pharmacy', 'college'))(req, res, next);
+  } else if (host.startsWith('mba.')) {
+    express.static(path.join(__dirname, 'mba', 'college'))(req, res, next);
+  } else if (host.startsWith('polytechnic.')) {
+    express.static(path.join(__dirname, 'polytechnic', 'college'))(req, res, next);
+  } else if (host.startsWith('bed.')) {
+    express.static(path.join(__dirname, 'bed', 'college'))(req, res, next);
+  } else if (host.startsWith('iti.')) {
+    express.static(path.join(__dirname, 'iti', 'college'))(req, res, next);
+  // } else if (host.startsWith('polytechnic.')) {
+  //   express.static(path.join(__dirname, 'polytechnic', 'college'))(req, res, next);
+  // }
+
+  //  else if (host.startsWith('mba.')) {
+  //   express.static(path.join(__dirname, 'mba', 'college'))(req, res, next);
+  // } else if (host.startsWith('mba.')) {
+  //   express.static(path.join(__dirname, 'mba', 'college'))(req, res, next);
+  } 
+   else if (host.startsWith('publicschool.')) {
+    express.static(path.join(__dirname, 'publicschool','school'))(req, res, next);
+  }  else if (host.startsWith('adminpanel.')) {
     express.static(path.join(__dirname, 'dist', 'smart', 'browser'))(req, res, next);
   } else if (host.startsWith('centraladmin.')) { 
     express.static(path.join(__dirname, 'centraladmin', 'centraladmin', 'browser'))(req, res, next);
@@ -42,24 +61,54 @@ app.get('*', (req, res) => {
   if (host.startsWith('adminpanel.')) {
     res.sendFile(path.join(__dirname, 'dist', 'smart', 'browser', 'index.html'));
   } else if (
-    host.startsWith('pharmacy.') ||
-    host.startsWith('iti.') ||
-    host.startsWith('engineering.') ||
-    host.startsWith('bed.') ||
-    host.startsWith('polytechnic.') ||
-    host.startsWith('mba.')
+    // host.startsWith('iti.') ||
+    host.startsWith('engineering.')
+    // host.startsWith('bed.')
+    // host.startsWith('polytechnic.')
+    // host.startsWith('mba.')
   ) {
     res.sendFile(path.join(__dirname, 'engineering', 'browser', 'index.html'));
   } else if (
+    host.startsWith('pharmacy.')
+  ) {
+    res.sendFile(path.join(__dirname,'pharmacy', 'college', 'index.html'));
+  }else if (
+    host.startsWith('mba.')
+  ) {
+    res.sendFile(path.join(__dirname,'mba', 'college', 'index.html'));
+  }else if (
+    host.startsWith('polytechnic.')
+  ) {
+    res.sendFile(path.join(__dirname,'polytechnic', 'college', 'index.html'));
+  } else if (
+    host.startsWith('bed.')
+  ) {
+    res.sendFile(path.join(__dirname,'bed','college', 'index.html'));
+  } else if (
+    host.startsWith('iti.')
+  ) {
+    res.sendFile(path.join(__dirname,'iti','college', 'index.html'));
+  // } else if (
+  //   host.startsWith('publicschool.')
+  // ) {
+  //   res.sendFile(path.join(__dirname,'school', 'index.html'));
+  // } else if (
+  //   host.startsWith('publicschool.')
+  // ) {
+  //   res.sendFile(path.join(__dirname,'school', 'index.html'));
+  } else if (
     host.startsWith('publicschool.')
   ) {
-    res.sendFile(path.join(__dirname,'school', 'index.html'));
+    res.sendFile(path.join(__dirname,'publicschool','school', 'index.html'));
   } else if (
     host.startsWith('centraladmin.')
   ) {
     res.sendFile(path.join(__dirname,'centraladmin', 'centraladmin', 'browser',  'index.html'));
-  }
-  else {
+  } else if (
+    host.startsWith('publicschool.')
+  ) {
+    res.sendFile(path.join(__dirname,'school', 'index.html'));
+  } else {
     res.sendFile(path.join(__dirname, 'university', 'index.html'));
   }
 });
