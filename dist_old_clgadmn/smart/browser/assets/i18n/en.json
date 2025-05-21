@@ -1,0 +1,173 @@
+{
+  "LOGIN": {
+    "TITLE": "Welcome to Smart"
+  },
+  "MENUITEMS": {
+    "FROUNT-OFFICE": {
+      "TEXT": "Frount Office",
+      "LIST": {
+        "ADMISSION": "Admission Inquiry",
+        "VISITORS": "Visitors Book",
+        "COMPLAINTS": "Complaints"
+      }
+    },
+    "DASHBOARD": {
+      "TEXT": "Dashboard"
+    },
+    "HOME": {
+      "TEXT": "Home",
+      "LIST": {
+        "BANNER-MANAGEMENT": "Banner Management",
+        "WELCOME-MESSAGE": "Welcome Message"
+      }
+    },
+    "ABOUT": {
+      "TEXT": "About",
+      "LIST": {
+        "VISION-MISSION": "Vision & Mission",
+        "PRINCIPALS-MESSAGE": "Principal’s Message",
+        "COLLEGE-HISTORY": "College History",
+        "GOVERNING-BODY": "Governing Body"
+      }
+    },
+    "USER-MANAGE": {
+      "TEXT": "User Manage",
+      "LIST": {
+        "ALL-USER": "All User",
+        "ADD-NEW-USER": "Add New User"
+      }
+    },
+    "ACADEMICS": {
+      "TEXT": "Academics",
+      "LIST": {
+        "COURSES": "Courses",
+          "SUBLIST": {
+        "ADD-COURSES": "Add Courses",
+        "ALL-COURSES": "All Courses",
+        "CATEGORY": "Category"
+      },
+        "DEPARTMENTS": "Departments",
+        "ACADEMIC-CALENDER": "Academic Calendar"
+      }
+    },
+    "fACULTY": {
+      "TEXT": "Faculty",
+      "LIST": {
+        "ADD-FACULTY": "Add Faculty",
+        "ALL-FACULTY": "All Faculty"
+      }
+    },
+    "STUDENTS": {
+      "TEXT": "Students",
+      "LIST": {
+        "ADD-STUDENT": "Add Student",
+        "ALL-STUDENT": "All Student"
+      }
+    },
+    "STAFF-USERS": {
+      "TEXT": "Staff Users",
+      "LIST": {
+        "ADD-STAFF": "Add Staff",
+        "ALL-STAFF": "All Staff"
+      }
+    },
+    "ADMISSION": {
+      "TEXT": "Admissions",
+      "LIST": {
+        "ADMISSION-GUIDELINES": "Admission Guidelines",
+        "NEW-ADMISSION": "New Admission"
+      }
+    },
+    "PLACEMENTS": {
+      "TEXT": "Placements",
+      "LIST": {
+        "RECRUITERS-LIST": "Recruiters List",
+        "STUDENT-PLACEMENTS-RECORD": "Student Placements Record",
+        "PLACEMENT-DRIVES": "Placement Drives"
+      }
+    },
+    "E-RESOURCES": {
+      "TEXT": "E-resources",
+      "LIST": {
+        "LIBRARY-ACCESS": "Library Access",
+        "ONLINE-JOUNALS": "Online Journals",
+        "STUDY-MATERIAL-UPLOAD": "Study Material Upload"
+      }
+    },
+
+
+    "CAMPUS-LIFE": {
+      "TEXT": "Campus Life",
+      "LIST": {
+        "CLUBS-AND-COMMITTEES": "Clubs and Committees",
+        "EVENTS": "Events",
+        "FACILITIES": "Facilities"
+      }
+    },
+
+    "DOWNLOADS": {
+      "TEXT": "Downloads",
+      "LIST": {
+        "IMAGE-GALLARY": "Image Gallary",
+        "VIDEO-GALLARY": "Video Gallary",
+        "CATEGORY": "Category"
+      }
+    },
+    "ALUMNI": { 
+      "TEXT": "Alumni",
+      "LIST": {
+        "REGISTER-ALUMNI": "Register Alumni",
+        "ALUMNI-STORIES": "Alumni Stories",
+        "ALUMNI-MEETS": "Alumni Meets"
+      }
+    },
+    "NOTICES": {
+      "TEXT": "Notices",
+      "LIST": {
+        "ADD-NOTICE": "Add Notice",
+        "VIEW-NOTICES": "View Notices",
+        "EXPIRED-NOTICES": "Expired Notices"
+      }
+    },
+    "CONTACT": {
+      "TEXT": "Contact",
+          "LIST": {
+        "COLLEGE-CONTACT-INFO": "College Contact Info",
+        "FEEDBACK-INFO": "Feedback Info"
+      }
+    },
+
+    "TEACHER": {
+      "TEXT": "Teacher",
+      "LIST": {
+        "DASHBOARD": "Dashboard",
+        "LECTURES": "Lectures",
+        "LEAVE-REQUEST": "Leave Request",
+        "EXAM-SCHEDULE": "Exam Schedule",
+        "SETTINGS": "Settings"
+      }
+    },
+    "STUDENT": {
+      "TEXT": "Student",
+      "LIST": {
+        "DASHBOARD": "Dashboard",
+        "HOMEWORK": "Homework",
+        "LEAVE-REQUEST": "Leave Request",
+        "TIME-TABLE": "Time Table",
+        "SETTINGS": "Settings"
+      }
+    },
+    "APPS": {
+      "TEXT": "Apps"
+    },
+    "CALENDAR": {
+      "TEXT": "Calendar"
+    },
+    "TASK": {
+      "TEXT": "Task"
+    },
+    "CONTACTS": {
+      "TEXT": "Contacts"
+    }
+  }
+}

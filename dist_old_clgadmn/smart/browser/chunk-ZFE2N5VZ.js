@@ -1,0 +1,1 @@
+var e=class{_parentInjector;_customTokens;constructor(t,o){this._parentInjector=t,this._customTokens=o}get(t,o){let a=this._customTokens.get(t);return typeof a<"u"?a:this._parentInjector.get(t,o)}};export{e as a};

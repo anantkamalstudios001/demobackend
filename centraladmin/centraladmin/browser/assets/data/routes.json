@@ -543,19 +543,6 @@
       "role": ["Student"],
       "submenu": []
     },
-
-    {
-      "path": "",
-      "title": "MENUITEMS.APPS.TEXT",
-      "iconType": "",
-      "icon": "",
-      "class": "",
-      "groupTitle": true,
-      "badge": "",
-      "badgeClass": "",
-      "role": ["All"],
-      "submenu": []
-    },
     {
       "path": "calendar",
       "title": "MENUITEMS.CALENDAR.TEXT",
