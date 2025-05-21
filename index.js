@@ -45,7 +45,7 @@ app.use((req, res, next) => {
     else
   {
     // Default for main domain (localhost)
-    express.static(path.join(__dirname, 'university'))(req, res, next);
+    express.static(path.join(__dirname, 'university', 'college'))(req, res, next);
   }
 });
 
@@ -109,7 +109,7 @@ app.get('*', (req, res) => {
   ) {
     res.sendFile(path.join(__dirname,'school', 'index.html'));
   } else {
-    res.sendFile(path.join(__dirname, 'university', 'index.html'));
+    res.sendFile(path.join(__dirname, 'university','college', 'index.html'));
   }
 });
 
