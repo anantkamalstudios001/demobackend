@@ -4,41 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>About Us - Brahma Valley University</title>
+    <title>Courses - Brahma Valley University</title>
     <meta name="description"
-        content="Learn about Brahma Valley University, a premier institution in Nashik, Maharashtra, dedicated to academic excellence, innovation, and career success.">
-    <meta name="keywords" content="Brahma Valley University, About Us, Nashik, Education, Placements, Campus">
+        content="Learn about the General Secretary of Brahma Valley University in Nashik, Maharashtra. Discover their vision, leadership, and commitment to academic excellence.">
+    <meta name="keywords"
+        content="Brahma Valley University, General Secretary, Nashik, Maharashtra, Leadership, Vision">
 
-    <!-- Favicons -->
     <link href="assets/img/logo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-y6kgGv8HbWsm0qXM6O+9mDEI1alxK5xlj3shfzz7KUs/YJfUHYEtMghqGy2z3/nr7szZ6e0IImWtszQfHdRc8A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         crossorigin="anonymous">
 
-    <!-- Vendor CSS Files -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-        integrity="sha384-Xt7rtyfF+RCmC5G+6zL6Y6B6z6fB6z6fB6z6fB6z6fB6z6fB6z6fB6z6fB6z6fB" crossorigin="anonymous">
+        crossorigin="anonymous">
+
+    <!-- Vendor CSS -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Main CSS File -->
+    <!-- Main CSS -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -51,103 +48,110 @@
             position: relative;
         }
 
-        .gallery-img {
-            cursor: pointer;
+        .approvals-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
         }
 
-        .gallery-img:hover {
+        .approvals-img:hover {
             transform: scale(1.05);
         }
 
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            /* 16:9 */
-            padding-top: 25px;
-            height: 0;
+        .content-section {
+            padding: 4rem 0;
         }
 
-        .video-container iframe,
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 0.375rem;
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fff;
         }
 
-        .footer {
-            background-color: #111;
-            color: #ccc;
-            font-size: 0.9rem;
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
-        .footer a {
-            color: #bbb;
-            text-decoration: none;
-            transition: color 0.3s ease;
+        .list-group-item {
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 1.1rem;
+            background-color: transparent;
         }
 
-        .footer a:hover {
-            color: #fff;
-            text-decoration: underline;
+        .btn-primary {
+            background-color: #ea1f28;
+            border: none;
+            transition: background-color 0.3s ease;
         }
 
-        .footer-section h6 {
-            font-weight: 600;
-            color: #fff;
+        .btn-primary:hover {
+            background-color: #c41820;
         }
 
-        .social-icon {
-            width: 24px;
-            height: 24px;
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
+        .animate__fadeIn {
+            animation: fadeIn 1s ease-in;
         }
 
-        .social-icon:hover {
-            opacity: 1;
+        .course-card {
+            display: none;
         }
 
-        .goog-te-banner-frame.skiptranslate {
-            display: none !important;
+        .course-card.show {
+            display: block;
         }
 
-        .goog-te-gadget {
-            font-size: 0;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        #google_translate_element select {
-            font-size: 12px;
-            padding: 4px 8px;
-            color: #000;
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 3rem 0;
+            }
+
+            .content-section {
+                padding: 2rem 0;
+            }
+
+            .approvals-img {
+                margin-bottom: 1.5rem;
+            }
         }
     </style>
 </head>
 
 <body>
     <!-- Header -->
-    <header id="header" class="header fixed-top">
+    <header>
         <div class="container-fluid py-1" style="background-color: #ea1f28;">
             <div
                 class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
-                <!-- Left: Menu Links -->
                 <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
-                    <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Download
-                            E-Brochures</a></li>
-                    <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Student
-                            Corner</a></li>
-                    <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+                    <li class="list-inline-item"><a class="text-white text-decoration-none small"
+                            href="ebrochures.html">Download E-Brochures</a></li>
+                    <li class="list-inline-item"><a class="text-white text-decoration-none small"
+                            href="student_corner.html">Student Corner</a></li>
+                    <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="blogs.html"
                             target="_blank">Blogs</a></li> -->
-                    <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a>
-                    </li>
-                    <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
-                            target="_blank">Consultancy Cell</a></li>
+                    <li class="list-inline-item"><a class="text-white text-decoration-none small"
+                            href="alumni.html">Alumni</a></li>
+                    <li class="list-inline-item"><a class="text-white text-decoration-none small"
+                            href="consultancy.html" target="_blank">Consultancy Cell</a></li>
                 </ul>
-
-                <!-- Right: Social/Action Images -->
                 <ul class="list-inline mb-0 d-flex align-items-center gap-2">
                     <li><a class="text-white text-decoration-none small" href="#"><span>Get Connected</span></a></li>
 
@@ -190,7 +194,6 @@
                 </ul>
             </div>
         </div>
-        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light pt-4 header fixed-top" id="header">
             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
                 <!-- Logo -->
@@ -210,10 +213,10 @@
 
                         <!-- About Us -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="aboutDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
                             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                                <li><a class="dropdown-item active" href="about_us.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
                                 <li><a class="dropdown-item" href="vision_mission.html">Vision & Mission</a></li>
                                 <li><a class="dropdown-item" href="president.html">President's Message</a></li>
                                 <li><a class="dropdown-item" href="chairman.html">Chairman's Message</a></li>
@@ -247,13 +250,13 @@
 
                         <!-- Academics -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                            <a class="nav-link dropdown-toggle active" href="#" id="academicsDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
                             <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
                                 <li><a class="dropdown-item" href="faculties.html">Faculties</a></li>
                                 <li><a class="dropdown-item" href="programmesoffered.html">Programmes Offered</a></li>
                                 <li><a class="dropdown-item" href="programmehigh.html">Programme Highlights</a></li>
-                                <li><a class="dropdown-item" href="coursesofstudy.html">Courses of Study</a></li>
+                                <li><a class="dropdown-item active" href="coursesofstudy.html">Courses of Study</a></li>
                                 <li><a class="dropdown-item" href="fees.html">Fees Structure</a></li>
                                 <li><a class="dropdown-item" href="eligibility.html">Eligibility</a></li>
                             </ul>
@@ -347,169 +350,157 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="main">
         <!-- Hero Section -->
         <section id="hero" class="hero-section" data-aos="fade-up">
-            <div class="container position-relative py-5">
-                <h1 class="display-3 fw-bold text-white">About Brahma Valley University</h1>
-                <p class="lead" data-aos="fade-up" data-aos-delay="200">Discover our legacy of excellence in
-                    education and innovation.</p>
+            <div class="container py-5">
+                <h1 class="display-4 fw-bold text-white">Our Courses</h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">Discover a wide range of academic programs
+                    designed to shape your future.</p>
+                <a href="admissions.html" class="btn btn-primary mt-2" data-aos="zoom-in" data-aos-delay="400">Explore
+                    Admissions</a>
             </div>
         </section>
 
-        <div class="container py-2">
-            <!-- Who We Are Section -->
-            <section class="row align-items-center mb-5">
-                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
-                        alt="Campus view" class="img-fluid rounded shadow" />
+        <!-- Program Overview Section -->
+        <section class="py-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="container">
+                <h2 class="section-title text-center fw-bold mb-3">Program Categories</h2>
+                <p class="text-center text-muted mb-3">Choose from undergraduate, postgraduate, diploma, and certificate
+                    programs tailored to your career goals.</p>
+                <div class="row g-2">
+                    <div class="col-md-4">
+                        <div class="card p-3 h-100">
+                            <i class="fas fa-graduation-cap fa-2x text-center mb-2" style="color: #ea1f28;"></i>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Undergraduate Programs</h5>
+                                <p class="card-text">Foundational degrees in Engineering, Pharmacy, Education, and more.
+                                </p>
+                                <a href="#courses" class="btn btn-outline-primary btn-sm">View Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 h-100">
+                            <i class="fas fa-book-open fa-2x text-center mb-2" style="color: #ea1f28;"></i>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Postgraduate Programs</h5>
+                                <p class="card-text">Advanced studies in Management, Technology, and Pharmaceutical
+                                    Sciences.</p>
+                                <a href="#courses" class="btn btn-outline-primary btn-sm">View Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 h-100">
+                            <i class="fas fa-certificate fa-2x text-center mb-2" style="color: #ea1f28;"></i>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Diploma & Certificate</h5>
+                                <p class="card-text">Skill-based programs in Polytechnic, ITI, and specialized fields.
+                                </p>
+                                <a href="#courses" class="btn btn-outline-primary btn-sm">View Courses</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
-                    <h2><strong>Who We Are</strong></h2>
-                    <p>Brahma Valley University, located in the serene valley of Nashik, Maharashtra, is a premier
-                        institution dedicated to fostering academic excellence, innovation, and leadership. Established
-                        in 2002, we offer a diverse range of programs across Engineering, Pharmacy, MBA, Polytechnic,
-                        ITI, B.Ed, and Public School education, shaping the leaders of tomorrow.</p>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Vision & Mission Section -->
-            <section class="mb-5" data-aos="fade-up" data-aos-duration="1000">
-                <h2 class="mb-4 text-center"><strong>Vision & Mission</strong></h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Vision</h4>
-                        <p>To be a global leader in education, fostering innovation, research, and holistic development
-                            to create responsible global citizens.</p>
+        <!-- Courses List Section -->
+        <section id="courses" class="py-4 bg-light" data-aos="fade-up" data-aos-delay="400">
+            <div class="container">
+                <h2 class="section-title text-center fw-bold mb-3">Explore Our Courses</h2>
+                <p class="text-center text-muted mb-3">Filter by category to find the right program for you.</p>
+                <div class="filter-buttons text-center mb-3">
+                    <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
+                    <button class="btn btn-outline-primary filter-btn"
+                        data-filter="undergraduate">Undergraduate</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="postgraduate">Postgraduate</button>
+                    <button class="btn btn-outline-primary filter-btn" data-filter="diploma">Diploma</button>
+                </div>
+                <div class="row g-2" id="course-list">
+                    <div class="col-md-4 course-card undergraduate show">
+                        <div class="card p-3 h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">B.Tech (Computer Engineering)</h5>
+                                <p class="card-text"><strong>Duration:</strong> 4 Years<br><strong>Eligibility:</strong>
+                                    10+2 with PCM<br><strong>Category:</strong> Undergraduate</p>
+                                <a href="program_details.html" class="btn btn-primary btn-sm">Learn More</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <h4>Mission</h4>
-                        <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Provide quality education with
-                                a focus on practical learning.</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Promote research and
-                                innovation to address global challenges.</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Nurture ethical leaders with a
-                                commitment to societal progress.</li>
-                        </ul>
+                    <div class="col-md-4 course-card undergraduate show">
+                        <div class="card p-3 h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">B.Pharm</h5>
+                                <p class="card-text"><strong>Duration:</strong> 4 Years<br><strong>Eligibility:</strong>
+                                    10+2 with PCB<br><strong>Category:</strong> Undergraduate</p>
+                                <a href="program_details.html" class="btn btn-primary btn-sm">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 course-card undergraduate show">
+                        <div class="card p-3 h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">B.Ed</h5>
+                                <p class="card-text"><strong>Duration:</strong> 2 Years<br><strong>Eligibility:</strong>
+                                    Bachelor’s Degree<br><strong>Category:</strong> Undergraduate</p>
+                                <a href="program_details.html" class="btn btn-primary btn-sm">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 course-card postgraduate show">
+                        <div class="card p-3 h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">MBA (Finance)</h5>
+                                <p class="card-text"><strong>Duration:</strong> 2 Years<br><strong>Eligibility:</strong>
+                                    Bachelor’s Degree<br><strong>Category:</strong> Postgraduate</p>
+                                <a href="program_details.html" class="btn btn-primary btn-sm">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 course-card postgraduate show">
+                        <div class="card p-3 h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">M.Tech (Mechanical)</h5>
+                                <p class="card-text"><strong>Duration:</strong> 2 Years<br><strong>Eligibility:</strong>
+                                    B.Tech in Relevant Field<br><strong>Category:</strong> Postgraduate</p>
+                                <a href="program_details.html" class="btn btn-primary btn-sm">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 course-card diploma show">
+                        <div class="card p-3 h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Diploma in Pharmacy (D.Pharm)</h5>
+                                <p class="card-text"><strong>Duration:</strong> 2 Years<br><strong>Eligibility:</strong>
+                                    10+2 with PCB<br><strong>Category:</strong> Diploma</p>
+                                <a href="program_details.html" class="btn btn-primary btn-sm">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 course-card diploma show">
+                        <div class="card p-3 h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Polytechnic (Civil Engineering)</h5>
+                                <p class="card-text"><strong>Duration:</strong> 3 Years<br><strong>Eligibility:</strong>
+                                    10th Pass<br><strong>Category:</strong> Diploma</p>
+                                <a href="program_details.html" class="btn btn-primary btn-sm">Learn More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Gallery Section -->
-            <section class="mb-5">
-                <h2 class="mb-4 text-center" data-aos="fade-up" data-aos-duration="1000"><strong>Campus Gallery</strong>
-                </h2>
-                <div class="row g-3">
-                    <div class="col-6 col-md-4" data-aos="flip-left" data-aos-duration="800">
-                        <a href="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80"
-                            class="glightbox" data-glightbox="title: Main Campus">
-                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=80"
-                                alt="Main Campus" class="img-fluid rounded gallery-img" />
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4" data-aos="flip-left" data-aos-delay="100" data-aos-duration="800">
-                        <a href="https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=1200&q=80"
-                            class="glightbox" data-glightbox="title: Library Interior">
-                            <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=400&q=80"
-                                alt="Library Interior" class="img-fluid rounded gallery-img" />
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4" data-aos="flip-left" data-aos-delay="200" data-aos-duration="800">
-                        <a href="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
-                            class="glightbox" data-glightbox="title: Student Life">
-                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80"
-                                alt="Student Life" class="img-fluid rounded gallery-img" />
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4" data-aos="flip-left" data-aos-delay="300" data-aos-duration="800">
-                        <a href="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80"
-                            class="glightbox" data-glightbox="title: Auditorium">
-                            <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=400&q=80"
-                                alt="Auditorium" class="img-fluid rounded gallery-img" />
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4" data-aos="flip-left" data-aos-delay="400" data-aos-duration="800">
-                        <a href="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=1200&q=80"
-                            class="glightbox" data-glightbox="title: Research Lab">
-                            <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=400&q=80"
-                                alt="Research Lab" class="img-fluid rounded gallery-img" />
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4" data-aos="flip-left" data-aos-delay="500" data-aos-duration="800">
-                        <a href="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80"
-                            class="glightbox" data-glightbox="title: Graduation Ceremony">
-                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=400&q=80"
-                                alt="Graduation Ceremony" class="img-fluid rounded gallery-img" />
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Placements Section -->
-            <section class="mb-5" data-aos="fade-up" data-aos-duration="1000">
-                <h2 class="mb-4 text-center"><strong>Placements</strong></h2>
-                <p class="text-muted mb-4">Brahma Valley University’s Placement Cell ensures our students are
-                    well-prepared for successful careers. In 2024, 92% of our graduates secured placements in top-tier
-                    companies, with an average salary package of ₹5.5 LPA.</p>
-                <div class="card shadow-sm p-4">
-                    <h4>Placement Highlights</h4>
-                    <ul class="list-unstyled">
-                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> 400+ companies visited campus in
-                            2024</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Top industries: IT, Engineering,
-                            Pharmaceuticals, Management</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Highest package: ₹12 LPA</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Top Recruiters Section -->
-            <section class="mb-5" data-aos="fade-up" data-aos-duration="1000">
-                <h2 class="mb-4 text-center"><strong>Top Recruiters</strong></h2>
-                <p class="text-muted mb-4 text-center">Our graduates are recruited by leading organizations across
-                    various sectors.</p>
-                <div class="row g-3">
-                    <div class="col-6 col-md-3 text-center">
-                        <img src="assets/img/company/accenture.jpg" alt="Accenture Logo" class="img-fluid mb-2">
-                        <p>Accenture</p>
-                    </div>
-                    <div class="col-6 col-md-3 text-center">
-                        <img src="assets/img/company/infosys.jpg" alt="Infosys Logo" class="img-fluid mb-2">
-                        <p>Infosys</p>
-                    </div>
-                    <div class="col-6 col-md-3 text-center">
-                        <img src="assets/img/company/cap.jpg" alt="Capgemini Logo" class="img-fluid mb-2">
-                        <p>Capgemini</p>
-                    </div>
-                    <div class="col-6 col-md-3 text-center">
-                        <img src="assets/img/company/ibm.jpg" alt="IBM Logo" class="img-fluid mb-2">
-                        <p>IBM</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Highlight Case Section -->
-            <section class="mb-5" data-aos="fade-up" data-aos-duration="1000">
-                <h2 class="mb-4 text-center"><strong>Highlight Case</strong></h2>
-                <div class="card shadow-sm p-4">
-                    <h4>Innovative AI Research Breakthrough</h4>
-                    <p class="text-muted">In 2024, Brahma Valley University’s Engineering Department, led by Dr. Anil
-                        Sharma, developed an AI-driven solution for optimizing agricultural yield prediction, adopted by
-                        local farmers in Nashik. This project earned the prestigious National Innovation Award and
-                        strengthened our industry-academia collaboration.</p>
-                </div>
-            </section>
-
-            <!-- Call to Action -->
-            <section class="text-center mb-5" data-aos="zoom-in" data-aos-duration="1000">
-                <h2 class="mb-4"><strong>Join Our Community</strong></h2>
-                <p class="text-muted mb-4">Explore the opportunities at Brahma Valley University and become part of our
-                    vibrant academic community.</p>
-                <a href="contact_us.html" class="btn btn-primary btn-lg">Get in Touch</a>
-            </section>
-        </div>
+        <!-- Call to Action -->
+        <section class="py-4 text-center bg-light" data-aos="zoom-in" data-aos-delay="600">
+            <div class="container">
+                <h2 class="mb-3 fw-bold">Start Your Journey</h2>
+                <p class="text-muted mb-3">Enroll in a program that aligns with your career aspirations.</p>
+                <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -539,21 +530,20 @@
                             <div class="footer-section">
                                 <h6 class="text-uppercase fw-bold mb-3">About Brahma Valley</h6>
                                 <ul class="list-unstyled small text-muted">
-                                    <li><a href="#/overview">Overview</a></li>
-                                    <li><a href="#/our-legacy">Our Legacy</a></li>
-                                    <li><a href="#/milestones">Milestones</a></li>
-                                    <li><a href="#/our-chairman">Our Leadership</a></li>
-                                    <li><a href="#/people-messages">People and Messages</a></li>
-                                    <li><a href="#/advisory-committee">Advisory Committee</a></li>
-                                    <li><a href="#/accreditation-recognition">Accreditation & Recognition</a></li>
-                                    <li><a href="#/sponsored-awards">Awards & Honors</a></li>
-                                    <li><a href="#/cpage.aspx?mpgid=2&pgidtrail=283">Success Stories</a></li>
+                                    <li><a href="overview.html">Overview</a></li>
+                                    <li><a href="legacy.html">Our Legacy</a></li>
+                                    <li><a href="milestones.html">Milestones</a></li>
+                                    <li><a href="leadership.html">Our Leadership</a></li>
+                                    <li><a href="people_messages.html">People and Messages</a></li>
+                                    <li><a href="advisory_committee.html">Advisory Committee</a></li>
+                                    <li><a href="accreditation.html">Accreditation & Recognition</a></li>
+                                    <li><a href="awards.html">Awards & Honors</a></li>
+                                    <li><a href="success_stories.html">Success Stories</a></li>
                                 </ul>
                                 <ul class="list-unstyled small text-muted mt-3">
-                                    <li><a href="#/testimonial.aspx?mpgid=250&pgidtrail=250&tesid=1">Testimonials</a>
-                                    </li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
                                     <li><a href="https://erp.brahmavalley.edu.in/" target="_blank">ERP Login</a></li>
-                                    <li><a href="#/admissions">Admissions</a></li>
+                                    <li><a href="admissions.html">Admissions</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -561,21 +551,21 @@
                             <div class="footer-section">
                                 <h6 class="text-uppercase fw-bold mb-3">Infrastructure</h6>
                                 <ul class="list-unstyled small text-muted">
-                                    <li><a href="#/cpage.aspx?mpgid=214&pgidtrail=213">Nashik City</a></li>
-                                    <li><a href="#/cpage.aspx?mpgid=214&pgidtrail=214">Trimbak Area</a></li>
-                                    <li><a href="#/cpage.aspx?mpgid=235&pgidtrail=235">Upcoming</a></li>
-                                    <li><a href="#/cpage.aspx?mpgid=218&pgidtrail=218">Campus Facilities</a></li>
+                                    <li><a href="nashik_city.html">Nashik City</a></li>
+                                    <li><a href="trimbak_area.html">Trimbak Area</a></li>
+                                    <li><a href="upcoming.html">Upcoming</a></li>
+                                    <li><a href="campus_facilities.html">Campus Facilities</a></li>
                                 </ul>
                                 <h6 class="text-uppercase fw-bold mt-4 mb-3">Academics</h6>
                                 <ul class="list-unstyled small text-muted">
-                                    <li><a href="#/courses">Courses</a></li>
-                                    <li><a href="#/faculty">Faculty & Research</a></li>
+                                    <li><a href="courses.html">Courses</a></li>
+                                    <li><a href="faculty_research.html">Faculty & Research</a></li>
                                 </ul>
                                 <h6 class="text-uppercase fw-bold mt-4 mb-3">Beyond Academics</h6>
                                 <ul class="list-unstyled small text-muted">
-                                    <li><a href="#/kala-academy">Kala Academy</a></li>
-                                    <li><a href="#/career-academy">Public Lecture Series</a></li>
-                                    <li><a href="#/clubs">Clubs</a></li>
+                                    <li><a href="kala_academy.html">Kala Academy</a></li>
+                                    <li><a href="lecture_series.html">Public Lecture Series</a></li>
+                                    <li><a href="clubs.html">Clubs</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -583,26 +573,24 @@
                             <div class="footer-section">
                                 <h6 class="text-uppercase fw-bold mb-3">Facilities</h6>
                                 <ul class="list-unstyled small text-muted">
-                                    <li><a href="#/innovation-center">Academic Facilities</a></li>
-                                    <li><a href="#/cpage.aspx?mpgid=22&pgid1=24&pgidtrail=246">Sports Facilities</a>
-                                    </li>
-                                    <li><a href="#/medical-facilities">Medical Facilities</a></li>
-                                    <li><a href="#/transport-facilities">Transport</a></li>
-                                    <li><a href="#/hostel">Hostel</a></li>
-                                    <li><a href="#/services">Services</a></li>
-                                    <li><a href="#/other-facilities">Other Facilities</a></li>
+                                    <li><a href="innovation_center.html">Academic Facilities</a></li>
+                                    <li><a href="sports_facilities.html">Sports Facilities</a></li>
+                                    <li><a href="medical_facilities.html">Medical Facilities</a></li>
+                                    <li><a href="transport.html">Transport</a></li>
+                                    <li><a href="hostel.html">Hostel</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="other_facilities.html">Other Facilities</a></li>
                                 </ul>
                                 <h6 class="text-uppercase fw-bold mt-4 mb-3">Life @ Brahma Valley</h6>
                                 <ul class="list-unstyled small text-muted">
-                                    <li><a href="#/news-list.aspx?mpgid=32&pgidtrail=34&ntypeid=2">Events</a></li>
-                                    <li><a href="#/industry-linkage">Industry Linkage</a></li>
-                                    <li><a href="#/community-engagement">Community Engagement</a></li>
-                                    <li><a href="#/cpage.aspx?mpgid=31&pgid1=32&pgidtrail=37">Dignitary Visits</a></li>
-                                    <li><a href="#/media">Gallery</a></li>
-                                    <li><a href="#/media-coverage.aspx?mpgid=31&pgid1=32&pgidtrail=245">Press
-                                            Release</a></li>
-                                    <li><a href="#/cpage.aspx?mpgid=31&pgid1=32&pgidtrail=237">Print Ads</a></li>
-                                    <li><a href="#/archive.aspx?mpgid=31&pgid1=32&pgidtrail=236">Archive</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="industry_linkage.html">Industry Linkage</a></li>
+                                    <li><a href="community_engagement.html">Community Engagement</a></li>
+                                    <li><a href="dignitary_visits.html">Dignitary Visits</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="press_release.html">Press Release</a></li>
+                                    <li><a href="print_ads.html">Print Ads</a></li>
+                                    <li><a href="archive.html">Archive</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -610,18 +598,18 @@
                             <div class="footer-section">
                                 <h6 class="text-uppercase fw-bold mb-3">Placements</h6>
                                 <ul class="list-unstyled small text-muted">
-                                    <li><a href="#/placement-overview">Overview</a></li>
-                                    <li><a href="#/career-counseling">Career Counseling</a></li>
-                                    <li><a href="#/placement-policy">Policy</a></li>
-                                    <li><a href="#/placement-records">Records</a></li>
-                                    <li><a href="#/student-development">Student Development</a></li>
-                                    <li><a href="#/our-recruiters">Our Recruiters</a></li>
-                                    <li><a href="#/placement-gallery">Gallery</a></li>
-                                    <li><a href="#/frequently-asked-questions">FAQs</a></li>
+                                    <li><a href="placement_overview.html">Overview</a></li>
+                                    <li><a href="career_counseling.html">Career Counseling</a></li>
+                                    <li><a href="placement_policy.html">Policy</a></li>
+                                    <li><a href="placement_records.html">Records</a></li>
+                                    <li><a href="student_development.html">Student Development</a></li>
+                                    <li><a href="recruiters.html">Our Recruiters</a></li>
+                                    <li><a href="placement_gallery.html">Gallery</a></li>
+                                    <li><a href="placement_faqs.html">FAQs</a></li>
                                 </ul>
                                 <h6 class="text-uppercase fw-bold mt-4 mb-3">Others</h6>
                                 <ul class="list-unstyled small text-muted">
-                                    <li><a href="#/cpage.aspx?mpgid=241&pgidtrail=241">Newsletters</a></li>
+                                    <li><a href="newsletters.html">Newsletters</a></li>
                                     <li><a
                                             href="https://brahmavalley.edu.in/cpage.aspx?mpgid=312&pgidtrail=312">Sitemap</a>
                                     </li>
@@ -630,8 +618,8 @@
                                     </li>
                                     <li><a href="https://brahmavalley.edu.in/cpage.aspx?mpgid=314&pgidtrail=314">Terms &
                                             Conditions</a></li>
-                                    <li><a href="javascript:void(0)">Grievance</a></li>
-                                    <li><a href="javascript:void(0)">Helpline</a></li>
+                                    <li><a href="grievance.html">Grievance</a></li>
+                                    <li><a href="helpline.html">Helpline</a></li>
                                     <li><a href="https://brahmavalley.edu.in/cpage.aspx?mpgid=315&pgidtrail=315">Privacy
                                             Policy</a></li>
                                 </ul>
@@ -641,7 +629,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
 
     <!-- Footer Bottom -->
@@ -662,9 +649,9 @@
                     <a href="#" target="_blank"><img src="assets/img/icons/linkedin.png" alt="LinkedIn"
                             class="social-icon" /></a>
                 </div>
-                <div class="small">Website by <a href="#" class="text-light text-decoration-underline">Anant Kamal
-                        Studios</a></div>
-                <div class="small">© 2025 Brahma Valley, Nashik.</div>
+                <div class="small">Website by <a href="https://anantkamalstudios.com"
+                        class="text-light text-decoration-underline">Anant Kamal Studios</a></div>
+                <div class="small">© 2025 Brahma Valley University, Nashik.</div>
             </div>
         </div>
     </section>
@@ -677,10 +664,9 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
@@ -701,49 +687,43 @@
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE
             }, 'google_translate_element');
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Scroll-to-top functionality
+            const scrollTop = document.querySelector('#scrollTop');
+            if (scrollTop) {
+                scrollTop.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const courseCards = document.querySelectorAll('.course-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.getAttribute('data-filter');
+
+                    // Update button states
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    // Filter courses
+                    courseCards.forEach(card => {
+                        if (filter === 'all' || card.classList.contains(filter)) {
+                            card.classList.add('show');
+                        } else {
+                            card.classList.remove('show');
+                        }
+                    });
+                })
+            });
+        });
     </script>
     <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const counters = document.querySelectorAll('.counter');
-            const animateCounter = (counter) => {
-                const target = parseFloat(counter.getAttribute('data-target'));
-                const duration = 2000;
-                const increment = target / (duration / 16);
-                let current = 0;
-                const updateCounter = () => {
-                    current += increment;
-                    if (current >= target) {
-                        counter.textContent = target.toLocaleString('en-IN', {
-                            minimumFractionDigits: Number.isInteger(target) ? 0 : 1,
-                            maximumFractionDigits: 1
-                        });
-                        return;
-                    }
-                    counter.textContent = Math.floor(current).toLocaleString('en-IN', {
-                        minimumFractionDigits: Number.isInteger(target) ? 0 : 1,
-                        maximumFractionDigits: 1
-                    });
-                    requestAnimationFrame(updateCounter);
-                };
-                updateCounter();
-            };
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const counter = entry.target;
-                        if (!counter.classList.contains('counted')) {
-                            counter.classList.add('counted');
-                            animateCounter(counter);
-                        }
-                    }
-                });
-            }, { threshold: 0.5 });
-            counters.forEach(counter => observer.observe(counter));
-        });
-    </script>
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

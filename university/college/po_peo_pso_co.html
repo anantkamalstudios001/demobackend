@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About the Vice President - Brahma Valley University</title>
+    <meta name="description"
+        content="Learn about the President of Brahma Valley University in Nashik, Maharashtra. Discover their vision, leadership, and commitment to academic excellence.">
+    <meta name="keywords" content="Brahma Valley University, President, Nashik, Maharashtra, Leadership, Vision">
+
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <!-- Vendor CSS -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFFFFF;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/banner.webp') no-repeat center center/cover;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+
+        .section-title {
+            color: #1A3C6E;
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: #ea1f28;
+            border-radius: 2px;
+        }
+
+        .card {
+            border: 1px solid #E9ECEF;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 1.5rem;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            background-color: #ea1f28;
+            color: white;
+            border-radius: 12px 12px 0 0;
+            padding: 0.75rem 1.25rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* .card-body {
+            padding: 1.5rem;
+            font-size: 0.95rem;
+        } */
+
+        .btn-primary {
+            background: linear-gradient(45deg, #ea1f28, #c41820);
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 500;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(45deg, #c41820, #ea1f28);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #E9ECEF, transparent);
+            margin: 2rem 0;
+        }
+
+        .social-icon {
+            font-size: 1.25rem;
+            color: #ea1f28;
+            transition: color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            color: #c41820;
+        }
+
+        .course-card {
+            background-color: #FFFFFF;
+            border: 1px solid #E9ECEF;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .course-card h5 {
+            color: #ea1f28;
+            font-weight: 500;
+        }
+
+        .course-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .course-card ul li {
+            padding: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 3rem 0;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section p {
+                font-size: 0.95rem;
+            }
+
+            .card-body {
+                font-size: 0.9rem;
+            }
+
+            .course-card {
+                padding: 1rem;
+            }
+
+            .course-card h5 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container-fluid py-1" style="background-color: #ea1f28;">
+            <div
+                class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
+                <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
+                    <li class="list-inline-item"><a class="text-white text-decoration-none small"
+                            href="ebrochures.html">Download E-Brochures</a></li>
+                    <li class="list-inline-item"><a class="text-white text-decoration-none small"
+                            href="student_corner.html">Student Corner</a></li>
+                    <li class="list-inline-item"><a class="text-white text-decoration-none small" href="blogs.html"
+                            target="_blank">Blogs</a></li>
+                    <li class="list-inline-item"><a class="text-white text-decoration-none small"
+                            href="alumni.html">Alumni</a></li>
+                    <li class="list-inline-item"><a class="text-white text-decoration-none small"
+                            href="consultancy.html" target="_blank">Consultancy Cell</a></li>
+                </ul>
+                <ul class="list-inline mb-0 d-flex align-items-center gap-2">
+                    <li><a class="text-white text-decoration-none small" href="#"><span>Get Connected</span></a></li>
+
+                    <li>
+                        <a class="text-white" href="#" target="_blank" aria-label="WhatsApp">
+                            <img src="assets/img/icons/whatsapp.png" alt="WhatsApp" width="20" height="20">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="#" target="_blank" aria-label="360">
+                            <img src="assets/img/icons/360.png" alt="360" width="20" height="20">
+                            <!-- <span class="ms-1">360</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="#" target="_blank">
+                            <img src="assets/img/icons/fb.png" alt="Facebook" width="20" height="20">
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a class="text-white" href="#" target="_blank" aria-label="Twitter">
+                            <img src="assets/img/icons/" alt="Twitter" width="20" height="20">
+                        </a>
+                    </li> -->
+                    <li>
+                        <a class="text-white" href="https://in.linkedin.com/" target="_blank">
+                            <img src="assets/img/icons/linkedin.png" alt="LinkedIn" width="20" height="20">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="https://www.instagram.com/" target="_blank">
+                            <img src="assets/img/icons/ig.png" alt="Instagram" width="20" height="20">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-white" href="https://www.youtube.com/" target="_blank">
+                            <img src="assets/img/icons/yt.png" alt="YouTube" width="20" height="20">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light pt-4 header fixed-top" id="header">
+            <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+                <a class="navbar-brand mt-2" href="index.html">
+                    <img src="assets/img/logo.png" alt="Brahma Valley University Logo" class="img-fluid__"
+                        style="max-height: 150px;">
+                </a>
+                <button class="navbar-toggler mobile-nav-toggle d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navmenu navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="president.html">President</a></li>
+                                <li><a class="dropdown-item" href="general_secretary.html">General Secretary</a></li>
+                                <li><a class="dropdown-item" href="vice_president.html">Vice President</a></li>
+                                <li><a class="dropdown-item" href="principal.html">Principal</a></li>
+                                <li><a class="dropdown-item" href="vision_mission.html">Vision & Mission</a></li>
+                                <li><a class="dropdown-item" href="committees.html">Committees</a></li>
+                                <li><a class="dropdown-item" href="approvals.html">Approval & Affiliation</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active " href="#" id="academicsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                            <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                                <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+                                <li><a class="dropdown-item active" href="po_peo_pso_co.html">PO, PEO, PSO & CO</a></li>
+                                <li><a class="dropdown-item" href="value_added_courses.html">Value Added/Add-on
+                                        Courses</a></li>
+                                <li><a class="dropdown-item" href="field_work.html">Field Work/Project/Internship</a>
+                                </li>
+                                <li><a class="dropdown-item" href="library.html">Library</a></li>
+                                <li><a class="dropdown-item" href="eligibility.html">Eligibility</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="instituteDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Institute</a>
+                            <ul class="dropdown-menu" aria-labelledby="instituteDropdown">
+                                <li><a class="dropdown-item" href="mba.html">MBA</a></li>
+                                <li><a class="dropdown-item" href="engineering.html">Engineering</a></li>
+                                <li><a class="dropdown-item" href="pharmacy.html">Pharmacy</a></li>
+                                <li><a class="dropdown-item" href="polytechnic.html">Polytechnic</a></li>
+                                <li><a class="dropdown-item" href="iti.html">ITI</a></li>
+                                <li><a class="dropdown-item" href="public_school.html">Public School</a></li>
+                                <li><a class="dropdown-item" href="bed.html">B.Ed</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+                            <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                                <li><a class="dropdown-item" href="admissions.html">Admissions</a></li>
+                                <li><a class="dropdown-item" href="program_details.html">Program Details</a></li>
+                                <li><a class="dropdown-item" href="eligibility.html">Eligibility</a></li>
+                                <li><a class="dropdown-item" href="academics_overview.html">Academics Overview</a></li>
+                                <li><a class="dropdown-item" href="fee_structure.html">Fee Structure</a></li>
+                                <li><a class="dropdown-item" href="info_brochure.html">Information Brochure</a></li>
+                                <li><a class="dropdown-item" href="rules_regulations.html">Rules & Regulations</a></li>
+                                <li><a class="dropdown-item" href="admission_form.html">Admission Form</a></li>
+                                <li><a class="dropdown-item" href="required_documents.html">Required Documents</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="placementDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Training & Placement</a>
+                            <ul class="dropdown-menu" aria-labelledby="placementDropdown">
+                                <li><a class="dropdown-item" href="training_placement.html">Training & Placement</a>
+                                </li>
+                                <li><a class="dropdown-item" href="placement_cell.html">Placement Cell</a></li>
+                                <li><a class="dropdown-item" href="career_guidance.html">Career Guidance</a></li>
+                                <li><a class="dropdown-item" href="placement.html">Placement</a></li>
+                                <li><a class="dropdown-item" href="placement_drive.html">Placement Drive</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Facilities</a>
+                            <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                                <li><a class="dropdown-item" href="facilities_title.html">Facilities Title</a></li>
+                                <li><a class="dropdown-item" href="facilities_details.html">Facilities Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="alumniDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Alumni</a>
+                            <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                                <li><a class="dropdown-item" href="alumni_details.html">Alumni Student Details</a></li>
+                                <li><a class="dropdown-item" href="registration_form.html">Registration Form Details</a>
+                                </li>
+                                <li><a class="dropdown-item" href="alumni_meet.html">Alumni Meet Details</a></li>
+                                <li><a class="dropdown-item" href="alumni_higher_studies.html">Alumni for Higher
+                                        Studies</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="consultancyDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Consultancy</a>
+                            <ul class="dropdown-menu" aria-labelledby="consultancyDropdown">
+                                <li><a class="dropdown-item" href="consultancy_pdf.html">PDF</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Events</a>
+                            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                                <li><a class="dropdown-item" href="upcoming_events.html">Upcoming Events</a></li>
+                            </ul>
+                        </li>
+                        <a class="nav-link dropdown-toggle" href="contact_us.html" id="contactDropdown"
+                            role="button">Contact Us</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container py-4">
+                <h1 class="display-4 fw-bold text-light">Program Outcomes & Objectives</h1>
+                <p class="lead mt-3" data-aos="fade-up" data-aos-delay="200">Discover the structured outcomes and
+                    objectives of our academic programs, crafted to ensure graduate success.</p>
+                <a href="courses.html" class="btn btn-primary mt-3" data-aos="zoom-in" data-aos-delay="400">Explore
+                    Programs</a>
+            </div>
+        </section>
+
+        <!-- Program Outcomes (PO) Section -->
+        <section class="py-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="container">
+                <h2 class="section-title text-center fw-bold mb-4">Program Outcomes (PO)</h2>
+                <p class="text-center text-muted mb-4">Program Outcomes define the skills and knowledge students gain by
+                    graduation. Below are the POs for B.Tech in Computer Engineering.</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO1</div>
+                            <div class="card-body">Apply mathematics, science, and engineering fundamentals to solve
+                                complex problems.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO2</div>
+                            <div class="card-body">Identify, formulate, and analyze engineering problems using first
+                                principles.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO3</div>
+                            <div class="card-body">Design solutions for complex problems, considering societal and
+                                environmental needs.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO4</div>
+                            <div class="card-body">Conduct research-based investigations to draw valid conclusions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO5</div>
+                            <div class="card-body">Utilize modern engineering tools and techniques effectively.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO6</div>
+                            <div class="card-body">Evaluate societal, health, safety, and cultural impacts of
+                                engineering practices.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO7</div>
+                            <div class="card-body">Understand the environmental impact of engineering solutions.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO8</div>
+                            <div class="card-body">Adhere to ethical principles and professional responsibilities.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO9</div>
+                            <div class="card-body">Work effectively as an individual or in multidisciplinary teams.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO10</div>
+                            <div class="card-body">Communicate effectively with diverse audiences.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO11</div>
+                            <div class="card-body">Apply engineering and management principles to manage projects.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-check-circle"></i> PO12</div>
+                            <div class="card-body">Engage in continuous learning to adapt to technological changes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Program Educational Objectives (PEO) Section -->
+        <section class="py-5" data-aos="fade-up" data-aos-delay="400">
+            <div class="container">
+                <h2 class="section-title text-center fw-bold mb-4">Program Educational Objectives (PEO)</h2>
+                <p class="text-center text-muted mb-4">PEOs outline the expected achievements of B.Tech Computer
+                    Engineering graduates within a few years post-graduation.</p>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-graduation-cap"></i> PEO1</div>
+                            <div class="card-body">Excel in technical roles, applying computer engineering knowledge to
+                                real-world challenges.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-graduation-cap"></i> PEO2</div>
+                            <div class="card-body">Pursue advanced studies or leadership roles, demonstrating
+                                adaptability.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-graduation-cap"></i> PEO3</div>
+                            <div class="card-body">Contribute to society through innovative, sustainable solutions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-graduation-cap"></i> PEO4</div>
+                            <div class="card-body">Uphold ethical standards and professional integrity in careers.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Program Specific Outcomes (PSO) Section -->
+        <section class="py-5" data-aos="fade-up" data-aos-delay="600">
+            <div class="container">
+                <h2 class="section-title text-center fw-bold mb-4">Program Specific Outcomes (PSO)</h2>
+                <p class="text-center text-muted mb-4">PSOs are tailored to the B.Tech in Computer Engineering program,
+                    focusing on specialized competencies.</p>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-code"></i> PSO1</div>
+                            <div class="card-body">Design, develop, and test software using modern programming
+                                paradigms.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-code"></i> PSO2</div>
+                            <div class="card-body">Develop efficient computer systems with hardware-software
+                                integration.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header"><i class="fas fa-code"></i> PSO3</div>
+                            <div class="card-body">Apply AI, cloud computing, and cybersecurity knowledge to innovate.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Course Outcomes (CO) Section -->
+        <section class="py-5" data-aos="fade-up" data-aos-delay="800">
+            <div class="container">
+                <h2 class="section-title text-center fw-bold mb-4">Course Outcomes (CO)</h2>
+                <p class="text-center text-muted mb-4">COs specify learning outcomes for courses in the B.Tech Computer
+                    Engineering program.</p>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="course-card">
+                            <h5>CS101: Data Structures</h5>
+                            <ul>
+                                <li>CO1: Understand arrays, stacks, and queues.</li>
+                                <li>CO2: Implement sorting and searching algorithms.</li>
+                                <li>CO3: Analyze algorithm time and space complexity.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="course-card">
+                            <h5>CS102: Database Management Systems</h5>
+                            <ul>
+                                <li>CO1: Design relational database schemas.</li>
+                                <li>CO2: Write SQL queries for data manipulation.</li>
+                                <li>CO3: Apply normalization for database optimization.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="course-card">
+                            <h5>CS103: Operating Systems</h5>
+                            <ul>
+                                <li>CO1: Explain processes and threads concepts.</li>
+                                <li>CO2: Implement scheduling algorithms.</li>
+                                <li>CO3: Manage memory and file systems.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="course-card">
+                            <h5>CS104: Computer Networks</h5>
+                            <ul>
+                                <li>CO1: Understand TCP/IP protocols.</li>
+                                <li>CO2: Configure basic network setups.</li>
+                                <li>CO3: Analyze network performance and security.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="course-card">
+                            <h5>CS105: Software Engineering</h5>
+                            <ul>
+                                <li>CO1: Apply SDLC models.</li>
+                                <li>CO2: Design UML diagrams for modeling.</li>
+                                <li>CO3: Implement testing for software quality.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-5 text-center" data-aos="zoom-in" data-aos-delay="1000">
+            <div class="container">
+                <h2 class="section-title fw-bold mb-3">Join Our Programs</h2>
+                <p class="text-muted mb-4">Enroll in programs designed to achieve these outcomes and objectives.</p>
+                <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row gx-xl-5 gy-4 gy-xl-0">
+                <div class="col-xl-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="footer-content mb-4">
+                        <a href="index.html" class="d-block mb-3">
+                            <img src="assets/img/logo.png" alt="Brahma Valley Logo" class="img-fluid" />
+                        </a>
+                        <p class="small text-light">Brahma Valley, Trimbak Road, Anjaneri, Nashik – 422213, Maharashtra
+                        </p>
+                        <p class="small text-muted">
+                            <a href="tel:+912532222111" class="text-light text-decoration-none">+91 253 222 2111</a> /
+                            <a href="tel:+912532222222" class="text-light text-decoration-none">+91 253 222 2222</a>
+                        </p>
+                        <p class="small text-muted">
+                            <a href="mailto:info@brahmavalley.com"
+                                class="text-light text-decoration-none">info@brahmavalley.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-9">
+                    <div class="row gy-4">
+                        <div class="col-lg-3">
+                            <div class="footer-section">
+                                <h6 class="text-uppercase fw-bold mb-3">About Brahma Valley</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li><a href="overview.html">Overview</a></li>
+                                    <li><a href="legacy.html">Our Legacy</a></li>
+                                    <li><a href="milestones.html">Milestones</a></li>
+                                    <li><a href="leadership.html">Our Leadership</a></li>
+                                    <li><a href="people_messages.html">People and Messages</a></li>
+                                    <li><a href="advisory_committee.html">Advisory Committee</a></li>
+                                    <li><a href="accreditation.html">Accreditation & Recognition</a></li>
+                                    <li><a href="awards.html">Awards & Honors</a></li>
+                                    <li><a href="success_stories.html">Success Stories</a></li>
+                                </ul>
+                                <ul class="list-unstyled small text-muted mt-3">
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="https://erp.brahmavalley.edu.in/" target="_blank">ERP Login</a></li>
+                                    <li><a href="admissions.html">Admissions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-section">
+                                <h6 class="text-uppercase fw-bold mb-3">Infrastructure</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li><a href="nashik_city.html">Nashik City</a></li>
+                                    <li><a href="trimbak_area.html">Trimbak Area</a></li>
+                                    <li><a href="upcoming.html">Upcoming</a></li>
+                                    <li><a href="campus_facilities.html">Campus Facilities</a></li>
+                                </ul>
+                                <h6 class="text-uppercase fw-bold mt-4 mb-3">Academics</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li><a href="courses.html">Courses</a></li>
+                                    <li><a href="faculty_research.html">Faculty & Research</a></li>
+                                </ul>
+                                <h6 class="text-uppercase fw-bold mt-4 mb-3">Beyond Academics</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li><a href="kala_academy.html">Kala Academy</a></li>
+                                    <li><a href="lecture_series.html">Public Lecture Series</a></li>
+                                    <li><a href="clubs.html">Clubs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-section">
+                                <h6 class="text-uppercase fw-bold mb-3">Facilities</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li><a href="innovation_center.html">Academic Facilities</a></li>
+                                    <li><a href="sports_facilities.html">Sports Facilities</a></li>
+                                    <li><a href="medical_facilities.html">Medical Facilities</a></li>
+                                    <li><a href="transport.html">Transport</a></li>
+                                    <li><a href="hostel.html">Hostel</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="other_facilities.html">Other Facilities</a></li>
+                                </ul>
+                                <h6 class="text-uppercase fw-bold mt-4 mb-3">Life @ Brahma Valley</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="industry_linkage.html">Industry Linkage</a></li>
+                                    <li><a href="community_engagement.html">Community Engagement</a></li>
+                                    <li><a href="dignitary_visits.html">Dignitary Visits</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="press_release.html">Press Release</a></li>
+                                    <li><a href="print_ads.html">Print Ads</a></li>
+                                    <li><a href="archive.html">Archive</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-section">
+                                <h6 class="text-uppercase fw-bold mb-3">Placements</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li><a href="placement_overview.html">Overview</a></li>
+                                    <li><a href="career_counseling.html">Career Counseling</a></li>
+                                    <li><a href="placement_policy.html">Policy</a></li>
+                                    <li><a href="placement_records.html">Records</a></li>
+                                    <li><a href="student_development.html">Student Development</a></li>
+                                    <li><a href="recruiters.html">Our Recruiters</a></li>
+                                    <li><a href="placement_gallery.html">Gallery</a></li>
+                                    <li><a href="placement_faqs.html">FAQs</a></li>
+                                </ul>
+                                <h6 class="text-uppercase fw-bold mt-4 mb-3">Others</h6>
+                                <ul class="list-unstyled small text-muted">
+                                    <li><a href="newsletters.html">Newsletters</a></li>
+                                    <li><a
+                                            href="https://brahmavalley.edu.in/cpage.aspx?mpgid=312&pgidtrail=312">Sitemap</a>
+                                    </li>
+                                    <li><a
+                                            href="https://brahmavalley.edu.in/cpage.aspx?mpgid=313&pgidtrail=313">Disclaimer</a>
+                                    </li>
+                                    <li><a href="https://brahmavalley.edu.in/cpage.aspx?mpgid=314&pgidtrail=314">Terms &
+                                            Conditions</a></li>
+                                    <li><a href="grievance.html">Grievance</a></li>
+                                    <li><a href="helpline.html">Helpline</a></li>
+                                    <li><a href="https://brahmavalley.edu.in/cpage.aspx?mpgid=315&pgidtrail=315">Privacy
+                                            Policy</a></li>
+                                </ul>
+                                <div class="text-white small mt-3 text-end" id="google_translate_element"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Footer Bottom -->
+    <section class="footer-bottom bg-secondary text-light py-3">
+        <div class="container">
+            <div
+                class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2 text-center text-lg-start">
+                <div class="social-media d-flex align-items-center gap-3">
+                    <span class="small">Follow Us</span>
+                    <a href="#" target="_blank"><img src="assets/img/icons/fb.png" alt="Facebook"
+                            class="social-icon" /></a>
+                    <!-- <a href="#" target="_blank"><img src="assets/img/twitter.png" alt="Twitter"
+                            class="social-icon" /></a> -->
+                    <a href="#" target="_blank"><img src="assets/img/icons/yt.png" alt="YouTube"
+                            class="social-icon" /></a>
+                    <a href="#" target="_blank"><img src="assets/img/icons/ig.png" alt="Instagram"
+                            class="social-icon" /></a>
+                    <a href="#" target="_blank"><img src="assets/img/icons/linkedin.png" alt="LinkedIn"
+                            class="social-icon" /></a>
+                </div>
+                <div class="small">Website by <a href="https://anantkamalstudios.com"
+                        class="text-light text-decoration-underline">Anant Kamal Studios</a></div>
+                <div class="small">© 2025 Brahma Valley University, Nashik.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,mr',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

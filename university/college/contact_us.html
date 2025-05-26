@@ -38,6 +38,15 @@
     <!-- Main CSS -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/banner.webp') no-repeat center center/cover;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,8 +61,8 @@
                             E-Brochures</a></li>
                     <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Student
                             Corner</a></li>
-                    <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
-                            target="_blank">Blogs</a></li>
+                    <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+                            target="_blank">Blogs</a></li> -->
                     <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a>
                     </li>
                     <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
@@ -66,38 +75,38 @@
 
                     <li>
                         <a class="text-white" href="#" target="_blank" aria-label="WhatsApp">
-                            <img src="assets/img/whatsapp.png" alt="WhatsApp" width="20" height="20">
+                            <img src="assets/img/icons/whatsapp.png" alt="WhatsApp" width="20" height="20">
                         </a>
                     </li>
                     <li>
                         <a class="text-white" href="#" target="_blank" aria-label="360">
-                            <img src="assets/img/360-degree.png" alt="360" width="20" height="20">
-                            <span class="ms-1">360</span>
+                            <img src="assets/img/icons/360.png" alt="360" width="20" height="20">
+                            <!-- <span class="ms-1">360</span> -->
                         </a>
                     </li>
                     <li>
                         <a class="text-white" href="#" target="_blank">
-                            <img src="assets/img/facebook.png" alt="Facebook" width="20" height="20">
+                            <img src="assets/img/icons/fb.png" alt="Facebook" width="20" height="20">
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a class="text-white" href="#" target="_blank" aria-label="Twitter">
-                            <img src="assets/img/twitter.png" alt="Twitter" width="20" height="20">
+                            <img src="assets/img/icons/" alt="Twitter" width="20" height="20">
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="text-white" href="https://in.linkedin.com/" target="_blank">
-                            <img src="assets/img/linkedin.png" alt="LinkedIn" width="20" height="20">
+                            <img src="assets/img/icons/linkedin.png" alt="LinkedIn" width="20" height="20">
                         </a>
                     </li>
                     <li>
                         <a class="text-white" href="https://www.instagram.com/" target="_blank">
-                            <img src="assets/img/instagram.png" alt="Instagram" width="20" height="20">
+                            <img src="assets/img/icons/ig.png" alt="Instagram" width="20" height="20">
                         </a>
                     </li>
                     <li>
                         <a class="text-white" href="https://www.youtube.com/" target="_blank">
-                            <img src="assets/img/youtube.png" alt="YouTube" width="20" height="20">
+                            <img src="assets/img/icons/yt.png" alt="YouTube" width="20" height="20">
                         </a>
                     </li>
                 </ul>
@@ -108,8 +117,7 @@
             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
                 <!-- Logo -->
                 <a class="navbar-brand mt-2" href="#">
-                    <img src="assets/img/logo.png" alt="Institution Logo" class="img-fluid__"
-                        style="max-height: 150px;">
+                    <img src="assets/img/logo.png" alt="Institution Logo" class="img-fluid" style="max-height: 150px;">
                 </a>
                 <!-- Mobile Menu Toggle -->
                 <button class="navbar-toggler mobile-nav-toggle d-lg-none" type="button" data-bs-toggle="collapse"
@@ -120,109 +128,141 @@
                 <!-- Menu Content -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navmenu navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="index.html" id="homeDropdown" role="button">Home</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                        <!-- About Us -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
                             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                 <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
-                                <li><a class="dropdown-item" href="#">President</a></li>
-                                <li><a class="dropdown-item" href="#">General Secretary</a></li>
-                                <li><a class="dropdown-item" href="#">Vice President</a></li>
-                                <li><a class="dropdown-item" href="#">Principal</a></li>
-                                <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
-                                <li><a class="dropdown-item" href="#">Committees</a></li>
-                                <li><a class="dropdown-item" href="#">Approval & Affiliation</a></li>
+                                <li><a class="dropdown-item" href="vision_mission.html">Vision & Mission</a></li>
+                                <li><a class="dropdown-item" href="president.html">President's Message</a></li>
+                                <li><a class="dropdown-item" href="chairman.html">Chairman's Message</a></li>
+                                <li><a class="dropdown-item" href="general_secretary.html">Vice Chancellor's Message</a>
+                                </li>
+                                <li><a class="dropdown-item" href="approvals.html">Approvals</a></li>
+                                <li><a class="dropdown-item" href="ourgrpinstitute.html">Our Group Institute</a></li>
+                                <li><a class="dropdown-item" href="governing.html">Governing Body</a></li>
+                                <li><a class="dropdown-item" href="boardmanag.html">Board of Management</a></li>
+                                <li><a class="dropdown-item" href="universityoff.html">University Officers</a></li>
+                                <li><a class="dropdown-item" href="committees.html">Committees</a></li>
+                                <li><a class="dropdown-item" href="mous.html">MOU's</a></li>
+                                <li><a class="dropdown-item" href="membership.html">Membership</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
-                            <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
-                                <li><a class="dropdown-item" href="#">Courses</a></li>
-                                <li><a class="dropdown-item" href="#">PO, PEO, PSO & CO</a></li>
-                                <li><a class="dropdown-item" href="#">Value Added/Add-on Courses</a></li>
-                                <li><a class="dropdown-item" href="#">Field Work/Project/Internship</a></li>
-                                <li><a class="dropdown-item" href="#">Library</a></li>
-                                <li><a class="dropdown-item" href="#">Eligibility</a></li>
-                            </ul>
-                        </li>
+
+                        <!-- Institute -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="instituteDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Institute</a>
                             <ul class="dropdown-menu" aria-labelledby="instituteDropdown">
-                                <li><a class="dropdown-item" href="#">MBA</a></li>
-                                <li><a class="dropdown-item" href="#">Engineering</a></li>
-                                <li><a class="dropdown-item" href="#">Pharmacy</a></li>
-                                <li><a class="dropdown-item" href="#">Polytechnic</a></li>
-                                <li><a class="dropdown-item" href="#">ITI</a></li>
-                                <li><a class="dropdown-item" href="#">Public School</a></li>
-                                <li><a class="dropdown-item" href="#">B.Ed</a></li>
+                                <li><a class="dropdown-item" href="mba.html">MBA</a></li>
+                                <li><a class="dropdown-item" href="engineering.html">Engineering</a></li>
+                                <li><a class="dropdown-item" href="pharmacy.html">Pharmacy</a></li>
+                                <li><a class="dropdown-item" href="polytechnic.html">Polytechnic</a></li>
+                                <li><a class="dropdown-item" href="iti.html">ITI</a></li>
+                                <li><a class="dropdown-item" href="public_school.html">Public School</a></li>
+                                <li><a class="dropdown-item" href="bed.html">B.Ed</a></li>
                             </ul>
                         </li>
+
+                        <!-- Academics -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                            <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                                <li><a class="dropdown-item" href="faculties.html">Faculties</a></li>
+                                <li><a class="dropdown-item" href="programmesoffered.html">Programmes Offered</a></li>
+                                <li><a class="dropdown-item" href="programmehigh.html">Programme Highlights</a></li>
+                                <li><a class="dropdown-item" href="coursesofstudy.html">Courses of Study</a></li>
+                                <li><a class="dropdown-item" href="fees.html">Fees Structure</a></li>
+                                <li><a class="dropdown-item" href="eligibility.html">Eligibility</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Admissions -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
                             <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
-                                <li><a class="dropdown-item" href="#">Admissions</a></li>
-                                <li><a class="dropdown-item" href="#">Program Details</a></li>
-                                <li><a class="dropdown-item" href="#">Eligibility</a></li>
-                                <li><a class="dropdown-item" href="#">Academics Overview</a></li>
-                                <li><a class="dropdown-item" href="#">Fee Structure</a></li>
-                                <li><a class="dropdown-item" href="#">Information Brochure</a></li>
-                                <li><a class="dropdown-item" href="#">Rules & Regulations</a></li>
-                                <li><a class="dropdown-item" href="#">Admission Form</a></li>
-                                <li><a class="dropdown-item" href="#">Required Documents</a></li>
+                                <li><a class="dropdown-item" href="applyonline.html">Apply Online</a></li>
+                                <li><a class="dropdown-item" href="rules_regulations.html">Rules & Regulations</a></li>
+                                <li><a class="dropdown-item" href="scholarship.html">Scholarship Details</a></li>
+                                <li><a class="dropdown-item" href="eligibility.html">Eligibility Criteria</a></li>
+                                <li><a class="dropdown-item" href="doculist.html">Document List</a></li>
+                                <li><a class="dropdown-item" href="fees_structure.html">Fee Structure</a></li>
+                                <li><a class="dropdown-item" href="admission_faq.html">Admission FAQ's</a></li>
+                                <li><a class="dropdown-item" href="downloadbrochure.html">Download E-Brochure</a></li>
+                                <li><a class="dropdown-item" href="refundpolicy.html">Refund Policy</a></li>
+                                <li><a class="dropdown-item" href="photogallery.html">Photo Gallery</a></li>
                             </ul>
                         </li>
+
+                        <!-- Placement -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="placementDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Training & Placement</a>
+                                data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
                             <ul class="dropdown-menu" aria-labelledby="placementDropdown">
-                                <li><a class="dropdown-item" href="#">Training & Placement</a></li>
-                                <li><a class="dropdown-item" href="#">Placement Cell</a></li>
-                                <li><a class="dropdown-item" href="#">Career Guidance</a></li>
-                                <li><a class="dropdown-item" href="#">Placement</a></li>
-                                <li><a class="dropdown-item" href="#">Placement Drive</a></li>
+                                <li><a class="dropdown-item" href="training_placement.html">Training & Placement</a>
+                                </li>
+                                <li><a class="dropdown-item" href="placement_cell.html">Placement Cell</a></li>
+                                <li><a class="dropdown-item" href="career_guidance.html">Career Guidance</a></li>
+                                <li><a class="dropdown-item" href="placement.html">Placement</a></li>
+                                <li><a class="dropdown-item" href="placement_drive.html">Placement Drive</a></li>
                             </ul>
                         </li>
+
+                        <!-- Research -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Facilities</a>
-                            <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
-                                <li><a class="dropdown-item" href="#">Facilities Title</a></li>
-                                <li><a class="dropdown-item" href="#">Facilities Details</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Research</a>
+                            <ul class="dropdown-menu" aria-labelledby="researchDropdown">
+                                <li><a class="dropdown-item" href="research.html">Research</a></li>
+                                <li><a class="dropdown-item" href="exam_notices.html">Notices</a></li>
+                                <li><a class="dropdown-item" href="exam_results.html">Results</a></li>
+                                <li><a class="dropdown-item" href="exam_timetables.html">Timetables</a></li>
+                                <li><a class="dropdown-item" href="exam_apply.html">How to Apply?</a></li>
+                                <li><a class="dropdown-item" href="exam_coe.html">CoE</a></li>
+                                <li><a class="dropdown-item" href="exam_coordinators.html">Co-ordinators</a></li>
+                                <!-- Examinations Submenu -->
+                                <!-- <li class="dropdown-submenu position-relative">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="examSubmenu" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Examinations</a>
+                  <ul class="dropdown-menu position-absolute start-100 top-0 mt-0" aria-labelledby="examSubmenu">
+                  </ul>
+                </li> -->
                             </ul>
                         </li>
+
+
+
+                        <!-- IQAC -->
+                        <li class="nav-item"><a class="nav-link" href="iqac.html">IQAC</a></li>
+
+                        <!-- Campus Life -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="alumniDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Alumni</a>
-                            <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
-                                <li><a class="dropdown-item" href="#">Alumni Student Details</a></li>
-                                <li><a class="dropdown-item" href="#">Registration Form Details</a></li>
-                                <li><a class="dropdown-item" href="#">Alumni Meet Details</a></li>
-                                <li><a class="dropdown-item" href="#">Alumni for Higher Studies</a></li>
-                                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" id="campusLifeDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Campus Life</a>
+                            <ul class="dropdown-menu" aria-labelledby="campusLifeDropdown">
+                                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                <li><a class="dropdown-item" href="sun_club.html">Sun Club</a></li>
+                                <li><a class="dropdown-item" href="spoken_tutorial.html">Spoken Tutorial</a></li>
+                                <li><a class="dropdown-item" href="professional_body.html">Professional Body</a></li>
+                                <li><a class="dropdown-item" href="student_welfare.html">Student Welfare</a></li>
+                                <li><a class="dropdown-item" href="digital_learning.html">Digital Learning Monitoring
+                                        Cell</a></li>
+                                <li><a class="dropdown-item" href="achievement.html">Achievement</a></li>
+                                <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                                <li><a class="dropdown-item" href="media_coverage.html">Media Coverage</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="consultancyDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Consultancy</a>
-                            <ul class="dropdown-menu" aria-labelledby="consultancyDropdown">
-                                <li><a class="dropdown-item" href="#">PDF</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
-                                <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
-                            </ul>
-                        </li>
-                        <li class="list-inline-item"><a class="text-white text-decoration-none small"
-                                href="contact_us.html">Contact Us</a></li>
+
+                        <!-- Blogs -->
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
+
+                        <!-- Contact -->
+                        <li class="nav-item"><a class="nav-link active" href="contact_us.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -231,11 +271,10 @@
 
     <main class="main">
         <!-- Hero Section -->
-        <section id="hero" class="hero section dark-background"
-            style="background-image: url('assets/img/banner.webp');">
-            <div class="container text-center text-white py-5">
-                <h1 class="display-4 fw-bold" data-aos="fade-up">Contact Brahma Valley University</h1>
-                <p class="lead" data-aos="fade-up" data-aos-delay="100">Reach out to us for admissions, inquiries, or
+        <section id="hero" class="hero-section" data-aos="fade-up">
+            <div class="container position-relative py-5">
+                <h1 class="display-3 fw-bold text-white">Contact Brahma Valley University</h1>
+                <p class="lead" data-aos="fade-up" data-aos-delay="200">Reach out to us for admissions, inquiries, or
                     any assistance.</p>
             </div>
         </section>
@@ -451,15 +490,15 @@
                 class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2 text-center text-lg-start">
                 <div class="social-media d-flex align-items-center gap-3">
                     <span class="small">Follow Us</span>
-                    <a href="#" target="_blank"><img src="assets/img/facebook.png" alt="Facebook"
+                    <a href="#" target="_blank"><img src="assets/img/icons/fb.png" alt="Facebook"
                             class="social-icon" /></a>
-                    <a href="#" target="_blank"><img src="assets/img/twitter.png" alt="Twitter"
+                    <!-- <a href="#" target="_blank"><img src="assets/img/twitter.png" alt="Twitter"
+                            class="social-icon" /></a> -->
+                    <a href="#" target="_blank"><img src="assets/img/icons/yt.png" alt="YouTube"
                             class="social-icon" /></a>
-                    <a href="#" target="_blank"><img src="assets/img/youtube.png" alt="YouTube"
+                    <a href="#" target="_blank"><img src="assets/img/icons/ig.png" alt="Instagram"
                             class="social-icon" /></a>
-                    <a href="#" target="_blank"><img src="assets/img/instagram.png" alt="Instagram"
-                            class="social-icon" /></a>
-                    <a href="#" target="_blank"><img src="assets/img/linkedin.png" alt="LinkedIn"
+                    <a href="#" target="_blank"><img src="assets/img/icons/linkedin.png" alt="LinkedIn"
                             class="social-icon" /></a>
                 </div>
                 <div class="small">Website by <a href="#" class="text-light text-decoration-underline">Anant Kamal
