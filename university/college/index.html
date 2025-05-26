@@ -48,22 +48,22 @@
 <body class="index-page">
 
 
-  <header id="header" class="header fixed-top">
+  <!-- Header -->
+  <header>
     <div class="container-fluid py-1" style="background-color: #ea1f28;">
       <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
-        <!-- Left: Menu Links -->
         <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
-          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Download
+          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="ebrochures.html">Download
               E-Brochures</a></li>
-          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Student Corner</a></li>
-          <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
-              target="_blank">Blogs</a></li> -->
-          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a></li>
-          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+          <li class="list-inline-item"><a class="text-white text-decoration-none small"
+              href="student_corner.html">Student Corner</a></li>
+          <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="blogs.html"
+                            target="_blank">Blogs</a></li> -->
+          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="alumni.html">Alumni</a>
+          </li>
+          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="consultancy.html"
               target="_blank">Consultancy Cell</a></li>
         </ul>
-
-        <!-- Right: Social/Action Images -->
         <ul class="list-inline mb-0 d-flex align-items-center gap-2">
           <li><a class="text-white text-decoration-none small" href="#"><span>Get Connected</span></a></li>
 
@@ -106,7 +106,6 @@
         </ul>
       </div>
     </div>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light pt-4 header fixed-top" id="header">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <!-- Logo -->
@@ -126,14 +125,15 @@
 
             <!-- About Us -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">About Us</a>
+              <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
               <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                 <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
                 <li><a class="dropdown-item" href="vision_mission.html">Vision & Mission</a></li>
                 <li><a class="dropdown-item" href="president.html">President's Message</a></li>
                 <li><a class="dropdown-item" href="chairman.html">Chairman's Message</a></li>
-                <li><a class="dropdown-item" href="general_secretary.html">Vice Chancellor's Message</a></li>
+                <li><a class="dropdown-item" href="general_secretary.html">Vice Chancellor's Message</a>
+                </li>
                 <li><a class="dropdown-item" href="approvals.html">Approvals</a></li>
                 <li><a class="dropdown-item" href="ourgrpinstitute.html">Our Group Institute</a></li>
                 <li><a class="dropdown-item" href="governing.html">Governing Body</a></li>
@@ -193,18 +193,6 @@
             </li>
 
             <!-- Placement -->
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="placementDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">Placement</a>
-              <ul class="dropdown-menu" aria-labelledby="placementDropdown">
-                <li><a class="dropdown-item" href="training_placement.html">Training & Placement</a></li>
-                <li><a class="dropdown-item" href="placement_cell.html">Placement Cell</a></li>
-                <li><a class="dropdown-item" href="career_guidance.html">Career Guidance</a></li>
-                <li><a class="dropdown-item" href="placement.html">Placement</a></li>
-                <li><a class="dropdown-item" href="placement_drive.html">Placement Drive</a></li>
-              </ul>
-            </li> -->
-
             <li class="nav-item"><a class="nav-link" href="placement.html">Placements</a></li>
 
             <!-- Research -->
@@ -244,7 +232,8 @@
                 <li><a class="dropdown-item" href="spoken_tutorial.html">Spoken Tutorial</a></li>
                 <li><a class="dropdown-item" href="professional_body.html">Professional Body</a></li>
                 <li><a class="dropdown-item" href="student_welfare.html">Student Welfare</a></li>
-                <li><a class="dropdown-item" href="digital_learning.html">Digital Learning Monitoring Cell</a></li>
+                <li><a class="dropdown-item" href="digital_learning.html">Digital Learning Monitoring
+                    Cell</a></li>
                 <li><a class="dropdown-item" href="achievement.html">Achievement</a></li>
                 <li><a class="dropdown-item" href="sports.html">Sports</a></li>
                 <li><a class="dropdown-item" href="media_coverage.html">Media Coverage</a></li>
@@ -1380,10 +1369,6 @@
   </main>
 
   <!-- Footer -->
-
-
-  <!-- Footer Bottom -->
-<!-- Footer -->
   <footer id="footer" class="footer bg-dark text-light pt-5">
     <div class="container">
       <div class="row gx-xl-5 gy-4 gy-xl-0">
@@ -1548,7 +1533,7 @@
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
         pageLanguage: 'en',
-        includedLanguages: 'en,hi,mr', // Add other languages here (e.g., 'gu','ta','te')
+        includedLanguages: 'en,hi,mr',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
       }, 'google_translate_element');
     }
@@ -1559,9 +1544,9 @@
 
   <!-- Vendor JS Files -->
   <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script> -->
+    crossorigin="anonymous"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
