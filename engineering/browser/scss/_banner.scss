@@ -3,7 +3,7 @@
 
 .home_banner_area {
   z-index: 1;
-  // min-height: 800px;
+  min-height: 900px;
   position: relative;
   background: url(../img/banner/home-banner.jpg) no-repeat center;
   background-size: cover;
@@ -23,7 +23,7 @@
       }
       p {
         font-size: 20px;
-        background: rgb(122 145 169 / 80%) !important;
+        color: $title-color;
         font-weight: 500;
       }
     }
@@ -79,7 +79,7 @@
 
 .banner_area {
   position: relative;
-  background: url(../img/SLIDER-1920X800.jpg) no-repeat center center;
+  background: url(../img/banner/banner.jpg) no-repeat center center;
   z-index: 1;
   min-height: 392px;
   padding-top: 0 !important;
@@ -95,7 +95,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      background: rgb(122 145 169 / 80%) !important;
+      background: rgba($title-color, 0.8);
     }
     .banner_content {
       position: relative;
