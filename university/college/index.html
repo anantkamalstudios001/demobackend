@@ -1,74 +1,1711 @@
-<!doctype html>
-<html lang="en" data-critters-container>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>University</title>
-  <meta name="description" content>
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Brahma Valley University</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- External CSS assets -->
-  <style>@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))}*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-font-sans-serif);font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}@-webkit-keyframes progress-bar-stripes{0%{background-position-x:1rem}}@-webkit-keyframes spinner-border{to{transform:rotate(360deg)}}@-webkit-keyframes spinner-grow{0%{transform:scale(0)}50%{opacity:1;transform:none}}</style><link rel="stylesheet" href="assets/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
-  <style>@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}</style><link rel="stylesheet" href="assets/css/font-awesome.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/font-awesome.min.css"></noscript>
-  <style>@charset "UTF-8";@-webkit-keyframes bounce{from,20%,53%,80%,to{-webkit-animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}40%,43%{-webkit-animation-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060);animation-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060);-webkit-transform:translate3d(0, -30px, 0);transform:translate3d(0, -30px, 0)}70%{-webkit-animation-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060);animation-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060);-webkit-transform:translate3d(0, -15px, 0);transform:translate3d(0, -15px, 0)}90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}@-webkit-keyframes flash{from,50%,to{opacity:1}25%,75%{opacity:0}}@-webkit-keyframes pulse{from{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}50%{-webkit-transform:scale3d(1.05, 1.05, 1.05);transform:scale3d(1.05, 1.05, 1.05)}to{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@-webkit-keyframes rubberBand{from{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}30%{-webkit-transform:scale3d(1.25, 0.75, 1);transform:scale3d(1.25, 0.75, 1)}40%{-webkit-transform:scale3d(0.75, 1.25, 1);transform:scale3d(0.75, 1.25, 1)}50%{-webkit-transform:scale3d(1.15, 0.85, 1);transform:scale3d(1.15, 0.85, 1)}65%{-webkit-transform:scale3d(.95, 1.05, 1);transform:scale3d(.95, 1.05, 1)}75%{-webkit-transform:scale3d(1.05, .95, 1);transform:scale3d(1.05, .95, 1)}to{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@-webkit-keyframes shake{from,to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px, 0, 0);transform:translate3d(-10px, 0, 0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px, 0, 0);transform:translate3d(10px, 0, 0)}}@-webkit-keyframes swing{20%{-webkit-transform:rotate3d(0, 0, 1, 15deg);transform:rotate3d(0, 0, 1, 15deg)}40%{-webkit-transform:rotate3d(0, 0, 1, -10deg);transform:rotate3d(0, 0, 1, -10deg)}60%{-webkit-transform:rotate3d(0, 0, 1, 5deg);transform:rotate3d(0, 0, 1, 5deg)}80%{-webkit-transform:rotate3d(0, 0, 1, -5deg);transform:rotate3d(0, 0, 1, -5deg)}to{-webkit-transform:rotate3d(0, 0, 1, 0deg);transform:rotate3d(0, 0, 1, 0deg)}}@-webkit-keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes tada{from{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}10%,20%{-webkit-transform:scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);transform:scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);transform:scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)}to{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@-webkit-keyframes wobble{from{-webkit-transform:none;transform:none}15%{-webkit-transform:translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);transform:translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)}30%{-webkit-transform:translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);transform:translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)}45%{-webkit-transform:translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);transform:translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)}60%{-webkit-transform:translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);transform:translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)}75%{-webkit-transform:translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);transform:translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)}to{-webkit-transform:none;transform:none}}@-webkit-keyframes jello{from,11.1%,to{-webkit-transform:none;transform:none}22.2%{-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{-webkit-transform:skewX(6.25deg) skewY(6.25deg);transform:skewX(6.25deg) skewY(6.25deg)}44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{-webkit-transform:skewX(-0.78125deg) skewY(-0.78125deg);transform:skewX(-0.78125deg) skewY(-0.78125deg)}77.7%{-webkit-transform:skewX(0.390625deg) skewY(0.390625deg);transform:skewX(0.390625deg) skewY(0.390625deg)}88.8%{-webkit-transform:skewX(-0.1953125deg) skewY(-0.1953125deg);transform:skewX(-0.1953125deg) skewY(-0.1953125deg)}}@-webkit-keyframes bounceIn{from,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000)}0%{opacity:0;-webkit-transform:scale3d(.3, .3, .3);transform:scale3d(.3, .3, .3)}20%{-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}40%{-webkit-transform:scale3d(.9, .9, .9);transform:scale3d(.9, .9, .9)}60%{opacity:1;-webkit-transform:scale3d(1.03, 1.03, 1.03);transform:scale3d(1.03, 1.03, 1.03)}80%{-webkit-transform:scale3d(.97, .97, .97);transform:scale3d(.97, .97, .97)}to{opacity:1;-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@-webkit-keyframes bounceInDown{from,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000)}0%{opacity:0;-webkit-transform:translate3d(0, -3000px, 0);transform:translate3d(0, -3000px, 0)}60%{opacity:1;-webkit-transform:translate3d(0, 25px, 0);transform:translate3d(0, 25px, 0)}75%{-webkit-transform:translate3d(0, -10px, 0);transform:translate3d(0, -10px, 0)}90%{-webkit-transform:translate3d(0, 5px, 0);transform:translate3d(0, 5px, 0)}to{-webkit-transform:none;transform:none}}@-webkit-keyframes bounceInLeft{from,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000)}0%{opacity:0;-webkit-transform:translate3d(-3000px, 0, 0);transform:translate3d(-3000px, 0, 0)}60%{opacity:1;-webkit-transform:translate3d(25px, 0, 0);transform:translate3d(25px, 0, 0)}75%{-webkit-transform:translate3d(-10px, 0, 0);transform:translate3d(-10px, 0, 0)}90%{-webkit-transform:translate3d(5px, 0, 0);transform:translate3d(5px, 0, 0)}to{-webkit-transform:none;transform:none}}@-webkit-keyframes bounceInRight{from,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000)}from{opacity:0;-webkit-transform:translate3d(3000px, 0, 0);transform:translate3d(3000px, 0, 0)}60%{opacity:1;-webkit-transform:translate3d(-25px, 0, 0);transform:translate3d(-25px, 0, 0)}75%{-webkit-transform:translate3d(10px, 0, 0);transform:translate3d(10px, 0, 0)}90%{-webkit-transform:translate3d(-5px, 0, 0);transform:translate3d(-5px, 0, 0)}to{-webkit-transform:none;transform:none}}@-webkit-keyframes bounceInUp{from,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000)}from{opacity:0;-webkit-transform:translate3d(0, 3000px, 0);transform:translate3d(0, 3000px, 0)}60%{opacity:1;-webkit-transform:translate3d(0, -20px, 0);transform:translate3d(0, -20px, 0)}75%{-webkit-transform:translate3d(0, 10px, 0);transform:translate3d(0, 10px, 0)}90%{-webkit-transform:translate3d(0, -5px, 0);transform:translate3d(0, -5px, 0)}to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}}@-webkit-keyframes bounceOut{20%{-webkit-transform:scale3d(.9, .9, .9);transform:scale3d(.9, .9, .9)}50%,55%{opacity:1;-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}to{opacity:0;-webkit-transform:scale3d(.3, .3, .3);transform:scale3d(.3, .3, .3)}}@-webkit-keyframes bounceOutDown{20%{-webkit-transform:translate3d(0, 10px, 0);transform:translate3d(0, 10px, 0)}40%,45%{opacity:1;-webkit-transform:translate3d(0, -20px, 0);transform:translate3d(0, -20px, 0)}to{opacity:0;-webkit-transform:translate3d(0, 2000px, 0);transform:translate3d(0, 2000px, 0)}}@-webkit-keyframes bounceOutLeft{20%{opacity:1;-webkit-transform:translate3d(20px, 0, 0);transform:translate3d(20px, 0, 0)}to{opacity:0;-webkit-transform:translate3d(-2000px, 0, 0);transform:translate3d(-2000px, 0, 0)}}@-webkit-keyframes bounceOutRight{20%{opacity:1;-webkit-transform:translate3d(-20px, 0, 0);transform:translate3d(-20px, 0, 0)}to{opacity:0;-webkit-transform:translate3d(2000px, 0, 0);transform:translate3d(2000px, 0, 0)}}@-webkit-keyframes bounceOutUp{20%{-webkit-transform:translate3d(0, -10px, 0);transform:translate3d(0, -10px, 0)}40%,45%{opacity:1;-webkit-transform:translate3d(0, 20px, 0);transform:translate3d(0, 20px, 0)}to{opacity:0;-webkit-transform:translate3d(0, -2000px, 0);transform:translate3d(0, -2000px, 0)}}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@-webkit-keyframes fadeInDown{from{opacity:0;-webkit-transform:translate3d(0, -100%, 0);transform:translate3d(0, -100%, 0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeInDownBig{from{opacity:0;-webkit-transform:translate3d(0, -2000px, 0);transform:translate3d(0, -2000px, 0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeInLeft{from{opacity:0;-webkit-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeInLeftBig{from{opacity:0;-webkit-transform:translate3d(-2000px, 0, 0);transform:translate3d(-2000px, 0, 0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeInRight{from{opacity:0;-webkit-transform:translate3d(100%, 0, 0);transform:translate3d(100%, 0, 0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeInRightBig{from{opacity:0;-webkit-transform:translate3d(2000px, 0, 0);transform:translate3d(2000px, 0, 0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeInUp{from{opacity:0;-webkit-transform:translate3d(0, 100%, 0);transform:translate3d(0, 100%, 0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeInUpBig{from{opacity:0;-webkit-transform:translate3d(0, 2000px, 0);transform:translate3d(0, 2000px, 0)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeOut{from{opacity:1}to{opacity:0}}@-webkit-keyframes fadeOutDown{from{opacity:1}to{opacity:0;-webkit-transform:translate3d(0, 100%, 0);transform:translate3d(0, 100%, 0)}}@-webkit-keyframes fadeOutDownBig{from{opacity:1}to{opacity:0;-webkit-transform:translate3d(0, 2000px, 0);transform:translate3d(0, 2000px, 0)}}@-webkit-keyframes fadeOutLeft{from{opacity:1}to{opacity:0;-webkit-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0)}}@-webkit-keyframes fadeOutLeftBig{from{opacity:1}to{opacity:0;-webkit-transform:translate3d(-2000px, 0, 0);transform:translate3d(-2000px, 0, 0)}}@-webkit-keyframes fadeOutRight{from{opacity:1}to{opacity:0;-webkit-transform:translate3d(100%, 0, 0);transform:translate3d(100%, 0, 0)}}@-webkit-keyframes fadeOutRightBig{from{opacity:1}to{opacity:0;-webkit-transform:translate3d(2000px, 0, 0);transform:translate3d(2000px, 0, 0)}}@-webkit-keyframes fadeOutUp{from{opacity:1}to{opacity:0;-webkit-transform:translate3d(0, -100%, 0);transform:translate3d(0, -100%, 0)}}@-webkit-keyframes fadeOutUpBig{from{opacity:1}to{opacity:0;-webkit-transform:translate3d(0, -2000px, 0);transform:translate3d(0, -2000px, 0)}}@-webkit-keyframes flip{from{-webkit-transform:perspective(400px) rotate3d(0, 1, 0, -360deg);transform:perspective(400px) rotate3d(0, 1, 0, -360deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);transform:perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);transform:perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(400px) scale3d(.95, .95, .95);transform:perspective(400px) scale3d(.95, .95, .95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}to{-webkit-transform:perspective(400px);transform:perspective(400px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}@-webkit-keyframes flipInX{from{-webkit-transform:perspective(400px) rotate3d(1, 0, 0, 90deg);transform:perspective(400px) rotate3d(1, 0, 0, 90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotate3d(1, 0, 0, -20deg);transform:perspective(400px) rotate3d(1, 0, 0, -20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotate3d(1, 0, 0, 10deg);transform:perspective(400px) rotate3d(1, 0, 0, 10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotate3d(1, 0, 0, -5deg);transform:perspective(400px) rotate3d(1, 0, 0, -5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@-webkit-keyframes flipInY{from{-webkit-transform:perspective(400px) rotate3d(0, 1, 0, 90deg);transform:perspective(400px) rotate3d(0, 1, 0, 90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotate3d(0, 1, 0, -20deg);transform:perspective(400px) rotate3d(0, 1, 0, -20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotate3d(0, 1, 0, 10deg);transform:perspective(400px) rotate3d(0, 1, 0, 10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotate3d(0, 1, 0, -5deg);transform:perspective(400px) rotate3d(0, 1, 0, -5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@-webkit-keyframes flipOutX{from{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotate3d(1, 0, 0, -20deg);transform:perspective(400px) rotate3d(1, 0, 0, -20deg);opacity:1}to{-webkit-transform:perspective(400px) rotate3d(1, 0, 0, 90deg);transform:perspective(400px) rotate3d(1, 0, 0, 90deg);opacity:0}}@-webkit-keyframes flipOutY{from{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotate3d(0, 1, 0, -15deg);transform:perspective(400px) rotate3d(0, 1, 0, -15deg);opacity:1}to{-webkit-transform:perspective(400px) rotate3d(0, 1, 0, 90deg);transform:perspective(400px) rotate3d(0, 1, 0, 90deg);opacity:0}}@-webkit-keyframes lightSpeedIn{from{-webkit-transform:translate3d(100%, 0, 0) skewX(-30deg);transform:translate3d(100%, 0, 0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg);opacity:1}to{-webkit-transform:none;transform:none;opacity:1}}@-webkit-keyframes lightSpeedOut{from{opacity:1}to{-webkit-transform:translate3d(100%, 0, 0) skewX(30deg);transform:translate3d(100%, 0, 0) skewX(30deg);opacity:0}}@-webkit-keyframes rotateIn{from{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0, 0, 1, -200deg);transform:rotate3d(0, 0, 1, -200deg);opacity:0}to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:none;transform:none;opacity:1}}@-webkit-keyframes rotateInDownLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0, 0, 1, -45deg);transform:rotate3d(0, 0, 1, -45deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:none;transform:none;opacity:1}}@-webkit-keyframes rotateInDownRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0, 0, 1, 45deg);transform:rotate3d(0, 0, 1, 45deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:none;transform:none;opacity:1}}@-webkit-keyframes rotateInUpLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0, 0, 1, 45deg);transform:rotate3d(0, 0, 1, 45deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:none;transform:none;opacity:1}}@-webkit-keyframes rotateInUpRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0, 0, 1, -90deg);transform:rotate3d(0, 0, 1, -90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:none;transform:none;opacity:1}}@-webkit-keyframes rotateOut{from{-webkit-transform-origin:center;transform-origin:center;opacity:1}to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate3d(0, 0, 1, 200deg);transform:rotate3d(0, 0, 1, 200deg);opacity:0}}@-webkit-keyframes rotateOutDownLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0, 0, 1, 45deg);transform:rotate3d(0, 0, 1, 45deg);opacity:0}}@-webkit-keyframes rotateOutDownRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0, 0, 1, -45deg);transform:rotate3d(0, 0, 1, -45deg);opacity:0}}@-webkit-keyframes rotateOutUpLeft{from{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate3d(0, 0, 1, -45deg);transform:rotate3d(0, 0, 1, -45deg);opacity:0}}@-webkit-keyframes rotateOutUpRight{from{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate3d(0, 0, 1, 90deg);transform:rotate3d(0, 0, 1, 90deg);opacity:0}}@-webkit-keyframes hinge{0%{-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}20%,60%{-webkit-transform:rotate3d(0, 0, 1, 80deg);transform:rotate3d(0, 0, 1, 80deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}40%,80%{-webkit-transform:rotate3d(0, 0, 1, 60deg);transform:rotate3d(0, 0, 1, 60deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}to{-webkit-transform:translate3d(0, 700px, 0);transform:translate3d(0, 700px, 0);opacity:0}}@-webkit-keyframes rollIn{from{opacity:0;-webkit-transform:translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);transform:translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)}to{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes rollOut{from{opacity:1}to{opacity:0;-webkit-transform:translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);transform:translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)}}@-webkit-keyframes zoomIn{from{opacity:0;-webkit-transform:scale3d(.3, .3, .3);transform:scale3d(.3, .3, .3)}50%{opacity:1}}@-webkit-keyframes zoomInDown{from{opacity:0;-webkit-transform:scale3d(.1, .1, .1) translate3d(0, -1000px, 0);transform:scale3d(.1, .1, .1) translate3d(0, -1000px, 0);-webkit-animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190);animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190)}60%{opacity:1;-webkit-transform:scale3d(.475, .475, .475) translate3d(0, 60px, 0);transform:scale3d(.475, .475, .475) translate3d(0, 60px, 0);-webkit-animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1);animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1)}}@-webkit-keyframes zoomInLeft{from{opacity:0;-webkit-transform:scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);transform:scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);-webkit-animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190);animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190)}60%{opacity:1;-webkit-transform:scale3d(.475, .475, .475) translate3d(10px, 0, 0);transform:scale3d(.475, .475, .475) translate3d(10px, 0, 0);-webkit-animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1);animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1)}}@-webkit-keyframes zoomInRight{from{opacity:0;-webkit-transform:scale3d(.1, .1, .1) translate3d(1000px, 0, 0);transform:scale3d(.1, .1, .1) translate3d(1000px, 0, 0);-webkit-animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190);animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190)}60%{opacity:1;-webkit-transform:scale3d(.475, .475, .475) translate3d(-10px, 0, 0);transform:scale3d(.475, .475, .475) translate3d(-10px, 0, 0);-webkit-animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1);animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1)}}@-webkit-keyframes zoomInUp{from{opacity:0;-webkit-transform:scale3d(.1, .1, .1) translate3d(0, 1000px, 0);transform:scale3d(.1, .1, .1) translate3d(0, 1000px, 0);-webkit-animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190);animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190)}60%{opacity:1;-webkit-transform:scale3d(.475, .475, .475) translate3d(0, -60px, 0);transform:scale3d(.475, .475, .475) translate3d(0, -60px, 0);-webkit-animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1);animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1)}}@-webkit-keyframes zoomOut{from{opacity:1}50%{opacity:0;-webkit-transform:scale3d(.3, .3, .3);transform:scale3d(.3, .3, .3)}to{opacity:0}}@-webkit-keyframes zoomOutDown{40%{opacity:1;-webkit-transform:scale3d(.475, .475, .475) translate3d(0, -60px, 0);transform:scale3d(.475, .475, .475) translate3d(0, -60px, 0);-webkit-animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190);animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190)}to{opacity:0;-webkit-transform:scale3d(.1, .1, .1) translate3d(0, 2000px, 0);transform:scale3d(.1, .1, .1) translate3d(0, 2000px, 0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1);animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1)}}@-webkit-keyframes zoomOutLeft{40%{opacity:1;-webkit-transform:scale3d(.475, .475, .475) translate3d(42px, 0, 0);transform:scale3d(.475, .475, .475) translate3d(42px, 0, 0)}to{opacity:0;-webkit-transform:scale(.1) translate3d(-2000px, 0, 0);transform:scale(.1) translate3d(-2000px, 0, 0);-webkit-transform-origin:left center;transform-origin:left center}}@-webkit-keyframes zoomOutRight{40%{opacity:1;-webkit-transform:scale3d(.475, .475, .475) translate3d(-42px, 0, 0);transform:scale3d(.475, .475, .475) translate3d(-42px, 0, 0)}to{opacity:0;-webkit-transform:scale(.1) translate3d(2000px, 0, 0);transform:scale(.1) translate3d(2000px, 0, 0);-webkit-transform-origin:right center;transform-origin:right center}}@-webkit-keyframes zoomOutUp{40%{opacity:1;-webkit-transform:scale3d(.475, .475, .475) translate3d(0, 60px, 0);transform:scale3d(.475, .475, .475) translate3d(0, 60px, 0);-webkit-animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190);animation-timing-function:cubic-bezier(0.550, 0.055, 0.675, 0.190)}to{opacity:0;-webkit-transform:scale3d(.1, .1, .1) translate3d(0, -2000px, 0);transform:scale3d(.1, .1, .1) translate3d(0, -2000px, 0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1);animation-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1)}}@-webkit-keyframes slideInDown{from{-webkit-transform:translate3d(0, -100%, 0);transform:translate3d(0, -100%, 0);visibility:visible}to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}}@-webkit-keyframes slideInLeft{from{-webkit-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0);visibility:visible}to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}}@-webkit-keyframes slideInRight{from{-webkit-transform:translate3d(100%, 0, 0);transform:translate3d(100%, 0, 0);visibility:visible}to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}}@-webkit-keyframes slideInUp{from{-webkit-transform:translate3d(0, 100%, 0);transform:translate3d(0, 100%, 0);visibility:visible}to{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}}@-webkit-keyframes slideOutDown{from{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}to{visibility:hidden;-webkit-transform:translate3d(0, 100%, 0);transform:translate3d(0, 100%, 0)}}@-webkit-keyframes slideOutLeft{from{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}to{visibility:hidden;-webkit-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0)}}@-webkit-keyframes slideOutRight{from{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}to{visibility:hidden;-webkit-transform:translate3d(100%, 0, 0);transform:translate3d(100%, 0, 0)}}@-webkit-keyframes slideOutUp{from{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}to{visibility:hidden;-webkit-transform:translate3d(0, -100%, 0);transform:translate3d(0, -100%, 0)}}</style><link rel="stylesheet" href="assets/css/animate.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/animate.css"></noscript>
-  <link rel="stylesheet" href="assets/css/owl.carousel.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/owl.carousel.css"></noscript>
-  <link rel="stylesheet" href="assets/css/slick.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/slick.css"></noscript>
-  <style>@charset "utf-8"</style><link rel="stylesheet" href="assets/css/off-canvas.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/off-canvas.css"></noscript>
-  <style>@charset "UTF-8"</style><link rel="stylesheet" href="assets/fonts/linea-fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/fonts/linea-fonts.css"></noscript>
-  <style>@media screen and (-webkit-min-device-pixel-ratio:0){}</style><link rel="stylesheet" href="assets/fonts/flaticon.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/fonts/flaticon.css"></noscript>
-  <style>@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px){}</style><link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/magnific-popup.css"></noscript>
-  <style>@media screen and (min-width: 992px){}@media only screen and (max-width: 991px){}</style><link rel="stylesheet" href="assets/css/rsmenu-main.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/rsmenu-main.css"></noscript>
-  <link rel="stylesheet" href="assets/css/rs-spacing.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/rs-spacing.css"></noscript>
-  <style>@charset "utf-8";@media only screen and (max-width: 991px){}</style><link rel="stylesheet" href="assets/css/responsive.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/responsive.css"></noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-y6kgGv8HbWsm0qXM6O+9mDEI1alxK5xlj3shfzz7KUs/YJfUHYEtMghqGy2z3/nr7szZ6e0IImWtszQfHdRc8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Vendor CSS Files --> <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    integrity="sha384-Xt7rtyfF+RCmC5G+6zL6Y6B6z6fB6z6fB6z6fB6z6fB6z6fB6z6fB6z6fB6z6fB" crossorigin="anonymous">
+
+  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
 
 
-  <!-- Base for Angular routing -->
-  <base href="/">
-<style>@import"https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800";@import"https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900";html,body{font-size:15px;color:#505050;font-family:Rubik,sans-serif;vertical-align:baseline;line-height:26px;font-weight:400;overflow-x:hidden}@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-primary-text-emphasis:#052c65;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#cfe2ff;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#9ec5fe;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33,37,41;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(33, 37, 41, .75);--bs-secondary-color-rgb:33,37,41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233,236,239;--bs-tertiary-color:rgba(33, 37, 41, .5);--bs-tertiary-color-rgb:33,37,41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:inherit;--bs-link-color:#0d6efd;--bs-link-color-rgb:13,110,253;--bs-link-decoration:underline;--bs-link-hover-color:#0a58ca;--bs-link-hover-color-rgb:10,88,202;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 .5rem 1rem rgba(0, 0, 0, .15);--bs-box-shadow-sm:0 .125rem .25rem rgba(0, 0, 0, .075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, .175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, .075);--bs-focus-ring-width:.25rem;--bs-focus-ring-opacity:.25;--bs-focus-ring-color:rgba(13, 110, 253, .25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}:root{--bs-btn-close-filter: }:root{--bs-carousel-indicator-active-bg:#fff;--bs-carousel-caption-color:#fff;--bs-carousel-control-icon-filter: }</style><link rel="stylesheet" href="styles.58baeb19f50cefaa.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.58baeb19f50cefaa.css"></noscript></head>
-<body>
-  <app-root></app-root>
-    <!-- modernizr js -->
-        <script src="assets/js/modernizr-2.8.3.min.js"></script>
-        <!-- jquery latest version -->
-        <script src="assets/js/jquery.min.js"></script>
-        <!-- Bootstrap v5.0.2 js -->
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Menu js -->
-        <script src="assets/js/rsmenu-main.js"></script> 
-        <!-- op nav js -->
-        <script src="assets/js/jquery.nav.js"></script>
-        <!-- owl.carousel js -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- Slick js -->
-        <script src="assets/js/slick.min.js"></script>
-        <!-- isotope.pkgd.min js -->
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <!-- imagesloaded.pkgd.min js -->
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <!-- wow js -->
-        <script src="assets/js/wow.min.js"></script>
-        <!-- Skill bar js -->
-        <script src="assets/js/skill.bars.jquery.js"></script>
-        <script src="assets/js/jquery.counterup.min.js"></script>        
-         <!-- counter top js -->
-        <script src="assets/js/waypoints.min.js"></script>
-        <!-- video js -->
-        <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
-        <!-- magnific popup js -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- tilt js -->
-        <script src="assets/js/tilt.jquery.min.js"></script>      
-        <!-- plugins js -->
-        <script src="assets/js/plugins.js"></script>
-        <!-- contact form js -->
-        <script src="assets/js/contact.form.js"></script>
-        <!-- main js -->
-        <script src="assets/js/main.js"></script>
-<script src="runtime.c71bc90bfa8701e9.js" type="module"></script><script src="polyfills.1e25145b950ba30a.js" type="module"></script><script src="scripts.8bc137067ee28624.js" defer></script><script src="main.5e826277384be1de.js" type="module"></script></body>
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid py-1" style="background-color: #ea1f28;">
+      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
+        <!-- Left: Menu Links -->
+        <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
+          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Download
+              E-Brochures</a></li>
+          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Student Corner</a></li>
+          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+              target="_blank">Blogs</a></li>
+          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a></li>
+          <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+              target="_blank">Consultancy Cell</a></li>
+        </ul>
+
+        <!-- Right: Social/Action Images -->
+        <ul class="list-inline mb-0 d-flex align-items-center gap-2">
+          <li><a class="text-white text-decoration-none small" href="#"><span>Get Connected</span></a></li>
+
+          <li>
+            <a class="text-white" href="#" target="_blank" aria-label="WhatsApp">
+              <img src="assets/img/whatsapp.png" alt="WhatsApp" width="20" height="20">
+            </a>
+          </li>
+          <li>
+            <a class="text-white" href="#" target="_blank" aria-label="360">
+              <img src="assets/img/360-degree.png" alt="360" width="20" height="20">
+              <span class="ms-1">360</span>
+            </a>
+          </li>
+          <li>
+            <a class="text-white" href="#" target="_blank">
+              <img src="assets/img/facebook.png" alt="Facebook" width="20" height="20">
+            </a>
+          </li>
+          <li>
+            <a class="text-white" href="#" target="_blank" aria-label="Twitter">
+              <img src="assets/img/twitter.png" alt="Twitter" width="20" height="20">
+            </a>
+          </li>
+          <li>
+            <a class="text-white" href="https://in.linkedin.com/" target="_blank">
+              <img src="assets/img/linkedin.png" alt="LinkedIn" width="20" height="20">
+            </a>
+          </li>
+          <li>
+            <a class="text-white" href="https://www.instagram.com/" target="_blank">
+              <img src="assets/img/instagram.png" alt="Instagram" width="20" height="20">
+            </a>
+          </li>
+          <li>
+            <a class="text-white" href="https://www.youtube.com/" target="_blank">
+              <img src="assets/img/youtube.png" alt="YouTube" width="20" height="20">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light pt-4 header fixed-top" id="header">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <!-- Logo -->
+        <a class="navbar-brand mt-2" href="#">
+          <img src="assets/img/logo.png" alt="Institution Logo" class="img-fluid__" style="max-height: 150px;">
+        </a>
+        <!-- Mobile Menu Toggle -->
+        <button class="navbar-toggler mobile-nav-toggle d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menu Content -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navmenu navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="index.html" id="homeDropdown" role="button">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">About Us</a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
+                <li><a class="dropdown-item" href="#">President</a></li>
+                <li><a class="dropdown-item" href="#">General Secretary</a></li>
+                <li><a class="dropdown-item" href="#">Vice President</a></li>
+                <li><a class="dropdown-item" href="#">Principal</a></li>
+                <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
+                <li><a class="dropdown-item" href="#">Committees</a></li>
+                <li><a class="dropdown-item" href="#">Approval & Affiliation</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+              <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                <li><a class="dropdown-item" href="#">Courses</a></li>
+                <li><a class="dropdown-item" href="#">PO, PEO, PSO & CO</a></li>
+                <li><a class="dropdown-item" href="#">Value Added/Add-on Courses</a></li>
+                <li><a class="dropdown-item" href="#">Field Work/Project/Internship</a></li>
+                <li><a class="dropdown-item" href="#">Library</a></li>
+                <li><a class="dropdown-item" href="#">Eligibility</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="instituteDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Institute</a>
+              <ul class="dropdown-menu" aria-labelledby="instituteDropdown">
+                <li><a class="dropdown-item" href="#">MBA</a></li>
+                <li><a class="dropdown-item" href="#">Engineering</a></li>
+                <li><a class="dropdown-item" href="#">Pharmacy</a></li>
+                <li><a class="dropdown-item" href="#">Polytechnic</a></li>
+                <li><a class="dropdown-item" href="#">ITI</a></li>
+                <li><a class="dropdown-item" href="#">Public School</a></li>
+                <li><a class="dropdown-item" href="#">B.Ed</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+              <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                <li><a class="dropdown-item" href="#">Admissions</a></li>
+                <li><a class="dropdown-item" href="#">Program Details</a></li>
+                <li><a class="dropdown-item" href="#">Eligibility</a></li>
+                <li><a class="dropdown-item" href="#">Academics Overview</a></li>
+                <li><a class="dropdown-item" href="#">Fee Structure</a></li>
+                <li><a class="dropdown-item" href="#">Information Brochure</a></li>
+                <li><a class="dropdown-item" href="#">Rules & Regulations</a></li>
+                <li><a class="dropdown-item" href="#">Admission Form</a></li>
+                <li><a class="dropdown-item" href="#">Required Documents</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="placementDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Training & Placement</a>
+              <ul class="dropdown-menu" aria-labelledby="placementDropdown">
+                <li><a class="dropdown-item" href="#">Training & Placement</a></li>
+                <li><a class="dropdown-item" href="#">Placement Cell</a></li>
+                <li><a class="dropdown-item" href="#">Career Guidance</a></li>
+                <li><a class="dropdown-item" href="#">Placement</a></li>
+                <li><a class="dropdown-item" href="#">Placement Drive</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Facilities</a>
+              <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                <li><a class="dropdown-item" href="#">Facilities Title</a></li>
+                <li><a class="dropdown-item" href="#">Facilities Details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="alumniDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Alumni</a>
+              <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                <li><a class="dropdown-item" href="#">Alumni Student Details</a></li>
+                <li><a class="dropdown-item" href="#">Registration Form Details</a></li>
+                <li><a class="dropdown-item" href="#">Alumni Meet Details</a></li>
+                <li><a class="dropdown-item" href="#">Alumni for Higher Studies</a></li>
+                <li><a class="dropdown-item" href="#">Gallery</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="consultancyDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Consultancy</a>
+              <ul class="dropdown-menu" aria-labelledby="consultancyDropdown">
+                <li><a class="dropdown-item" href="#">PDF</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Events</a>
+              <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                <li><a class="dropdown-item" href="#">Upcoming Events</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item"><a class="text-white text-decoration-none small" href="contact_us.html">Contact
+                Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background" style="background-image: url('assets/img/banner.webp');">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Brahma Valley</span></h2>
+            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+              et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
+              doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
+            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+              et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
+              doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
+            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
+              et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse
+              doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+    <section class="bg-dark py-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 overflow-hidden">
+            <div class="scrolling-text d-flex">
+              <ul class="d-flex gap-5 m-0 p-0 list-unstyled text-white">
+                <li>
+                  <span><i class="bi bi-bell-fill me-2"></i>NEP - As per the guidelines from UGC and directives of the
+                    State Government of Maharashtra, the NEP has been implemented from the academic year 2023-24.</span>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="text-white text-decoration-none">
+                    <i class="bi bi-bell-fill me-2"></i>Click Here for SU-DAT 2025-26 Registration
+                    <img src="assets/img/new6.gif" alt="new" width="35" height="15">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="text-white text-decoration-none">
+                    <i class="bi bi-bell-fill me-2"></i>Click Here for SU-MAT 2025-26 Registration
+                    <img src="assets/img/new6.gif" alt="new" width="35" height="15">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="text-white text-decoration-none">
+                    <i class="bi bi-bell-fill me-2"></i>Click Here for SU-LAT 2025-26 Registration
+                    <img src="assets/img/new6.gif" alt="new" width="35" height="15">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .scrolling-text {
+        animation: scroll-left 30s linear infinite;
+        white-space: nowrap;
+      }
+
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Who we are</p>
+      </div><!-- End Section Title -->
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
+                  velit.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6" style="height: 400px;" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/about.webp" alt="Descriptive Alt Text"
+              class="w-100 h-100 rounded shadow object-fit-cover" style="object-fit: cover;">
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Programmes -->
+    <section class="Study-sec">
+      <div class="container">
+        <span data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+          data-aos-duration="1000">Future-Ready Programmes</span>
+        <p class="lead" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
+          data-aos-duration="1000">Discover diverse, new-age programmes designed to shape future leaders.</p>
+        <div class="row align-items-center">
+          <div class="col-lg-9">
+            <h2 data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+              Innovation is in our DNA, explore our pillars of knowledge
+            </h2>
+          </div>
+          <div class="col-lg-3 upward">
+            <div class="search-home" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine"
+              data-aos-duration="800">
+              <div class="home-submit searchable">
+                <input type="text" name="search_course" class="form-control" placeholder="Type Programme Name"
+                  autocomplete="off" onkeyup="filterFunction(this, event)" aria-label="Search programmes">
+                <ul id="programmeList">
+                  <li><a href="#">B.Tech Civil Engineering</a></li>
+                  <li><a href="#">B.Tech Mechanical Engineering</a></li>
+                  <li><a href="#">B.Tech Chemical Engineering</a></li>
+                  <li><a href="#">B.Tech Computer Science and Engineering</a></li>
+                  <li><a href="#">M.Tech Civil Engineering</a></li>
+                  <li><a href="#">Ph.D. in Chemical Engineering</a></li>
+                  <li><a href="#">B.Sc. Computer Science</a></li>
+                  <li><a href="#">M.Sc. Data Science</a></li>
+                  <li><a href="#">B.Pharm</a></li>
+                  <li><a href="#">MBA Marketing</a></li>
+                </ul>
+                <div class="submit-btn">
+                  <a href="javascript:void(0);" onclick="document.querySelector('input[name=search_course]').focus()">
+                    <img src="https://mitwpu.edu.in/assets/frontend/images/search-icon.svg" alt="Search icon"
+                      class="img-fluid" loading="lazy">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative ugp">
+                <a href="#" class="stretched-link home-sec-link">
+                  <h2 class="home-sec-title">Undergraduate Programmes</h2>
+                </a>
+                <p class="home-sec-desc">Choose from a wide array of multidisciplinary undergraduate programmes and
+                  embark on your professional journey.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative pgp">
+                <a href="#" class="stretched-link home-sec-link">
+                  <h2 class="home-sec-title">Postgraduate Programmes</h2>
+                </a>
+                <p class="home-sec-desc">Augment your proficiencies and add value to your knowledge by choosing from a
+                  diverse range of postgraduate programmes.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative dgp">
+                <a href="#" class="stretched-link home-sec-link">
+                  <h2 class="home-sec-title">Ph.D. <br>Programmes</h2>
+                </a>
+                <p class="home-sec-desc">Pursue a host of focused doctoral programmes and lead in advanced research in
+                  your field of study.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item position-relative phgp">
+                <a href="#" class="stretched-link home-sec-link">
+                  <h2 class="home-sec-title">Diplomas & Certifications</h2>
+                </a>
+                <p class="home-sec-desc">Enrich your learning or bridge the gap between academic phases through various
+                  diplomas and certifications.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item position-relative dgp">
+                <a href="#" class="stretched-link home-sec-link">
+                  <h2 class="home-sec-title">Additional Ph.D. Programme</h2>
+                </a>
+                <p class="home-sec-desc">Pursue a host of focused doctoral programmes and lead in advanced research in
+                  your field of study.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item position-relative phgp">
+                <a href="#" class="stretched-link home-sec-link">
+                  <h2 class="home-sec-title">Additional Diploma & Certification</h2>
+                </a>
+                <p class="home-sec-desc">Enrich your learning or bridge the gap between academic phases through various
+                  diplomas and certifications.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /Programmes -->
+
+    <!-- Recruiters Section -->
+    <section class="recruiters-section" id="placements">
+      <div class="shape-1"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="apbc-title-area text-center" data-aos="fade-up" data-aos-offset="200"
+              data-aos-easing="ease-in-sine" data-aos-duration="1000">
+              <div class="apbc-headline">
+                <h3>Campus Placements</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-10 offset-md-1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
+            <p>For many years, our graduates have been the preferred choice of recruiters. Through our personalized
+              placement support and Corporate Resource Centre (CRC), we ensure every student is prepared to launch a
+              successful career.</p>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-4" data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine"
+            data-aos-duration="800">
+            <div class="tac-2">
+              <div class="taxt2">
+                <p><span class="counter" data-target="13000">0</span>+ <span>Campus placements in 2023-24</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine"
+            data-aos-duration="800">
+            <div class="tac-2">
+              <div class="taxt2">
+                <p><span class="counter" data-target="1250">0</span>+ <span>Companies visited for placements in
+                    2023-24</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine"
+            data-aos-duration="800">
+            <div class="tac-2">
+              <div class="taxt2">
+                <p><span class="counter" data-target="62.7">0</span> LPA <span>Highest salary offered through campus
+                    placements</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="placement-logo" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
+              data-aos-duration="1000">
+              <h5 class="text-center mb-4">Our students have received job offers from top global and national
+                corporations</h5>
+              <div class="brand-wrapper">
+                <div id="logoCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="d-flex justify-content-center flex-wrap gap-3">
+                        <img src="assets/img/company/accenture.jpg" class="img-fluid mx-3" alt="Company 1"
+                          loading="lazy">
+                        <img src="assets/img/company/cap.jpg" class="img-fluid mx-3" alt="Company 2" loading="lazy">
+                        <img src="assets/img/company/ibm.jpg" class="img-fluid mx-3" alt="Company 3" loading="lazy">
+                        <img src="assets/img/company/infosys.jpg" class="img-fluid mx-3" alt="Company 4" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center flex-wrap gap-3">
+                        <img src="assets/img/company/accenture.jpg" class="img-fluid mx-3" alt="Company 5"
+                          loading="lazy">
+                        <img src="assets/img/company/cap.jpg" class="img-fluid mx-3" alt="Company 6" loading="lazy">
+                        <img src="assets/img/company/ibm.jpg" class="img-fluid mx-3" alt="Company 7" loading="lazy">
+                        <img src="assets/img/company/infosys.jpg" class="img-fluid mx-3" alt="Company 8" loading="lazy">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center flex-wrap gap-3">
+                        <img src="assets/img/company/accenture.jpg" class="img-fluid mx-3" alt="Company 9"
+                          loading="lazy">
+                        <img src="assets/img/company/cap.jpg" class="img-fluid mx-3" alt="Company 10" loading="lazy">
+                        <img src="assets/img/company/ibm.jpg" class="img-fluid mx-3" alt="Company 11" loading="lazy">
+                        <img src="assets/img/company/infosys.jpg" class="img-fluid mx-3" alt="Company 12"
+                          loading="lazy">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#logoCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#logoCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /Recruiters Section -->
+
+    <section class="py-3 bg-light">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="mb-3" data-aos="fade-down-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
+            <strong>Best Placements – Turning Ambitions into Careers</strong>
+          </h2>
+          <blockquote class="blockquote">
+            <p class="mb-0">Top recruiters, unmatched opportunities – your success story begins here.</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <section class="py-1 bg-light">
+      <div class="container text-center">
+        <div id="placementCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://mitwpu.edu.in/assets/frontend/images/placements/Mrutyunjay-Patil-1.webp"
+                class="d-block w-100 rounded" alt="Mrutyunjay Patil">
+            </div>
+            <div class="carousel-item">
+              <img src="https://mitwpu.edu.in/assets/frontend/images/placements/Dhairvi-Shah.webp"
+                class="d-block w-100 rounded" alt="Dhairvi Shah">
+            </div>
+            <div class="carousel-item">
+              <img src="https://mitwpu.edu.in/assets/frontend/images/placements/Mayank-Kumar.webp"
+                class="d-block w-100 rounded" alt="Mayank Kumar">
+            </div>
+            <div class="carousel-item">
+              <img src="https://mitwpu.edu.in/assets/frontend/images/placements/Anukriti-Joshi.webp"
+                class="d-block w-100 rounded" alt="Anukriti Joshi">
+            </div>
+          </div>
+
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#placementCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#placementCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <ul class="nav nav-tabs row d-flex" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item col-6 col-md-3 text-center">
+            <a class="nav-link active show d-flex flex-column align-items-center" data-bs-toggle="tab"
+              data-bs-target="#features-tab-1">
+              <i class="bi bi-binoculars fs-3 mb-1"></i>
+              <h5 class="mb-0">Modi sit est dela pireda nest</h5>
+            </a>
+          </li>
+          <li class="nav-item col-6 col-md-3 text-center">
+            <a class="nav-link d-flex flex-column align-items-center" data-bs-toggle="tab"
+              data-bs-target="#features-tab-2">
+              <i class="bi bi-box-seam fs-3 mb-1"></i>
+              <h5 class="mb-0">Unde praesenti mara setra le</h5>
+            </a>
+          </li>
+          <li class="nav-item col-6 col-md-3 text-center">
+            <a class="nav-link d-flex flex-column align-items-center" data-bs-toggle="tab"
+              data-bs-target="#features-tab-3">
+              <i class="bi bi-brightness-high fs-3 mb-1"></i>
+              <h5 class="mb-0">Pariatur explica nitro dela</h5>
+            </a>
+          </li>
+          <li class="nav-item col-6 col-md-3 text-center">
+            <a class="nav-link d-flex flex-column align-items-center" data-bs-toggle="tab"
+              data-bs-target="#features-tab-4">
+              <i class="bi bi-command fs-3 mb-1"></i>
+              <h5 class="mb-0">Nostrum qui dile node</h5>
+            </a>
+          </li>
+        </ul>
+
+        <!-- End Tab Nav -->
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i>
+                    <spab>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</spab>
+                  </li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
+                      velit</span>.</li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
+                      fugiat nulla pariatur.</span></li>
+                </ul>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/working-1.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
+                      velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui
+                      a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
+                      fugiat nulla pariatur.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/working-2.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
+                      velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui
+                      a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                </ul>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/working-3.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
+                <p>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate
+                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                  sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
+                      velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu
+                      fugiat nulla pariatur.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/working-4.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Call To Action Section -->
+    <!-- <section id="call-to-action" class="call-to-action section dark-background">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Call To Action</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum.</p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- /Call To Action Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>What we do offer</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Nesciunt Mete</h3>
+              </a>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis
+                tempore et consequatur.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Eosle Commodi</h3>
+              </a>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
+                nesciunt dolorem.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-text" style="color: #20c997;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Ledo Markt</h3>
+              </a>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
+                eos earum corrupti.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Asperiores Commodit</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
+                adipisci neque.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-globe" style="color: #6610f2;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Velit Doloremque</h3>
+              </a>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem
+                alias eius labore.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-clock" style="color: #f3268c;"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Dolori Architecto</h3>
+              </a>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti
+                recusandae ducimus enim.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Services Section -->
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What they are saying about us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 10
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                    malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                    minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
+                    velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                    veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
+                    culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
+                    quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Testimonials Section -->
+
+
+    <!-- Faq Section -->
+    <!-- <section id="faq" class="faq section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Frequently Asked Questions</p>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-12">
+            <div class="custom-accordion" id="accordion-faq">
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
+                    How to download and register?
+                  </button>
+                </h2>
+
+                <div id="collapse-faq-1" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordion-faq">
+                  <div class="accordion-body">
+                    Far far away, behind the word mountains, far from the countries
+                    Vokalia and Consonantia, there live the blind texts. Separated
+                    they live in Bookmarksgrove right at the coast of the Semantics,
+                    a large language ocean.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-faq-2" "="">
+                How to create your paypal account?
+              </button>
+            </h2>
+            <div id=" collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
+                    <div class="accordion-body">
+                      A small river named Duden flows by their place and supplies it
+                      with the necessary regelialia. It is a paradisematic country, in
+                      which roasted parts of sentences fly into your mouth.
+                    </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-faq-3">
+                  How to link your paypal and bank account?
+                </button>
+              </h2>
+
+              <div id="collapse-faq-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faq">
+                <div class="accordion-body">
+                  When she reached the first hills of the Italic Mountains, she
+                  had a last view back on the skyline of her hometown
+                  Bookmarksgrove, the headline of Alphabet Village and the subline
+                  of her own road, the Line Lane. Pityful a rethoric question ran
+                  over her cheek, then she continued her way.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </section> -->
+    <!-- /Faq Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Faculty</h2>
+        <p>Our Hardworking Faculty</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Recent Posts Section -->
+    <section id="recent-posts" class="recent-posts section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Recent Posts</h2>
+        <p>Recent Blog Posts<br></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Politics</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Maria Doe</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jan 1, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Sports</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Allisa Mayer</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jun 5, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article>
+
+              <div class="post-img">
+                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Entertainment</p>
+
+              <h2 class="title">
+                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Mark Dower</p>
+                  <p class="post-date">
+                    <time datetime="2022-01-01">Jun 22, 2022</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+        </div><!-- End recent posts list -->
+
+      </div>
+
+    </section><!-- /Recent Posts Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@example.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer bg-dark text-light pt-5">
+    <div class="container">
+      <div class="row gx-xl-5 gy-4 gy-xl-0">
+        <!-- Contact Info -->
+        <div class="col-xl-3" data-aos="fade-up" data-aos-duration="800">
+          <div class="footer-content mb-4">
+            <a href="index.html" class="d-block mb-3">
+              <img src="assets/img/logo.png" alt="Brahma Valley Logo" class="img-fluid" />
+            </a>
+            <p class="small text-light">Brahma Valley, Trimbak Road, Anjaneri, Nashik – 422213, Maharashtra</p>
+            <p class="small text-muted">
+              <a href="tel:+912532222111" class="text-light text-decoration-none">+91 253 222 2111</a> /
+              <a href="tel:+912532222222" class="text-light text-decoration-none">+91 253 222 2222</a>
+            </p>
+            <p class="small text-muted">
+              <a href="mailto:info@brahmavalley.com" class="text-light text-decoration-none">info@brahmavalley.com</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="col-xl-9">
+          <div class="row gy-4">
+            <!-- About -->
+            <div class="col-lg-3">
+              <div class="footer-section">
+                <h6 class="text-uppercase fw-bold mb-3">About Brahma Valley</h6>
+                <ul class="list-unstyled small text-muted">
+                  <li><a href="#/overview">Overview</a></li>
+                  <li><a href="#/our-legacy">Our Legacy</a></li>
+                  <li><a href="#/milestones">Milestones</a></li>
+                  <li><a href="#/our-chairman">Our Leadership</a></li>
+                  <li><a href="#/people-messages">People and Messages</a></li>
+                  <li><a href="#/advisory-committee">Advisory Committee</a></li>
+                  <li><a href="#/accreditation-recognition">Accreditation & Recognition</a></li>
+                  <li><a href="#/sponsored-awards">Awards & Honors</a></li>
+                  <li><a href="#/cpage.aspx?mpgid=2&pgidtrail=283">Success Stories</a></li>
+                </ul>
+                <ul class="list-unstyled small text-muted mt-3">
+                  <li><a href="#/testimonial.aspx?mpgid=250&pgidtrail=250&tesid=1">Testimonials</a></li>
+                  <li><a href="https://erp.brahmavalley.edu.in/" target="_blank">ERP Login</a></li>
+                  <li><a href="#/admissions">Admissions</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Infrastructure + Academics -->
+            <div class="col-lg-3">
+              <div class="footer-section">
+                <h6 class="text-uppercase fw-bold mb-3">Infrastructure</h6>
+                <ul class="list-unstyled small text-muted">
+                  <li><a href="#/cpage.aspx?mpgid=214&pgidtrail=213">Nashik City</a></li>
+                  <li><a href="#/cpage.aspx?mpgid=214&pgidtrail=214">Trimbak Area</a></li>
+                  <li><a href="#/cpage.aspx?mpgid=235&pgidtrail=235">Upcoming</a></li>
+                  <li><a href="#/cpage.aspx?mpgid=218&pgidtrail=218">Campus Facilities</a></li>
+                </ul>
+                <h6 class="text-uppercase fw-bold mt-4 mb-3">Academics</h6>
+                <ul class="list-unstyled small text-muted">
+                  <li><a href="#/courses">Courses</a></li>
+                  <li><a href="#/faculty">Faculty & Research</a></li>
+                </ul>
+                <h6 class="text-uppercase fw-bold mt-4 mb-3">Beyond Academics</h6>
+                <ul class="list-unstyled small text-muted">
+                  <li><a href="#/kala-academy">Kala Academy</a></li>
+                  <li><a href="#/career-academy">Public Lecture Series</a></li>
+                  <li><a href="#/clubs">Clubs</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Facilities + Life -->
+            <div class="col-lg-3">
+              <div class="footer-section">
+                <h6 class="text-uppercase fw-bold mb-3">Facilities</h6>
+                <ul class="list-unstyled small text-muted">
+                  <li><a href="#/innovation-center">Academic Facilities</a></li>
+                  <li><a href="#/cpage.aspx?mpgid=22&pgid1=24&pgidtrail=246">Sports Facilities</a></li>
+                  <li><a href="#/medical-facilities">Medical Facilities</a></li>
+                  <li><a href="#/transport-facilities">Transport</a></li>
+                  <li><a href="#/hostel">Hostel</a></li>
+                  <li><a href="#/services">Services</a></li>
+                  <li><a href="#/other-facilities">Other Facilities</a></li>
+                </ul>
+                <h6 class="text-uppercase fw-bold mt-4 mb-3">Life @ Brahma Valley</h6>
+                <ul class="list-unstyled small text-muted">
+                  <li><a href="#/news-list.aspx?mpgid=32&pgidtrail=34&ntypeid=2">Events</a></li>
+                  <li><a href="#/industry-linkage">Industry Linkage</a></li>
+                  <li><a href="#/community-engagement">Community Engagement</a></li>
+                  <li><a href="#/cpage.aspx?mpgid=31&pgid1=32&pgidtrail=37">Dignitary Visits</a></li>
+                  <li><a href="#/media">Gallery</a></li>
+                  <li><a href="#/media-coverage.aspx?mpgid=31&pgid1=32&pgidtrail=245">Press Release</a></li>
+                  <li><a href="#/cpage.aspx?mpgid=31&pgid1=32&pgidtrail=237">Print Ads</a></li>
+                  <li><a href="#/archive.aspx?mpgid=31&pgid1=32&pgidtrail=236">Archive</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Placements + Others -->
+            <div class="col-lg-3">
+              <div class="footer-section">
+                <h6 class="text-uppercase fw-bold mb-3">Placements</h6>
+                <ul class="list-unstyled small text-muted">
+                  <li><a href="#/placement-overview">Overview</a></li>
+                  <li><a href="#/career-counseling">Career Counseling</a></li>
+                  <li><a href="#/placement-policy">Policy</a></li>
+                  <li><a href="#/placement-records">Records</a></li>
+                  <li><a href="#/student-development">Student Development</a></li>
+                  <li><a href="#/our-recruiters">Our Recruiters</a></li>
+                  <li><a href="#/placement-gallery">Gallery</a></li>
+                  <li><a href="#/frequently-asked-questions">FAQs</a></li>
+                </ul>
+                <h6 class="text-uppercase fw-bold mt-4 mb-3">Others</h6>
+                <ul class="list-unstyled small text-muted">
+                  <li><a href="#/cpage.aspx?mpgid=241&pgidtrail=241">Newsletters</a></li>
+                  <li><a href="https://brahmavalley.edu.in/cpage.aspx?mpgid=312&pgidtrail=312">Sitemap</a></li>
+                  <li><a href="https://brahmavalley.edu.in/cpage.aspx?mpgid=313&pgidtrail=313">Disclaimer</a></li>
+                  <li><a href="https://brahmavalley.edu.in/cpage.aspx?mpgid=314&pgidtrail=314">Terms & Conditions</a>
+                  </li>
+                  <li><a href="javascript:void(0)">Grievance</a></li>
+                  <li><a href="javascript:void(0)">Helpline</a></li>
+                  <li><a href="https://brahmavalley.edu.in/cpage.aspx?mpgid=315&pgidtrail=315">Privacy Policy</a></li>
+                </ul>
+                <div class="text-white small mt-3 text-end" id="google_translate_element"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Bottom -->
+  <section class="footer-bottom bg-secondary text-light py-3">
+    <div class="container">
+      <div
+        class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-2 text-center text-lg-start">
+        <!-- Social Media -->
+        <div class="social-media d-flex align-items-center gap-3">
+          <span class="small">Follow Us</span>
+          <a href="#" target="_blank"><img src="assets/img/facebook.png" alt="Facebook" class="social-icon" /></a>
+          <a href="#" target="_blank"><img src="assets/img/twitter.png" alt="Twitter" class="social-icon" /></a>
+          <a href="#" target="_blank"><img src="assets/img/youtube.png" alt="YouTube" class="social-icon" /></a>
+          <a href="#" target="_blank"><img src="assets/img/instagram.png" alt="Instagram" class="social-icon" /></a>
+          <a href="#" target="_blank"><img src="assets/img/linkedin.png" alt="LinkedIn" class="social-icon" /></a>
+        </div>
+
+        <!-- Credit -->
+        <div class="small">Website by <a href="#" class="text-light text-decoration-underline">Anant Kamal Studios</a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="small">&copy; 2025 Brahma Valley, Nashik.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,mr', // Add other languages here (e.g., 'gu','ta','te')
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+  <!-- Search Filter Function -->
+  <script>
+    function filterFunction(input, event) {
+      const filter = input.value.toLowerCase();
+      const ul = document.getElementById("programmeList");
+      const li = ul.getElementsByTagName("li");
+
+      ul.classList.toggle("show", filter.length > 0);
+
+      for (let i = 0; i < li.length; i++) {
+        const a = li[i].getElementsByTagName("a")[0];
+        const txtValue = a.textContent || a.innerText;
+        li[i].style.display = txtValue.toLowerCase().includes(filter) ? "" : "none";
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      const searchContainer = document.querySelector(".search-home");
+      if (!searchContainer.contains(event.target)) {
+        document.getElementById("programmeList").classList.remove("show");
+        document.querySelector("input[name=search_course]").value = "";
+      }
+    });
+  </script>
+  <!-- Counting Animation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const counters = document.querySelectorAll('.counter');
+      const animateCounter = (counter) => {
+        const target = parseFloat(counter.getAttribute('data-target'));
+        const duration = 2000; // Animation duration in ms
+        const increment = target / (duration / 16); // Approx 60fps
+        let current = 0;
+
+        const updateCounter = () => {
+          current += increment;
+          if (current >= target) {
+            counter.textContent = target.toLocaleString('en-IN', {
+              minimumFractionDigits: Number.isInteger(target) ? 0 : 1,
+              maximumFractionDigits: 1
+            });
+            return;
+          }
+          counter.textContent = Math.floor(current).toLocaleString('en-IN', {
+            minimumFractionDigits: Number.isInteger(target) ? 0 : 1,
+            maximumFractionDigits: 1
+          });
+          requestAnimationFrame(updateCounter);
+        };
+        updateCounter();
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            if (!counter.classList.contains('counted')) {
+              counter.classList.add('counted');
+              animateCounter(counter);
+            }
+          }
+        });
+      }, { threshold: 0.5 });
+
+      counters.forEach(counter => observer.observe(counter));
+    });
+  </script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
