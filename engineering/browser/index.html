@@ -20,101 +20,6 @@
   <!-- Bootstrap 4 CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <style>
-    .carousel-item img {
-      object-fit: cover;
-      height: 100vh;
-      max-height: 800px;
-    }
-
-    @media (max-width: 767.98px) {
-      .carousel-caption {
-        display: block !important;
-        font-size: 0.9rem;
-      }
-
-      .carousel-caption h5 {
-        font-size: 1.2rem;
-      }
-
-      .carousel-item img {
-        height: 30vh;
-        margin-top: 45px;
-      }
-    }
-
-    .navbar-nav .nav-link {
-      color: black !important;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      top: 50%;
-      transform: translateY(-50%);
-      width: 5%;
-    }
-
-    @media (max-width: 768px) {
-
-      .carousel-control-prev,
-      .carousel-control-next {
-        top: 65%;
-        /* slightly above center for smaller screens */
-        width: 8%;
-        /* easier to click on mobile */
-      }
-    }
-
-    @media (max-width: 768px) {
-      .section_gap {
-        padding-top: 40px;
-        padding-bottom: 5px;
-        /* ↓ mobile la even less */
-      }
-    }
-    .body {
-    font-family: 'Poppins'
-}
-.navbar-nav .nav-link {
-  font-weight: bold;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu > .dropdown-menu {
-  top: 0;
-  left: 100%;
-  display: none;
-  position: absolute;
-}
-.dropdown-submenu.show > .dropdown-menu {
-  display: block;
-}
-/* Enable dropdown on hover */
-.hover-dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-/* Submenu position */
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -1px;
-  display: none;
-  position: absolute;
-}
-
-/* Show submenu on hover */
-.dropdown-submenu:hover .dropdown-menu {
-  display: block;
-}
-
-
-  </style>
 </head>
 
 <body class="index-page">
@@ -123,10 +28,11 @@
       <!-- Left: Menu Links -->
       <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
         <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"><b>Download
-            E-Brochures</b></a>
+              E-Brochures</b></a>
         </li>
         <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Adminssion</a></li> -->
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#" target="_blank"><b>Blogs</b></a>
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+            target="_blank"><b>Blogs</b></a>
         </li>
         <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a></li> -->
         <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Contact Us</a></li> -->
@@ -135,7 +41,7 @@
       </ul>
 
       <!-- Right: Social/Action Images -->
-     <ul class="list-inline mb-0 d-flex align-items-center gap-2">
+      <ul class="list-inline mb-0 d-flex align-items-center gap-2">
         <li><a class="text-white text-decoration-none small" href="#"><span><b>Get Connected</b></span></a></li>
 
         <li class="ml-2">
@@ -183,9 +89,9 @@
 
 
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid" style="margin-left: 50px;">
+        <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" height="70"></a>
+          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" height="100"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span> <span class="icon-bar"></span>
@@ -193,7 +99,7 @@
           </button>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-           <ul class="nav navbar-nav menu_nav ml-auto">
+            <ul class="nav navbar-nav menu_nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -205,7 +111,7 @@
                     <a class="nav-link" href="president.html">President Desk</a>
                   </li>
                   <li class="nav-item">
-                   <a class="nav-link" href="#" style="white-space: nowrap;">General&nbsp;Secretary&nbsp;Desk</a>
+                    <a class="nav-link" href="#" style="white-space: nowrap;">General&nbsp;Secretary&nbsp;Desk</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Vice President Desk</a>
@@ -226,10 +132,10 @@
               </li>
               <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Department's</a>
+                  aria-expanded="false">Departments</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Mechanical Engg</a>
+                    <a class="nav-link" href="mechanical.html">Mechanical Engg</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Computer Engg</a>
@@ -281,37 +187,37 @@
                   </li>
                 </ul>
               </li>
-            <li class="nav-item dropdown hover-dropdown">
-  <a class="nav-link dropdown-toggle" href="#">NAAC</a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">IQAC</a></li>
-    <li><a class="dropdown-item" href="#">IIQA</a></li>
-    <li><a class="dropdown-item" href="#">Best Practices</a></li>
-    <li><a class="dropdown-item" href="#">Feedback</a></li>
+              <li class="nav-item dropdown hover-dropdown">
+                <a class="nav-link dropdown-toggle" href="#">NAAC</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item fontweight" href="#">IQAC</a></li>
+                  <li><a class="dropdown-item fontweight" href="#">IIQA</a></li>
+                  <li><a class="dropdown-item fontweight" href="#">Best Practices</a></li>
+                  <li><a class="dropdown-item fontweight" href="#">Feedback</a></li>
 
-    <!-- NAAC SSR Submenu -->
-    <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">NAAC SSR</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">2023-2024</a></li>
-        <li><a class="dropdown-item" href="#">2024-2025</a></li>
-      </ul>
-    </li>
+                  <!-- NAAC SSR Submenu -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item fontweight dropdown-toggle" href="#">NAAC SSR</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item fontweight" href="#">2023-2024</a></li>
+                      <li><a class="dropdown-item fontweight" href="#">2024-2025</a></li>
+                    </ul>
+                  </li>
 
-    <li><a class="dropdown-item" href="#">NAAC Documents</a></li>
+                  <li><a class="dropdown-item fontweight" href="#">NAAC Documents</a></li>
 
-    <!-- AQAR Submenu -->
-    <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#">AQAR</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">2023-2024</a></li>
-        <li><a class="dropdown-item" href="#">2024-2025</a></li>
-      </ul>
-    </li>
+                  <!-- AQAR Submenu -->
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item fontweight dropdown-toggle" href="#">AQAR</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item fontweight" href="#">2023-2024</a></li>
+                      <li><a class="dropdown-item fontweight" href="#">2024-2025</a></li>
+                    </ul>
+                  </li>
 
-    <li><a class="dropdown-item" href="#">AQAR Documents</a></li>
-  </ul>
-            </li>
+                  <li><a class="dropdown-item fontweight" href="#">AQAR Documents</a></li>
+                </ul>
+              </li>
 
 
 
@@ -337,39 +243,6 @@
                   </li>
                 </ul>
               </li>
-              <!-- <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Resources</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Best Practice</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Extension & Outreach Activity</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">International Affairs Cell</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Women Grievance</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Annual Action Plan</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Internal Complaint Committee</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Anti-Ragging Committee</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Anti-Ragging Squad</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Staff Grievance</a>
-                  </li>
-                </ul>
-              </li> -->
               <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Student Corner</a>
@@ -403,10 +276,10 @@
                   </li>
                 </ul>
               </li>
-             
+
               <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Alumini</a>
+                  aria-expanded="false">Alumni</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
                     <a class="nav-link" href="#">Alumni&nbsp;Student&nbsp;Details</a>
@@ -417,10 +290,11 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Alumni Meet Details</a>
                   </li>
-                   <li class="nav-item">
-                    <a class="nav-link" href="#">Alumni&nbsp;for&nbsp;Higher&nbsp;Studies&nbsp;in&nbsp;Different&nbsp;Countries</a>
+                  <li class="nav-item">
+                    <a class="nav-link"
+                      href="#">Alumni&nbsp;for&nbsp;Higher&nbsp;Studies&nbsp;in&nbsp;Different&nbsp;Countries</a>
                   </li>
-                   <li class="nav-item">
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Gallery</a>
                   </li>
                 </ul>
@@ -435,10 +309,10 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">Facilities Details</a>
                   </li>
-                   <li class="nav-item">
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Library</a>
                   </li>
-                   <li class="nav-item">
+                  <li class="nav-item">
                     <a class="nav-link" href="#">Hostel</a>
                   </li>
                   <li class="nav-item">
@@ -446,7 +320,7 @@
                   </li>
                 </ul>
               </li>
-               <li class="nav-item submenu dropdown">
+              <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Media Coverage</a>
                 <ul class="dropdown-menu">
@@ -475,7 +349,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
-             
+
             </ul>
           </div>
         </div>
@@ -560,115 +434,116 @@
   </section>
 
 
-   <section class="Study-sec">
-      <div class="container">
-        <span data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
-          data-aos-duration="1000">Future-Ready Programmes</span>
-        <p class="lead" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine"
-          data-aos-duration="1000">Discover diverse, new-age programmes designed to shape future leaders.</p>
-        <div class="row align-items-center">
-          <div class="col-lg-9">
-            <h2 data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000" style="color: #ef6603;">
-              Innovation is in our DNA, explore our pillars of knowledge
-            </h2>
-          </div>
-          <div class="col-lg-3 upward">
-            <div class="search-home" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine"
-              data-aos-duration="800">
-              <div class="home-submit searchable">
-                <input type="text" name="search_course" class="form-control" placeholder="Type Programme Name"
-                  autocomplete="off" onkeyup="filterFunction(this, event)" aria-label="Search programmes">
-                <ul id="programmeList">
-                  <li><a href="#">B.Tech Civil Engineering</a></li>
-                  <li><a href="#">B.Tech Mechanical Engineering</a></li>
-                  <li><a href="#">B.Tech Chemical Engineering</a></li>
-                  <li><a href="#">B.Tech Computer Science and Engineering</a></li>
-                  <li><a href="#">M.Tech Civil Engineering</a></li>
-                  <li><a href="#">Ph.D. in Chemical Engineering</a></li>
-                  <li><a href="#">B.Sc. Computer Science</a></li>
-                  <li><a href="#">M.Sc. Data Science</a></li>
-                  <li><a href="#">B.Pharm</a></li>
-                  <li><a href="#">MBA Marketing</a></li>
-                </ul>
-                <div class="submit-btn">
-                  <a href="javascript:void(0);" onclick="document.querySelector('input[name=search_course]').focus()">
-                    <img src="https://mitwpu.edu.in/assets/frontend/images/search-icon.svg" alt="Search icon"
-                      class="img-fluid" loading="lazy">
-                  </a>
-                </div>
+  <section class="Study-sec">
+    <div class="container">
+      <span data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+        data-aos-duration="1000">Future-Ready Programmes</span>
+      <p class="lead" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        Discover diverse, new-age programmes designed to shape future leaders.</p>
+      <div class="row align-items-center">
+        <div class="col-lg-9">
+          <h2 data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000"
+            style="color: #ef6603;">
+            Innovation is in our DNA, explore our pillars of knowledge
+          </h2>
+        </div>
+        <div class="col-lg-3 upward">
+          <div class="search-home" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine"
+            data-aos-duration="800">
+            <div class="home-submit searchable">
+              <input type="text" name="search_course" class="form-control" placeholder="Type Programme Name"
+                autocomplete="off" onkeyup="filterFunction(this, event)" aria-label="Search programmes">
+              <ul id="programmeList">
+                <li><a href="#">B.Tech Civil Engineering</a></li>
+                <li><a href="#">B.Tech Mechanical Engineering</a></li>
+                <li><a href="#">B.Tech Chemical Engineering</a></li>
+                <li><a href="#">B.Tech Computer Science and Engineering</a></li>
+                <li><a href="#">M.Tech Civil Engineering</a></li>
+                <li><a href="#">Ph.D. in Chemical Engineering</a></li>
+                <li><a href="#">B.Sc. Computer Science</a></li>
+                <li><a href="#">M.Sc. Data Science</a></li>
+                <li><a href="#">B.Pharm</a></li>
+                <li><a href="#">MBA Marketing</a></li>
+              </ul>
+              <div class="submit-btn">
+                <a href="javascript:void(0);" onclick="document.querySelector('input[name=search_course]').focus()">
+                  <img src="https://mitwpu.edu.in/assets/frontend/images/search-icon.svg" alt="Search icon"
+                    class="img-fluid" loading="lazy">
+                </a>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="container">
-          <div class="row gy-4 justify-content-center">
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="service-item position-relative ugp">
-                <a href="#" class="stretched-link home-sec-link">
-                  <h2 class="home-sec-title">Undergraduate Programmes</h2>
-                </a>
-                <p class="home-sec-desc">Choose from a wide array of multidisciplinary undergraduate programmes and
-                  embark on your professional journey.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-item position-relative pgp">
-                <a href="#" class="stretched-link home-sec-link">
-                  <h2 class="home-sec-title">Postgraduate Programmes</h2>
-                </a>
-                <p class="home-sec-desc">Augment your proficiencies and add value to your knowledge by choosing from a
-                  diverse range of postgraduate programmes.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-item position-relative dgp">
-                <a href="#" class="stretched-link home-sec-link">
-                  <h2 class="home-sec-title">Ph.D. <br>Programmes</h2>
-                </a>
-                <p class="home-sec-desc">Pursue a host of focused doctoral programmes and lead in advanced research in
-                  your field of study.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-item position-relative phgp">
-                <a href="#" class="stretched-link home-sec-link">
-                  <h2 class="home-sec-title">Diplomas & Certifications</h2>
-                </a>
-                <p class="home-sec-desc">Enrich your learning or bridge the gap between academic phases through various
-                  diplomas and certifications.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-item position-relative dgp">
-                <a href="#" class="stretched-link home-sec-link">
-                  <h2 class="home-sec-title">Additional Ph.D. Programme</h2>
-                </a>
-                <p class="home-sec-desc">Pursue a host of focused doctoral programmes and lead in advanced research in
-                  your field of study.</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="service-item position-relative phgp">
-                <a href="#" class="stretched-link home-sec-link">
-                  <h2 class="home-sec-title">Additional Diploma & Certification</h2>
-                </a>
-                <p class="home-sec-desc">Enrich your learning or bridge the gap between academic phases through various
-                  diplomas and certifications.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
       </div>
-    </section>
+
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative ugp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Undergraduate Programmes</h2>
+              </a>
+              <p class="home-sec-desc">Choose from a wide array of multidisciplinary undergraduate programmes and
+                embark on your professional journey.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative pgp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Postgraduate Programmes</h2>
+              </a>
+              <p class="home-sec-desc">Augment your proficiencies and add value to your knowledge by choosing from a
+                diverse range of postgraduate programmes.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative dgp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Ph.D. <br>Programmes</h2>
+              </a>
+              <p class="home-sec-desc">Pursue a host of focused doctoral programmes and lead in advanced research in
+                your field of study.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative phgp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Diplomas & Certifications</h2>
+              </a>
+              <p class="home-sec-desc">Enrich your learning or bridge the gap between academic phases through various
+                diplomas and certifications.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative dgp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Additional Ph.D. Programme</h2>
+              </a>
+              <p class="home-sec-desc">Pursue a host of focused doctoral programmes and lead in advanced research in
+                your field of study.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative phgp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Additional Diploma & Certification</h2>
+              </a>
+              <p class="home-sec-desc">Enrich your learning or bridge the gap between academic phases through various
+                diplomas and certifications.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
   <!--================ End Feature Area =================-->
 
   <!--================ Start Popular Courses Area =================-->
@@ -1084,28 +959,28 @@
     });
   </script>
   <script>
-function toggleSubmenu(event) {
-  event.preventDefault();
-  event.stopPropagation();
+    function toggleSubmenu(event) {
+      event.preventDefault();
+      event.stopPropagation();
 
-  // Close others
-  document.querySelectorAll('.dropdown-submenu').forEach(el => {
-    if (el !== event.target.closest('.dropdown-submenu')) el.classList.remove('show');
-  });
+      // Close others
+      document.querySelectorAll('.dropdown-submenu').forEach(el => {
+        if (el !== event.target.closest('.dropdown-submenu')) el.classList.remove('show');
+      });
 
-  // Toggle current
-  const parent = event.target.closest('.dropdown-submenu');
-  parent.classList.toggle('show');
-}
+      // Toggle current
+      const parent = event.target.closest('.dropdown-submenu');
+      parent.classList.toggle('show');
+    }
 
-// Close submenu when clicking outside or closing main menu
-document.addEventListener('click', () => {
-  document.querySelectorAll('.dropdown-submenu').forEach(el => el.classList.remove('show'));
-});
-$('.dropdown').on('hide.bs.dropdown', function () {
-  document.querySelectorAll('.dropdown-submenu').forEach(el => el.classList.remove('show'));
-});
-</script>
+    // Close submenu when clicking outside or closing main menu
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.dropdown-submenu').forEach(el => el.classList.remove('show'));
+    });
+    $('.dropdown').on('hide.bs.dropdown', function () {
+      document.querySelectorAll('.dropdown-submenu').forEach(el => el.classList.remove('show'));
+    });
+  </script>
 
 
 
