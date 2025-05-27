@@ -90,25 +90,47 @@
 .dropdown-submenu.show > .dropdown-menu {
   display: block;
 }
+/* Enable dropdown on hover */
+.hover-dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Submenu position */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  display: none;
+  position: absolute;
+}
+
+/* Show submenu on hover */
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
 
 </style>
 </head>
 
 <body class="index-page">
-  <div class="container-fluid py-1" style="background-color: #ea1f28;">
+  <div class="container-fluid py-2" style="background-color: hwb(207 6% 14%);">
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
       <!-- Left: Menu Links -->
       <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Download
-            E-Brochures</a>
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"><b>Download
+            E-Brochures</b></a>
         </li>
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Adminssion</a></li>
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#" target="_blank">Blogs</a>
+        <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Adminssion</a></li> -->
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#" target="_blank"><b>Blogs</b></a>
         </li>
         <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a></li> -->
         <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Contact Us</a></li> -->
         <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
-            target="_blank">Consultancy Cell</a></li>
+            target="_blank"><b>Consultancy Cell</b></a></li>
       </ul>
 
       <!-- Right: Social/Action Images -->
@@ -258,36 +280,37 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="naacDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    NAAC
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="naacDropdown">
+              <li class="nav-item dropdown hover-dropdown">
+  <a class="nav-link dropdown-toggle" href="#">NAAC</a>
+  <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#">IQAC</a></li>
     <li><a class="dropdown-item" href="#">IIQA</a></li>
     <li><a class="dropdown-item" href="#">Best Practices</a></li>
     <li><a class="dropdown-item" href="#">Feedback</a></li>
+
+    <!-- NAAC SSR Submenu -->
     <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#" onclick="toggleSubmenu(event)">NAAC SSR</a>
+      <a class="dropdown-item dropdown-toggle" href="#">NAAC SSR</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Cycle 1</a></li>
-        <li><a class="dropdown-item" href="#">Cycle 2</a></li>
+        <li><a class="dropdown-item" href="#">2023-2024</a></li>
+        <li><a class="dropdown-item" href="#">2024-2025</a></li>
       </ul>
     </li>
+
     <li><a class="dropdown-item" href="#">NAAC Documents</a></li>
 
-    <!-- Submenu -->
+    <!-- AQAR Submenu -->
     <li class="dropdown-submenu">
-      <a class="dropdown-item dropdown-toggle" href="#" onclick="toggleSubmenu(event)">AQAR</a>
+      <a class="dropdown-item dropdown-toggle" href="#">AQAR</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Cycle 1</a></li>
-        <li><a class="dropdown-item" href="#">Cycle 2</a></li>
+        <li><a class="dropdown-item" href="#">2023-2024</a></li>
+        <li><a class="dropdown-item" href="#">2024-2025</a></li>
       </ul>
     </li>
 
     <li><a class="dropdown-item" href="#">AQAR Documents</a></li>
   </ul>
-              </li>
+            </li>
               <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">Training & Placement</a>
@@ -418,18 +441,18 @@
                   </li>
                 </ul>
               </li>
-               <li class="nav-item submenu dropdown">
+              <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Events</a>
+                  aria-expanded="false">Media Coverage</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Events Title</a>
+                    <a class="nav-link" href="#">Events</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Events Images</a>
+                    <a class="nav-link" href="#">News</a>
                 </ul>
               </li>
-              <li class="nav-item submenu dropdown">
+              <!-- <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                   aria-expanded="false">News</a>
                 <ul class="dropdown-menu">
@@ -443,7 +466,7 @@
                     <a class="nav-link" href="#">News Details</a>
                   </li>
                 </ul>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>

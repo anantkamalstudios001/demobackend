@@ -4878,6 +4878,9 @@ h2::after {
 .home-sec-link:hover .home-sec-title {
     color: #007bff;
 }
+b, sup, sub, u, del {
+    color: #f3f3f3;
+}
 
 /*---------------------------------------------------- */
 
