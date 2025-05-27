@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="icon" href="img/logo.png" type="image/png" />
-  <title>Polytechnic College</title>
+  <title>Engineering College</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/flaticon.css" />
@@ -21,7 +21,63 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <style>
-   
+    .carousel-item img {
+      object-fit: cover;
+      height: 100vh;
+      max-height: 800px;
+    }
+
+    @media (max-width: 767.98px) {
+      .carousel-caption {
+        display: block !important;
+        font-size: 0.9rem;
+      }
+
+      .carousel-caption h5 {
+        font-size: 1.2rem;
+      }
+
+      .carousel-item img {
+        height: 30vh;
+        margin-top: 45px;
+      }
+    }
+
+    .navbar-nav .nav-link {
+      color: black !important;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5%;
+    }
+
+    @media (max-width: 768px) {
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        top: 65%;
+        /* slightly above center for smaller screens */
+        width: 8%;
+        /* easier to click on mobile */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section_gap {
+        padding-top: 40px;
+        padding-bottom: 5px;
+        /* ↓ mobile la even less */
+      }
+    }
+    .body {
+    font-family: 'Poppins'
+}
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
   </style>
 </head>
 
@@ -37,13 +93,13 @@
         <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#" target="_blank">Blogs</a>
         </li>
         <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a></li> -->
-        <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Contact Us</a></li> -->
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Contact Us</a></li>
         <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
             target="_blank">Consultancy Cell</a></li>
       </ul>
 
       <!-- Right: Social/Action Images -->
-      <ul class="list-inline mb-0 d-flex align-items-center gap-2">
+     <ul class="list-inline mb-0 d-flex align-items-center gap-2">
         <li><a class="text-white text-decoration-none small" href="#"><span>Get Connected</span></a></li>
 
         <li class="ml-2">
@@ -93,7 +149,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid" style="margin-left: 50px;">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" height="100"></a>
+          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" height="70"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span> <span class="icon-bar"></span>
@@ -110,47 +166,178 @@
                   aria-expanded="false">About Us</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="boardmember.html">Board Members</a>
+                    <a class="nav-link" href="president.html">President</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="president.html">President Desk</a>
+                    <a class="nav-link" href="#">General Secretory</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Principal Desk</a>
+                    <a class="nav-link" href="#">Vice President</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Governing Body</a>
+                    <a class="nav-link" href="#">Principal</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Our Mission/Vision</a>
+                    <a class="nav-link" href="#">Vision & Mission</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Committees</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">approval & Affilation</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Courses</a>
+                  aria-expanded="false">Department's</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Computer Technology</a>
+                    <a class="nav-link" href="#">Mechanical Engg</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Information Technology</a>
+                    <a class="nav-link" href="#">Computer Engg</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Electrical Engineering</a>
+                    <a class="nav-link" href="#">Civil Engg</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Electronics &amp; Telecommunication</a>
+                    <a class="nav-link" href="#">Electrical Engg</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Mechanical Engineering</a>
+                    <a class="nav-link" href="#">First Year Engg</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Civil Engineering</a>
+                    <a class="nav-link" href="#">M.B.A</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Academics</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Science &amp; Humanities</a>
+                    <a class="nav-link" href="#">PO, PEO, PSO & CO (Program and Course Outcomes)</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Value Added/Add-on Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Field Work/Project/Internship</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Library</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Eligibility</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">NAAC</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">IQAC</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">IIQA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Best Practices</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Feedback</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">NAAC SSR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">NAAC Documents</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">AQAR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">AQAR Documents</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Training & Placement</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Training & Placement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Placement Cell</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Career Guidance</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Placement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Placement Drive</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Student Corner</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Notices</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Course Structure</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Examination</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hostel Overview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hostel Documentation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Rules & Regulations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Important Contacts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Code of Conduct</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Photos for Students</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Club</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Scholarship Section</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Student Council Committee</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Events</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Events Title</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Events Images</a>
                 </ul>
               </li>
               <li class="nav-item submenu dropdown">
@@ -158,78 +345,31 @@
                   aria-expanded="false">Facilities</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Library</a>
+                    <a class="nav-link" href="#">Facilities Title</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Hostel</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sports</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Cafeteria</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Transport</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Cultural Fiesta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="nav-link" href="#">Facilities Details</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item submenu dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Grievances</a>
+                  aria-expanded="false">News</a>
                 <ul class="dropdown-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Student Grievances</a>
+                    <a class="nav-link" href="#">News Title</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Anti-Ragging Committee</a>
+                    <a class="nav-link" href="#">News Images</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Womens Committee</a>
+                    <a class="nav-link" href="#">News Details</a>
                   </li>
                 </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Training &amp; Placements</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About TPO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">TPO Team</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Recruiters</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Campus Placements</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">MOU's</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Alumni</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Admission Enquiry</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Fee Regulatory Authority</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
-
             </ul>
           </div>
         </div>
@@ -239,73 +379,31 @@
   <!--================ End Header Menu Area =================-->
 
   <!--================ Start Home Banner Area =================-->
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </button>
-  </div>
+  <div class="board-banner">
+  <img src="img/1920x800.jpg" alt="Board Members" class="img-fluid w-100">
+</div>
   <!--================ End Home Banner Area =================-->
 
   <!--================ Start Feature Area =================-->
   <section class="about_area section_gap" style="padding-top: 20px;">
     <div class="container">
-      <h3 class="text-center" style=" font-family: 'Poppins'">About Us</h3>
+      <h3 class="text-center" style=" font-family: 'Poppins'">President Message</h3>
       <div class="row h_blog_item">
         <div class="col-lg-6">
           <div class="h_blog_img">
-            <img class="img-fluid" src="img/about.png" alt="" />
+            <img class="img-fluid" src="img/image.jpeg" alt="" />
           </div>
         </div>
         <div class="col-lg-6">
           <div class="h_blog_text">
             <div class="h_blog_text_inner left right">
-              <h4 style=" font-family: 'Poppins'">Welcome to our Institute</h4>
+              <h4 style=" font-family: 'Poppins'">From The President's Desk</h4>
               <p style=" font-family: 'Poppins'">
-                Subdue whales void god which living don't midst lesser
-                yielding over lights whose. Cattle greater brought sixth fly
-                den dry good tree isn't seed stars were.
+                 Heartiest welcome to Brahma Valley College of Engineering & Research Institute. Our aim of starting this Institute is to facilitate the best quality education for all. We intend to impart education which will make students physically fit, mentally alert, intellectually capable, emotionally balanced, socially responsible and morally forthright. During their Endeavour we will motivate them to strive hard to achieve their goals and teach them to be self reliant and confident person.
               </p>
               <p style=" font-family: 'Poppins'">
-                Subdue whales void god which living don't midst lesser yieldi
-                over lights whose. Cattle greater brought sixth fly den dry
-                good tree isn't seed stars were the boring.
+                Student and staff are the member of Nashik Gramin Shikshan Prasarak Mandals family and we include basic human, national values in our students and try to make them responsible citizens.
               </p>
-              <a class="primary-btn" href="about-us.html">
-                Learn More <i class="ti-arrow-right ml-1"></i>
-              </a>
             </div>
           </div>
         </div>
@@ -313,124 +411,14 @@
     </div>
   </section>
 
-
-  <section class="Study-sec">
-    <div class="container">
-      <span data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
-        data-aos-duration="1000">Future-Ready Programmes</span>
-      <p class="lead" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-        Discover diverse, new-age programmes designed to shape future leaders.</p>
-      <div class="row align-items-center">
-        <div class="col-lg-9">
-          <h2 data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000"
-            style="color: #ef6603;">
-            Innovation is in our DNA, explore our pillars of knowledge
-          </h2>
-        </div>
-        <div class="col-lg-3 upward">
-          <div class="search-home" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine"
-            data-aos-duration="800">
-            <div class="home-submit searchable">
-              <input type="text" name="search_course" class="form-control" placeholder="Type Programme Name"
-                autocomplete="off" onkeyup="filterFunction(this, event)" aria-label="Search programmes">
-              <ul id="programmeList">
-                <li><a href="#">B.Tech Civil Engineering</a></li>
-                <li><a href="#">B.Tech Mechanical Engineering</a></li>
-                <li><a href="#">B.Tech Chemical Engineering</a></li>
-                <li><a href="#">B.Tech Computer Science and Engineering</a></li>
-                <li><a href="#">M.Tech Civil Engineering</a></li>
-                <li><a href="#">Ph.D. in Chemical Engineering</a></li>
-                <li><a href="#">B.Sc. Computer Science</a></li>
-                <li><a href="#">M.Sc. Data Science</a></li>
-                <li><a href="#">B.Pharm</a></li>
-                <li><a href="#">MBA Marketing</a></li>
-              </ul>
-              <div class="submit-btn">
-                <a href="javascript:void(0);" onclick="document.querySelector('input[name=search_course]').focus()">
-                  <img src="https://mitwpu.edu.in/assets/frontend/images/search-icon.svg" alt="Search icon"
-                    class="img-fluid" loading="lazy">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative ugp">
-              <a href="#" class="stretched-link home-sec-link">
-                <h2 class="home-sec-title">Undergraduate Programmes</h2>
-              </a>
-              <p class="home-sec-desc">Choose from a wide array of multidisciplinary undergraduate programmes and
-                embark on your professional journey.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative pgp">
-              <a href="#" class="stretched-link home-sec-link">
-                <h2 class="home-sec-title">Postgraduate Programmes</h2>
-              </a>
-              <p class="home-sec-desc">Augment your proficiencies and add value to your knowledge by choosing from a
-                diverse range of postgraduate programmes.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative dgp">
-              <a href="#" class="stretched-link home-sec-link">
-                <h2 class="home-sec-title">Ph.D. <br>Programmes</h2>
-              </a>
-              <p class="home-sec-desc">Pursue a host of focused doctoral programmes and lead in advanced research in
-                your field of study.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative phgp">
-              <a href="#" class="stretched-link home-sec-link">
-                <h2 class="home-sec-title">Diplomas & Certifications</h2>
-              </a>
-              <p class="home-sec-desc">Enrich your learning or bridge the gap between academic phases through various
-                diplomas and certifications.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative dgp">
-              <a href="#" class="stretched-link home-sec-link">
-                <h2 class="home-sec-title">Additional Ph.D. Programme</h2>
-              </a>
-              <p class="home-sec-desc">Pursue a host of focused doctoral programmes and lead in advanced research in
-                your field of study.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative phgp">
-              <a href="#" class="stretched-link home-sec-link">
-                <h2 class="home-sec-title">Additional Diploma & Certification</h2>
-              </a>
-              <p class="home-sec-desc">Enrich your learning or bridge the gap between academic phases through various
-                diplomas and certifications.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
+ 
   <!--================ End Feature Area =================-->
 
   <!--================ Start Popular Courses Area =================-->
   <!--================ End Popular Courses Area =================-->
 
   <!--================ Start Registration Area =================-->
-  <div class="section_gap registration_area">
+  <!-- <div class="section_gap registration_area">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-7">
@@ -482,11 +470,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--================ End Registration Area =================-->
 
   <!--================ Start Trainers Area =================-->
-  <section class="trainer_area section_gap_top" style="padding-top: 30px;">
+  <!-- <section class="trainer_area section_gap_top" style="padding-top: 30px;">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-5">
@@ -585,11 +573,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!--================ End Trainers Area =================-->
 
   <!--================ Start Events Area =================-->
-  <div class="events_area" style="padding-top: 20px;">
+  <!-- <div class="events_area" style="padding-top: 20px;">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-5">
@@ -661,12 +649,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!--================ End Events Area =================-->
 
   <!--================ Start Testimonial Area =================-->
   <!--================ Start Milestone Placements Section =================-->
-  <section class="py-5 bg-white">
+  <!-- <section class="py-5 bg-white">
     <div class="container text-center">
       <h3 class="font-weight-bold mb-3" style=" font-family: 'Poppins'">Placements Students</h3>
       <div class="mb-4" style="width: 150px; height: 2px; background-color: red; margin: 0 auto;"></div>
@@ -691,7 +679,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!--================ End Milestone Placements Section =================-->
 
   <!--================ End Testimonial Area =================-->
@@ -814,30 +802,9 @@
   <script src="js/gmaps.min.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/theme.js"></script>
-  <!-- Search Filter Function -->
-  <script>
-    function filterFunction(input, event) {
-      const filter = input.value.toLowerCase();
-      const ul = document.getElementById("programmeList");
-      const li = ul.getElementsByTagName("li");
+</body>
 
-      ul.classList.toggle("show", filter.length > 0);
-
-      for (let i = 0; i < li.length; i++) {
-        const a = li[i].getElementsByTagName("a")[0];
-        const txtValue = a.textContent || a.innerText;
-        li[i].style.display = txtValue.toLowerCase().includes(filter) ? "" : "none";
-      }
-    }
-
-    document.addEventListener("click", function (event) {
-      const searchContainer = document.querySelector(".search-home");
-      if (!searchContainer.contains(event.target)) {
-        document.getElementById("programmeList").classList.remove("show");
-        document.querySelector("input[name=search_course]").value = "";
-      }
-    });
-  </script>
+</html>
 </body>
 
 </html>

@@ -3,335 +3,153 @@
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="icon" href="img/logo.png" type="image/png" />
-  <title>Pharmacy</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/flaticon.css" />
-  <link rel="stylesheet" href="css/themify-icons.css" />
-  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
-  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-  <!-- main css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <title>MBA College</title>
   <!-- Bootstrap 4 CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
   <style>
-    .carousel-item img {
-      object-fit: cover;
-      height: 100vh;
-      max-height: 800px;
-    }
-
-    @media (max-width: 767.98px) {
-      .carousel-caption {
-        display: block !important;
-        font-size: 0.9rem;
-      }
-
-      .carousel-caption h5 {
-        font-size: 1.2rem;
-      }
-
-      .carousel-item img {
-        height: 30vh;
-        margin-top: 45px;
-      }
-    }
-
-    .navbar-nav .nav-link {
-      color: black !important;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      top: 50%;
-      transform: translateY(-50%);
-      width: 5%;
-    }
-
-    @media (max-width: 768px) {
-
-      .carousel-control-prev,
-      .carousel-control-next {
-        top: 65%;
-        /* slightly above center for smaller screens */
-        width: 8%;
-        /* easier to click on mobile */
-      }
-    }
-
-    @media (max-width: 768px) {
-      .section_gap {
-        padding-top: 40px;
-        padding-bottom: 5px;
-        /* ↓ mobile la even less */
-      }
+    body {
+      font-family: 'Poppins', sans-serif;
     }
   </style>
 </head>
 
 <body class="index-page">
+  <!-- Top Bar -->
   <div class="container-fluid py-1" style="background-color: #ea1f28;">
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
-      <!-- Left: Menu Links -->
       <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Download
-            E-Brochures</a>
-        </li>
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Adminssion</a></li>
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#" target="_blank">Blogs</a>
-        </li>
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a></li>
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Contact Us</a></li>
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="e-brochures.html">Download
+            E-Brochures</a></li>
+        <li class="list-inline-item"><a class="text-white text-decoration-none small"
+            href="admission.html">Admission</a></li>
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="blogs.html"
+            target="_blank">Blogs</a></li>
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="alumni.html">Alumni</a></li>
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="consultancy-cell.html"
             target="_blank">Consultancy Cell</a></li>
       </ul>
-
-      <!-- Right: Social/Action Images -->
-      <ul class="list-inline mb-0 d-flex align-items-center gap-2">
-        <li><a class="text-white text-decoration-none small" href="#"><span>Get Connected</span></a></li>
-
-        <li class="ml-2">
-          <a class="text-white" href="#" target="_blank" aria-label="WhatsApp">
-            <img src="img/whatsapp.png" alt="WhatsApp" width="20" height="20">
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="#" target="_blank" aria-label="360">
-            <img src="img/360-degree.png" alt="360" width="20" height="20">
-            <span class="ml-2">360</span>
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="#" target="_blank">
-            <img src="img/facebook.png" alt="Facebook" width="20" height="20">
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="#" target="_blank" aria-label="Twitter">
-            <img src="img/twitter.png" alt="Twitter" width="20" height="20">
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="https://in.linkedin.com/" target="_blank">
-            <img src="img/linkedin.png" alt="LinkedIn" width="20" height="20">
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="https://www.instagram.com/" target="_blank">
-            <img src="img/instagram.png" alt="Instagram" width="20" height="20">
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="https://www.youtube.com/" target="_blank">
-            <img src="img/youtube.png" alt="YouTube" width="20" height="20">
-          </a>
-        </li>
+      <ul class="list-inline mb-0 d-flex align-items-center gap-2" style="gap: 10px;">
+        <li><a class="text-white text-decoration-none small" href="connect.html">Get Connected</a></li>
+        <li><a class="text-white" href="whatsapp.html" target="_blank" aria-label="WhatsApp">
+            <img src="img/whatsapp_icon.png" alt="WhatsApp Icon" width="20" height="20">
+          </a></li>
+        <li><a class="text-white" href="virtual-tour.html" target="_blank" aria-label="360 Tour">
+            <img src="img/g360.png" alt="360 Tour Icon" width="20" height="20">
+            <!-- <span class="ml-2">360</span> -->
+          </a></li>
+        <li><a class="text-white" href="facebook.html" target="_blank" aria-label="Facebook">
+            <img src="img/fb_icon.png" alt="Facebook Icon" width="20" height="20">
+          </a></li>
+        <li><a class="text-white" href="https://in.linkedin.com/" target="_blank" aria-label="LinkedIn">
+            <img src="img/linkedin_icon.png" alt="LinkedIn Icon" width="20" height="20">
+          </a></li>
+        <li><a class="text-white" href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+            <img src="img/youtube_icon.png" alt="YouTube Icon" width="20" height="20">
+          </a></li>
       </ul>
     </div>
   </div>
-  <!--================ Start Header Menu Area =================-->
+
+  <!-- Header Menu -->
   <header class="header_area">
-
     <div class="main_menu">
-
-
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid" style="margin-left: 50px;">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" height="50"></a>
+        <div class="container-fluid px-5">
+          <a class="navbar-brand logo_h" href="index.html">
+            <img src="img/logo.png" alt="Engineering College Logo" height="100">
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span> <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-            <ul class="nav navbar-nav menu_nav ml-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                   aria-expanded="false">About Us</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Board Members</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Chairman Desk</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Prinicpal Desk</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mission and Vision</a>
-                  </li>
+                  <li><a class="dropdown-item" href="board-members.html">Board Members</a></li>
+                  <li><a class="dropdown-item" href="lmc-committee.html">LMC Committee</a></li>
+                  <li><a class="dropdown-item" href="president-desk.html">President Desk</a></li>
+                  <li><a class="dropdown-item" href="director-desk.html">Director Desk</a></li>
+                  <li><a class="dropdown-item" href="coordinator-desk.html">Co-ordinator Desk</a></li>
+                  <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
                 </ul>
               </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Innovation</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                  aria-expanded="false">Academics</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Start-Up</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Incubation</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">I-IPR</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Eco System</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">IRDC</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Practice School</a>
-                  </li>
+                  <li><a class="dropdown-item" href="department.html">Department</a></li>
+                  <li><a class="dropdown-item" href="students-corner.html">Students Corner</a></li>
+                  <li><a class="dropdown-item" href="admission-criteria.html">Admission Criteria</a></li>
+                  <li><a class="dropdown-item" href="mba-eligibility.html">M.B.A Eligibility</a></li>
+                  <li><a class="dropdown-item" href="specialization.html">Specialization</a></li>
                 </ul>
               </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">NAAC</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">IQAC</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">IIQA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Best Practices</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Feedback</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">NAAC SSR</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">NAAC Documents</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">AQAR</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">AQAR Documents</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="course-structure.html">Course Structure</a>
               </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                   aria-expanded="false">Training & Placement</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Placement Cell</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Career Guidance</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Placement</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Placement Drive</a>
-                  </li>
+                  <li><a class="dropdown-item" href="tpo-desk.html">TPO Desk</a></li>
+                  <li><a class="dropdown-item" href="industrial-visit.html">Industrial Visit</a></li>
+                  <li><a class="dropdown-item" href="student-placement.html">Student Placement</a></li>
                 </ul>
               </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Student Corner</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                  aria-expanded="false">Management Events</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="courses.html">Notices</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Course Structure</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Examination</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Hostel Overview</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Hostel Documentation</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Rules & Regulations</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Important Contacts</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Code of Conduct</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Photos for Students</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Club</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Scholarship Section</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Student Council Committee</a>
-                  </li>
+                  <li><a class="dropdown-item" href="events.html">Events</a></li>
+                  <li><a class="dropdown-item" href="cultural-program.html">Cultural Program</a></li>
+                  <li><a class="dropdown-item" href="upcoming-events.html">Upcoming Events</a></li>
                 </ul>
               </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Events</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                  aria-expanded="false">Social Activity</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Events Title</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Events Images</a>
+                  <li><a class="dropdown-item" href="social-welfare-activity.html">Social Welfare Activity</a></li>
+                  <li><a class="dropdown-item" href="anti-ragging.html">Anti-Ragging</a></li>
                 </ul>
               </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Facilities</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                  aria-expanded="false">NAAC</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Facilities Title</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Facilities Details</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">News</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">News Title</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">News Images</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">News Details</a>
-                  </li>
+                  <li><a class="dropdown-item" href="iiqa.html">IIQA</a></li>
+                  <li><a class="dropdown-item" href="iqac.html">IQAC</a></li>
+                  <li><a class="dropdown-item" href="best-practices.html">Best Practices</a></li>
+                  <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                  <li><a class="dropdown-item" href="naac-ssr.html">NAAC SSR</a></li>
+                  <li><a class="dropdown-item" href="naac-documents.html">NAAC Documents</a></li>
+                  <li><a class="dropdown-item" href="rti.html">RTI</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="photo-gallery.html">Photo Gallery</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link search" id="search">
-                  <i class="ti-search"></i>
-                </a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -339,9 +157,8 @@
       </nav>
     </div>
   </header>
-  <!--================ End Header Menu Area =================-->
 
-  <!--================ Start Home Banner Area =================-->
+  <!-- Home Banner (Carousel) -->
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -350,61 +167,60 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+        <img src="img/1920x800.jpg" class="d-block w-100" alt="Campus Building">
+        <div class="carousel-caption">
+          <h5>Explore Our Campus</h5>
+          <p>Discover state-of-the-art facilities and vibrant student life.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+        <img src="img/1920x800.jpg" class="d-block w-100" alt="Academic Excellence">
+        <div class="carousel-caption">
+          <h5>Academic Excellence</h5>
+          <p>Join a community dedicated to innovation and learning.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+        <img src="img/1920x800.jpg" class="d-block w-100" alt="Student Activities">
+        <div class="carousel-caption">
+          <h5>Thriving Student Life</h5>
+          <p>Engage in diverse extracurricular and cultural events.</p>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
-    </button>
+    </a>
   </div>
-  <!--================ End Home Banner Area =================-->
 
-  <!--================ Start Feature Area =================-->
+  <!-- About Us Section -->
   <section class="about_area section_gap" style="padding-top: 20px;">
     <div class="container">
       <h3 class="text-center">About Us</h3>
       <div class="row h_blog_item">
         <div class="col-lg-6">
           <div class="h_blog_img">
-            <img class="img-fluid" src="img/about.png" alt="" />
+            <img class="img-fluid" src="img/about.png" alt="Institute Campus">
           </div>
         </div>
         <div class="col-lg-6">
           <div class="h_blog_text">
             <div class="h_blog_text_inner left right">
-              <h4>Welcome to our Institute</h4>
+              <h4>Welcome to Our Institute</h4>
               <p>
-                Subdue whales void god which living don't midst lesser
-                yielding over lights whose. Cattle greater brought sixth fly
-                den dry good tree isn't seed stars were.
+                Our institute is dedicated to fostering academic excellence and holistic development.
+                With cutting-edge facilities and a passionate faculty, we empower students to achieve
+                their full potential and contribute meaningfully to society.
               </p>
               <p>
-                Subdue whales void god which living don't midst lesser yieldi
-                over lights whose. Cattle greater brought sixth fly den dry
-                good tree isn't seed stars were the boring.
+                Established with a vision to innovate and inspire, we offer a range of programs
+                designed to meet the demands of the modern world, ensuring our graduates are
+                industry-ready and globally competitive.
               </p>
               <a class="primary-btn" href="about-us.html">
                 Learn More <i class="ti-arrow-right ml-1"></i>
@@ -415,13 +231,9 @@
       </div>
     </div>
   </section>
-  <!--================ End Feature Area =================-->
 
-  <!--================ Start Popular Courses Area =================-->
-  <!--================ End Popular Courses Area =================-->
-
-  <!--================ Start Registration Area =================-->
-  <div class="section_gap registration_area">
+  <!-- Registration Area -->
+  <section class="section_gap registration_area">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-7">
@@ -429,9 +241,8 @@
             <div class="col-lg-12">
               <h1 class="mb-3">Register Now</h1>
               <p>
-                There is a moment in the life of any aspiring astronomer that
-                it is time to buy that first telescope. It’s exciting to think
-                about setting up your own viewing station.
+                Join our vibrant community and take the first step towards a rewarding career.
+                Our programs are designed to equip you with the skills and knowledge needed to succeed.
               </p>
             </div>
             <div class="col clockinner1 clockinner">
@@ -456,16 +267,16 @@
           <div class="register_form">
             <h3>Courses for Free</h3>
             <p>It is high time for learning</p>
-            <form class="form_area" id="myForm" action="mail.html" method="post">
+            <form class="form_area" id="myForm" action="mail.php" method="post">
               <div class="row">
                 <div class="col-lg-12 form_group">
-                  <input name="name" placeholder="Your Name" required="" type="text" />
-                  <input name="name" placeholder="Your Phone Number" required="" type="tel" />
+                  <input name="name" placeholder="Your Name" required type="text">
+                  <input name="phone" placeholder="Your Phone Number" required type="tel">
                   <input name="email" placeholder="Your Email Address"
-                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="" type="email" />
+                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required type="email">
                 </div>
                 <div class="col-lg-12 text-center">
-                  <button class="primary-btn">Submit</button>
+                  <button class="primary-btn" type="submit">Submit</button>
                 </div>
               </div>
             </form>
@@ -473,10 +284,9 @@
         </div>
       </div>
     </div>
-  </div>
-  <!--================ End Registration Area =================-->
+  </section>
 
-  <!--================ Start Trainers Area =================-->
+  <!-- Trainers Area -->
   <section class="trainer_area section_gap_top" style="padding-top: 30px;">
     <div class="container">
       <div class="row justify-content-center">
@@ -489,103 +299,87 @@
       <div class="row justify-content-center d-flex align-items-center">
         <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
           <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t1.jpg" alt="" />
+            <img class="img-fluid" src="img/trainer/t1.jpg" alt="Professor Vijay Khairnar">
           </div>
           <div class="meta-text text-sm-center">
             <h4>Mr. Vijay Khairnar</h4>
             <p class="designation">Assistant Professor</p>
             <div class="mb-4">
-              <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the.
-              </p>
+              <p>Expert in computer science with over 10 years of teaching experience.</p>
             </div>
             <div class="align-items-center justify-content-center d-flex">
-              <a href="#"><i class="ti-facebook"></i></a>
-              <a href="#"><i class="ti-twitter"></i></a>
-              <a href="#"><i class="ti-linkedin"></i></a>
-              <a href="#"><i class="ti-pinterest"></i></a>
+              <a href="facebook.html"><i class="ti-facebook"></i></a>
+              <a href="twitter.html"><i class="ti-twitter"></i></a>
+              <a href="linkedin.html"><i class="ti-linkedin"></i></a>
+              <a href="pinterest.html"><i class="ti-pinterest"></i></a>
             </div>
           </div>
         </div>
-
         <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
           <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t2.jpg" alt="" />
+            <img class="img-fluid" src="img/trainer/t2.jpg" alt="Professor Jane Doe">
           </div>
           <div class="meta-text text-sm-center">
-            <h4>Mr. Vijay Khairnar</h4>
+            <h4>Ms. Jane Doe</h4>
             <p class="designation">Assistant Professor</p>
             <div class="mb-4">
-              <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the.
-              </p>
+              <p>Specializes in mechanical engineering and industry collaborations.</p>
             </div>
             <div class="align-items-center justify-content-center d-flex">
-              <a href="#"><i class="ti-facebook"></i></a>
-              <a href="#"><i class="ti-twitter"></i></a>
-              <a href="#"><i class="ti-linkedin"></i></a>
-              <a href="#"><i class="ti-pinterest"></i></a>
+              <a href="facebook.html"><i class="ti-facebook"></i></a>
+              <a href="twitter.html"><i class="ti-twitter"></i></a>
+              <a href="linkedin.html"><i class="ti-linkedin"></i></a>
+              <a href="pinterest.html"><i class="ti-pinterest"></i></a>
             </div>
           </div>
         </div>
-
         <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
           <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
+            <img class="img-fluid" src="img/trainer/t3.jpg" alt="Professor John Smith">
           </div>
           <div class="meta-text text-sm-center">
-            <h4>Mr. Vijay Khairnar</h4>
+            <h4>Mr. John Smith</h4>
             <p class="designation">Assistant Professor</p>
             <div class="mb-4">
-              <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the.
-              </p>
+              <p>Renowned for research in electrical engineering and renewable energy.</p>
             </div>
             <div class="align-items-center justify-content-center d-flex">
-              <a href="#"><i class="ti-facebook"></i></a>
-              <a href="#"><i class="ti-twitter"></i></a>
-              <a href="#"><i class="ti-linkedin"></i></a>
-              <a href="#"><i class="ti-pinterest"></i></a>
+              <a href="facebook.html"><i class="ti-facebook"></i></a>
+              <a href="twitter.html"><i class="ti-twitter"></i></a>
+              <a href="linkedin.html"><i class="ti-linkedin"></i></a>
+              <a href="pinterest.html"><i class="ti-pinterest"></i></a>
             </div>
           </div>
         </div>
-
         <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
           <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t4.jpg" alt="" />
+            <img class="img-fluid" src="img/trainer/t4.jpg" alt="Professor Sarah Lee">
           </div>
           <div class="meta-text text-sm-center">
-            <h4>Mr. Vijay Khairnar</h4>
+            <h4>Ms. Sarah Lee</h4>
             <p class="designation">Assistant Professor</p>
             <div class="mb-4">
-              <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the.
-              </p>
+              <p>Expert in civil engineering with a focus on sustainable design.</p>
             </div>
             <div class="align-items-center justify-content-center d-flex">
-              <a href="#"><i class="ti-facebook"></i></a>
-              <a href="#"><i class="ti-twitter"></i></a>
-              <a href="#"><i class="ti-linkedin"></i></a>
-              <a href="#"><i class="ti-pinterest"></i></a>
+              <a href="facebook.html"><i class="ti-facebook"></i></a>
+              <a href="twitter.html"><i class="ti-twitter"></i></a>
+              <a href="linkedin.html"><i class="ti-linkedin"></i></a>
+              <a href="pinterest.html"><i class="ti-pinterest"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!--================ End Trainers Area =================-->
 
-  <!--================ Start Events Area =================-->
-  <div class="events_area" style="padding-top: 20px;">
+  <!-- Events Area -->
+  <section class="events_area" style="padding-top: 20px;">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-5">
           <div class="main_title">
-            <h2 class="mb-3 text-white" style="padding-top: 10px;">Upcoming Events</h2>
+            <h2 class="mb-3">Upcoming Events</h2>
           </div>
         </div>
       </div>
@@ -593,152 +387,131 @@
         <div class="col-lg-6 col-md-6">
           <div class="single_event position-relative">
             <div class="event_thumb">
-              <img src="img/event/e1.jpg" alt="" />
+              <img src="img/event/e1.jpg" alt="Annual Tech Fest">
             </div>
             <div class="event_details">
               <div class="d-flex mb-4">
                 <div class="date"><span>15</span> Jun</div>
-
                 <div class="time-location">
-                  <p>
-                    <span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM
-                  </p>
-                  <p>
-                    <span class="ti-location-pin mr-2"></span> Hilton Quebec
-                  </p>
+                  <p><span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM</p>
+                  <p><span class="ti-location-pin mr-2"></span> Main Auditorium</p>
                 </div>
               </div>
               <p>
-                One make creepeth man for so bearing their firmament won't
-                fowl meat over seas great
+                Join us for our annual tech fest, featuring workshops, hackathons, and guest lectures.
               </p>
-              <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+              <a href="event-details.html" class="primary-btn rounded-0 mt-3">View Details</a>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-md-6">
           <div class="single_event position-relative">
             <div class="event_thumb">
-              <img src="img/event/e2.jpg" alt="" />
+              <img src="img/event/e2.jpg" alt="Cultural Night">
             </div>
             <div class="event_details">
               <div class="d-flex mb-4">
                 <div class="date"><span>15</span> Jun</div>
-
                 <div class="time-location">
-                  <p>
-                    <span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM
-                  </p>
-                  <p>
-                    <span class="ti-location-pin mr-2"></span> Hilton Quebec
-                  </p>
+                  <p><span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM</p>
+                  <p><span class="ti-location-pin mr-2"></span> Open Air Theater</p>
                 </div>
               </div>
               <p>
-                One make creepeth man for so bearing their firmament won't
-                fowl meat over seas great
+                Celebrate diversity with performances, food stalls, and cultural showcases.
               </p>
-              <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+              <a href="event-details.html" class="primary-btn rounded-0 mt-3">View Details</a>
             </div>
           </div>
         </div>
-
         <div class="col-lg-12">
           <div class="text-center pt-lg-5 pt-3">
-            <a href="#" class="event-link">
-              View All Event <img src="img/next.png" alt="" />
+            <a href="events.html" class="event-link">
+              View All Events <img src="img/next.png" alt="Next Arrow">
             </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--================ End Events Area =================-->
+  </section>
 
-  <!--================ Start Testimonial Area =================-->
-  <!--================ Start Milestone Placements Section =================-->
+  <!-- Placements Section -->
   <section class="py-5 bg-white">
     <div class="container text-center">
-      <h3 class="font-weight-bold mb-3">Placements Students</h3>
+      <h3 class="font-weight-bold mb-3">Placement Partners</h3>
       <div class="mb-4" style="width: 150px; height: 2px; background-color: red; margin: 0 auto;"></div>
       <div class="row justify-content-center">
         <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="IKS Health" />
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="IKS Health Logo">
         </div>
         <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="TCS" />
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="TCS Logo">
         </div>
         <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Glenmark" />
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Glenmark Logo">
         </div>
         <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Cognizant" />
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Cognizant Logo">
         </div>
         <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Macleods" />
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Macleods Logo">
         </div>
         <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Wockhardt" />
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Wockhardt Logo">
         </div>
       </div>
     </div>
   </section>
-  <!--================ End Milestone Placements Section =================-->
 
-  <!--================ End Testimonial Area =================-->
-
-  <!--================ Start footer Area  =================-->
+  <!-- Footer -->
   <footer class="footer-area section_gap">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-6 single-footer-widget">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Tutorial</a></li>
-            <li><a href="#">Event Gallery</a></li>
-            <li><a href="#">Course</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="event-gallery.html">Event Gallery</a></li>
+            <li><a href="course-structure.html">Course</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-6 single-footer-widget">
           <h4>Additional Links</h4>
           <ul>
-            <li><a href="#">DTE Code</a></li>
-            <li><a href="#">Publication</a></li>
-            <li><a href="#">Hostel Overview</a></li>
-            <li><a href="#">Student Login</a></li>
-            <li><a href="#">Staff Login</a></li>
-            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="dte-code.html">DTE Code</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href="hostel-overview.html">Hostel Overview</a></li>
+            <li><a href="student-login.html">Student Login</a></li>
+            <li><a href="staff-login.html">Staff Login</a></li>
+            <li><a href="terms-condition.html">Terms & Condition</a></li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-6 single-footer-widget contact-info-widget">
-          <h4>CONTACT INFO</h4>
+          <h4>Contact Info</h4>
           <ul>
             <li><i class="fa fa-envelope"></i> reply@bestinstituteeducation.com</li>
             <li><i class="fa fa-phone"></i> +91 9923072990</li>
             <li><i class="fa fa-fax"></i> +91 9923072990</li>
-            <li><i class="fa fa-globe"></i> www.brahmavalley.com</li>
+            <li><i class="fa fa-globe"></i> <a href="http://www.brahmavalley.com">www.brahmavalley.com</a></li>
           </ul>
         </div>
-
         <div class="col-lg-3 col-md-6 single-footer-widget">
           <h4>Newsletter</h4>
-          <p>You can trust us. we only send promo offers,</p>
+          <p>Stay updated with our latest news and offers.</p>
           <div class="form-wrap" id="mc_embed_signup">
             <form target="_blank"
-              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01"
               method="get" class="form-inline">
-              <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Your Email Address'" required="" type="email" />
-              <button class="click-btn btn btn-default">
-                <span>subscribe</span>
+              <input class="form-control" name="EMAIL" placeholder="Your Email Address" required type="email">
+              <button class="click-btn btn btn-default" type="submit">
+                <span>Subscribe</span>
               </button>
               <div style="position: absolute; left: -5000px;">
-                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text" />
+                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
               </div>
-
               <div class="info"></div>
             </form>
           </div>
@@ -746,68 +519,35 @@
       </div>
       <div class="row footer-bottom d-flex justify-content-between">
         <p class="col-lg-6 col-sm-12 footer-text m-0 text-white">
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          Copyright &copy;
-          <script>document.write(new Date().getFullYear());</script>Bramha Vallay University. All University Reserved
-          <!-- <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright ©
+          <script>document.write(new Date().getFullYear());</script> Brahma Valley University. All Rights Reserved
         </p>
         <div class="col-lg-6 col-sm-12 footer-social">
-          <a href="#"><i class="ti-facebook"></i></a>
-          <a href="#"><i class="ti-twitter"></i></a>
-          <a href="#"><i class="ti-dribbble"></i></a>
-          <a href="#"><i class="ti-linkedin"></i></a>
+          <a href="facebook.html"><i class="ti-facebook"></i></a>
+          <a href="youtube.html"><i class="ti-youtube"></i></a>
+          <a href="instagram.html"><i class="ti-instagram"></i></a>
+          <a href="linkedin.html"><i class="ti-linkedin"></i></a>
         </div>
       </div>
     </div>
   </footer>
-  <!--================ End footer Area  =================-->
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
   <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
   <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="js/owl-carousel-thumb.min.js"></script>
-  <script src="js/jquery.ajaxchimp.min.js"></script>
-  <script src="js/mail-script.js"></script> -->
-  <!--gmaps Js-->
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
-  <script src="js/gmaps.min.js"></script>
-  <script src="js/theme.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-
-  <!-- Popper.js (2nd) -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
-
-  <!-- Bootstrap JS (3rd) -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/stellar.js"></script>
-  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="js/owl-carousel-thumb.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.ajaxchimp.min.js"></script>
   <script src="js/mail-script.js"></script>
-  <!--gmaps Js-->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-  <script src="js/gmaps.min.js"></script>
   <script src="js/contact.js"></script>
   <script src="js/theme.js"></script>
-</body>
-
-</html>
 </body>
 
 </html>
