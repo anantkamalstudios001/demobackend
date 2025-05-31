@@ -68,7 +68,7 @@
             transform: translateX(-50%);
             width: 60px;
             height: 4px;
-            background-color: #ea1f28;
+            background-color: #083da0;
             border-radius: 2px;
         }
 
@@ -86,7 +86,7 @@
         }
 
         .card-header {
-            background-color: #ea1f28;
+            background-color: #083da0;
             color: white;
             border-radius: 12px 12px 0 0;
             padding: 0.75rem 1.25rem;
@@ -102,7 +102,7 @@
         } */
 
         .btn-primary {
-            background: linear-gradient(45deg, #ea1f28, #c41820);
+            background: linear-gradient(45deg, #083da0, #c41820);
             border: none;
             border-radius: 8px;
             padding: 0.75rem 1.5rem;
@@ -114,7 +114,7 @@
         .btn-primary:hover {
             transform: scale(1.05);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-            background: linear-gradient(45deg, #c41820, #ea1f28);
+            background: linear-gradient(45deg, #c41820, #083da0);
         }
 
         .section-divider {
@@ -125,7 +125,7 @@
 
         .social-icon {
             font-size: 1.25rem;
-            color: #ea1f28;
+            color: #083da0;
             transition: color 0.3s ease;
         }
 
@@ -149,7 +149,7 @@
         }
 
         .course-card h5 {
-            color: #ea1f28;
+            color: #083da0;
             font-weight: 500;
         }
 
@@ -195,7 +195,7 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container-fluid py-1" style="background-color: #ea1f28;">
+        <div class="container-fluid py-1" style="background-color: #083da0;">
             <div
                 class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
                 <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
@@ -254,47 +254,44 @@
         </div>
         <nav class="navbar navbar-expand-lg navbar-light pt-4 header fixed-top" id="header">
             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-                <a class="navbar-brand mt-2" href="index.html">
-                    <img src="assets/img/logo.png" alt="Brahma Valley University Logo" class="img-fluid__"
-                        style="max-height: 150px;">
+                <!-- Logo -->
+                <a class="navbar-brand mt-2" href="#">
+                    <img src="assets/img/logo.png" alt="Institution Logo" class="img-fluid" style="max-height: 150px;">
                 </a>
+                <!-- Mobile Menu Toggle -->
                 <button class="navbar-toggler mobile-nav-toggle d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Menu Content -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navmenu navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+                        <!-- About Us -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
                             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                 <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
-                                <li><a class="dropdown-item" href="president.html">President</a></li>
-                                <li><a class="dropdown-item" href="general_secretary.html">General Secretary</a></li>
-                                <li><a class="dropdown-item" href="vice_president.html">Vice President</a></li>
-                                <li><a class="dropdown-item" href="principal.html">Principal</a></li>
                                 <li><a class="dropdown-item" href="vision_mission.html">Vision & Mission</a></li>
+                                <li><a class="dropdown-item" href="president.html">President's Message</a></li>
+                                <li><a class="dropdown-item" href="chairman.html">Chairman's Message</a></li>
+                                <li><a class="dropdown-item" href="general_secretary.html">Vice Chancellor's Message</a>
+                                </li>
+                                <li><a class="dropdown-item" href="approvals.html">Approvals</a></li>
+                                <li><a class="dropdown-item" href="ourgrpinstitute.html">Our Group Institute</a></li>
+                                <li><a class="dropdown-item" href="governing.html">Governing Body</a></li>
+                                <li><a class="dropdown-item" href="boardmanag.html">Board of Management</a></li>
+                                <li><a class="dropdown-item" href="universityoff.html">University Officers</a></li>
                                 <li><a class="dropdown-item" href="committees.html">Committees</a></li>
-                                <li><a class="dropdown-item" href="approvals.html">Approval & Affiliation</a>
-                                </li>
+                                <li><a class="dropdown-item" href="mous.html">MOU's</a></li>
+                                <li><a class="dropdown-item" href="membership.html">Membership</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active " href="#" id="academicsDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
-                            <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
-                                <li><a class="dropdown-item" href="courses.html">Courses</a></li>
-                                <li><a class="dropdown-item active" href="po_peo_pso_co.html">PO, PEO, PSO & CO</a></li>
-                                <li><a class="dropdown-item" href="value_added_courses.html">Value Added/Add-on
-                                        Courses</a></li>
-                                <li><a class="dropdown-item" href="field_work.html">Field Work/Project/Internship</a>
-                                </li>
-                                <li><a class="dropdown-item" href="library.html">Library</a></li>
-                                <li><a class="dropdown-item" href="eligibility.html">Eligibility</a></li>
-                            </ul>
-                        </li>
+
+                        <!-- Institute -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="instituteDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Institute</a>
@@ -308,70 +305,79 @@
                                 <li><a class="dropdown-item" href="bed.html">B.Ed</a></li>
                             </ul>
                         </li>
+
+                        <!-- Academics -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="academicsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Academics</a>
+                            <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                                <li><a class="dropdown-item" href="academics_overview.html">Academics Overview</a></li>
+                                <li><a class="dropdown-item" href="academic_cal.html">Academic Calendar</a></li>
+                                <li><a class="dropdown-item active" href="listofholiday.html">List of Holidays</a></li>
+                                <li><a class="dropdown-item" href="#pdf">Academic Regulations</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Admissions -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
                             <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
-                                <li><a class="dropdown-item" href="admissions.html">Admissions</a></li>
-                                <li><a class="dropdown-item" href="program_details.html">Program Details</a></li>
-                                <li><a class="dropdown-item" href="eligibility.html">Eligibility</a></li>
-                                <li><a class="dropdown-item" href="academics_overview.html">Academics Overview</a></li>
-                                <li><a class="dropdown-item" href="fee_structure.html">Fee Structure</a></li>
-                                <li><a class="dropdown-item" href="info_brochure.html">Information Brochure</a></li>
+                                <li><a class="dropdown-item" href="applyonline.html">Apply Online</a></li>
+                                <li><a class="dropdown-item" href="coursesofferes.html">Courses Offered</a></li>
                                 <li><a class="dropdown-item" href="rules_regulations.html">Rules & Regulations</a></li>
-                                <li><a class="dropdown-item" href="admission_form.html">Admission Form</a></li>
-                                <li><a class="dropdown-item" href="required_documents.html">Required Documents</a></li>
+                                <li><a class="dropdown-item" href="scholarship.html">Scholarship Details</a></li>
+                                <li><a class="dropdown-item" href="eligibility.html">Eligibility Criteria</a></li>
+                                <li><a class="dropdown-item" href="doculist.html">Document Required</a></li>
+                                <li><a class="dropdown-item" href="fees_structure.html">Fee Structure</a></li>
+                                <li><a class="dropdown-item" href="admission_faq.html">FAQ's</a></li>
+                                <li><a class="dropdown-item" href="downloadbrochure.html">E-Brochure</a></li>
+                                <!-- <li><a class="dropdown-item" href="refundpolicy.html">Refund Policy</a></li>
+                                <li><a class="dropdown-item" href="photogallery.html">Photo Gallery</a></li> -->
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="placementDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Training & Placement</a>
-                            <ul class="dropdown-menu" aria-labelledby="placementDropdown">
-                                <li><a class="dropdown-item" href="training_placement.html">Training & Placement</a>
-                                </li>
-                                <li><a class="dropdown-item" href="placement_cell.html">Placement Cell</a></li>
-                                <li><a class="dropdown-item" href="career_guidance.html">Career Guidance</a></li>
-                                <li><a class="dropdown-item" href="placement.html">Placement</a></li>
-                                <li><a class="dropdown-item" href="placement_drive.html">Placement Drive</a></li>
+
+                        <!-- Placement -->
+                        <li class="nav-item"><a class="nav-link" href="placement.html">Placements</a></li>
+
+                        <!-- Research -->
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Research</a>
+                            <ul class="dropdown-menu" aria-labelledby="researchDropdown">
+                                <li><a class="dropdown-item" href="research.html">Research</a></li>
+                                <li><a class="dropdown-item" href="exam_notices.html">Notices</a></li>
+                                <li><a class="dropdown-item" href="exam_results.html">Results</a></li>
+                                <li><a class="dropdown-item" href="exam_timetables.html">Timetables</a></li>
+                                <li><a class="dropdown-item" href="exam_apply.html">How to Apply?</a></li>
+                                <li><a class="dropdown-item" href="exam_coe.html">CoE</a></li>
+                                <li><a class="dropdown-item" href="exam_coordinators.html">Co-ordinators</a></li>
                             </ul>
-                        </li>
+                        </li> -->
+
+
+
+                        <!-- IQAC -->
+                        <li class="nav-item"><a class="nav-link" href="iqac.html">IQAC</a></li>
+
+                        <!-- Campus Life -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Facilities</a>
-                            <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
-                                <li><a class="dropdown-item" href="facilities_title.html">Facilities Title</a></li>
-                                <li><a class="dropdown-item" href="facilities_details.html">Facilities Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="alumniDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Alumni</a>
-                            <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
-                                <li><a class="dropdown-item" href="alumni_details.html">Alumni Student Details</a></li>
-                                <li><a class="dropdown-item" href="registration_form.html">Registration Form Details</a>
-                                </li>
-                                <li><a class="dropdown-item" href="alumni_meet.html">Alumni Meet Details</a></li>
-                                <li><a class="dropdown-item" href="alumni_higher_studies.html">Alumni for Higher
-                                        Studies</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" id="campusLifeDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Campus Life</a>
+                            <ul class="dropdown-menu" aria-labelledby="campusLifeDropdown">
                                 <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                <li><a class="dropdown-item" href="eventgallery.html">Events Gallery</a></li>
+                                <li><a class="dropdown-item" href="achievement.html">Achievement</a></li>
+                                <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                                <li><a class="dropdown-item" href="media_coverage.html">Media Coverage</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="consultancyDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Consultancy</a>
-                            <ul class="dropdown-menu" aria-labelledby="consultancyDropdown">
-                                <li><a class="dropdown-item" href="consultancy_pdf.html">PDF</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Events</a>
-                            <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
-                                <li><a class="dropdown-item" href="upcoming_events.html">Upcoming Events</a></li>
-                            </ul>
-                        </li>
-                        <a class="nav-link dropdown-toggle" href="contact_us.html" id="contactDropdown"
-                            role="button">Contact Us</a>
+
+                        <!-- Blogs -->
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
+
+                        <!-- Contact -->
+                        <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>

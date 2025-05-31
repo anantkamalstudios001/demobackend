@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahma Valley College of Engineering & Research Institute</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- AOS for Animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Custom CSS -->
+    <style>
+        /* .hero-banner {
+      position: relative;
+      overflow: hidden;
+    } */
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid py-1" style="background-color: #ea1f28;">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
+            <!-- Left: Menu Links -->
+            <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
+                <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Download
+                        E-Brochures</a>
+                </li>
+                <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Adminssion</a>
+                </li>
+                <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+                        target="_blank">Blogs</a>
+                </li>
+                <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+                        target="_blank">Consultancy Cell</a></li>
+            </ul>
+
+            <!-- Right: Social/Action Images -->
+            <ul class="list-inline mb-0 d-flex align-items-center gap-2">
+                <li><a class="text-white text-decoration-none small" href="#"><span>Get Connected</span></a></li>
+
+                <li class="ml-2">
+                    <a class="text-white" href="#" target="_blank" aria-label="WhatsApp">
+                        <img src="img/whatsapp_icon.png" alt="WhatsApp" width="20" height="20">
+                    </a>
+                </li>
+                <li class="ml-2">
+                    <a class="text-white" href="#" target="_blank" aria-label="360">
+                        <img src="img/g360_icon_brahmavalley_social.png" alt="360" width="20" height="20">
+                    </a>
+                </li>
+                <li class="ml-2">
+                    <a class="text-white" href="#" target="_blank">
+                        <img src="img/fb_icon.png" alt="Facebook" width="20" height="20">
+                    </a>
+                </li>
+                <li class="ml-2">
+                    <a class="text-white" href="https://in.linkedin.com/" target="_blank">
+                        <img src="img/linkedin_icon.png" alt="LinkedIn" width="20" height="20">
+                    </a>
+                </li>
+                <li class="ml-2">
+                    <a class="text-white" href="https://www.youtube.com/" target="_blank">
+                        <img src="img/youtube_icon.png" alt="YouTube" width="20" height="20">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area mb-4">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" height="100"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            </li>
+
+                            <!-- About Us Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">ABOUT US</a>
+                                <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                    <li><a class="dropdown-item" href="about-us.html">NGSPM’S BVCOE (B.Ed.)</a></li>
+                                    <li><a class="dropdown-item" href="vision-mission.html">OUR VISION AND MISSION</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="president.html">PRESIDENT MESSAGE</a></li>
+                                    <li><a class="dropdown-item" href="generalsecretary.html">GENERAL SECRETARY
+                                            MESSAGE</a></li>
+                                    <li><a class="dropdown-item" href="campusdirector.html">CAMPUS DIRECTOR MESSAGE</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="principal.html">PRINCIPAL MESSAGE</a></li>
+                                    <li><a class="dropdown-item" href="faculty.html">FACULTY</a></li>
+                                    <li><a class="dropdown-item" href="coc.html" target="_blank">CODE OF CONDUCT</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="institutional.html" target="_blank">INSTITUTIONAL
+                                            DISTINCTIVENESS</a></li>
+                                    <li><a class="dropdown-item" href="bestpractices.html" target="_blank">BEST
+                                            PRACTICES</a></li>
+                                    <li><a class="dropdown-item" href="institutionalandsocial.html">INSTITUTIONAL VALUES
+                                            AND SOCIAL RESPONSIBILITY</a></li>
+                                    <li><a class="dropdown-item" href="goal_object.html">GOALS AND OBJECTIVES</a></li>
+                                    <li><a class="dropdown-item" href="fees.html">FEES REGULATING AUTHORITY</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Governance Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="governanceDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">GOVERNANCE</a>
+                                <ul class="dropdown-menu" aria-labelledby="governanceDropdown">
+                                    <li><a class="dropdown-item" href="local-develop.html">LOCAL DEVELOPMENT
+                                            COMMITTEE</a></li>
+                                    <li><a class="dropdown-item" href="internal-quality.html">INTERNAL QUALITY ASSURANCE
+                                            CELL</a></li>
+                                    <li><a class="dropdown-item" href="rti.html">RIGHT TO INFORMATION</a></li>
+                                    <li><a class="dropdown-item" href="equalopp.html">EQUAL OPPORTUNITY CELL</a></li>
+                                    <li><a class="dropdown-item" href="stddevelp.html">STUDENTS DEVELOPMENT
+                                            COMMITTEE</a></li>
+                                    <li><a class="dropdown-item" href="grievance-redressal.html">GRIEVANCE REDRESSAL
+                                            CELL</a></li>
+                                    <li><a class="dropdown-item" href="divyang-cell.html">DIVYANG CELL</a></li>
+                                    <li><a class="dropdown-item" href="womens-cell.html">VISHAKHA / WOMEN / ANTI SEXUAL
+                                            HARASSMENT CELL</a></li>
+                                    <li><a class="dropdown-item" href="scst-cell.html">SC/ST GRIEVANCE CELL</a></li>
+                                    <li><a class="dropdown-item" href="placement-cell.html">PLACEMENT CELL</a></li>
+                                    <li><a class="dropdown-item" href="student-council.html">STUDENT COUNCIL</a></li>
+                                    <li><a class="dropdown-item" href="anti-ragging.html">ANTI RAGGING CELL</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Academics Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">ACADEMICS</a>
+                                <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">COURSES</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="bed-course.html">B.Ed. (AFFILIATED TO
+                                                    SPPU)</a></li>
+                                            <li><a class="dropdown-item" href="dsm-course.html">SELF STUDY COURSES
+                                                    DIPLOMA IN SCHOOL MANAGEMENT (YCMOU)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">FEEDBACK</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="feedback-staff.html">FOR STAFF</a></li>
+                                            <li><a class="dropdown-item" href="feedback-students.html">FOR STUDENTS</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="feedback-stakeholders.html">FOR
+                                                    STAKEHOLDERS</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="student-survey.html">STUDENTS SATISFACTION
+                                            SURVEY</a></li>
+                                    <li><a class="dropdown-item" href="cos-pos.html">CO’S & PO’S</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Facilities Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">FACILITIES</a>
+                                <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">LIBRARY</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="library-nep.html">LIBRARY REFERENCE
+                                                    SECTION NEP 2020</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="infrastructure.html">INFRASTRUCTURE</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Student Corner Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="studentCornerDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">STUDENT CORNER</a>
+                                <ul class="dropdown-menu" aria-labelledby="studentCornerDropdown">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">ADMISSION</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="admission-form.html">INQUIRY FORM AND
+                                                    ADMISSION FORM</a></li>
+                                            <li><a class="dropdown-item" href="fees-admission.html">FEES</a></li>
+                                            <li><a class="dropdown-item" href="scholarship.html">SCHOLARSHIP</a></li>
+                                            <li><a class="dropdown-item" href="required-docs.html">REQUIRED DOCUMENT
+                                                    LIST FOR ADMISSION</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="student-achievements.html">STUDENTS
+                                            ACHIEVEMENT</a></li>
+                                    <li><a class="dropdown-item" href="cbcs-syllabus.html">CBCS SYSTEM AND SYLLABUS</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="academic-calendar.html">ACADEMIC CALENDAR</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="study-material.html">STUDY MATERIAL</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">LAB</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="ict-lab.html">ICT LAB</a></li>
+                                            <li><a class="dropdown-item" href="language-lab.html">LANGUAGE LAB</a></li>
+                                            <li><a class="dropdown-item" href="psychology-lab.html">PSYCHOLOGY LAB</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="science-lab.html">SCIENCE LAB</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="exam-results.html">EXAMINATION AND RESULT</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="placement-drive.html">PLACEMENT DRIVE</a></li>
+                                    <li><a class="dropdown-item" href="alumni.html">ALUMNI</a></li>
+                                    <li><a class="dropdown-item" href="mous.html">MOU’S</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- News & Events Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="newsEventsDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">NEWS & EVENTS</a>
+                                <ul class="dropdown-menu" aria-labelledby="newsEventsDropdown">
+                                    <li><a class="dropdown-item" href="cultural-events.html">CULTURAL</a></li>
+                                    <li><a class="dropdown-item" href="sports-events.html">SPORTS</a></li>
+                                    <li><a class="dropdown-item" href="field-visit.html">FIELD VISIT/ STUDY TOUR</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="art-craft.html">ART AND CRAFT</a></li>
+                                    <li><a class="dropdown-item" href="music.html">MUSIC</a></li>
+                                    <li><a class="dropdown-item" href="research-publication.html">RESEARCH AND
+                                            PUBLICATION</a></li>
+                                    <li><a class="dropdown-item" href="innovation.html">INNOVATION PUBLICATIONS</a></li>
+                                    <li><a class="dropdown-item" href="extension.html">EXTENSION ACTIVITIES</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- NAAC Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="naacDropdown" data-bs-toggle="dropdown"
+                                    aria-expanded="false">NAAC</a>
+                                <ul class="dropdown-menu" aria-labelledby="naacDropdown">
+                                    <li><a class="dropdown-item" href="accreditation.html">ACCREDITATION</a></li>
+                                    <li><a class="dropdown-item" href="ssr.html">SSR</a></li>
+                                    <li><a class="dropdown-item" href="iqac.html" target="_blank">IQAC CELL</a></li>
+                                    <li><a class="dropdown-item" href="academic-committee.html">ACADEMIC MONITORING
+                                            COMMITTEE</a></li>
+                                    <li><a class="dropdown-item" href="naac-documents.html">NAAC DOCUMENTS</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Gallery Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">GALLERY</a>
+                                <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                                    <li><a class="dropdown-item" href="gallery-cultural.html">CULTURAL</a></li>
+                                    <li><a class="dropdown-item" href="gallery-sports.html">SPORTS</a></li>
+                                    <li><a class="dropdown-item" href="gallery-field-visit.html">FIELD VISIT/ STUDY
+                                            TOUR</a></li>
+                                    <li><a class="dropdown-item" href="gallery-art-craft.html">ART AND CRAFT</a></li>
+                                    <li><a class="dropdown-item" href="gallery-music.html">MUSIC</a></li>
+                                    <li><a class="dropdown-item" href="gallery-innovation.html">INNOVATION
+                                            PUBLICATIONS</a></li>
+                                    <li><a class="dropdown-item" href="gallery-extension.html">EXTENSION ACTIVITIES</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Contact -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner" data-aos="fade-up">
+        <img src="img/1920x800.jpg" alt="Brahma Valley Campus">
+        <div class="hero-overlay">
+            <div>
+                <h1 class="text-light">Welcome to Brahma Valley B Ed College</h1>
+                <a href="admission-form.html" class="btn btn-primary">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Director Message Section -->
+    <section class="president-section py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-5" data-aos="fade-up">Director's Message</h3>
+            <div class="card border-0 shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                <div class="row g-0">
+                    <!-- Director Image & Info -->
+                    <div class="col-lg-5 d-flex flex-column align-items-center justify-content-center bg-white p-4">
+                        <img src="img/team/director.png" alt="Director" class="img-fluid rounded shadow mb-3" />
+                        <div class="text-center">
+                            <p class="mb-1"><strong>Dr. Chandrashekhar K. Patil</strong></p>
+                            <p class="mb-1"><strong>Campus Director</strong></p>
+                            <p class="mb-0">Nashik Gramin Shikshan Prasarak Mandal</p>
+                        </div>
+                    </div>
+
+                    <!-- Director Message -->
+                    <div class="col-lg-7">
+                        <div class="card-body p-4">
+                            <h4 class="card-title">From The Director's Desk</h4>
+                            <p>I take great pleasure in welcoming you to the Nashik Gramin Shikshan Prasarak Mandal. We
+                                are committed to the holistic growth and development of every student, ensuring a strong
+                                foundation for a successful career.</p>
+
+                            <p>Our institutions are backed by a team of highly qualified, experienced, and dedicated
+                                faculty members. They not only deliver academic excellence but also mentor students in
+                                their overall personality and skill development.</p>
+
+                            <p>We believe that every student has unique potential, and it is our mission to nurture that
+                                potential with care, commitment, and competence. Our educational environment fosters
+                                independence, confidence, and leadership qualities.</p>
+
+                            <p>I am confident that the students who graduate from our institutions will emerge as
+                                responsible, capable, and future-ready individuals. We are here to support you in every
+                                step of your academic journey and personal growth.</p>
+
+                            <p class="fw-bold mt-4">
+                                Best Wishes,<br>
+                                Dr. Chandrashekhar K. Patil<br>
+                                Campus Director
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--================ Start footer Area  =================-->
+    <footer id="page-footer" class="footer-area l-footer" itemscope itemtype="https://schema.org/WPFooter">
+        <section class="l-section color_footer-bottom">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- About Us Column -->
+                    <div class="col-lg-4">
+                        <h4><strong>About Us</strong></h4>
+                        <div class="my-3"></div>
+                        <div class="footlog text-center">
+                            <img width="279" height="181"
+                                src="https://bed.brahmavalley.com/wp-content/uploads/2023/03/whi.png" class="img-fluid"
+                                alt="Brahma Valley B.Ed. College Logo" decoding="async" loading="lazy">
+                        </div>
+                        <p>Brahma Valley College of Education (B.Ed.) aims to impart quality education in a safe,
+                            natural
+                            environment that promotes discipline, motivation, and learning.</p>
+                    </div>
+                    <!-- Information Column -->
+                    <div class="col-lg-4">
+                        <h4><strong>Information</strong></h4>
+                        <div class="my-3"></div>
+                        <div class="w-menu footmen d-flex">
+                            <ul id="menu-header-menu" class="menu" style="margin-right: 60px;">
+                                <li><a href="http://bed.brahmavalley.com/" aria-current="page">Home</a></li>
+                                <li><a href="https://bed.brahmavalley.com/admission/">Admission</a></li>
+                                <li><a href="https://bed.brahmavalley.com/principal-desk/">Principal Desk</a></li>
+                                <li><a href="https://bed.brahmavalley.com/board-members/">Board Members</a></li>
+                                <li><a href="https://bed.brahmavalley.com/faculty/">Faculty</a></li>
+                                <li><a href="https://bed.brahmavalley.com/lmc-committee/">LMC Committee</a></li>
+                                <li><a href="https://bed.brahmavalley.com/about-us/">About Us</a></li>
+                            </ul>
+                            <ul id="menu-header-menu" class="menu">
+                                <li><a href="https://bed.brahmavalley.com/anti-ragging-committee/">Anti-Ragging
+                                        Committee</a></li>
+                                <li><a href="https://bed.brahmavalley.com/facilities/">Facilities</a></li>
+                                <li><a href="https://bed.brahmavalley.com/gallery/">Gallery</a></li>
+                                <li><a href="#">Downloads</a></li>
+                                <li><a href="#">RTI</a></li>
+                                <li><a href="https://bed.brahmavalley.com/contact-us/">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Contact Us Column -->
+                    <div class="col-lg-4">
+                        <h4><strong>Contact Us</strong></h4>
+                        <div class="my-3"></div>
+                        <div class="w-contacts">
+                            <div class="w-contacts-list">
+                                <div class="w-contacts-item for_address">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="w-contacts-item-value">Brahma Valley Educational Campus, Trimbak
+                                        Road,
+                                        Anjaneri,
+                                        Nashik-422213.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-contacts">
+                            <div class="w-contacts-list">
+                                <div class="w-contacts-item for_address">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="w-contacts-item-value">Palika Bazar Complex, Near Railway Booking
+                                        Office,
+                                        Sharanpur-Trimbak Link Road, Nashik-422002.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-3"></div>
+                        <div class="w-contacts">
+                            <div class="w-contacts-list">
+                                <div class="w-contacts-item for_phone">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span class="w-contacts-item-value">(0253)2312904</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-3"></div>
+                        <div class="w-contacts">
+                            <div class="w-contacts-list">
+                                <div class="w-contacts-item for_email">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="w-contacts-item-value"><a
+                                            href="mailto:brahmavalleybed2007@yahoo.in">brahmavalleybed2007@yahoo.in</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height:10px;"></div>
+                        <div class="w-socials color_text shape_square style_default hover_fade">
+                            <div class="w-socials-list">
+                                <div class="w-socials-item facebook">
+                                    <a class="w-socials-item-link"
+                                        href="https://www.facebook.com/profile.php?id=100091000913073" target="_blank"
+                                        rel="noopener nofollow" title="Facebook" aria-label="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                                <div class="w-socials-item twitter">
+                                    <a class="w-socials-item-link" href="#" target="_blank" rel="noopener nofollow"
+                                        title="Twitter" aria-label="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="w-socials-item instagram">
+                                    <a class="w-socials-item-link" href="#" target="_blank" rel="noopener nofollow"
+                                        title="Instagram" aria-label="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-top">
+            <div class="container">
+                <div class="my-3"></div>
+                <p class="text-center">Copyright © 2025 Brahma Valley College of Education (B.Ed.) – All Rights
+                    Reserved.</p>
+                <div class="my-3"></div>
+            </div>
+        </section>
+    </footer>
+    <!--================ End footer Area  =================-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/owl-carousel-thumb.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Dropdown submenu on hover for desktop
+        document.querySelectorAll('.dropdown-submenu').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                if (window.innerWidth > 992) {
+                    this.querySelector('.dropdown-menu').style.display = 'block';
+                }
+            });
+            item.addEventListener('mouseleave', function () {
+                if (window.innerWidth > 992) {
+                    this.querySelector('.dropdown-menu').style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <title>B Ed College</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/themify-icons.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .why_join_area {
+      padding: 50px 0;
+      background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      background-attachment: fixed;
+      color: #ffffff;
+    }
+
+    /* Infrastructure Section Background and Animation */
+    .infrastructure_area {
+      position: relative;
+      background: linear-gradient(to bottom, #f8f9fa, #ffffff),
+        url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-blend-mode: overlay;
+      animation: fadeIn 1s ease-in;
+      overflow-x: hidden;
+    }
+
+    /* Cards Styling */
+    .infra_card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .infra_card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Images Styling */
+    .infra_img {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+
+    .infra_card:hover .infra_img {
+      transform: scale(1.05);
+    }
+
+    /* Fade-in Keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Divider Styling */
+    .custom-divider {
+      height: 3px;
+      width: 60%;
+      background-color: #dee2e6;
+      margin: 3rem auto 0;
+      border-radius: 2px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      height: 40px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      font-size: 1.8rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      background-color: #1a1919;
+    }
+
+    .faq_testimonial_area {
+      padding: 50px 0;
+      background: linear-gradient(135deg, #4e73df 0%, #a3bffa 100%);
+      animation: fadeIn 1s ease-in;
+    }
+
+    .faq_testimonial_area h3,
+    .faq_testimonial_area h4 {
+      color: #ffffff;
+    }
+
+    .accordion-button {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      color: #1e3a8a;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+  <div class="container-fluid py-1" style="background-color: #ea1f28;">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
+      <!-- Left: Menu Links -->
+      <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Download
+            E-Brochures</a>
+        </li>
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Adminssion</a></li>
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#" target="_blank">Blogs</a>
+        </li>
+        <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a></li> -->
+        <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Contact Us</a></li> -->
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+            target="_blank">Consultancy Cell</a></li>
+      </ul>
+
+      <!-- Right: Social/Action Images -->
+      <ul class="list-inline mb-0 d-flex align-items-center gap-2">
+        <li><a class="text-white text-decoration-none small" href="#"><span>Get Connected</span></a></li>
+
+        <li class="ml-2">
+          <a class="text-white" href="#" target="_blank" aria-label="WhatsApp">
+            <img src="img/whatsapp_icon.png" alt="WhatsApp" width="20" height="20">
+          </a>
+        </li>
+        <li class="ml-2">
+          <a class="text-white" href="#" target="_blank" aria-label="360">
+            <img src="img/g360_icon_brahmavalley_social.png" alt="360" width="20" height="20">
+          </a>
+        </li>
+        <li class="ml-2">
+          <a class="text-white" href="#" target="_blank">
+            <img src="img/fb_icon.png" alt="Facebook" width="20" height="20">
+          </a>
+        </li>
+        <!-- <li class="ml-2">
+          <a class="text-white" href="#" target="_blank" aria-label="Twitter">
+            <img src="img/twitter.png" alt="Twitter" width="20" height="20">
+          </a>
+        </li> -->
+        <li class="ml-2">
+          <a class="text-white" href="https://in.linkedin.com/" target="_blank">
+            <img src="img/linkedin_icon.png" alt="LinkedIn" width="20" height="20">
+          </a>
+        </li>
+        <!-- <li class="ml-2">
+          <a class="text-white" href="https://www.instagram.com/" target="_blank">
+            <img src="img/instagram.png" alt="Instagram" width="20" height="20">
+          </a>
+        </li> -->
+        <li class="ml-2">
+          <a class="text-white" href="https://www.youtube.com/" target="_blank">
+            <img src="img/youtube_icon.png" alt="YouTube" width="20" height="20">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" height="100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+
+              <!-- About Us Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">ABOUT US</a>
+                <ul class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                  <li><a class="dropdown-item" href="#">NGSPM’S BVCOE
+                      (B.Ed.)</a></li>
+                  <li><a class="dropdown-item" href="#">OUR VISION
+                      AND MISSION</a></li>
+                  <li><a class="dropdown-item" href="#">PRESIDENT
+                      MESSAGE</a></li>
+                  <li><a class="dropdown-item" href="#">GENERAL
+                      SECRETARY
+                      MESSAGE</a></li>
+                  <li><a class="dropdown-item" href="#">CAMPUS
+                      DIRECTOR MESSAGE</a></li>
+                  <li><a class="dropdown-item" href="#">PRINCIPAL
+                      MESSAGE</a></li>
+                  <li><a class="dropdown-item" href="#">FACULTY</a></li>
+                  <li><a class="dropdown-item" href="#" target="_blank">CODE OF CONDUCT</a></li>
+                  <li><a class="dropdown-item" href="#" target="_blank">INSTITUTIONAL DISTINCTIVENESS</a></li>
+                  <li><a class="dropdown-item" href="#" target="_blank">BEST PRACTICES</a></li>
+                  <li><a class="dropdown-item" href="#">INSTITUTIONAL VALUES AND SOCIAL RESPONSIBILITY</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">GOALS AND OBJECTIVES</a></li>
+                  <li><a class="dropdown-item" href="#">FEES REGULATING
+                      AUTHORITY</a></li>
+                </ul>
+              </li>
+
+              <!-- Governance Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="governanceDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">GOVERNANCE</a>
+                <ul class="dropdown-menu" aria-labelledby="governanceDropdown">
+                  <li><a class="dropdown-item" href="#">LOCAL DEVELOPMENT COMMITTEE</a></li>
+                  <li><a class="dropdown-item" href="#">INTERNAL
+                      QUALITY ASSURANCE CELL</a></li>
+                  <li><a class="dropdown-item" href="#">RIGHT
+                      TO INFORMATION</a></li>
+                  <li><a class="dropdown-item" href="#">EQUAL
+                      OPPORTUNITY
+                      CELL</a></li>
+                  <li><a class="dropdown-item" href="#">STUDENTS
+                      DEVELOPMENT COMMITTEE</a></li>
+                  <li><a class="dropdown-item" href="#">GRIEVANCE
+                      REDRESSAL
+                      CELL</a></li>
+                  <li><a class="dropdown-item" href="#">DIVYANG
+                      CELL</a></li>
+                  <li><a class="dropdown-item" href="#">VISHAKHA/WOMENS/ANTI
+                      SEXUAL HARASSMENT CELL</a></li>
+                  <li><a class="dropdown-item" href="#">SC/ST
+                      GRIEVANCE CELL</a></li>
+                  <li><a class="dropdown-item" href="#">PLACEMENT
+                      CELL</a></li>
+                  <li><a class="dropdown-item" href="#">STUDENT
+                      COUNCIL</a></li>
+                  <li><a class="dropdown-item" href="#">ANTI RAGGING
+                      CELL</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Academics Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">ACADEMICS</a>
+                <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">COURSES</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">B.Ed. (AFFILIATED TO SAVITRIBAI PHULE PUNE
+                          UNIVERSITY)</a></li>
+                      <li><a class="dropdown-item" href="#">SELF STUDY COURSES DIPLOMA IN SCHOOL
+                          MANAGEMENT (AFFILIATED TO YCMOU)</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">FEEDBACK</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">FOR STAFF</a></li>
+                      <li><a class="dropdown-item" href="#">FOR STUDENTS</a></li>
+                      <li><a class="dropdown-item" href="#">FOR STAKEHOLDERS</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">STUDENTS SATISFACTION SURVEY</a></li>
+                  <li><a class="dropdown-item" href="#">CO’S & PO’S</a></li>
+                </ul>
+              </li>
+
+              <!-- Facilities Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">FACILITIES</a>
+                <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">LIBRARY</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">LIBRARY
+                          REFERENCE SECTION NEP 2020</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">INFRASTRUCTURE</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Student Corner Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="studentCornerDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">STUDENT CORNER</a>
+                <ul class="dropdown-menu" aria-labelledby="studentCornerDropdown">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">ADMISSION</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">INQUIRY FORM AND ADMISSION FORM</a></li>
+                      <li><a class="dropdown-item" href="#">FEES</a></li>
+                      <li><a class="dropdown-item" href="#">SCHOLARSHIP</a></li>
+                      <li><a class="dropdown-item" href="#">REQUIRED DOCUMENT LIST FOR ADMISSION</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">STUDENTS ACHIEVEMENT</a></li>
+                  <li><a class="dropdown-item" href="#">CBCS SYSTEM AND SYLLABUS</a></li>
+                  <li><a class="dropdown-item" href="#">ACADEMIC CALENDAR</a></li>
+                  <li><a class="dropdown-item" href="#">STUDY MATERIAL</a></li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">LAB</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">ICT LAB</a></li>
+                      <li><a class="dropdown-item" href="#">LANGUAGE LAB</a></li>
+                      <li><a class="dropdown-item" href="#">PSYCHOLOGY LAB</a></li>
+                      <li><a class="dropdown-item" href="#">SCIENCE LAB</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">EXAMINATION AND RESULT</a></li>
+                  <li><a class="dropdown-item" href="#">PLACEMENT DRIVE</a></li>
+                  <li><a class="dropdown-item" href="#">ALUMNI</a></li>
+                  <li><a class="dropdown-item" href="#">MOU’S</a></li>
+                </ul>
+              </li>
+
+              <!-- News & Events Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="newsEventsDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">NEWS & EVENTS</a>
+                <ul class="dropdown-menu" aria-labelledby="newsEventsDropdown">
+                  <li><a class="dropdown-item" href="#">CULTURAL</a></li>
+                  <li><a class="dropdown-item" href="#">SPORTS</a></li>
+                  <li><a class="dropdown-item" href="#">FIELD VISIT/ STUDY TOUR</a></li>
+                  <li><a class="dropdown-item" href="#">ART AND CRAFT</a></li>
+                  <li><a class="dropdown-item" href="#">MUSIC</a></li>
+                  <li><a class="dropdown-item" href="#">RESEARCH AND PUBLICATION</a></li>
+                  <li><a class="dropdown-item" href="#">INNOVATION PUBLICATIONS</a></li>
+                  <li><a class="dropdown-item" href="#">EXTENSION ACTIVITIES</a></li>
+                </ul>
+              </li>
+
+              <!-- NAAC Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="naacDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">NAAC</a>
+                <ul class="dropdown-menu" aria-labelledby="naacDropdown">
+                  <li><a class="dropdown-item" href="#">ACCREDITATION</a></li>
+                  <li><a class="dropdown-item" href="#">SSR</a></li>
+                  <li><a class="dropdown-item" href="#" target="_blank">IQAC CELL</a></li>
+                  <li><a class="dropdown-item" href="#">ACADEMIC MONITORING COMMITTEE</a></li>
+                  <li><a class="dropdown-item" href="#">NAAC
+                      DOCUMENTS</a></li>
+                </ul>
+              </li>
+
+              <!-- Gallery Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="galleryDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">GALLERY</a>
+                <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                  <li><a class="dropdown-item" href="#">CULTURAL</a></li>
+                  <li><a class="dropdown-item" href="#">SPORTS</a></li>
+                  <li><a class="dropdown-item" href="#">FIELD VISIT/ STUDY TOUR</a></li>
+                  <li><a class="dropdown-item" href="#">ART AND CRAFT</a></li>
+                  <li><a class="dropdown-item" href="#">MUSIC</a></li>
+                  <li><a class="dropdown-item" href="#">INNOVATION PUBLICATIONS</a></li>
+                  <li><a class="dropdown-item" href="#">EXTENSION ACTIVITIES</a></li>
+                </ul>
+              </li>
+              <!-- Contact -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================ End Header Menu Area =================-->
+
+  <!--================ Start Home Banner Area =================-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+
+      <!-- Slide Template -->
+      <div class="carousel-item active position-relative">
+        <div class="text-overlay text-center py-3 w-100 position-absolute text-white">
+          <h4 class="fw-bold mb-1">Nashik Gramin Shikshan Prasarak Mandals</h4>
+          <h4 class="fw-bold mb-1">BRAHMA VALLEY <br>COLLEGE OF EDUCATION (B.ED.)</h4>
+          <h5 class="fw-normal">Id. No PU/NS/B.ED/104/2007</h5>
+        </div>
+        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div> -->
+      </div>
+
+      <!-- Repeat for Slide 2 -->
+      <div class="carousel-item position-relative">
+        <div class="text-overlay text-center py-3 w-100 position-absolute text-white">
+          <h4 class="fw-bold mb-1">Nashik Gramin Shikshan Prasarak Mandals</h4>
+          <h4 class="fw-bold mb-1">BRAHMA VALLEY <br>COLLEGE OF EDUCATION (B.ED.)</h4>
+          <h5 class="fw-normal">Id. No PU/NS/B.ED/104/2007</h5>
+        </div>
+        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div> -->
+      </div>
+
+      <!-- Repeat for Slide 3 -->
+      <div class="carousel-item position-relative">
+        <div class="text-overlay text-center py-3 w-100 position-absolute text-white">
+          <h4 class="fw-bold mb-1">Nashik Gramin Shikshan Prasarak Mandals</h4>
+          <h4 class="fw-bold mb-1">BRAHMA VALLEY <br>COLLEGE OF EDUCATION (B.ED.)</h4>
+          <h5 class="fw-normal">Id. No PU/NS/B.ED/104/2007</h5>
+        </div>
+        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
+        <!-- <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div> -->
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+
+
+  <!--================ End Home Banner Area =================-->
+
+  <!--================ Start Feature Area =================-->
+  <section class="about_area section_gap">
+    <div class="container">
+      <h3 class="text-center mb-5" style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 600;">
+        Admission Information</h3>
+      <div class="row h_blog_item align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="h_blog_text">
+            <div class="h_blog_text_inner left right">
+              <h4 class="mb-3" style="font-size: 1.8rem; font-weight: 500;">Admission Process</h4>
+              <p class="mb-3">
+                Admission is conducted through the Maharashtra Common Entrance Cell, CET, organized by the Maharashtra
+                Government.
+              </p>
+              <p class="mb-3">
+                <strong>Course Duration:</strong> 2 Years<br>
+                <strong>Intake:</strong> 100 (50+50)
+              </p>
+              <h5 class="text-center mt-4 mb-3" style="font-size: 1.5rem; font-weight: 500;"><u>Eligibility Criteria</u>
+              </h5>
+              <ul class="list-unstyled text-center">
+                <li>Minimum 45% marks in graduation (any faculty) + CET PASS for Reserved Category</li>
+                <li>Minimum 50% marks in graduation (any faculty) + CET PASS for Open Category</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="h_blog_img">
+            <img class="img-fluid" src="img/about.png" alt="Admission Information" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about_area section_gap" style="padding-top: 20px;">
+    <div class="container">
+      <h3 class="text-center" style=" font-family: 'Poppins'">About Us</h3>
+      <div class="row h_blog_item">
+        <div class="col-lg-6">
+          <div class="h_blog_img">
+            <img class="img-fluid" src="img/about.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="h_blog_text">
+            <div class="h_blog_text_inner left right">
+              <h4 style=" font-family: 'Poppins'">Welcome to our Institute</h4>
+              <p style=" font-family: 'Poppins'">
+                Subdue whales void god which living don't midst lesser
+                yielding over lights whose. Cattle greater brought sixth fly
+                den dry good tree isn't seed stars were.
+              </p>
+              <p style=" font-family: 'Poppins'">
+                Subdue whales void god which living don't midst lesser yieldi
+                over lights whose. Cattle greater brought sixth fly den dry
+                good tree isn't seed stars were the boring.
+              </p>
+              <a class="primary-btn" href="about-us.html">
+                Learn More <i class="ti-arrow-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why_join_area">
+    <div class="container">
+      <h3 class="text-center mb-5 fw-bold">Why Join BVCE (B.Ed)</h3>
+      <div class="text-center mb-4">
+        <i class="bi bi-mortarboard-fill why_join_icon"></i>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="why_join_card card shadow border-0 rounded">
+            <div class="accordion" id="whyJoinAccordion">
+              <div class="accordion-item border-0">
+                <h4 class="accordion-header">
+                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#accessibility" aria-expanded="true" aria-controls="accessibility">
+                    Prime Accessibility
+                  </button>
+                </h4>
+                <div id="accessibility" class="accordion-collapse collapse show" data-bs-parent="#whyJoinAccordion">
+                  <div class="accordion-body">
+                    <p class="mb-3"><strong>Easily approachable campus:</strong></p>
+                    <ol>
+                      <li>By road, just 10 KM from Nashik City on Nashik-Trimbakeshwar Highway</li>
+                      <li>By road, 180 KM from Aurangabad</li>
+                      <li>By rail, 20 KM from Nashik Road railway station and 65 KM from Manmad Railway Junction</li>
+                      <li>Nearest airport, about 40 KM away at Ozar Mig and 180 KM away at Mumbai Metro City</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#facilities" aria-expanded="false" aria-controls="facilities">
+                    World-Class Facilities
+                  </button>
+                </h4>
+                <div id="facilities" class="accordion-collapse collapse" data-bs-parent="#whyJoinAccordion">
+                  <div class="accordion-body">
+                    <ol>
+                      <li>Well-qualified and experienced faculty</li>
+                      <li>Central E-library facility for all colleges</li>
+                      <li>Voluminous library with adequate reference books, textbooks, journals, and periodicals</li>
+                      <li>Well-furnished and ventilated hostel with hygienic cafeteria</li>
+                      <li>Excellent transport facility</li>
+                      <li>Wi-Fi campus with 20 Mbps bandwidth</li>
+                      <li>Well-equipped laboratories as per norms</li>
+                      <li>Campus with hostel facilities for boys (600 capacity) and girls (400 capacity) with all
+                        necessary amenities</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#studentLife" aria-expanded="false" aria-controls="studentLife">
+                    Vibrant Student Life
+                  </button>
+                </h4>
+                <div id="studentLife" class="accordion-collapse collapse" data-bs-parent="#whyJoinAccordion">
+                  <div class="accordion-body">
+                    <ol>
+                      <li>Emphasis on sports and personality development</li>
+                      <li>Cultural Fiesta every year in Jan-Feb under the banner Brahmotsav</li>
+                      <li>Huge playground and gymnasium facilities for students</li>
+                      <li>Central amphitheatre</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="why_join_img">
+            <img class="img-fluid rounded shadow"
+              src="https://bed.brahmavalley.com/wp-content/uploads/2023/03/Why-Choose-us.jpg" alt="Why Choose BVCE"
+              loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Infrastructure Section -->
+  <section class="infrastructure_area py-5">
+    <div class="container">
+      <h3 class="text-center mb-4 pt-4 fw-bold">Our Infrastructure</h3>
+      <div class="text-center mb-4">
+        <i class="bi bi-building-fill infra_icon display-4 text-primary"></i>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="infra_card card h-100 shadow-sm border-0 rounded-4 hover-shadow">
+            <img class="card-img-top rounded-top infra_img"
+              src="https://bed.brahmavalley.com/wp-content/uploads/2023/03/lib2.jpg" alt="Well-Equipped Library"
+              loading="lazy" />
+            <div class="card-body text-center">
+              <h4 class="card-title mb-3">Well-Equipped Library</h4>
+              <p class="card-text">A spacious library with ample reference books, textbooks, journals, and a dedicated
+                reading hall.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="infra_card card h-100 shadow-sm border-0 rounded-4 hover-shadow">
+            <img class="card-img-top rounded-top infra_img"
+              src="https://bed.brahmavalley.com/wp-content/uploads/2023/03/computer.jpg" alt="Centralized Computer Lab"
+              loading="lazy" />
+            <div class="card-body text-center">
+              <h4 class="card-title mb-3">Centralized Computer Lab</h4>
+              <p class="card-text">A modern computer lab with high-speed internet access for all students.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="infra_card card h-100 shadow-sm border-0 rounded-4 hover-shadow">
+            <img class="card-img-top rounded-top infra_img"
+              src="https://bed.brahmavalley.com/wp-content/uploads/2023/03/3-1.jpg" alt="Hostel Facility"
+              loading="lazy" />
+            <div class="card-body text-center">
+              <h4 class="card-title mb-3">Hostel Facility</h4>
+              <p class="card-text">Well-furnished, ventilated hostels with trained staff ensuring security, health, and
+                hygiene.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="infra_card card h-100 shadow-sm border-0 rounded-4 hover-shadow">
+            <img class="card-img-top rounded-top infra_img"
+              src="https://bed.brahmavalley.com/wp-content/uploads/2022/12/rowbg-img1.jpg" alt="Cafeteria"
+              loading="lazy" />
+            <div class="card-body text-center">
+              <h4 class="card-title mb-3">Cafeteria</h4>
+              <p class="card-text">A professionally managed canteen offering nutritious food, clean drinking water, and
+                a hygienic environment.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col">
+          <div class="infra_card card h-100 shadow-sm border-0 rounded-4 hover-shadow">
+            <img class="card-img-top rounded-top infra_img"
+              src="https://bed.brahmavalley.com/wp-content/uploads/2023/03/t2.jpg" alt="Transportation"
+              loading="lazy" />
+            <div class="card-body text-center">
+              <h4 class="card-title mb-3">Transportation</h4>
+              <p class="card-text">Regular bus services by MSRTC from Nashik city and district to the college campus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col">
+          <div class="infra_card card h-100 shadow-sm border-0 rounded-4 hover-shadow">
+            <img class="card-img-top rounded-top infra_img"
+              src="https://bed.brahmavalley.com/wp-content/uploads/2023/03/5-Tips-For-Students-For-Personality-Development.png"
+              alt="Personality Development" loading="lazy" />
+            <div class="card-body text-center">
+              <h4 class="card-title mb-3">Personality Development</h4>
+              <p class="card-text">Programs to equip students with skills to manage stress, time, and succeed in a
+                competitive world.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col">
+          <div class="infra_card card h-100 shadow-sm border-0 rounded-4 hover-shadow">
+            <img class="card-img-top rounded-top infra_img"
+              src="https://bed.brahmavalley.com/wp-content/uploads/2023/03/4.jpeg" alt="Cultural Fiesta & Sports"
+              loading="lazy" />
+            <div class="card-body text-center">
+              <h4 class="card-title mb-3">Cultural Fiesta & Sports</h4>
+              <p class="card-text">Annual celebrations and sports events like Gandhi Jayanti, Savitribai Phule Jayanti,
+                Teachers' Day, and more.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col">
+          <div class="infra_card card h-100 shadow-sm border-0 rounded-4 hover-shadow">
+            <img class="card-img-top rounded-top infra_img"
+              src="https://bed.brahmavalley.com/wp-content/uploads/2022/12/rowbg-img1.jpg" alt="Scholarship"
+              loading="lazy" />
+            <div class="card-body text-center">
+              <h4 class="card-title mb-3">Scholarship</h4>
+              <p class="card-text">Scholarships and freeships as per Maharashtra Government for eligible and
+                economically backward students.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-divider mt-5"></div>
+    </div>
+  </section>
+
+
+
+  <section class="faq_testimonial_area py-5">
+    <div class="container">
+      <div class="row g-5">
+        <!-- FAQ Section -->
+        <div class="col-lg-6">
+          <div class="text-center">
+            <h3 class="mb-4" style="font-family: 'Poppins', sans-serif;">Frequently Asked Questions</h3>
+            <i class="bi bi-question-circle-fill fs-1 text-primary mb-3"></i>
+          </div>
+          <div class="card shadow-sm border-0 rounded">
+            <div class="accordion" id="faqAccordion">
+              <!-- FAQ 1 -->
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    What are the eligibility criteria for the B.Ed program?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Candidates must have a bachelor's degree with a minimum of 50% marks (45% for reserved categories)
+                    from a recognized university.
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ 2 -->
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    Is there an entrance exam for admission?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, you must qualify the MAH-B.Ed CET conducted by the State Common Entrance Test Cell,
+                    Maharashtra.
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ 3 -->
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    Are hostel facilities available for students?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, BVCE offers hostels for boys (600 capacity) and girls (400 capacity) with all essential
+                    amenities.
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ 4 -->
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    What scholarships are available for students?
+                  </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Scholarships are available per Government of Maharashtra guidelines for eligible and economically
+                    weaker students.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div class="col-lg-6">
+          <div class="text-center">
+            <h3 class="mb-4" style="font-family: 'Poppins', sans-serif;">What Our Students Say</h3>
+            <i class="bi bi-chat-quote-fill fs-1 text-success mb-3"></i>
+          </div>
+          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carousel">
+              <!-- Testimonial 1 -->
+              <div class="carousel-item active">
+                <div class="card shadow-sm border-0 rounded">
+                  <div class="card-body position-relative">
+                    <i class="bi bi-quote text-success position-absolute" style="font-size: 3rem; top: 0; left: 0;"></i>
+                    <p class="pt-4">“The faculty at BVCE are incredibly supportive, and the hands-on teaching practice
+                      helped me gain confidence as an educator. The campus facilities are top-notch!”</p>
+                    <div>
+                      <p class="fw-bold mb-0">Priya Sharma</p>
+                      <p class="text-muted mb-0 small">B.Ed Student, Nashik</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="carousel-item">
+                <div class="card shadow-sm border-0 rounded">
+                  <div class="card-body position-relative">
+                    <i class="bi bi-quote text-success position-absolute" style="font-size: 3rem; top: 0; left: 0;"></i>
+                    <p class="pt-4">“The cultural events and personality development programs at BVCE made my college
+                      experience unforgettable. I feel well-prepared for my teaching career.”</p>
+                    <div>
+                      <p class="fw-bold mb-0">Rahul Patil</p>
+                      <p class="text-muted mb-0 small">B.Ed Student, Aurangabad</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators mt-3">
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="gallery_area">
+    <div class="container">
+      <h3 class="text-center mb-5" style="font-family: 'Poppins', sans-serif;">Gallery</h3>
+      <div class="text-center mb-4">
+        <i class="bi bi-camera-fill gallery_icon"></i>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="gallery">
+        <div class="col">
+          <div class="gallery_card card shadow-sm border-0 rounded h-100">
+            <a href="https://bed.brahmavalley.com/wp-content/uploads/2023/06/YOGA-LECTURE.jpg"
+              data-rel="lightcase:gallery" title="Yoga Lecture">
+              <img class="card-img-top rounded-top gallery_img"
+                src="https://bed.brahmavalley.com/wp-content/uploads/2023/06/YOGA-LECTURE-300x225.jpg"
+                alt="Yoga Lecture at BVCE" loading="lazy" />
+            </a>
+            <div class="card-body text-center">
+              <h4 class="card-title mb-0" style="font-size: 1rem;">Yoga Lecture</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="gallery_card card shadow-sm border-0 rounded h-100">
+            <a href="https://bed.brahmavalley.com/wp-content/uploads/2023/06/YOGA-ACTIVITY.jpg"
+              data-rel="lightcase:gallery" title="Yoga Activity">
+              <img class="card-img-top rounded-top gallery_img"
+                src="https://bed.brahmavalley.com/wp-content/uploads/2023/06/YOGA-ACTIVITY-300x225.jpg"
+                alt="Yoga Activity at BVCE" loading="lazy" />
+            </a>
+            <div class="card-body text-center">
+              <h4 class="card-title mb-0" style="font-size: 1rem;">Yoga Activity</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="gallery_card card shadow-sm border-0 rounded h-100">
+            <a href="https://bed.brahmavalley.com/wp-content/uploads/2023/06/TEACHING-WITH-TECHNOLOGY.jpg"
+              data-rel="lightcase:gallery" title="Teaching with Technology">
+              <img class="card-img-top rounded-top gallery_img"
+                src="https://bed.brahmavalley.com/wp-content/uploads/2023/06/TEACHING-WITH-TECHNOLOGY-300x226.jpg"
+                alt="Teaching with Technology at BVCE" loading="lazy" />
+            </a>
+            <div class="card-body text-center">
+              <h4 class="card-title mb-0" style="font-size: 1rem;">Teaching with Technology</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="gallery_card card shadow-sm border-0 rounded h-100">
+            <a href="https://bed.brahmavalley.com/wp-content/uploads/2023/06/Screenshot_20230528_190520.jpg"
+              data-rel="lightcase:gallery" title="Classroom Activity">
+              <img class="card-img-top rounded-top gallery_img"
+                src="https://bed.brahmavalley.com/wp-content/uploads/2023/06/Screenshot_20230528_190520-300x219.jpg"
+                alt="Classroom Activity at BVCE" loading="lazy" />
+            </a>
+            <div class="card-body text-center">
+              <h4 class="card-title mb-0" style="font-size: 1rem;">Classroom Activity</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="gallery_card card shadow-sm border-0 rounded h-100">
+            <a href="https://bed.brahmavalley.com/wp-content/uploads/2023/06/PLACEMENT-PHOTO.jpg"
+              data-rel="lightcase:gallery" title="Placement Event">
+              <img class="card-img-top rounded-top gallery_img"
+                src="https://bed.brahmavalley.com/wp-content/uploads/2023/06/PLACEMENT-PHOTO-300x225.jpg"
+                alt="Placement Event at BVCE" loading="lazy" />
+            </a>
+            <div class="card-body text-center">
+              <h4 class="card-title mb-0" style="font-size: 1rem;">Placement Event</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="gallery_card card shadow-sm border-0 rounded h-100">
+            <a href="https://bed.brahmavalley.com/wp-content/uploads/2023/06/PARIPATH.jpg" data-rel="lightcase:gallery"
+              title="Paripath Event">
+              <img class="card-img-top rounded-top gallery_img"
+                src="https://bed.brahmavalley.com/wp-content/uploads/2023/06/PARIPATH-300x225.jpg"
+                alt="Paripath Event at BVCE" loading="lazy" />
+            </a>
+            <div class="card-body text-center">
+              <h4 class="card-title mb-0" style="font-size: 1rem;">Paripath Event</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="gallery_card card shadow-sm border-0 rounded h-100">
+            <a href="https://bed.brahmavalley.com/wp-content/uploads/2023/06/IMG-20230529-WA0033.jpg"
+              data-rel="lightcase:gallery" title="Cultural Workshop">
+              <img class="card-img-top rounded-top gallery_img"
+                src="https://bed.brahmavalley.com/wp-content/uploads/2023/06/IMG-20230529-WA0033-300x169.jpg"
+                alt="Cultural Workshop at BVCE" loading="lazy" />
+            </a>
+            <div class="card-body text-center">
+              <h4 class="card-title mb-0" style="font-size: 1rem;">Cultural Workshop</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="gallery_card card shadow-sm border-0 rounded h-100">
+            <a href="https://bed.brahmavalley.com/wp-content/uploads/2023/06/MAHARASHTRA-DIN-CELIBRATION.jpg"
+              data-rel="lightcase:gallery" title="Maharashtra Day Celebration">
+              <img class="card-img-top rounded-top gallery_img"
+                src="https://bed.brahmavalley.com/wp-content/uploads/2023/06/MAHARASHTRA-DIN-CELIBRATION-300x135.jpg"
+                alt="Maharashtra Day Celebration at BVCE" loading="lazy" />
+            </a>
+            <div class="card-body text-center">
+              <h4 class="card-title mb-0" style="font-size: 1rem;">Maharashtra Day Celebration</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Gallery pagination" class="mt-4">
+        <ul class="pagination justify-content-center">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">1</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="https://bed.brahmavalley.com/page/2/">2</a></li>
+          <li class="page-item"><a class="page-link" href="https://bed.brahmavalley.com/page/3/">3</a></li>
+          <li class="page-item"><a class="page-link" href="https://bed.brahmavalley.com/page/4/">4</a></li>
+          <li class="page-item">
+            <a class="page-link" href="https://bed.brahmavalley.com/page/2/" aria-label="Next">
+              <span aria-hidden="true">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="custom-divider"></div>
+    </div>
+  </section>
+
+
+
+
+  <section class="Study-sec">
+    <div class="container">
+      <span data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine"
+        data-aos-duration="1000">Future-Ready Programmes</span>
+      <p class="lead" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        Discover diverse, new-age programmes designed to shape future leaders.</p>
+      <div class="row align-items-center">
+        <div class="col-lg-9">
+          <h2 data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000"
+            style="color: #ef6603;">
+            Innovation is in our DNA, explore our pillars of knowledge
+          </h2>
+        </div>
+        <div class="col-lg-3 upward">
+          <div class="search-home" data-aos="flip-left" data-aos-offset="200" data-aos-easing="ease-in-sine"
+            data-aos-duration="800">
+            <div class="home-submit searchable">
+              <input type="text" name="search_course" class="form-control" placeholder="Type Programme Name"
+                autocomplete="off" onkeyup="filterFunction(this, event)" aria-label="Search programmes">
+              <ul id="programmeList">
+                <li><a href="#">B.Tech Civil Engineering</a></li>
+                <li><a href="#">B.Tech Mechanical Engineering</a></li>
+                <li><a href="#">B.Tech Chemical Engineering</a></li>
+                <li><a href="#">B.Tech Computer Science and Engineering</a></li>
+                <li><a href="#">M.Tech Civil Engineering</a></li>
+                <li><a href="#">Ph.D. in Chemical Engineering</a></li>
+                <li><a href="#">B.Sc. Computer Science</a></li>
+                <li><a href="#">M.Sc. Data Science</a></li>
+                <li><a href="#">B.Pharm</a></li>
+                <li><a href="#">MBA Marketing</a></li>
+              </ul>
+              <div class="submit-btn">
+                <a href="javascript:void(0);" onclick="document.querySelector('input[name=search_course]').focus()">
+                  <img src="https://mitwpu.edu.in/assets/frontend/images/search-icon.svg" alt="Search icon"
+                    class="img-fluid" loading="lazy">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative ugp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Undergraduate Programmes</h2>
+              </a>
+              <p class="home-sec-desc">Choose from a wide array of multidisciplinary undergraduate programmes and
+                embark on your professional journey.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative pgp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Postgraduate Programmes</h2>
+              </a>
+              <p class="home-sec-desc">Augment your proficiencies and add value to your knowledge by choosing from a
+                diverse range of postgraduate programmes.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative dgp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Ph.D. <br>Programmes</h2>
+              </a>
+              <p class="home-sec-desc">Pursue a host of focused doctoral programmes and lead in advanced research in
+                your field of study.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative phgp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Diplomas & Certifications</h2>
+              </a>
+              <p class="home-sec-desc">Enrich your learning or bridge the gap between academic phases through various
+                diplomas and certifications.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative dgp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Additional Ph.D. Programme</h2>
+              </a>
+              <p class="home-sec-desc">Pursue a host of focused doctoral programmes and lead in advanced research in
+                your field of study.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative phgp">
+              <a href="#" class="stretched-link home-sec-link">
+                <h2 class="home-sec-title">Additional Diploma & Certification</h2>
+              </a>
+              <p class="home-sec-desc">Enrich your learning or bridge the gap between academic phases through various
+                diplomas and certifications.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--================ End Feature Area =================-->
+
+  <!--================ Start Popular Courses Area =================-->
+  <!--================ End Popular Courses Area =================-->
+
+  <!--================ Start Registration Area =================-->
+  <div class="section_gap registration_area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="row clock_sec clockdiv" id="clockdiv">
+            <div class="col-lg-12">
+              <h1 class="mb-3">Register Now</h1>
+              <p>
+                There is a moment in the life of any aspiring astronomer that
+                it is time to buy that first telescope. It’s exciting to think
+                about setting up your own viewing station.
+              </p>
+            </div>
+            <div class="col clockinner1 clockinner">
+              <h1 class="days">150</h1>
+              <span class="smalltext">Days</span>
+            </div>
+            <div class="col clockinner clockinner1">
+              <h1 class="hours">23</h1>
+              <span class="smalltext">Hours</span>
+            </div>
+            <div class="col clockinner clockinner1">
+              <h1 class="minutes">47</h1>
+              <span class="smalltext">Mins</span>
+            </div>
+            <div class="col clockinner clockinner1">
+              <h1 class="seconds">59</h1>
+              <span class="smalltext">Secs</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1">
+          <div class="register_form">
+            <h3 style=" font-family: 'Poppins'">Courses for Free</h3><br>
+            <p style=" font-family: 'Poppins'">It is high time for learning</p>
+            <form class="form_area" id="myForm" action="mail.html" method="post">
+              <div class="row">
+                <div class="col-lg-12 form_group">
+                  <input name="name" placeholder="Your Name" required="" type="text" />
+                  <input name="name" placeholder="Your Phone Number" required="" type="tel" />
+                  <input name="email" placeholder="Your Email Address"
+                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="" type="email" />
+                </div>
+                <div class="col-lg-12 text-center">
+                  <button class="primary-btn">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--================ End Registration Area =================-->
+
+  <!--================ Start Trainers Area =================-->
+  <section class="trainer_area section_gap_top" style="padding-top: 30px;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3">Our Expert Staff</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center d-flex align-items-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="img/trainer/t1.jpg" alt="" />
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4 style=" font-family: 'Poppins'">Mr. Vijay Khairnar</h4>
+            <p class="designation">Assistant Professor</p>
+            <div class="mb-4">
+              <p style=" font-family: 'Poppins'">
+                If you are looking at blank cassettes on the web, you may be
+                very confused at the.
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="#"><i class="ti-facebook"></i></a>
+              <a href="#"><i class="ti-twitter"></i></a>
+              <a href="#"><i class="ti-linkedin"></i></a>
+              <a href="#"><i class="ti-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="img/trainer/t2.jpg" alt="" />
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4 style=" font-family: 'Poppins'">Mr. Vijay Khairnar</h4>
+            <p class="designation" style=" font-family: 'Poppins'">Assistant Professor</p>
+            <div class="mb-4">
+              <p style=" font-family: 'Poppins'">
+                If you are looking at blank cassettes on the web, you may be
+                very confused at the.
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="#"><i class="ti-facebook"></i></a>
+              <a href="#"><i class="ti-twitter"></i></a>
+              <a href="#"><i class="ti-linkedin"></i></a>
+              <a href="#"><i class="ti-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4 style=" font-family: 'Poppins'">Mr. Vijay Khairnar</h4>
+            <p class="designation" style=" font-family: 'Poppins'">Assistant Professor</p>
+            <div class="mb-4">
+              <p style=" font-family: 'Poppins'">
+                If you are looking at blank cassettes on the web, you may be
+                very confused at the.
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="#"><i class="ti-facebook"></i></a>
+              <a href="#"><i class="ti-twitter"></i></a>
+              <a href="#"><i class="ti-linkedin"></i></a>
+              <a href="#"><i class="ti-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="img/trainer/t4.jpg" alt="" />
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4 style=" font-family: 'Poppins'">Mr. Vijay Khairnar</h4>
+            <p class="designation" style=" font-family: 'Poppins'">Assistant Professor</p>
+            <div class="mb-4">
+              <p style=" font-family: 'Poppins'">
+                If you are looking at blank cassettes on the web, you may be
+                very confused at the.
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="#"><i class="ti-facebook"></i></a>
+              <a href="#"><i class="ti-twitter"></i></a>
+              <a href="#"><i class="ti-linkedin"></i></a>
+              <a href="#"><i class="ti-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================ End Trainers Area =================-->
+
+  <!--================ Start Events Area =================-->
+  <div class="events_area" style="padding-top: 20px;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3 text-white">Upcoming Events</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="single_event position-relative">
+            <div class="event_thumb">
+              <img src="img/event/e1.jpg" alt="" />
+            </div>
+            <div class="event_details">
+              <div class="d-flex mb-4">
+                <div class="date"><span>15</span> Jun</div>
+
+                <div class="time-location">
+                  <p>
+                    <span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM
+                  </p>
+                  <p>
+                    <span class="ti-location-pin mr-2"></span> Hilton Quebec
+                  </p>
+                </div>
+              </div>
+              <p style=" font-family: 'Poppins'">
+                One make creepeth man for so bearing their firmament won't
+                fowl meat over seas great
+              </p>
+              <a href="#" class="primary-btn rounded-0 mt-3" style=" font-family: 'Poppins'">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="single_event position-relative">
+            <div class="event_thumb">
+              <img src="img/event/e2.jpg" alt="" />
+            </div>
+            <div class="event_details">
+              <div class="d-flex mb-4">
+                <div class="date"><span>15</span> Jun</div>
+
+                <div class="time-location">
+                  <p>
+                    <span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM
+                  </p>
+                  <p>
+                    <span class="ti-location-pin mr-2" style=" font-family: 'Poppins'"></span> Hilton Quebec
+                  </p>
+                </div>
+              </div>
+              <p style=" font-family: 'Poppins'">
+                One make creepeth man for so bearing their firmament won't
+                fowl meat over seas great
+              </p>
+              <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="text-center pt-lg-5 pt-3">
+            <a href="#" class="event-link">
+              View All Event <img src="img/next.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--================ End Events Area =================-->
+
+  <!--================ Start Testimonial Area =================-->
+  <!--================ Start Milestone Placements Section =================-->
+  <section class="py-5 bg-white">
+    <div class="container text-center">
+      <h3 class="font-weight-bold mb-3" style=" font-family: 'Poppins'">Placements Students</h3>
+      <div class="mb-4" style="width: 150px; height: 2px; background-color: red; margin: 0 auto;"></div>
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="IKS Health" />
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="TCS" />
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Glenmark" />
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Cognizant" />
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Macleods" />
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 mb-4">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Wockhardt" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================ End Milestone Placements Section =================-->
+
+  <!--================ End Testimonial Area =================-->
+
+  <!--================ Start footer Area  =================-->
+  <footer id="page-footer" class="footer-area l-footer" itemscope itemtype="https://schema.org/WPFooter">
+    <section class="l-section color_footer-bottom">
+      <div class="container">
+        <div class="row g-4">
+          <!-- About Us Column -->
+          <div class="col-lg-4">
+            <h4><strong>About Us</strong></h4>
+            <div class="my-3"></div>
+            <div class="footlog text-center">
+              <img width="279" height="181" src="https://bed.brahmavalley.com/wp-content/uploads/2023/03/whi.png"
+                class="img-fluid" alt="Brahma Valley B.Ed. College Logo" decoding="async" loading="lazy">
+            </div>
+            <p>Brahma Valley College of Education (B.Ed.) aims to impart quality education in a safe, natural
+              environment that promotes discipline, motivation, and learning.</p>
+          </div>
+          <!-- Information Column -->
+          <div class="col-lg-4">
+            <h4><strong>Information</strong></h4>
+            <div class="my-3"></div>
+            <div class="w-menu footmen d-flex">
+              <ul id="menu-header-menu" class="menu" style="margin-right: 60px;">
+                <li><a href="http://bed.brahmavalley.com/" aria-current="page">Home</a></li>
+                <li><a href="https://bed.brahmavalley.com/admission/">Admission</a></li>
+                <li><a href="https://bed.brahmavalley.com/principal-desk/">Principal Desk</a></li>
+                <li><a href="https://bed.brahmavalley.com/board-members/">Board Members</a></li>
+                <li><a href="https://bed.brahmavalley.com/faculty/">Faculty</a></li>
+                <li><a href="https://bed.brahmavalley.com/lmc-committee/">LMC Committee</a></li>
+                <li><a href="https://bed.brahmavalley.com/about-us/">About Us</a></li>
+              </ul>
+              <ul id="menu-header-menu" class="menu">
+                <li><a href="https://bed.brahmavalley.com/anti-ragging-committee/">Anti-Ragging Committee</a></li>
+                <li><a href="https://bed.brahmavalley.com/facilities/">Facilities</a></li>
+                <li><a href="https://bed.brahmavalley.com/gallery/">Gallery</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">RTI</a></li>
+                <li><a href="https://bed.brahmavalley.com/contact-us/">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Contact Us Column -->
+          <div class="col-lg-4">
+            <h4><strong>Contact Us</strong></h4>
+            <div class="my-3"></div>
+            <div class="w-contacts">
+              <div class="w-contacts-list">
+                <div class="w-contacts-item for_address">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="w-contacts-item-value">Brahma Valley Educational Campus, Trimbak Road, Anjaneri,
+                    Nashik-422213.</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-contacts">
+              <div class="w-contacts-list">
+                <div class="w-contacts-item for_address">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="w-contacts-item-value">Palika Bazar Complex, Near Railway Booking Office,
+                    Sharanpur-Trimbak Link Road, Nashik-422002.</span>
+                </div>
+              </div>
+            </div>
+            <div class="my-3"></div>
+            <div class="w-contacts">
+              <div class="w-contacts-list">
+                <div class="w-contacts-item for_phone">
+                  <i class="fas fa-phone-alt"></i>
+                  <span class="w-contacts-item-value">(0253)2312904</span>
+                </div>
+              </div>
+            </div>
+            <div class="my-3"></div>
+            <div class="w-contacts">
+              <div class="w-contacts-list">
+                <div class="w-contacts-item for_email">
+                  <i class="fas fa-envelope"></i>
+                  <span class="w-contacts-item-value"><a
+                      href="mailto:brahmavalleybed2007@yahoo.in">brahmavalleybed2007@yahoo.in</a></span>
+                </div>
+              </div>
+            </div>
+            <div style="height:10px;"></div>
+            <div class="w-socials color_text shape_square style_default hover_fade">
+              <div class="w-socials-list">
+                <div class="w-socials-item facebook">
+                  <a class="w-socials-item-link" href="https://www.facebook.com/profile.php?id=100091000913073"
+                    target="_blank" rel="noopener nofollow" title="Facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </div>
+                <div class="w-socials-item twitter">
+                  <a class="w-socials-item-link" href="#" target="_blank" rel="noopener nofollow" title="Twitter"
+                    aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="w-socials-item instagram">
+                  <a class="w-socials-item-link" href="#" target="_blank" rel="noopener nofollow" title="Instagram"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-top">
+      <div class="container">
+        <div class="my-3"></div>
+        <p class="text-center">Copyright © 2025 Brahma Valley College of Education (B.Ed.) – All Rights Reserved.</p>
+        <div class="my-3"></div>
+      </div>
+    </section>
+  </footer>
+  <!--================ End footer Area  =================-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/owl-carousel-thumb.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--gmaps Js-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/js/lightcase.min.js"
+    integrity="sha512-Lk1t/nm+/5z0Ckw1K0ZpxxyhTR+YM3Dy3oIPQCsZTAE3Evu7mR26W2S3S3S3f0W7ybywbNexWV0p9X/9vlNCLww=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $('a[data-rel^=lightcase]').lightcase({
+        transition: 'fade',
+        showCaption: true,
+        showTitle: true,
+        maxWidth: 1200,
+        maxHeight: 800
+      });
+    });
+  </script>
+  <!-- Search Filter Function -->
+  <script>
+    function filterFunction(input, event) {
+      const filter = input.value.toLowerCase();
+      const ul = document.getElementById("programmeList");
+      const li = ul.getElementsByTagName("li");
+
+      ul.classList.toggle("show", filter.length > 0);
+
+      for (let i = 0; i < li.length; i++) {
+        const a = li[i].getElementsByTagName("a")[0];
+        const txtValue = a.textContent || a.innerText;
+        li[i].style.display = txtValue.toLowerCase().includes(filter) ? "" : "none";
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      const searchContainer = document.querySelector(".search-home");
+      if (!searchContainer.contains(event.target)) {
+        document.getElementById("programmeList").classList.remove("show");
+        document.querySelector("input[name=search_course]").value = "";
+      }
+    });
+  </script>
+</body>
+
+</html>

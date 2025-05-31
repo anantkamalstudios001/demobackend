@@ -47,97 +47,13 @@
             text-align: center;
             position: relative;
         }
-
-        .approvals-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-
-        .approvals-img:hover {
-            transform: scale(1.05);
-        }
-
-        .content-section {
-            padding: 4rem 0;
-        }
-
-        .card {
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            background-color: #fff;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .list-group-item {
-            border: none;
-            padding: 1rem 1.5rem;
-            font-size: 1.1rem;
-            background-color: transparent;
-        }
-
-        .btn-primary {
-            background-color: #ea1f28;
-            border: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: #c41820;
-        }
-
-        .animate__fadeIn {
-            animation: fadeIn 1s ease-in;
-        }
-
-        .course-card {
-            display: none;
-        }
-
-        .course-card.show {
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 3rem 0;
-            }
-
-            .content-section {
-                padding: 2rem 0;
-            }
-
-            .approvals-img {
-                margin-bottom: 1.5rem;
-            }
-        }
     </style>
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <div class="container-fluid py-1" style="background-color: #ea1f28;">
+        <div class="container-fluid py-1" style="background-color: #083da0;">
             <div
                 class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
                 <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
@@ -285,7 +201,7 @@
 
 
                         <!-- Research -->
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Research</a>
                             <ul class="dropdown-menu" aria-labelledby="researchDropdown">
@@ -296,15 +212,8 @@
                                 <li><a class="dropdown-item" href="exam_apply.html">How to Apply?</a></li>
                                 <li><a class="dropdown-item" href="exam_coe.html">CoE</a></li>
                                 <li><a class="dropdown-item" href="exam_coordinators.html">Co-ordinators</a></li>
-                                <!-- Examinations Submenu -->
-                                <!-- <li class="dropdown-submenu position-relative">
-                  <a class="dropdown-item dropdown-toggle" href="#" id="examSubmenu" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">Examinations</a>
-                  <ul class="dropdown-menu position-absolute start-100 top-0 mt-0" aria-labelledby="examSubmenu">
-                  </ul>
-                </li> -->
                             </ul>
-                        </li>
+                        </li> -->
 
 
 
@@ -317,12 +226,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">Campus Life</a>
                             <ul class="dropdown-menu" aria-labelledby="campusLifeDropdown">
                                 <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
-                                <li><a class="dropdown-item" href="sun_club.html">Sun Club</a></li>
-                                <li><a class="dropdown-item" href="spoken_tutorial.html">Spoken Tutorial</a></li>
-                                <li><a class="dropdown-item" href="professional_body.html">Professional Body</a></li>
-                                <li><a class="dropdown-item" href="student_welfare.html">Student Welfare</a></li>
-                                <li><a class="dropdown-item" href="digital_learning.html">Digital Learning Monitoring
-                                        Cell</a></li>
+                                <li><a class="dropdown-item" href="eventgallery.html">Events Gallery</a></li>
                                 <li><a class="dropdown-item" href="achievement.html">Achievement</a></li>
                                 <li><a class="dropdown-item" href="sports.html">Sports</a></li>
                                 <li><a class="dropdown-item" href="media_coverage.html">Media Coverage</a></li>
@@ -361,7 +265,7 @@
                 <div class="row g-2">
                     <div class="col-md-4">
                         <div class="card p-3 h-100">
-                            <i class="fas fa-graduation-cap fa-2x text-center mb-2" style="color: #ea1f28;"></i>
+                            <i class="fas fa-graduation-cap fa-2x text-center mb-2" style="color: #083da0;"></i>
                             <div class="card-body text-center">
                                 <h5 class="card-title">Undergraduate Programs</h5>
                                 <p class="card-text">Foundational degrees in Engineering, Pharmacy, Education, and more.
@@ -372,7 +276,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card p-3 h-100">
-                            <i class="fas fa-book-open fa-2x text-center mb-2" style="color: #ea1f28;"></i>
+                            <i class="fas fa-book-open fa-2x text-center mb-2" style="color: #083da0;"></i>
                             <div class="card-body text-center">
                                 <h5 class="card-title">Postgraduate Programs</h5>
                                 <p class="card-text">Advanced studies in Management, Technology, and Pharmaceutical
@@ -383,7 +287,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card p-3 h-100">
-                            <i class="fas fa-certificate fa-2x text-center mb-2" style="color: #ea1f28;"></i>
+                            <i class="fas fa-certificate fa-2x text-center mb-2" style="color: #083da0;"></i>
                             <div class="card-body text-center">
                                 <h5 class="card-title">Diploma & Certificate</h5>
                                 <p class="card-text">Skill-based programs in Polytechnic, ITI, and specialized fields.

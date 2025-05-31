@@ -2,246 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fixed Navbar and Carousel</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Themify Icons (for ti-search and ti-close) -->
-  <link href="https://cdn.jsdelivr.net/npm/themify-icons@1.0.0/themify-icons.css" rel="stylesheet">
-  <style>
-    /* Ensure the navbar stays above the carousel */
-    .header_area {
-      position: relative;
-      z-index: 1000; /* High z-index for navbar */
-    }
-
-    /* Add padding to the body or carousel to account for fixed navbar height */
-    body {
-      padding-top: 100px; /* Adjust based on navbar height */
-    }
-
-    /* Ensure carousel images are responsive */
-    .carousel-item img {
-      max-height: 500px; /* Adjust as needed */
-      object-fit: cover; /* Prevent image distortion */
-    }
-
-    /* Optional: Style for search input box */
-    .search_input {
-      display: none; /* Hidden by default */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #fff;
-      z-index: 1001; /* Above navbar */
-    }
-
-    .search_input.show {
-      display: block; /* Show when toggled */
-    }
-
-    /* Fix typo in carousel indicators (remove extra space) */
-    .carousel-indicators li {
-      cursor: pointer;
-    }
-  </style>
+  <title>Downloads</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header_area">
-    <div class="main_menu">
-      <div class="top-header bg-dark text-white py-1">
-        <div class="container d-flex justify-content-end">
-          <a href="events.html" class="text-white mx-2">Events</a>
-          <a href="student-corner.html" class="text-white mx-2">Student Corner</a>
-          <a href="blogs.html" class="text-white mx-2">Blogs</a>
-          <a href="alumni.html" class="text-white mx-2">Alumni</a>
-          <a href="contact.html" class="text-white mx-2">Contact Us</a>
-        </div>
-      </div>
-      <div class="search_input" id="search_input_box">
-        <div class="container">
-          <form class="d-flex justify-content-between" method="GET" action="search.html">
-            <input type="text" class="form-control" id="search_input" placeholder="Search Here" aria-label="Search input" />
-            <button type="submit" class="btn" aria-label="Submit search"><i class="ti-search"></i></button>
-            <span class="ti-close" id="close_search" title="Close Search" aria-label="Close search"></span>
-          </form>
-        </div>
-      </div>
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="Website Logo" /></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-            <ul class="nav navbar-nav menu_nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">About Us</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="courses.html">Board Members</a></li>
-                  <li class="nav-item"><a class="nav-link" href="course-details.html">Chairman Desk</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Principal Desk</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Mission and Vision</a></li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Innovation</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="courses.html">Start-Up</a></li>
-                  <li class="nav-item"><a class="nav-link" href="course-details.html">Incubation</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">I-IPR</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Eco System</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">IRDC</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Practice School</a></li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">NAAC</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="courses.html">IQAC</a></li>
-                  <li class="nav-item"><a class="nav-link" href="course-details.html">IIQA</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Best Practices</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Feedback</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">NAAC SSR</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">NAAC Documents</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">AQAR</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">AQAR Documents</a></li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Training & Placement</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="courses.html">Placement Cell</a></li>
-                  <li class="nav-item"><a class="nav-link" href="course-details.html">Career Guidance</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Placement</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Placement Drive</a></li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Student Corner</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="courses.html">Notices</a></li>
-                  <li class="nav-item"><a class="nav-link" href="course-details.html">Course Structure</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Examination</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Hostel Overview</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Hostel Documentation</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Rules & Regulations</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Important Contacts</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Code of Conduct</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Photos for Students</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Club</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Scholarship Section</a></li>
-                  <li class="nav-item"><a class="nav-link" href="elements.html">Student Council Committee</a></li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Events</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="courses.html">Events Title</a></li>
-                  <li class="nav-item"><a class="nav-link" href="course-details.html">Events Images</a></li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Facilities</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="courses.html">Facilities Title</a></li>
-                  <li class="nav-item"><a class="nav-link" href="course-details.html">Facilities Details</a></li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">News</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="nav-link" href="single-blog.html">News Title</a></li>
-                  <li class="nav-item"><a class="nav-link" href="single-blog.html">News Images</a></li>
-                  <li class="nav-item"><a class="nav-link" href="single-blog.html">News Details</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link search" id="search">
-                  <i class="ti-search"></i>
-                </a>
-              </li>
-            </ul>
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- 1.1.1 -->
+      <div class="col-md-4">
+        <div class="border p-3 rounded shadow-sm d-flex align-items-center">
+          <i class="fas fa-download fa-2x text-primary me-3"></i>
+          <div>
+            <a href="http://bed.brahmavalley.com/wp-content/uploads/2023/07/1.1.1.pdf" target="_blank" rel="noopener" class="text-decoration-none fw-bold">1.1.1</a>
           </div>
         </div>
-      </nav>
-    </div>
-  </header>
+      </div>
 
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/slider-2.jpg" class="d-block w-100" alt="Campus academic programs">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Explore Academic Excellence</h5>
-          <p>Join our vibrant community and discover world-class education.</p>
-          <a class="btn btn-primary" href="admissions.html">Apply Now</a>
+      <!-- 1.1_159 -->
+      <div class="col-md-4">
+        <div class="border p-3 rounded shadow-sm d-flex align-items-center">
+          <i class="fas fa-download fa-2x text-primary me-3"></i>
+          <div>
+            <a href="http://bed.brahmavalley.com/wp-content/uploads/2023/07/1.1_159-1.xlsx" target="_blank" rel="noopener" class="text-decoration-none fw-bold">1.1_159</a>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/SLIDER-1920X800.1.jpg" class="d-block w-100" alt="Student activities overview">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Engage in Vibrant Activities</h5>
-          <p>Participate in our diverse student clubs and events.</p>
-          <a class="btn btn-primary" href="events.html">Learn More</a>
+
+      <!-- 1.6_159 -->
+      <div class="col-md-4">
+        <div class="border p-3 rounded shadow-sm d-flex align-items-center">
+          <i class="fas fa-download fa-2x text-primary me-3"></i>
+          <div>
+            <a href="http://bed.brahmavalley.com/wp-content/uploads/2023/07/1.6_159-1.xlsx" target="_blank" rel="noopener" class="text-decoration-none fw-bold">1.6_159</a>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/slider-3 (1).jpg" class="d-block w-100" alt="Campus facilities">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>State-of-the-Art Facilities</h5>
-          <p>Experience our cutting-edge infrastructure.</p>
-          <a class="btn btn-primary" href="facilities.html">Explore Facilities</a>
+
+      <!-- 1st year planning -->
+      <div class="col-md-4">
+        <div class="border p-3 rounded shadow-sm d-flex align-items-center">
+          <i class="fas fa-download fa-2x text-primary me-3"></i>
+          <div>
+            <a href="http://bed.brahmavalley.com/wp-content/uploads/2023/07/1st-year-planning-2018-19.xlsx" target="_blank" rel="noopener" class="text-decoration-none fw-bold">1st Year Planning 2018-19</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd year timetable -->
+      <div class="col-md-4">
+        <div class="border p-3 rounded shadow-sm d-flex align-items-center">
+          <i class="fas fa-download fa-2x text-primary me-3"></i>
+          <div>
+            <a href="http://bed.brahmavalley.com/wp-content/uploads/2023/07/2nd-year-time-table-2018-19.xlsx" target="_blank" rel="noopener" class="text-decoration-none fw-bold">2nd Year Time Table 2018-19</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- B.Ed Planning -->
+      <div class="col-md-4">
+        <div class="border p-3 rounded shadow-sm d-flex align-items-center">
+          <i class="fas fa-download fa-2x text-primary me-3"></i>
+          <div>
+            <a href="http://bed.brahmavalley.com/wp-content/uploads/2023/07/B.ed-1st-and-2nd-Year-Planning-2017-18.xlsx" target="_blank" rel="noopener" class="text-decoration-none fw-bold">B.Ed 1st and 2nd Year Planning 2017-18</a>
+          </div>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </button>
   </div>
 
-  <!-- Bootstrap JS and jQuery (required for navbar and carousel functionality) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // JavaScript for search toggle
-    $(document).ready(function() {
-      $('#search').click(function() {
-        $('#search_input_box').addClass('show');
-      });
-      $('#close_search').click(function() {
-        $('#search_input_box').removeClass('show');
-      });
-    });
-  </script>
+  <!-- Bootstrap & Font Awesome Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

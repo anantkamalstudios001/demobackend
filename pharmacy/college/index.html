@@ -2,812 +2,850 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="icon" href="img/logo.png" type="image/png" />
-  <title>Pharmacy</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brahma Valley Institute Of Pharmacy (BVIOP)</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
   <link rel="stylesheet" href="css/flaticon.css" />
   <link rel="stylesheet" href="css/themify-icons.css" />
   <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
   <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-  <!-- main css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <!-- Bootstrap 4 CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    .carousel-item img {
-      object-fit: cover;
-      height: 100vh;
-      max-height: 800px;
-    }
-
-    @media (max-width: 767.98px) {
-      .carousel-caption {
-        display: block !important;
-        font-size: 0.9rem;
-      }
-
-      .carousel-caption h5 {
-        font-size: 1.2rem;
-      }
-
-      .carousel-item img {
-        height: 30vh;
-        margin-top: 45px;
-      }
-    }
-
-    .navbar-nav .nav-link {
-      color: black !important;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      top: 50%;
-      transform: translateY(-50%);
-      width: 5%;
-    }
-
-    @media (max-width: 768px) {
-
-      .carousel-control-prev,
-      .carousel-control-next {
-        top: 65%;
-        /* slightly above center for smaller screens */
-        width: 8%;
-        /* easier to click on mobile */
-      }
-    }
-
-    @media (max-width: 768px) {
-      .section_gap {
-        padding-top: 40px;
-        padding-bottom: 5px;
-        /* ↓ mobile la even less */
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/newstyle.css">
 </head>
 
 <body class="index-page">
+  <!-- Top Bar -->
   <div class="container-fluid py-1" style="background-color: #ea1f28;">
     <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
-      <!-- Left: Menu Links -->
       <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
         <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Download
             E-Brochures</a>
         </li>
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Adminssion</a></li>
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Admission</a>
+        </li>
         <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#" target="_blank">Blogs</a>
         </li>
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a></li>
-        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Contact Us</a></li>
         <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
             target="_blank">Consultancy Cell</a></li>
       </ul>
-
-      <!-- Right: Social/Action Images -->
       <ul class="list-inline mb-0 d-flex align-items-center gap-2">
-        <li><a class="text-white text-decoration-none small" href="#"><span>Get Connected</span></a></li>
-
-        <li class="ml-2">
-          <a class="text-white" href="#" target="_blank" aria-label="WhatsApp">
-            <img src="img/whatsapp.png" alt="WhatsApp" width="20" height="20">
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="#" target="_blank" aria-label="360">
-            <img src="img/360-degree.png" alt="360" width="20" height="20">
-            <span class="ml-2">360</span>
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="#" target="_blank">
-            <img src="img/facebook.png" alt="Facebook" width="20" height="20">
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="#" target="_blank" aria-label="Twitter">
-            <img src="img/twitter.png" alt="Twitter" width="20" height="20">
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="https://in.linkedin.com/" target="_blank">
-            <img src="img/linkedin.png" alt="LinkedIn" width="20" height="20">
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="https://www.instagram.com/" target="_blank">
-            <img src="img/instagram.png" alt="Instagram" width="20" height="20">
-          </a>
-        </li>
-        <li class="ml-2">
-          <a class="text-white" href="https://www.youtube.com/" target="_blank">
-            <img src="img/youtube.png" alt="YouTube" width="20" height="20">
-          </a>
-        </li>
+        <li><a class="text-white text-decoration-none small" href="#">Get Connected</a></li>
+        <li class="ms-2"><a class="text-white" href="#" target="_blank" aria-label="WhatsApp"><img
+              src="img/whatsapp_icon.png" alt="WhatsApp" width="20" height="20"></a></li>
+        <li class="ms-2"><a class="text-white" href="#" target="_blank" aria-label="360"><img
+              src="img/g360_icon_brahmavalley_social.png" alt="360" width="20" height="20"></a></li>
+        <li class="ms-2"><a class="text-white" href="#" target="_blank"><img src="img/fb_icon.png" alt="Facebook"
+              width="20" height="20"></a></li>
+        <li class="ms-2"><a class="text-white" href="https://in.linkedin.com/" target="_blank"><img
+              src="img/linkedin_icon.png" alt="LinkedIn" width="20" height="20"></a></li>
+        <li class="ms-2"><a class="text-white" href="https://www.youtube.com/" target="_blank"><img
+              src="img/youtube_icon.png" alt="YouTube" width="20" height="20"></a></li>
       </ul>
     </div>
   </div>
-  <!--================ Start Header Menu Area =================-->
+  <!-- Institute Info Banner -->
+  <div class="bg-gradient text-white py-3 border-bottom" style="background-color: #003366;">
+    <div class="container text-center">
+      <h6 class="text-uppercase fw-bold mb-1" style="letter-spacing: 1px;">
+        NASHIK GRAMIN SHIKSHAN PRASARAK MANDAL’s
+      </h6>
+      <h4 class="fw-bold mb-2" style="font-size: 1.5rem;">
+        BRAHMA VALLEY INSTITUTE OF PHARMACY
+      </h4>
+      <p class="mb-1 small">
+        Approved by Pharmacy Council of India (PCI), New Delhi, and DTE Mumbai, recognized by the
+        Government of Maharashtra, affiliated to Dr. Babasaheb Ambedkar Technological University, Lonere
+      </p>
+      <p class="mb-0 small">
+        <strong>Choice Code:</strong> 550582310 &nbsp;|&nbsp; <strong>DTE Code:</strong> 5505
+      </p>
+    </div>
+  </div>
+
+  <!-- Enhanced Header Menu -->
   <header class="header_area">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+      <div class="container">
+        <!-- Left Logo -->
+        <a class="navbar-brand d-lg-block" href="index.html">
+          <img src="img/logo.png" alt="College Logo" height="80">
+        </a>
 
-    <div class="main_menu">
+        <!-- Toggler Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid" style="margin-left: 50px;">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" height="50"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar"></span> <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-            <ul class="nav navbar-nav menu_nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">About Us</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Board Members</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Chairman Desk</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Prinicpal Desk</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mission and Vision</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Innovation</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Start-Up</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Incubation</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">I-IPR</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Eco System</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">IRDC</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Practice School</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">NAAC</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">IQAC</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">IIQA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Best Practices</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Feedback</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">NAAC SSR</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">NAAC Documents</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">AQAR</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">AQAR Documents</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Training & Placement</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Placement Cell</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Career Guidance</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Placement</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Placement Drive</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Student Corner</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="courses.html">Notices</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Course Structure</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Examination</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Hostel Overview</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Hostel Documentation</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Rules & Regulations</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Important Contacts</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Code of Conduct</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Photos for Students</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Club</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Scholarship Section</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Student Council Committee</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Events</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Events Title</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Events Images</a>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">Facilities</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Facilities Title</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Facilities Details</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item submenu dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">News</a>
-                <ul class="dropdown-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">News Title</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">News Images</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">News Details</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link search" id="search">
-                  <i class="ti-search"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <!-- BVIOP Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="bviopDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">BVIOP</a>
+              <ul class="dropdown-menu" aria-labelledby="bviopDropdown">
+                <li><a class="dropdown-item" href="boardmember.html">Board Members</a></li>
+                <li><a class="dropdown-item" href="chairman.html">Chairman Desk</a></li>
+                <li><a class="dropdown-item" href="generalsecretary.html">General Secretary Desk</a></li>
+                <li><a class="dropdown-item" href="cmapusdirector.html">Campus Director Desk</a></li>
+                <li><a class="dropdown-item" href="principal.html">Principal Desk</a></li>
+                <li><a class="dropdown-item" href="lmc.html">LMC</a></li>
+                <li><a class="dropdown-item" href="vision.html">Mission & Vision</a></li>
+              </ul>
+            </li>
+
+            <!-- Admissions Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Admissions</a>
+              <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                <li><a class="dropdown-item" href="eligibility.html">Eligibility Criteria</a></li>
+                <li><a class="dropdown-item" href="apply.html ">Apply Now</a></li>
+                <li><a class="dropdown-item" href="requireddocument.html">Required Documents</a></li>
+                <li><a class="dropdown-item" href="admission.html">Admission Process</a></li>
+                <li><a class="dropdown-item" href="collegeflyers.html">College Flyers</a></li>
+                <li><a class="dropdown-item" href="fees&scholarship.html">Fees & Scholarship</a></li>
+              </ul>
+            </li>
+
+            <!-- Courses -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="courseDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Course</a>
+              <ul class="dropdown-menu" aria-labelledby="courseDropdown">
+                <li><a class="dropdown-item" href="bpharma.html">B.Pharm</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="facilities.html">Facilities</a>
+            </li>
+
+            <!-- Committee Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="committeeDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Committee</a>
+              <ul class="dropdown-menu" aria-labelledby="committeeDropdown">
+                <li><a class="dropdown-item" href="cdc.html">College Development Committee</a></li>
+                <li><a class="dropdown-item" href="antiragging.html">Anti – Ragging</a></li>
+                <li><a class="dropdown-item" href="grievance.html">Grievance Committee</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
+
+        <!-- Right Logo -->
+        <a class="navbar-brand d-none d-lg-block" href="index.html">
+          <img src="img/pharmalogo.png" alt="Pharmacy Logo" height="80">
+        </a>
+      </div>
+    </nav>
   </header>
-  <!--================ End Header Menu Area =================-->
 
-  <!--================ Start Home Banner Area =================-->
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
+
+  <!-- Home Banner Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
+
+      <!-- Slide 1 -->
       <div class="carousel-item active">
-        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+        <img src="img/1920x800.jpg" class="d-block w-100 img-fluid" alt="Campus View">
+        <div class="carousel-caption custom-caption">
+          <h5 data-aos="fade-up">Welcome to Brahma Valley Institute Of Pharmacy (BVIOP)</h5>
+          <p data-aos="fade-up" data-aos-delay="100">Empowering Future Innovators with World-Class Education</p>
+          <a href="#" class="btn btn-primary mt-2" data-aos="fade-up" data-aos-delay="200">Apply Now</a>
         </div>
       </div>
+
+      <!-- Slide 2 -->
       <div class="carousel-item">
-        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+        <img src="img/1920x800.jpg" class="d-block w-100 img-fluid" alt="Student Life">
+        <div class="carousel-caption custom-caption">
+          <h5 data-aos="fade-up">Innovate, Learn, Succeed</h5>
+          <p data-aos="fade-up" data-aos-delay="100">Join our vibrant community of learners and innovators.</p>
+          <a href="#" class="btn btn-primary mt-2" data-aos="fade-up" data-aos-delay="200">Explore Courses</a>
         </div>
       </div>
+
+      <!-- Slide 3 -->
       <div class="carousel-item">
-        <img src="img/1920x800.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+        <img src="img/1920x800.jpg" class="d-block w-100 img-fluid" alt="Technology Hub">
+        <div class="carousel-caption custom-caption">
+          <h5 data-aos="fade-up">Shape Your Future</h5>
+          <p data-aos="fade-up" data-aos-delay="100">Hands-on training and industry-aligned programs.</p>
+          <a href="#" class="btn btn-primary mt-2" data-aos="fade-up" data-aos-delay="200">Discover More</a>
         </div>
       </div>
+
     </div>
-    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!--================ End Home Banner Area =================-->
 
-  <!--================ Start Feature Area =================-->
-  <section class="about_area section_gap" style="padding-top: 20px;">
+
+
+  <!-- BVIOP Introduction Section -->
+  <section class="bvcte-section py-5 bg-white">
     <div class="container">
-      <h3 class="text-center">About Us</h3>
-      <div class="row h_blog_item">
-        <div class="col-lg-6">
-          <div class="h_blog_img">
-            <img class="img-fluid" src="img/about.png" alt="" />
+      <!-- Section Title -->
+      <h2 class="text-center mb-4 fw-bold" style="font-family: 'Poppins';" data-aos="fade-up">About BVIOP</h2>
+      <div class="mx-auto mb-5" style="width: 80px; height: 3px; background-color: #ea1f28;"></div>
+
+      <!-- About Row -->
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+          <img src="img/about.png" alt="BVIOP Campus" class="img-fluid rounded shadow-sm">
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <p class="mb-3 fs-5"><strong>Welcome to Brahma Valley Institute of Pharmacy (BVIOP)</strong> — established in
+            2023 with the vision to offer world-class pharmacy education to students from remote and rural backgrounds.
+            Our institute stands as a symbol of academic excellence and modern infrastructure within a serene and
+            spiritually enriched environment.</p>
+          <p class="fs-6">Located at Anjaneri village (Tal. Trimbakeshwar, Dist. Nashik), the birthplace of Lord Hanuman
+            and near the sacred Trimbakeshwar Temple (one of the 12 Jyotirlingas of Lord Shiva), BVIOP combines the
+            purity of nature with cutting-edge education, making it a unique destination for aspiring pharmacists.</p>
+          <a href="#" class="btn btn-danger mt-3 px-4 py-2">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Features and Location -->
+      <div class="row g-4">
+        <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-4 bg-light rounded shadow-sm h-100">
+            <h4 class="mb-3"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Prime Location</h4>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><i class="bi bi-geo-alt me-2 text-muted"></i>20 KM from Nashik City on
+                Nashik-Trimbakeshwar Highway</li>
+              <li class="mb-2"><i class="bi bi-geo-alt me-2 text-muted"></i>180 KM from Aurangabad</li>
+              <li class="mb-2"><i class="bi bi-train-front me-2 text-muted"></i>30 KM from Nashik Road Railway Station,
+                65 KM from Manmad Junction</li>
+              <li><i class="bi bi-airplane me-2 text-muted"></i>Nearest Airport: 40 KM at Ozar (Nashik Airport), 180 KM
+                to Mumbai International Airport</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- Features -->
+        <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="p-4 bg-light rounded shadow-sm h-100">
+            <h4 class="mb-3"><i class="bi bi-stars text-danger me-2"></i>Why Choose BVIOP?</h4>
+            <ul class="list-unstyled feature-list mb-0">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>State-of-the-art laboratories
+                for Pharmaceutical Sciences</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Highly experienced and qualified
+                faculty</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>35-acre lush green campus with
+                modern infrastructure</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Interactive digital classrooms
+                and e-learning facilities</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Central library with access to
+                leading pharmacy journals and e-resources</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Separate hostel facilities for
+                boys and girls with hygienic dining</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Industrial training and regular
+                guest lectures by industry experts</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Annual cultural & technical
+                events: ‘Brahmotsav’</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Wi-Fi enabled campus with
+                seamless connectivity</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Well-equipped gym, sports grounds, and
+                amphitheater</li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Carousel Section -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 animate__animated animate__fadeIn">Campus Highlights</h2>
+
+      <div id="campusCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-3 shadow" style="height: 400px; overflow: hidden;">
+          <div class="carousel-item active h-100">
+            <img src="img/gallery/GENTS-TOILET-600x600.jpeg" class="d-block w-100 h-100 object-fit-contain"
+              alt="Pharmacy Lab">
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded px-3 py-2">
+              <h5 class="text-white fw-bold">State-of-the-Art Laboratories</h5>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="img/gallery/HAP-LAB-600x600.jpeg" class="d-block w-100 h-100 object-fit-contain" alt="Library">
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded px-3 py-2">
+              <h5 class="text-white fw-bold">Extensive Library Resources</h5>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="img/gallery/Saraswati-Poojan-600x600.jpg" class="d-block w-100 h-100 object-fit-contain"
+              alt="Campus Life">
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded px-3 py-2">
+              <h5 class="text-white fw-bold">Vibrant Campus Life</h5>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="img/gallery/SECURITY-BARRIER-600x600.jpeg" class="d-block w-100 h-100 object-fit-contain"
+              alt="Security">
+            <div class="carousel-caption bg-dark bg-opacity-50 rounded px-3 py-2">
+              <h5 class="text-white fw-bold">Secure & Safe Environment</h5>
+            </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="h_blog_text">
-            <div class="h_blog_text_inner left right">
-              <h4>Welcome to our Institute</h4>
-              <p>
-                Subdue whales void god which living don't midst lesser
-                yielding over lights whose. Cattle greater brought sixth fly
-                den dry good tree isn't seed stars were.
-              </p>
-              <p>
-                Subdue whales void god which living don't midst lesser yieldi
-                over lights whose. Cattle greater brought sixth fly den dry
-                good tree isn't seed stars were the boring.
-              </p>
-              <a class="primary-btn" href="about-us.html">
-                Learn More <i class="ti-arrow-right ml-1"></i>
-              </a>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#campusCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#campusCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 position-relative text-white mt-5"
+    style="background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('img/DSC01130.jpg'); background-size: cover; background-position: center;">
+
+    <!-- Zigzag SVG -->
+    <div class="position-absolute bottom-0 w-100 text-light">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 8" preserveAspectRatio="none" width="100%" height="50px">
+        <path fill="currentColor" d="M64 8 L0 8 L0 0 L20 7.9 L40 3 L48 5 L64 0 Z"></path>
+      </svg>
+    </div>
+
+    <div class="container py-5">
+      <!-- Heading -->
+      <h2 class="text-center mb-4 fw-bold display-4 animate__animated animate__fadeIn">Why Choose <span
+          class="text-warning">BVIOP</span></h2>
+
+      <!-- Description -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-10 text-center animate__animated animate__fadeInUp animate__delay-1s">
+          <p class="lead">At <strong>Brahma Valley Institute of Pharmacy</strong>, we nurture future pharmacists through
+            a
+            student-centric approach blending science, compassion, and innovation. Our programs are aligned with global
+            healthcare needs and pharmaceutical advancements.</p>
+          <p class="lead">From world-class laboratories to industry-integrated learning, BVIOP offers an environment
+            where knowledge meets purpose. <a href="contact.html"
+              class="text-warning fw-semibold text-decoration-underline">Enquire Now!</a></p>
+        </div>
+      </div>
+
+      <!-- Highlight Cards -->
+      <div class="row g-4 justify-content-center">
+        <!-- Vision -->
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card bg-white bg-opacity-10 border-0 text-center text-white p-4 rounded-4 shadow-lg backdrop-blur animate__animated animate__zoomIn animate__delay-2s h-100">
+            <div class="card-body">
+              <i class="fas fa-eye fa-3x mb-3 text-warning" style="text-shadow: 0 0 8px rgba(255,193,7,0.7);"></i>
+              <h5 class="fw-bold fs-4 mb-2">Our Vision</h5>
+              <p class="mb-0">To become a center of excellence in pharmacy education and research, nurturing
+                professionals who make a difference globally.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission -->
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card bg-white bg-opacity-10 border-0 text-center text-white p-4 rounded-4 shadow-lg backdrop-blur animate__animated animate__zoomIn animate__delay-3s h-100">
+            <div class="card-body">
+              <i class="fas fa-bullseye fa-3x mb-3 text-success" style="text-shadow: 0 0 8px rgba(28,107,62,0.8);"></i>
+              <h5 class="fw-bold fs-4 mb-2">Our Mission</h5>
+              <p class="mb-0">To equip students with the latest knowledge, practical skills, and ethical values,
+                fostering leaders in healthcare and pharmaceutical sectors.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Values -->
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card bg-white bg-opacity-10 border-0 text-center text-white p-4 rounded-4 shadow-lg backdrop-blur animate__animated animate__zoomIn animate__delay-4s h-100">
+            <div class="card-body">
+              <i class="fas fa-heartbeat fa-3x mb-3 text-danger" style="text-shadow: 0 0 8px rgba(234,31,40,0.7);"></i>
+              <h5 class="fw-bold fs-4 mb-2">Our Values</h5>
+              <p class="mb-0">Integrity, innovation, empathy, and academic excellence drive every decision we make for
+                the holistic development of our students.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!--================ End Feature Area =================-->
 
-  <!--================ Start Popular Courses Area =================-->
-  <!--================ End Popular Courses Area =================-->
 
-  <!--================ Start Registration Area =================-->
-  <div class="section_gap registration_area">
+
+
+  <!-- Facilities Section -->
+  <section class="py-5 bg-dark text-light">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7">
-          <div class="row clock_sec clockdiv" id="clockdiv">
-            <div class="col-lg-12">
-              <h1 class="mb-3">Register Now</h1>
-              <p>
-                There is a moment in the life of any aspiring astronomer that
-                it is time to buy that first telescope. It’s exciting to think
-                about setting up your own viewing station.
-              </p>
-            </div>
-            <div class="col clockinner1 clockinner">
-              <h1 class="days">150</h1>
-              <span class="smalltext">Days</span>
-            </div>
-            <div class="col clockinner clockinner1">
-              <h1 class="hours">23</h1>
-              <span class="smalltext">Hours</span>
-            </div>
-            <div class="col clockinner clockinner1">
-              <h1 class="minutes">47</h1>
-              <span class="smalltext">Mins</span>
-            </div>
-            <div class="col clockinner clockinner1">
-              <h1 class="seconds">59</h1>
-              <span class="smalltext">Secs</span>
+      <h2 class="text-center mb-5" data-aos="fade-up">Our World-Class Facilities</h2>
+      <div class="row g-4">
+        <!-- Library -->
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in">
+          <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
+            <img src="img/Lib1.jpg" class="card-img-top" alt="Library">
+            <div class="card-body text-center">
+              <h5 class="card-title">Modern Library</h5>
+              <p class="card-text">Explore thousands of books, e-journals, and digital content in a quiet and
+                resourceful environment.</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 offset-lg-1">
-          <div class="register_form">
-            <h3>Courses for Free</h3>
-            <p>It is high time for learning</p>
-            <form class="form_area" id="myForm" action="mail.html" method="post">
+
+        <!-- Hostel -->
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
+            <img src="img/hostel.jpg" class="card-img-top" alt="Hostel">
+            <div class="card-body text-center">
+              <h5 class="card-title">Secure Hostels</h5>
+              <p class="card-text">Fully furnished hostels with Wi-Fi, 24/7 security, and a homely atmosphere.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sports -->
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
+            <img src="img/sp1.jpg" class="card-img-top" alt="Sports Facilities">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sports Complex</h5>
+              <p class="card-text">Indoor and outdoor courts for cricket, football, badminton, and more for physical
+                fitness and team building.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transport -->
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card h-100 border-0 shadow rounded-4 overflow-hidden">
+            <img src="img/transport.jpg" class="card-img-top" alt="Transport Facilities">
+            <div class="card-body text-center">
+              <h5 class="card-title">Transport Services</h5>
+              <p class="card-text">Well-connected transport with GPS-enabled buses for safe and timely commutes across
+                the city.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Optional: Add a call-to-action below -->
+      <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+        <a href="#contact" class="btn btn-primary px-4 py-2 rounded-pill">Visit Us & See More</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Gallery Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h3 class="text-center mb-4" style="font-family: 'Poppins', sans-serif;" data-aos="fade-up">Campus Gallery</h3>
+      <div class="mx-auto mb-5" style="width: 80px; height: 3px; background-color: #ea1f28; border-radius: 2px;"
+        data-aos="fade-up" data-aos-delay="100"></div>
+
+      <div class="row g-3">
+        <!-- Gallery Item -->
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+          <a href="img/gallery/GENTS-TOILET-600x600.jpeg" data-rel="lightcase:campusgallery" title="Campus View 1">
+            <img src="img/gallery/GENTS-TOILET-600x600.jpeg" class="img-fluid rounded shadow-sm" alt="Campus View 1">
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+          <a href="img/gallery/HAP-LAB-600x600.jpeg" data-rel="lightcase:campusgallery" title="Laboratory">
+            <img src="img/gallery/HAP-LAB-600x600.jpeg" class="img-fluid rounded shadow-sm" alt="Laboratory">
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <a href="img/gallery/Saraswati-Poojan-600x600.jpg" data-rel="lightcase:campusgallery" title="Classroom">
+            <img src="img/gallery/Saraswati-Poojan-600x600.jpg" class="img-fluid rounded shadow-sm" alt="Classroom">
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+          <a href="img/gallery/SECURITY-BARRIER-600x600.jpeg" data-rel="lightcase:campusgallery" title="Sports Ground">
+            <img src="img/gallery/SECURITY-BARRIER-600x600.jpeg" class="img-fluid rounded shadow-sm"
+              alt="Sports Ground">
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="gallery.html" class="btn btn-danger px-4 py-2" data-aos="fade-up" data-aos-delay="800">View All
+          Photos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Area -->
+  <section class="py-5 position-relative text-white"
+    style="background: linear-gradient(135deg, #003366, #005f99); overflow: hidden;">
+    <!-- Triangular Shape -->
+    <div class="position-absolute bottom-0 w-100" style="color: #ffffff;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 8" preserveAspectRatio="none" width="100%" height="50px">
+        <path fill="currentColor" d="M64 9 L0 9 L0 7.9 L48 0 L64 7.9 Z"></path>
+      </svg>
+    </div>
+    <div class="container py-5">
+      <div class="row align-items-center gy-5">
+        <!-- Contact Information and Countdown -->
+        <div class="col-lg-6 animate__animated animate__fadeInLeft">
+          <h2 class="fw-bold mb-3">📢 Admissions Open - Contact Us!</h2>
+          <p class="lead mb-4">Join Brahma Valley College of Pharmacy and embark on a journey in pharmaceutical sciences
+            with expert faculty, cutting-edge facilities, and excellent placement support.</p>
+          <div class="mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-map-marker-alt me-2" style="font-size: 1.2rem; color: #1c6b3e;"></i>
+              <p class="mb-0">Brahma Valley Educational Campus, Anjaneri, Trimbak Road, Nashik-422213, Maharashtra,
+                India</p>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-map-marker-alt me-2" style="font-size: 1.2rem; color: #1c6b3e;"></i>
+              <p class="mb-0">Head Office: Palika Bazar Complex, Near Railway Booking Office, Sharanpur-Trimbak Link
+                Road, Nashik-422002</p>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <i class="fas fa-phone me-2" style="font-size: 1.2rem; color: #1c6b3e;"></i>
+              <p class="mb-0">(0253) 2311244 / 2312904</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="fas fa-envelope me-2" style="font-size: 1.2rem; color: #1c6b3e;"></i>
+              <p class="mb-0">principalbviop@gmail.com</p>
+            </div>
+          </div>
+          <!-- Countdown Timer -->
+          <div class="d-flex flex-wrap gap-3" id="clockdiv">
+            <div class="text-center px-3 py-2 bg-white bg-opacity-10 rounded-3 shadow-sm">
+              <h3 class="days display-6 mb-0 text-dark">150</h3>
+              <small class="text-uppercase text-dark">Days</small>
+            </div>
+            <div class="text-center px-3 py-2 bg-white bg-opacity-10 rounded-3 shadow-sm">
+              <h3 class="hours display-6 mb-0 text-dark">23</h3>
+              <small class="text-uppercase text-dark">Hrs</small>
+            </div>
+            <div class="text-center px-3 py-2 bg-white bg-opacity-10 rounded-3 shadow-sm">
+              <h3 class="minutes display-6 mb-0 text-dark">47</h3>
+              <small class="text-uppercase text-dark">Min</small>
+            </div>
+            <div class="text-center px-3 py-2 bg-white bg-opacity-10 rounded-3 shadow-sm">
+              <h3 class="seconds display-6 mb-0 text-dark">59</h3>
+              <small class="text-uppercase text-dark">Sec</small>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <div class="col-lg-6 animate__animated animate__fadeInRight">
+          <div class="p-4 bg-white text-dark rounded-4 shadow-lg" style="backdrop-filter: blur(10px);">
+            <h4 class="fw-semibold mb-2 text-center">📧 Contact Us</h4>
+            <p class="mb-4 text-center text-muted">Use the form below to send us your inquiries. Your details are
+              secure, and we promise no spam, only occasional newsletters.</p>
+            <form class="caldera_forms_form" aria-label="Contact Form">
               <div class="row">
-                <div class="col-lg-12 form_group">
-                  <input name="name" placeholder="Your Name" required="" type="text" />
-                  <input name="name" placeholder="Your Phone Number" required="" type="tel" />
-                  <input name="email" placeholder="Your Email Address"
-                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="" type="email" />
+                <div class="col-sm-6 mb-3">
+                  <label for="fld_8768091_2" class="form-label">First Name <span class="text-danger">*</span></label>
+                  <input type="text" id="fld_8768091_2" class="form-control" placeholder="First Name" required
+                    aria-label="First Name">
                 </div>
-                <div class="col-lg-12 text-center">
-                  <button class="primary-btn">Submit</button>
+                <div class="col-sm-6 mb-3">
+                  <label for="fld_9970286_2" class="form-label">Last Name <span class="text-danger">*</span></label>
+                  <input type="text" id="fld_9970286_2" class="form-control" placeholder="Last Name" required
+                    aria-label="Last Name">
                 </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mb-3">
+                  <label for="fld_6009157_2" class="form-label">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" id="fld_6009157_2" class="form-control" placeholder="example@mail.com" required
+                    aria-label="Email Address">
+                </div>
+                <div class="col-sm-6 mb-3">
+                  <label for="fld_7467429_2" class="form-label">Phone No <span class="text-danger">*</span></label>
+                  <input type="tel" id="fld_7467429_2" class="form-control" placeholder="(999)999-9999" required
+                    aria-label="Phone Number">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="fld_7683514_2" class="form-label">Comments / Questions</label>
+                <textarea id="fld_7683514_2" class="form-control" rows="5" placeholder="Your message"
+                  aria-label="Comments or Questions"></textarea>
+              </div>
+              <div class="text-center mt-4">
+                <a href="https://pharmacy.brahmavalley.co.in/contact"
+                  class="btn btn-primary px-4 py-2 rounded-pill">Send Message</a>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--================ End Registration Area =================-->
-
-  <!--================ Start Trainers Area =================-->
-  <section class="trainer_area section_gap_top" style="padding-top: 30px;">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-5">
-          <div class="main_title">
-            <h2 class="mb-3">Our Expert Staff</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center d-flex align-items-center">
-        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-          <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t1.jpg" alt="" />
-          </div>
-          <div class="meta-text text-sm-center">
-            <h4>Mr. Vijay Khairnar</h4>
-            <p class="designation">Assistant Professor</p>
-            <div class="mb-4">
-              <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the.
-              </p>
-            </div>
-            <div class="align-items-center justify-content-center d-flex">
-              <a href="#"><i class="ti-facebook"></i></a>
-              <a href="#"><i class="ti-twitter"></i></a>
-              <a href="#"><i class="ti-linkedin"></i></a>
-              <a href="#"><i class="ti-pinterest"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-          <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t2.jpg" alt="" />
-          </div>
-          <div class="meta-text text-sm-center">
-            <h4>Mr. Vijay Khairnar</h4>
-            <p class="designation">Assistant Professor</p>
-            <div class="mb-4">
-              <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the.
-              </p>
-            </div>
-            <div class="align-items-center justify-content-center d-flex">
-              <a href="#"><i class="ti-facebook"></i></a>
-              <a href="#"><i class="ti-twitter"></i></a>
-              <a href="#"><i class="ti-linkedin"></i></a>
-              <a href="#"><i class="ti-pinterest"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-          <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-          </div>
-          <div class="meta-text text-sm-center">
-            <h4>Mr. Vijay Khairnar</h4>
-            <p class="designation">Assistant Professor</p>
-            <div class="mb-4">
-              <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the.
-              </p>
-            </div>
-            <div class="align-items-center justify-content-center d-flex">
-              <a href="#"><i class="ti-facebook"></i></a>
-              <a href="#"><i class="ti-twitter"></i></a>
-              <a href="#"><i class="ti-linkedin"></i></a>
-              <a href="#"><i class="ti-pinterest"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-          <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t4.jpg" alt="" />
-          </div>
-          <div class="meta-text text-sm-center">
-            <h4>Mr. Vijay Khairnar</h4>
-            <p class="designation">Assistant Professor</p>
-            <div class="mb-4">
-              <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the.
-              </p>
-            </div>
-            <div class="align-items-center justify-content-center d-flex">
-              <a href="#"><i class="ti-facebook"></i></a>
-              <a href="#"><i class="ti-twitter"></i></a>
-              <a href="#"><i class="ti-linkedin"></i></a>
-              <a href="#"><i class="ti-pinterest"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
-  <!--================ End Trainers Area =================-->
 
-  <!--================ Start Events Area =================-->
-  <div class="events_area" style="padding-top: 20px;">
+
+  <section class="py-5 bg-light position-relative">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-5">
-          <div class="main_title">
-            <h2 class="mb-3 text-white" style="padding-top: 10px;">Upcoming Events</h2>
-          </div>
-        </div>
+      <!-- Heading -->
+      <h2 class="text-center fw-bold mb-3 animate__animated animate__fadeIn">Follow Us on Instagram</h2>
+      <div class="text-center mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+        <span class="d-inline-block bg-primary text-white px-3 py-1 rounded-pill">
+          <i class="fas fa-heart me-2"></i>@bviop_official
+        </span>
       </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-6">
-          <div class="single_event position-relative">
-            <div class="event_thumb">
-              <img src="img/event/e1.jpg" alt="" />
-            </div>
-            <div class="event_details">
-              <div class="d-flex mb-4">
-                <div class="date"><span>15</span> Jun</div>
 
-                <div class="time-location">
-                  <p>
-                    <span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM
-                  </p>
-                  <p>
-                    <span class="ti-location-pin mr-2"></span> Hilton Quebec
-                  </p>
-                </div>
+      <!-- Instagram Feed -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-3" id="sbi_images">
+        <!-- Post 1 -->
+        <div class="col animate__animated animate__zoomIn animate__delay-1s">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <a href="https://www.instagram.com/p/Cw658oBsSNO/" target="_blank" rel="noopener nofollow"
+              class="d-block position-relative">
+              <img
+                src="https://pharmacy.brahmavalley.co.in/wp-content/uploads/sb-instagram-feed-images/375836889_271541765813451_5685031262592403395_n.heicfull.jpg"
+                class="card-img-top" alt="B. Pharmacy Admission" style="height: 200px; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 p-2 bg-dark bg-opacity-50 text-white w-100">
+                <span class="sbi-screenreader">B. Pharmacy Admission 👨‍💻</span>
               </div>
-              <p>
-                One make creepeth man for so bearing their firmament won't
-                fowl meat over seas great
-              </p>
-              <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
-            </div>
+            </a>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6">
-          <div class="single_event position-relative">
-            <div class="event_thumb">
-              <img src="img/event/e2.jpg" alt="" />
-            </div>
-            <div class="event_details">
-              <div class="d-flex mb-4">
-                <div class="date"><span>15</span> Jun</div>
-
-                <div class="time-location">
-                  <p>
-                    <span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM
-                  </p>
-                  <p>
-                    <span class="ti-location-pin mr-2"></span> Hilton Quebec
-                  </p>
-                </div>
+        <!-- Post 2 -->
+        <div class="col animate__animated animate__zoomIn animate__delay-2s">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <a href="https://www.instagram.com/p/CwUVzHAo3mb/" target="_blank" rel="noopener nofollow"
+              class="d-block position-relative">
+              <img
+                src="https://pharmacy.brahmavalley.co.in/wp-content/uploads/sb-instagram-feed-images/369573984_1017586922730996_1380229349452211971_n.heicfull.jpg"
+                class="card-img-top" alt="Visit link" style="height: 200px; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 p-2 bg-dark bg-opacity-50 text-white w-100">
+                <span class="sbi-screenreader">Visit link below 👇</span>
               </div>
-              <p>
-                One make creepeth man for so bearing their firmament won't
-                fowl meat over seas great
-              </p>
-              <a href="#" class="primary-btn rounded-0 mt-3">View Details</a>
-            </div>
+            </a>
           </div>
         </div>
-
-        <div class="col-lg-12">
-          <div class="text-center pt-lg-5 pt-3">
-            <a href="#" class="event-link">
-              View All Event <img src="img/next.png" alt="" />
+        <!-- Post 3 -->
+        <div class="col animate__animated animate__zoomIn animate__delay-3s">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <a href="https://www.instagram.com/p/CvtWbHaoBJY/" target="_blank" rel="noopener nofollow"
+              class="d-block position-relative">
+              <img
+                src="https://pharmacy.brahmavalley.co.in/wp-content/uploads/sb-instagram-feed-images/366430441_3608529599383152_5004487235173172730_n.heicfull.jpg"
+                class="card-img-top" alt="Vacancy Position" style="height: 200px; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 p-2 bg-dark bg-opacity-50 text-white w-100">
+                <span class="sbi-screenreader">Vacancy Position</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Post 4 -->
+        <div class="col animate__animated animate__zoomIn animate__delay-4s">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <a href="https://www.instagram.com/p/CvtVb6NBNAh/" target="_blank" rel="noopener nofollow"
+              class="d-block position-relative">
+              <img
+                src="https://pharmacy.brahmavalley.co.in/wp-content/uploads/sb-instagram-feed-images/365752006_1319428135661812_2040368078338409017_n.heicfull.jpg"
+                class="card-img-top" alt="Brahma Valley" style="height: 200px; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 p-2 bg-dark bg-opacity-50 text-white w-100">
+                <span class="sbi-screenreader">Brahma Valley</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Post 5 -->
+        <div class="col animate__animated animate__zoomIn animate__delay-5s">
+          <div class="card border-0 shadow-sm overflow-hidden">
+            <a href="https://www.instagram.com/p/CvhSg88BQoh/" target="_blank" rel="noopener nofollow"
+              class="d-block position-relative">
+              <img
+                src="https://pharmacy.brahmavalley.co.in/wp-content/uploads/sb-instagram-feed-images/365155893_685943923350337_4857573841375250670_n.heicfull.jpg"
+                class="card-img-top" alt="Brahma Valley" style="height: 200px; object-fit: cover;">
+              <div class="position-absolute bottom-0 start-0 p-2 bg-dark bg-opacity-50 text-white w-100">
+                <span class="sbi-screenreader">Brahma Valley</span>
+              </div>
             </a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!--================ End Events Area =================-->
 
-  <!--================ Start Testimonial Area =================-->
-  <!--================ Start Milestone Placements Section =================-->
+      <!-- Follow Button -->
+      <div class="text-center mt-5 animate__animated animate__fadeInUp animate__delay-6s">
+        <a href="https://www.instagram.com/bviop_official/" target="_blank" rel="nofollow noopener"
+          class="btn btn-outline-primary rounded-pill px-4 py-2">
+          <i class="fab fa-instagram me-2"></i>Follow on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Placements Section -->
   <section class="py-5 bg-white">
     <div class="container text-center">
-      <h3 class="font-weight-bold mb-3">Placements Students</h3>
-      <div class="mb-4" style="width: 150px; height: 2px; background-color: red; margin: 0 auto;"></div>
-      <div class="row justify-content-center">
-        <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="IKS Health" />
+      <h3 class="font-weight-bold mb-3" style="font-family: 'Poppins'" data-aos="fade-up">Our Top Recruiters</h3>
+      <div class="mb-4" style="width: 150px; height: 2px; background-color: #ea1f28; margin: 0 auto;"></div>
+      <div class="row justify-content-center g-4">
+        <div class="col-6 col-sm-4 col-md-2 mb-4" data-aos="zoom-in">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="IKS Health">
         </div>
-        <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="TCS" />
+        <div class="col-6 col-sm-4 col-md-2 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="TCS">
         </div>
-        <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Glenmark" />
+        <div class="col-6 col-sm-4 col-md-2 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Glenmark">
         </div>
-        <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Cognizant" />
+        <div class="col-6 col-sm-4 col-md-2 mb-4" data-aos="zoom-in" data-aos-delay="300">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Cognizant">
         </div>
-        <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Macleods" />
+        <div class="col-6 col-sm-4 col-md-2 mb-4" data-aos="zoom-in" data-aos-delay="400">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Macleods">
         </div>
-        <div class="col-6 col-sm-4 col-md-2 mb-4">
-          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Wockhardt" />
+        <div class="col-6 col-sm-4 col-md-2 mb-4" data-aos="zoom-in" data-aos-delay="500">
+          <img src="img/images.png" class="img-fluid shadow-sm p-2 bg-white" alt="Wockhardt">
         </div>
       </div>
     </div>
   </section>
-  <!--================ End Milestone Placements Section =================-->
 
-  <!--================ End Testimonial Area =================-->
-
-  <!--================ Start footer Area  =================-->
-  <footer class="footer-area section_gap">
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-white">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 single-footer-widget">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Tutorial</a></li>
-            <li><a href="#">Event Gallery</a></li>
-            <li><a href="#">Course</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 single-footer-widget">
-          <h4>Additional Links</h4>
-          <ul>
-            <li><a href="#">DTE Code</a></li>
-            <li><a href="#">Publication</a></li>
-            <li><a href="#">Hostel Overview</a></li>
-            <li><a href="#">Student Login</a></li>
-            <li><a href="#">Staff Login</a></li>
-            <li><a href="#">Terms & Condition</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 col-md-6 single-footer-widget contact-info-widget">
-          <h4>CONTACT INFO</h4>
-          <ul>
-            <li><i class="fa fa-envelope"></i> reply@bestinstituteeducation.com</li>
-            <li><i class="fa fa-phone"></i> +91 9923072990</li>
-            <li><i class="fa fa-fax"></i> +91 9923072990</li>
-            <li><i class="fa fa-globe"></i> www.brahmavalley.com</li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6 single-footer-widget">
-          <h4>Newsletter</h4>
-          <p>You can trust us. we only send promo offers,</p>
-          <div class="form-wrap" id="mc_embed_signup">
-            <form target="_blank"
-              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-              method="get" class="form-inline">
-              <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Your Email Address'" required="" type="email" />
-              <button class="click-btn btn btn-default">
-                <span>subscribe</span>
-              </button>
-              <div style="position: absolute; left: -5000px;">
-                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text" />
-              </div>
-
-              <div class="info"></div>
-            </form>
+      <div class="row g-4">
+        <!-- About Us -->
+        <div class="col-lg-4 col-md-6 animate__animated animate__fadeInLeft">
+          <h5 class="mb-4 fw-bold text-uppercase">About Us</h5>
+          <p>Brahma Valley Institute of Pharmacy (BVIOP), established in 2023, is committed to
+            delivering
+            premier
+            pharmacy education with world-class infrastructure to students in remote regions.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-white fs-5 social-icon" title="Facebook" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-white fs-5 social-icon" title="Twitter" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/bviop_official/" target="_blank" class="text-white fs-5 social-icon"
+              title="Instagram" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp animate__delay-1s">
+          <h5 class="mb-4 fw-bold text-uppercase">Quick Links</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled lh-lg">
+                <li><a href="index.html" class="text-white text-decoration-none"><i
+                      class="bi bi-chevron-right me-2"></i>Home</a></li>
+                <li><a href="vision.html" class="text-white text-decoration-none"><i
+                      class="bi bi-chevron-right me-2"></i>BVIOP</a></li>
+                <li><a href="admission.html" class="text-white text-decoration-none"><i
+                      class="bi bi-chevron-right me-2"></i>Admissions</a></li>
+                <li><a href="#" class="text-white text-decoration-none"><i
+                      class="bi bi-chevron-right me-2"></i>Course</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled lh-lg">
+                <li><a href="facilities.html" class="text-white text-decoration-none"><i
+                      class="bi bi-chevron-right me-2"></i>Facilities</a></li>
+                <li><a href="cdc.html" class="text-white text-decoration-none"><i
+                      class="bi bi-chevron-right me-2"></i>Committee</a></li>
+                <li><a href="gallery.html" class="text-white text-decoration-none"><i
+                      class="bi bi-chevron-right me-2"></i>Gallery</a></li>
+                <li><a href="contact.html" class="text-white text-decoration-none"><i
+                      class="bi bi-chevron-right me-2"></i>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-6 animate__animated animate__fadeInRight animate__delay-2s">
+          <h5 class="mb-4 fw-bold text-uppercase">Contact Us</h5>
+          <ul class="list-unstyled lh-lg">
+            <li><i class="bi bi-geo-alt-fill me-2 text-warning"></i>Brahma Valley Campus, Anjaneri,
+              Trimbak
+              Road,
+              Nashik-422213, Maharashtra</li>
+            <li><i class="bi bi-telephone-fill me-2 text-warning"></i>8830602363 / 02594 299247</li>
+            <li><i class="bi bi-envelope-fill me-2 text-warning"></i><a href="mailto:principalbviop@gmail.com"
+                class="text-white text-decoration-none">principalbviop@gmail.com</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-warning mt-3 rounded-pill px-4">Join Our
+            Newsletter</a>
+        </div>
       </div>
-      <div class="row footer-bottom d-flex justify-content-between">
-        <p class="col-lg-6 col-sm-12 footer-text m-0 text-white">
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          Copyright &copy;
-          <script>document.write(new Date().getFullYear());</script>Bramha Vallay University. All University Reserved
-          <!-- <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        </p>
-        <div class="col-lg-6 col-sm-12 footer-social">
-          <a href="#"><i class="ti-facebook"></i></a>
-          <a href="#"><i class="ti-twitter"></i></a>
-          <a href="#"><i class="ti-dribbble"></i></a>
-          <a href="#"><i class="ti-linkedin"></i></a>
+
+      <!-- Bottom Bar -->
+      <hr class="border-secondary my-4">
+      <div class="row text-center">
+        <div class="col-12 animate__animated animate__fadeInUp animate__delay-3s">
+          <small>© 2025 <strong>Brahma Valley Institute of Pharmacy</strong>. All rights
+            reserved.</small>
         </div>
       </div>
     </div>
   </footer>
-  <!--================ End footer Area  =================-->
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="js/owl-carousel-thumb.min.js"></script>
-  <script src="js/jquery.ajaxchimp.min.js"></script>
-  <script src="js/mail-script.js"></script> -->
-  <!--gmaps Js-->
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
-  <script src="js/gmaps.min.js"></script>
-  <script src="js/theme.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
-  <!-- Popper.js (2nd) -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
 
-  <!-- Bootstrap JS (3rd) -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/stellar.js"></script>
-  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="js/owl-carousel-thumb.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.ajaxchimp.min.js"></script>
-  <script src="js/mail-script.js"></script>
-  <!--gmaps Js-->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-  <script src="js/gmaps.min.js"></script>
-  <script src="js/contact.js"></script>
-  <script src="js/theme.js"></script>
-</body>
 
-</html>
+  <!-- Bootstrap JS and Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/lightcase@2.5.0/src/css/lightcase.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightcase@2.5.0/src/js/lightcase.js"></script>
+  <script src="js/newscript.js"></script>
 </body>
 
 </html>
