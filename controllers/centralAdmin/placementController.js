@@ -1,4 +1,4 @@
-const Placement = require('../../models/centralAdmin/placementParagraphModel');
+const Placement = require('../../models/centralAdmin/Placement');
 
 exports.addPlacement = async (req, res) => {
   try {

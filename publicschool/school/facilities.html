@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#3b82f6", secondary: "#64748b" },
+          borderRadius: {
+            none: "0px",
+            sm: "4px",
+            DEFAULT: "8px",
+            md: "12px",
+            lg: "16px",
+            xl: "20px",
+            "2xl": "24px",
+            "3xl": "32px",
+            full: "9999px",
+            button: "8px",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :where([class^="ri-"])::before {
+      content: "\f3c2";
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .news-ticker {
+      animation: ticker 30s linear infinite;
+    }
+
+    @keyframes ticker {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .counter-animation {
+      animation: countUp 2s ease-out forwards;
+    }
+
+    @keyframes countUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .carousel-item {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .carousel-item.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .custom-checkbox {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .custom-checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkmark {
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .custom-checkbox input:checked~.checkmark {
+      background-color: #3b82f6;
+      border-color: #3b82f6;
+    }
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .custom-checkbox input:checked~.checkmark:after {
+      display: block;
+    }
+
+    .custom-switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+
+    .custom-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 24px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked+.slider {
+      background-color: #3b82f6;
+    }
+
+    input:checked+.slider:before {
+      transform: translateX(26px);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#" class="flex items-center">
+        <img src="img/logo.png" alt="Greenfield Academy Logo" class="h-13 w-auto" />
+      </a>
+
+      <div class="hidden lg:flex items-center space-x-8">
+        <nav>
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo -->
+
+    <!-- Desktop Menu -->
+    <ul class="hidden sm:flex space-x-5 items-center">
+      <li><a href="school.html" class="text-primary font-medium hover:text-primary/80 transition">Home</a></li>
+
+      <!-- About Us Dropdown -->
+      <li class="relative group">
+        <a href="#" class="flex items-center text-gray-700 font-medium hover:text-primary transition">
+          About Us BVPS
+          <i class="ri-arrow-down-s-line ml-1"></i>
+        </a>
+        <div class="absolute left-0 top-full z-10 w-56 mt-2 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
+          <a href="chairman-desk.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Chairman Desk</a>
+          <a href="principal-desk.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Principal Desk</a>
+          <a href="bvps-vision.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">BVPS Vision</a>
+          <a href="faculties.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Faculties</a>
+          <a href="testimonials.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Testimonials</a>
+        </div>
+      </li>
+
+      <!-- Academics Dropdown -->
+      <li class="relative group">
+        <a href="#" class="flex items-center text-gray-700 font-medium hover:text-primary transition">
+          Academics
+          <i class="ri-arrow-down-s-line ml-1"></i>
+        </a>
+        <div class="absolute left-0 top-full z-10 w-56 mt-2 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
+          <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Curriculum</a>
+        </div>
+      </li>
+
+      <!-- Other Static Links -->
+      <li><a href="about-jur-col.html" class="text-gray-700 font-medium hover:text-primary transition">About Junior College</a></li>
+      <li><a href="school-life.html" class="text-gray-700 font-medium hover:text-primary transition">School Life</a></li>
+      <li><a href="boarding-faciliti.html" class="text-gray-700 font-medium hover:text-primary transition">Boarding Facilities</a></li>
+      <li><a href="admission.html" class="text-gray-700 font-medium hover:text-primary transition">Admission</a></li>
+
+      <!-- Activities Dropdown -->
+      <li class="relative group">
+        <a href="#" class="flex items-center text-gray-700 font-medium hover:text-primary transition">
+          Activities BVPS
+          <i class="ri-arrow-down-s-line ml-1"></i>
+        </a>
+        <div class="absolute left-0 top-full z-10 w-56 mt-2 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
+          <a href="facilities.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Facilities</a>
+          <a href="extra-curricular-activities.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Extra Curricular Activities</a>
+          <a href="sports.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sports</a>
+        </div>
+      </li>
+
+      <li><a href="download.html" class="text-gray-700 font-medium hover:text-primary transition">Download</a></li>
+      <li><a href="contact.html" class="text-gray-700 font-medium hover:text-primary transition">Contact Us</a></li>
+    </ul>
+
+    <!-- Mobile menu button (optional if using mobile menu) -->
+    <button class="lg:hidden text-2xl text-gray-700">
+      <i class="ri-menu-line"></i>
+    </button>
+  </div>
+</nav>
+
+      </div>
+
+      <button class="lg:hidden w-10 h-10 flex items-center justify-center text-gray-700" id="mobile-menu-button">
+        <i class="ri-menu-line text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="lg:hidden bg-white w-full absolute top-full left-0 shadow-lg hidden" id="mobile-menu">
+  <nav class="container mx-auto px-4 py-3">
+    <ul class="space-y-3">
+      <li>
+        <a href="school.html" class="block py-2 text-primary font-medium">Home</a>
+      </li>
+
+      <!-- About Us BVPS -->
+      <li>
+        <button class="dropdown-toggle flex items-center justify-between w-full py-2 text-gray-700 font-medium" data-target="about-dropdown">
+          About Us BVPS
+          <i class="ri-arrow-down-s-line ml-2"></i>
+        </button>
+        <div class="dropdown hidden pl-4 space-y-2 mt-2" id="about-dropdown">
+          <a href="chairman-desk.html" class="block py-2 text-sm text-gray-700">Chairman Desk</a>
+          <a href="principal-desk.html" class="block py-2 text-sm text-gray-700">Principal Desk</a>
+          <a href="bvps-vision.html" class="block py-2 text-sm text-gray-700">BVPS Vision</a>
+          <a href="faculties.html" class="block py-2 text-sm text-gray-700">Faculties</a>
+          <a href="testimonials.html" class="block py-2 text-sm text-gray-700">Testimonials</a>
+        </div>
+      </li>
+
+      <!-- Academics -->
+      <li>
+        <button class="dropdown-toggle flex items-center justify-between w-full py-2 text-gray-700 font-medium" data-target="academics-dropdown">
+          Academics
+          <i class="ri-arrow-down-s-line ml-2"></i>
+        </button>
+        <div class="dropdown hidden pl-4 space-y-2 mt-2" id="academics-dropdown">
+          <a href="#" class="block py-2 text-sm text-gray-700">Curriculum</a>
+        </div>
+      </li>
+
+      <!-- Activities -->
+      <li>
+        <button class="dropdown-toggle flex items-center justify-between w-full py-2 text-gray-700 font-medium" data-target="activities-dropdown">
+          Activities BVPS
+          <i class="ri-arrow-down-s-line ml-2"></i>
+        </button>
+        <div class="dropdown hidden pl-4 space-y-2 mt-2" id="activities-dropdown">
+          <a href="facilities.html" class="block py-2 text-sm text-gray-700">Facilities</a>
+          <a href="extra-curricular-activities.html" class="block py-2 text-sm text-gray-700">Extra Curricular Activities</a>
+          <a href="sports.html" class="block py-2 text-sm text-gray-700">Sports</a>
+        </div>
+      </li>
+
+      <li><a href="about-jur-col.html" class="block py-2 text-gray-700 font-medium">About Junior College</a></li>
+      <li><a href="school-life.html" class="block py-2 text-gray-700 font-medium">School Life</a></li>
+      <li><a href="boarding-faciliti.html" class="block py-2 text-gray-700 font-medium">Boarding Facilities</a></li>
+      <li><a href="boarding-faciliti.html" class="block py-2 text-gray-700 font-medium">Admission</a></li>
+      <li><a href="download.html" class="block py-2 text-gray-700 font-medium">Download</a></li>
+      <li><a href="contact.html" class="block py-2 text-gray-700 font-medium">Contact Us</a></li>
+    </ul>
+  </nav>
+</div>
+  </header>
+  <div class="relative h-[300px] flex items-center justify-center text-center text-white"
+     style="background-image: url('img/banner.jpg'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div> <!-- Dark overlay -->
+  
+  <div class="relative z-10">
+    <h1 class="text-4xl font-bold mb-2">Facility</h1>
+    <p class="text-sm">
+      <a href="school.html" class="text-gray-200 hover:text-white">Home</a> / 
+      <span class="text-white font-medium">Facility</span>
+    </p>
+  </div>
+</div>
+
+
+  <!-- Newsletter Section -->
+ <section id="facilities" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-4 fade-in">
+        Facility
+      </h2>
+      <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto fade-in">
+        We provide state-of-the-art facilities to support a comprehensive
+        educational experience.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in">
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:translate-y-[-5px]">
+          <img
+            src="img/brahma-valley.avif"
+            alt="Library" class="w-full h-48 object-cover object-top" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 flex items-center">
+              <div class="w-8 h-8 flex items-center justify-center mr-2 bg-primary/10 rounded-full text-primary">
+                <i class="ri-book-line"></i>
+              </div>
+              Boarding Facility
+            </h3>
+            <p class="text-gray-600">
+              Our extensive library houses over 20,000 books, digital
+              resources, and comfortable study spaces to foster a love for
+              reading and research.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:translate-y-[-5px]">
+          <img
+            src="img/transport (1).jpg"
+            alt="Science Labs" class="w-full h-48 object-cover object-top" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 flex items-center">
+              <div class="w-8 h-8 flex items-center justify-center mr-2 bg-primary/10 rounded-full text-primary">
+                <i class="ri-flask-line"></i>
+              </div>
+              Bus Facility
+            </h3>
+            <p class="text-gray-600">
+              Fully equipped physics, chemistry, and biology labs with modern
+              equipment to facilitate hands-on learning and scientific
+              exploration.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:translate-y-[-5px]">
+          <img
+            src="img/transport (1).jpg"
+            alt="Computer Labs" class="w-full h-48 object-cover object-top" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 flex items-center">
+              <div class="w-8 h-8 flex items-center justify-center mr-2 bg-primary/10 rounded-full text-primary">
+                <i class="ri-computer-line"></i>
+              </div>
+              Canteen Facility
+            </h3>
+            <p class="text-gray-600">
+              State-of-the-art computer labs, coding studios, and digital
+              learning spaces equipped with the latest hardware and software.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:translate-y-[-5px]">
+          <img
+            src="img/transport (1).jpg"
+            alt="Sports Facilities" class="w-full h-48 object-cover object-top" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 flex items-center">
+              <div class="w-8 h-8 flex items-center justify-center mr-2 bg-primary/10 rounded-full text-primary">
+                <i class="ri-basketball-line"></i>
+              </div>
+              Sports Facilities
+            </h3>
+            <p class="text-gray-600">
+              Indoor gymnasium, outdoor playing fields, swimming pool, and
+              courts for various sports to promote physical fitness and team
+              spirit.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:translate-y-[-5px]">
+          <img
+            src="img/transport (1).jpg"
+            alt="Performing Arts Center" class="w-full h-48 object-cover object-top" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 flex items-center">
+              <div class="w-8 h-8 flex items-center justify-center mr-2 bg-primary/10 rounded-full text-primary">
+                <i class="ri-music-line"></i>
+              </div>
+              Performing Arts Center
+            </h3>
+            <p class="text-gray-600">
+              Auditorium, music rooms, dance studios, and art galleries to
+              nurture creativity and artistic expression among students.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md transition-transform hover:translate-y-[-5px]">
+          <img
+            src="img/transport (1).jpg"
+            alt="Dining Hall" class="w-full h-48 object-cover object-top" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 flex items-center">
+              <div class="w-8 h-8 flex items-center justify-center mr-2 bg-primary/10 rounded-full text-primary">
+                <i class="ri-restaurant-line"></i>
+              </div>
+              Dining & Recreation
+            </h3>
+            <p class="text-gray-600">
+              Modern cafeteria serving nutritious meals, student lounges, and
+              outdoor recreation areas for relaxation and socialization.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center fade-in">
+        <!-- <a href="#"
+          class="inline-block bg-primary text-white px-6 py-3 rounded-button whitespace-nowrap hover:bg-primary/90 transition">Take
+          a Virtual Tour</a> -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <a href="#" class="flex items-center mb-6">
+            <span class="text-3xl font-['Pacifico'] text-white">Greenfield</span>
+            <span class="ml-2 text-lg font-semibold text-gray-300">Academy</span>
+          </a>
+          <p class="text-gray-400 mb-6">
+            Providing quality education since 1990. Our mission is to nurture
+            the intellectual, physical, social, and emotional growth of our
+            students.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i class="ri-facebook-fill"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i class="ri-twitter-fill"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i class="ri-instagram-line"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-8 h-8 flex items-center justify-center">
+                <i class="ri-linkedin-fill"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-white transition">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="text-gray-400 hover:text-white transition">About Us</a>
+            </li>
+            <li>
+              <a href="#academics" class="text-gray-400 hover:text-white transition">Academics</a>
+            </li>
+            <li>
+              <a href="#admissions" class="text-gray-400 hover:text-white transition">Admissions</a>
+            </li>
+            <li>
+              <a href="#facilities" class="text-gray-400 hover:text-white transition">Facilities</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-6">Resources</h3>
+          <ul class="space-y-3">
+            <li>
+              <a href="#" class="text-gray-400 hover:text-white transition">Student Portal</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-white transition">Parent Portal</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-white transition">Faculty Resources</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-white transition">Academic Calendar</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-white transition">School Policies</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 hover:text-white transition">Career Opportunities</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-6">Contact Information</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center mt-1 text-gray-400 mr-3">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <span class="text-gray-400">123 Education Avenue, Greenfield<br />CA 94301, United
+                States</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center mt-1 text-gray-400 mr-3">
+                <i class="ri-phone-line"></i>
+              </div>
+              <span class="text-gray-400">+1 (555) 123-4567</span>
+            </li>
+            <li class="flex items-start">
+              <div class="w-5 h-5 flex items-center justify-center mt-1 text-gray-400 mr-3">
+                <i class="ri-mail-line"></i>
+              </div>
+              <span class="text-gray-400">info@greenfieldacademy.edu</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-gray-700">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            &copy; 2025 Greenfield Academy. All rights reserved.
+          </p>
+          <div class="flex flex-wrap gap-4 text-sm text-gray-400">
+            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition">Terms of Service</a>
+            <a href="#" class="hover:text-white transition">Accessibility</a>
+            <a href="#" class="hover:text-white transition">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top"
+    class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 z-50">
+    <i class="ri-arrow-up-line text-xl"></i>
+  </button>
+
+  <!-- Accessibility Controls -->
+  <div class="fixed left-6 bottom-6 z-50">
+    <button id="accessibility-toggle"
+      class="w-12 h-12 bg-gray-800 text-white rounded-full shadow-lg flex items-center justify-center">
+      <i class="ri-settings-3-line text-xl"></i>
+    </button>
+
+    <div id="accessibility-panel" class="absolute bottom-16 left-0 bg-white rounded-lg shadow-lg p-4 w-64 hidden">
+      <h3 class="font-bold text-gray-800 mb-3">Accessibility Options</h3>
+
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-gray-700">High Contrast</span>
+          <label class="custom-switch">
+            <input type="checkbox" id="high-contrast" />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-gray-700">Font Size</span>
+          <div class="flex items-center space-x-2">
+            <button id="decrease-font"
+              class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full text-gray-700 hover:bg-gray-300 transition">
+              <i class="ri-subtract-line"></i>
+            </button>
+            <button id="reset-font"
+              class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full text-gray-700 hover:bg-gray-300 transition">
+              <i class="ri-refresh-line"></i>
+            </button>
+            <button id="increase-font"
+              class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full text-gray-700 hover:bg-gray-300 transition">
+              <i class="ri-add-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-gray-700">Language</span>
+          <div class="relative">
+            <select id="language-selector"
+              class="bg-gray-200 text-gray-700 rounded px-2 py-1 text-sm appearance-none pr-6">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-1 pointer-events-none">
+              <i class="ri-arrow-down-s-line text-gray-500 text-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script id="carousel-script">
+    document.addEventListener("DOMContentLoaded", function () {
+      // Carousel functionality
+      const carouselItems = document.querySelectorAll(".carousel-item");
+      const indicators = document.querySelectorAll("[data-slide]");
+      let currentSlide = 0;
+      let slideInterval;
+
+      function showSlide(index) {
+        // Hide all slides
+        carouselItems.forEach((item) => {
+          item.classList.remove("active");
+        });
+
+        // Update indicators
+        indicators.forEach((indicator) => {
+          indicator.style.opacity = "0.5";
+        });
+
+        // Show the selected slide
+        carouselItems[index].classList.add("active");
+        indicators[index].style.opacity = "1";
+
+        currentSlide = index;
+      }
+
+      function nextSlide() {
+        let next = currentSlide + 1;
+        if (next >= carouselItems.length) {
+          next = 0;
+        }
+        showSlide(next);
+      }
+
+      // Set up click handlers for indicators
+      indicators.forEach((indicator) => {
+        indicator.addEventListener("click", function () {
+          const slideIndex = parseInt(this.getAttribute("data-slide"));
+          showSlide(slideIndex);
+          resetInterval();
+        });
+      });
+
+      // Start automatic slideshow
+      function startInterval() {
+        slideInterval = setInterval(nextSlide, 5000);
+      }
+
+      function resetInterval() {
+        clearInterval(slideInterval);
+        startInterval();
+      }
+
+      startInterval();
+    });
+  </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+
+        // Toggle icon
+        const icon = mobileMenuButton.querySelector("i");
+        if (mobileMenu.classList.contains("hidden")) {
+          icon.classList.remove("ri-close-line");
+          icon.classList.add("ri-menu-line");
+        } else {
+          icon.classList.remove("ri-menu-line");
+          icon.classList.add("ri-close-line");
+        }
+      });
+    }
+
+    // Dropdowns for About/Academics/Activities
+    document.querySelectorAll(".dropdown-toggle").forEach(button => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-target");
+        const dropdown = document.getElementById(targetId);
+        const icon = button.querySelector("i");
+
+        dropdown.classList.toggle("hidden");
+
+        if (dropdown.classList.contains("hidden")) {
+          icon.classList.remove("ri-arrow-up-s-line");
+          icon.classList.add("ri-arrow-down-s-line");
+        } else {
+          icon.classList.remove("ri-arrow-down-s-line");
+          icon.classList.add("ri-arrow-up-s-line");
+        }
+      });
+    });
+  });
+</script>
+  <script id="scroll-animations-script">
+    document.addEventListener("DOMContentLoaded", function () {
+      // Fade-in animations on scroll
+      const fadeElements = document.querySelectorAll(".fade-in");
+
+      function checkFade() {
+        fadeElements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementTop < windowHeight * 0.9) {
+            element.classList.add("active");
+          }
+        });
+      }
+
+      // Initial check
+      checkFade();
+
+      // Check on scroll
+      window.addEventListener("scroll", checkFade);
+
+      // Counter animations
+      const counters = document.querySelectorAll(".counter");
+
+      function startCounting(counter) {
+        const target = parseInt(counter.getAttribute("data-target"));
+        const duration = 2000; // 2 seconds
+        const step = target / (duration / 16); // 60fps
+        let current = 0;
+
+        const updateCounter = () => {
+          current += step;
+          if (current < target) {
+            counter.textContent = Math.floor(current);
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = target;
+          }
+        };
+
+        updateCounter();
+      }
+
+      function checkCounters() {
+        counters.forEach((counter) => {
+          const elementTop = counter.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (
+            elementTop < windowHeight * 0.8 &&
+            !counter.classList.contains("counted")
+          ) {
+            counter.classList.add("counted");
+            startCounting(counter);
+          }
+        });
+      }
+
+      // Initial check
+      checkCounters();
+
+      // Check on scroll
+      window.addEventListener("scroll", checkCounters);
+    });
+  </script>
+
+  <script id="back-to-top-script">
+    document.addEventListener("DOMContentLoaded", function () {
+      // Back to top button
+      const backToTopButton = document.getElementById("back-to-top");
+
+      function toggleBackToTopButton() {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add("opacity-100");
+          backToTopButton.classList.remove("invisible");
+        } else {
+          backToTopButton.classList.remove("opacity-100");
+          backToTopButton.classList.add("invisible");
+        }
+      }
+
+      window.addEventListener("scroll", toggleBackToTopButton);
+
+      backToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
+
+  <script id="accessibility-script">
+    document.addEventListener("DOMContentLoaded", function () {
+      // Accessibility panel toggle
+      const accessibilityToggle = document.getElementById("accessibility-toggle");
+      const accessibilityPanel = document.getElementById("accessibility-panel");
+
+      accessibilityToggle.addEventListener("click", function () {
+        accessibilityPanel.classList.toggle("hidden");
+      });
+
+      // High contrast mode
+      const highContrastToggle = document.getElementById("high-contrast");
+
+      highContrastToggle.addEventListener("change", function () {
+        if (this.checked) {
+          document.body.classList.add("high-contrast");
+        } else {
+          document.body.classList.remove("high-contrast");
+        }
+      });
+
+      // Font size controls
+      const decreaseFontBtn = document.getElementById("decrease-font");
+      const resetFontBtn = document.getElementById("reset-font");
+      const increaseFontBtn = document.getElementById("increase-font");
+
+      let currentFontSize = 100;
+
+      decreaseFontBtn.addEventListener("click", function () {
+        if (currentFontSize > 80) {
+          currentFontSize -= 10;
+          document.body.style.fontSize = currentFontSize + "%";
+        }
+      });
+
+      resetFontBtn.addEventListener("click", function () {
+        currentFontSize = 100;
+        document.body.style.fontSize = "100%";
+      });
+
+      increaseFontBtn.addEventListener("click", function () {
+        if (currentFontSize < 130) {
+          currentFontSize += 10;
+          document.body.style.fontSize = currentFontSize + "%";
+        }
+      });
+
+      // Close panel when clicking outside
+      document.addEventListener("click", function (event) {
+        if (
+          !accessibilityPanel.contains(event.target) &&
+          event.target !== accessibilityToggle
+        ) {
+          accessibilityPanel.classList.add("hidden");
+        }
+      });
+    });
+  </script>
+
+  <script id="smooth-scroll-script">
+    document.addEventListener("DOMContentLoaded", function () {
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById("mobile-menu");
+            if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+              mobileMenu.classList.add("hidden");
+              const icon = document.querySelector("#mobile-menu-button i");
+              icon.classList.remove("ri-close-line");
+              icon.classList.add("ri-menu-line");
+            }
+
+            // Calculate header height for offset
+            const header = document.querySelector("header");
+            const headerHeight = header ? header.offsetHeight : 0;
+
+            window.scrollTo({
+              top: targetElement.offsetTop - headerHeight,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
