@@ -1,0 +1,66 @@
+{
+  "info": {
+    "_postman_id": "college-admin-sample-001",
+    "name": "College Admin APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"admin@college.com\",\n  \"password\": \"admin123\"\n}"
+        },
+        "url": {
+          "raw": "{{api_base_url}}/api/login",
+          "host": ["{{api_base_url}}"],
+          "path": ["api", "login"]
+        }
+      }
+    },
+    {
+      "name": "Get All News",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "ngrok-skip-browser-warning", "value": "true" }
+        ],
+        "url": {
+          "raw": "{{api_base_url}}/api/news",
+          "host": ["{{api_base_url}}"],
+          "path": ["api", "news"]
+        }
+      }
+    },
+    {
+      "name": "Add News",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "ngrok-skip-browser-warning", "value": "true" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"New College Event\",\n  \"content\": [\"Event details here\"],\n  \"author\": \"Admin\"\n}"
+        },
+        "url": {
+          "raw": "{{api_base_url}}/api/news",
+          "host": ["{{api_base_url}}"],
+          "path": ["api", "news"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "api_base_url",
+      "value": "https://your-ngrok-url.ngrok-free.app"
+    }
+  ]
+}

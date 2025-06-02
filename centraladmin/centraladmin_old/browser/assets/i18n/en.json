@@ -3,9 +3,6 @@
     "TITLE": "Welcome to Smart"
   },
   "MENUITEMS": {
-    "MAIN": {
-      "TEXT": "Main"
-    },
     "BRAHMAVALLEY-MAIN": {
       "TEXT": "Brahmavalley Main",
       "LIST": {
