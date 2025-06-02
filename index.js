@@ -12,9 +12,9 @@ connectDB();
 
 // CORS setup
 app.use(cors({
-  origin: ['http://localhost:4200'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'x-department']
+  // origin: ['http://localhost:4200'],
+  // methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  // allowedHeaders: ['Content-Type', 'Authorization', 'x-department']
 }));
 
 // JSON body parser
