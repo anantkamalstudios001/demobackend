@@ -129,6 +129,14 @@ router.delete('/delete-campus-gallery/:id', campusGalleryController.deleteCampus
 
 
 
+const controller = require('../controllers/centralAdmin/visionMissionController');
+
+router.post('/add-vision-mission', controller.addVisionMission);
+router.get('/vision-mission', controller.getVisionMission);
+router.put('/update-vision-mission/:id', controller.updateVisionMission);
+router.delete('/delete-vision-mission/:id', controller.deleteVisionMission);
+
+
 const placementParagraphController = require('../controllers/centralAdmin/placementParagraphController');
 
 router.post('/add-placement-paragraph', placementParagraphController.addPlacementParagraph);
@@ -145,6 +153,23 @@ router.get('/highlighted-cases', highlightedCaseController.getHighlightedCases);
 router.put('/update-highlighted-case/:id', highlightedCaseController.updateHighlightedCase);
 router.delete('/delete-highlighted-case/:id', highlightedCaseController.deleteHighlightedCase);
 
+
+
+const altPresidentController = require('../controllers/centralAdmin/presidentMessageController');
+
+// Storage setup for Alt President images
+const altPresidentStorage = multer.diskStorage({
+  destination: (req, file, cb) => cb(null, 'uploads/aboutpresident'),  // folder to store images
+  filename: (req, file, cb) => cb(null, Date.now() + '-' + file.originalname)  // unique filename
+});
+
+const altUploadPresidentImage = multer({ storage: altPresidentStorage }).single('image');
+
+// Then in your router file
+router.post('/add-president-data', altUploadPresidentImage, altPresidentController.createAltPresidentMessage);
+router.get('/president-data', altPresidentController.fetchAltPresidentMessages);
+router.put('/edit-alt-president-msg/:id', altUploadPresidentImage, altPresidentController.modifyAltPresidentMessage);
+router.delete('/remove-alt-president-msg/:id', altPresidentController.removeAltPresidentMessage);
 
 
 
