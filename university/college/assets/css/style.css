@@ -1,0 +1,581 @@
+.img-fluid__ {
+    max-width: 100px;
+    height: auto;
+}
+
+.custom-hover-btn {
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.custom-hover-btn:hover {
+    background-color: #ffc107;
+    color: #fff;
+    border-color: #ffc107;
+}
+
+
+
+.navmenu .nav-link {
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+.navmenu .nav-link:hover {
+    color: #ffc107;
+}
+
+
+/* Mobile toggle styling */
+.mobile-nav-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: #ef6603;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(255 255 255);
+    background-color: #ef6603;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #ef6603;
+    --bs-btn-border-color: #ef6603;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ef6603;
+    --bs-btn-hover-border-color: #ef6603;
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ef6603;
+    --bs-btn-active-border-color: #ef6603;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #ef6603;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #ef6603;
+    --bs-gradient: none;
+}
+
+/* Ensure dropdowns are full-width in mobile view */
+@media (max-width: 991px) {
+    .dropdown-menu {
+        width: 100%;
+        padding: 0;
+    }
+
+    .dropdown-item {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 797px) {
+    div#navbarNavDropdown {
+        background-color: #444444;
+    }
+
+}
+
+
+/* Section styling */
+.Study-sec {
+    padding: 5rem 0;
+    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.Study-sec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 51, 102, 0.5);
+    z-index: 1;
+}
+
+.Study-sec .container {
+    position: relative;
+    z-index: 2;
+}
+
+.Study-sec span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffd700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.Study-sec .lead {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.Study-sec h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+/* Search bar styling */
+.search-home {
+    position: relative;
+    max-width: 300px;
+}
+
+.search-home .form-control {
+    border: none;
+    border-radius: 25px;
+    padding: 12px 50px 12px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.search-home .form-control:focus {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    border-color: #ffd700;
+}
+
+.search-home .submit-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-home .submit-btn img {
+    width: 20px;
+    filter: brightness(0.6);
+}
+
+.search-home ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    top: calc(100% + 10px);
+}
+
+.search-home ul.show {
+    display: block;
+    animation: slideDown 0.3s ease-in-out;
+}
+
+.search-home ul li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.search-home ul li:last-child {
+    border-bottom: none;
+}
+
+.search-home ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    display: block;
+    transition: background 0.2s ease;
+}
+
+.search-home ul li a:hover {
+    background: #f0f0f0;
+    color: #007bff;
+}
+
+/* Programme cards */
+.uppd_progr {
+    margin-top: 3rem;
+}
+
+.ugp,
+.pgp,
+.dgp,
+.phgp {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.ugp:hover,
+.pgp:hover,
+.dgp:hover,
+.phgp:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.home-sec-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.home-sec-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-sec-link:hover .home-sec-title {
+    color: #007bff;
+}
+
+.home-sec-desc {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .Study-sec h2 {
+        font-size: 1.8rem;
+        padding-right: 0;
+    }
+
+    .search-home {
+        max-width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .Study-sec .lead {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .Study-sec {
+        padding: 3rem 0;
+    }
+
+    .ugp,
+    .pgp,
+    .dgp,
+    .phgp {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .Study-sec {
+        padding: 3rem 0;
+    }
+
+    header#header {
+        padding: 0 !important;
+    }
+
+    .ugp,
+    .pgp,
+    .dgp,
+    .phgp {
+        margin-bottom: 1rem;
+    }
+
+    .upward {
+        position: relative;
+        top: -25px !important;
+    }
+}
+
+h2.aos-init.aos-animate {
+    color: #ef6603;
+}
+
+.upward {
+    position: relative;
+    top: -150px;
+}
+
+
+
+/* General styling */
+body {
+    font-family: 'Poppins' !important;
+    margin: 0;
+}
+
+.bi-x::before {
+    content: "\f62a";
+    color: #000;
+}
+
+button.navbar-toggler.mobile-nav-toggle.d-lg-none {
+    color: #fff;
+    background-color: #fff;
+}
+
+/* Recruiters Section Styling */
+.recruiters-section {
+    padding: 5rem 0;
+    background: linear-gradient(rgba(0, 77, 77, 0.8), rgba(0, 77, 77, 0.8)), url('https://images.unsplash.com/photo-1516321310764-8d9a662d6924?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.recruiters-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 77, 77, 0.5);
+    z-index: 1;
+}
+
+.recruiters-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Shape for decorative element */
+.shape-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.3) 0%, transparent 70%);
+    z-index: 1;
+}
+
+/* Title area */
+.apbc-title-area {
+    margin-bottom: 2rem;
+}
+
+.apbc-headline h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffd700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Description */
+.recruiters-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #f0f0f0;
+}
+
+/* Stats cards */
+.tac-2 {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.tac-2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.taxt2 p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.taxt2 span {
+    font-size: 1rem;
+    color: #f0f0f0;
+    display: block;
+}
+
+/* Counter styling */
+.counter {
+    display: inline-block;
+    min-width: 100px;
+    /* Prevent layout shift during counting */
+}
+
+/* Placement logos */
+.placement-logo {
+    margin-top: 3rem;
+}
+
+.placement-logo h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.brand-wrapper {
+    max-width: 100%;
+}
+
+/* Carousel for logos */
+.carousel-inner {
+    padding: 1rem;
+}
+
+.container.text-center.text-white.py-5 {
+    margin-top: 150px !important;
+}
+
+@media (max-width: 579px) {
+    .container.text-center.text-white.py-5 {
+        margin-top: 350px !important;
+    }
+
+    ul.list-inline.mb-0.d-flex.flex-wrap.gap-2.text-white {
+        display: none !important;
+    }
+}
+
+/* .carousel-item img {
+      max-height: 60px;
+      width: auto;
+      margin: 0 1rem;
+    } */
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .recruiters-section h3 {
+        font-size: 1.8rem;
+    }
+
+    .tac-2 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .recruiters-section {
+        padding: 3rem 0;
+    }
+
+    .tac-2 {
+        margin-bottom: 1rem;
+    }
+
+    .taxt2 p {
+        font-size: 1.5rem;
+    }
+
+    /* .carousel-item img {
+        max-height: 50px;
+      } */
+}
+
+.footer {
+    background-color: #111;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-section h6 {
+    font-weight: 600;
+    color: #fff;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 1;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    font-size: 0;
+}
+
+#google_translate_element select {
+    font-size: 12px;
+    padding: 4px 8px;
+    color: #000;
+}

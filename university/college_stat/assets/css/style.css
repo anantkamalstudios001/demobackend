@@ -937,11 +937,3 @@ button.navbar-toggler.mobile-nav-toggle.d-lg-none {
     padding: 2rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-/*  */
-.icon-box {
-    font-size: 3rem;
-    color: #3b82f6;
-    margin-bottom: 1rem;
-}
