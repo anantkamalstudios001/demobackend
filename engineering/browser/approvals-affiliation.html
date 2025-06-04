@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <title>Engineering College</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/themify-icons.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <style>
+    .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/board-hero.jpg') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .board-members-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, #ffffff, #f0f0f0);
+        }
+
+         .member-card {
+                background: #fff;
+                border-radius: 12px;
+                overflow: hidden;
+                transition: transform 0.3s ease;
+                margin-bottom: 20px;
+                padding: 10px;
+                max-width: 320px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .member-card img {
+    width: 100%;
+    height: 180px; /* smaller image */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+        .member-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .member-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: hwb(0 61% 37% / 0.31);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .member-card:hover .member-overlay {
+            opacity: 1;
+        }
+
+        .member-overlay p {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 8px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ffd700;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ea1f28;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 40vh;
+            }
+
+            .hero-section h1 {
+                font-size: 1.8rem;
+            }
+
+            .member-card img {
+                height: 200px;
+            }
+
+            .member-overlay {
+                padding: 10px;
+            }
+
+            .member-overlay p {
+                font-size: 0.8rem;
+            }
+        }
+       table th {
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #343a40 !important;
+  color: white;
+  text-align: center;
+}
+
+table td {
+  vertical-align: middle;
+}
+
+table a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+   .custom-card {
+    max-width: 1200px; /* Reduce width */
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+  }
+
+  .custom-table th {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+  }
+
+  .custom-table td,
+  .custom-table th {
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .custom-card {
+      padding: 15px;
+    }
+
+    .custom-table {
+      font-size: 14px;
+    }
+  }
+    </style>
+</head>
+
+<body class="index-page">
+  <div class="container-fluid py-2" style="background-color: hwb(207 6% 14%);">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center text-white gap-2 px-3">
+      <!-- Left: Menu Links -->
+      <ul class="list-inline mb-0 d-flex flex-wrap gap-2 text-white">
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"><b>Download
+              E-Brochures</b></a>
+        </li>
+        <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Adminssion</a></li> -->
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+            target="_blank"><b>Blogs</b></a>
+        </li>
+        <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Alumni</a></li> -->
+        <!-- <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#">Contact Us</a></li> -->
+        <li class="list-inline-item"><a class="text-white text-decoration-none small" href="#"
+            target="_blank"><b>Consultancy Cell</b></a></li>
+      </ul>
+
+      <!-- Right: Social/Action Images -->
+      <ul class="list-inline mb-0 d-flex align-items-center gap-2">
+        <li><a class="text-white text-decoration-none small" href="#"><span><b>Get Connected</b></span></a></li>
+
+        <li class="ml-2">
+          <a class="text-white" href="#" target="_blank" aria-label="WhatsApp">
+            <img src="img/whatsapp_icon.png" alt="WhatsApp" width="20" height="20">
+          </a>
+        </li>
+        <li class="ml-2">
+          <a class="text-white" href="#" target="_blank" aria-label="360">
+            <img src="img/g360_icon_brahmavalley_social.png" alt="360" width="20" height="20">
+          </a>
+        </li>
+        <li class="ml-2">
+          <a class="text-white" href="#" target="_blank">
+            <img src="img/fb_icon.png" alt="Facebook" width="20" height="20">
+          </a>
+        </li>
+        <!-- <li class="ml-2">
+          <a class="text-white" href="#" target="_blank" aria-label="Twitter">
+            <img src="img/twitter.png" alt="Twitter" width="20" height="20">
+          </a>
+        </li> -->
+        <li class="ml-2">
+          <a class="text-white" href="https://in.linkedin.com/" target="_blank">
+            <img src="img/linkedin_icon.png" alt="LinkedIn" width="20" height="20">
+          </a>
+        </li>
+        <!-- <li class="ml-2">
+          <a class="text-white" href="https://www.instagram.com/" target="_blank">
+            <img src="img/instagram.png" alt="Instagram" width="20" height="20">
+          </a>
+        </li> -->
+        <li class="ml-2">
+          <a class="text-white" href="https://www.youtube.com/" target="_blank">
+            <img src="img/youtube_icon.png" alt="YouTube" width="20" height="20">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--================ Start Header Menu Area =================-->
+<header class="header_area">
+
+    <div class="main_menu">
+
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand logo_h" href="index.html">
+      <img src="img/bramha-valley-logo.jpg" alt="Logo" height="80">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> 
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <!-- About Us Dropdown -->
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About Us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="board-members.html">Board of Members</a>
+            <a class="dropdown-item" href="president.html">President Desk</a>
+            <a class="dropdown-item" href="general-secretary.html" style="white-space: nowrap;">General Secretary Desk</a>
+            <a class="dropdown-item" href="vice-president.html">Vice President Desk</a>
+            <a class="dropdown-item" href="principal-desk.html">Principal Desk</a>
+            <a class="dropdown-item" href="local-committees.html">Local Managing Committee</a>
+            <a class="dropdown-item" href="vision-mission.html">Vision & Mission</a>
+            <a class="dropdown-item" href="approvals-affiliation.html">Approvals & Affiliation</a>
+          </div>
+        </li>
+
+        <!-- Departments Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Departments
+          </a>
+          <div class="dropdown-menu" aria-labelledby="departmentsDropdown">
+            <a class="dropdown-item" href="mechanical.html">Mechanical Engg</a>
+            <a class="dropdown-item" href="computer.html">Computer Engg</a>
+            <a class="dropdown-item" href="civil.html">Civil Engg</a>
+            <a class="dropdown-item" href="electrical.html">Electrical Engg</a>
+            <a class="dropdown-item" href="firstyrengg.html">First Year Engg</a>
+            <a class="dropdown-item" href="mba.html">M.B.A</a>
+          </div>
+        </li>
+
+        <!-- Admissions Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Admissions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
+            <a class="dropdown-item" href="admission.html">Admission</a>
+            <a class="dropdown-item" href="#">Program Details</a>
+            <a class="dropdown-item" href="eligibility.html">Eligibility</a>
+            <a class="dropdown-item" href="#">Academics Overview</a>
+            <a class="dropdown-item" href="#">Fee Structure</a>
+            <a class="dropdown-item" href="information-brochure.html">Information Brochure</a>
+            <a class="dropdown-item" href="rules-regulation.html">Rules & Regulations</a>
+            <a class="dropdown-item" href="admission-form.html">Admission Form</a>
+            <a class="dropdown-item" href="#">Required Documents</a>
+          </div>
+        </li>
+
+        <!-- NAAC Dropdown with Submenus -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="naacDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            NAAC
+          </a>
+          <div class="dropdown-menu" aria-labelledby="naacDropdown">
+            <a class="dropdown-item" href="iqac.html">IQAC</a>
+            <a class="dropdown-item" href="#">IIQA</a>
+            <a class="dropdown-item" href="best-practice.html">Best Practices</a>
+            <a class="dropdown-item" href="feedback.html">Feedback</a>
+
+            <!-- NAAC SSR Submenu -->
+            <div class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">NAAC SSR</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">2023-2024</a>
+                <a class="dropdown-item" href="#">2024-2025</a>
+              </div>
+            </div>
+
+            <a class="dropdown-item" href="naac-documents.html">NAAC Documents</a>
+
+            <!-- AQAR Submenu -->
+            <div class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">AQAR</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">2023-2024</a>
+                <a class="dropdown-item" href="#">2024-2025</a>
+              </div>
+            </div>
+
+            <a class="dropdown-item" href="aqar-documents.html">AQAR Documents</a>
+          </div>
+        </li>
+
+        <!-- Training & Placement Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="trainingDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Training & Placement
+          </a>
+          <div class="dropdown-menu" aria-labelledby="trainingDropdown">
+            <a class="dropdown-item" href="training-placement.html">Training & Placement</a>
+            <a class="dropdown-item" href="placement-cell.html">Placement Cell</a>
+            <a class="dropdown-item" href="#">Career Guidance</a>
+            <a class="dropdown-item" href="placement.html">Placement</a>
+            <a class="dropdown-item" href="placement-drive.html">Placement Drive</a>
+          </div>
+        </li>
+
+        <!-- Student Corner Dropdown with Submenu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="studentCornerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Student Corner
+          </a>
+          <div class="dropdown-menu" aria-labelledby="studentCornerDropdown">
+            <a class="dropdown-item" href="notices.html">Notices</a>
+            <a class="dropdown-item" href="#">Course Structure</a>
+            <a class="dropdown-item" href="examination.html">Examination</a>
+            <a class="dropdown-item" href="rules-regulation.html">Rules & Regulations</a>
+            <a class="dropdown-item" href="important-contact.html">Important Contacts</a>
+            <a class="dropdown-item" href="#">Code of Conduct</a>
+            <a class="dropdown-item" href="photos-students.html">Photos for Students</a>
+            <a class="dropdown-item" href="scholarship-section.html">Scholarship Section</a>
+            <a class="dropdown-item" href="stu-council-comites.html">Student Council Committee</a>
+
+            <!-- Alumni Submenu -->
+            <div class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">Alumni</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="alumini-student-details.html">Alumni Student Details</a>
+                <a class="dropdown-item" href="registration-form-details.html">Registration Form Details</a>
+                <a class="dropdown-item" href="alumini-meet-details.html">Alumni Meet Details</a>
+                <a class="dropdown-item" href="alumini-stu-diff-countries.html">Alumni in Different Countries</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+
+        <!-- Facilities Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Facilities
+          </a>
+          <div class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+            <a class="dropdown-item" href="facilities-title.html">Facilities Title</a>
+            <a class="dropdown-item" href="facilities-details.html">Facilities Details</a>
+            <a class="dropdown-item" href="library.html">Library</a>
+            <a class="dropdown-item" href="hostel.html">Hostel</a>
+            <a class="dropdown-item" href="#">Club</a>
+          </div>
+        </li>
+
+        <!-- Media Coverage Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Media Coverage
+          </a>
+          <div class="dropdown-menu" aria-labelledby="mediaDropdown">
+            <a class="dropdown-item" href="events.html">Events</a>
+            <a class="dropdown-item" href="news.html">News</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+  <!--================ End Header Menu Area =================-->
+
+ <section class="hero-section">
+        <div class="container">
+           <h1 data-aos="fade-up" style="font-family: 'Poppins', sans-serif; color: white;">
+  Approvals & Affiliation
+</h1>
+<p data-aos="fade-up" data-aos-delay="200" style="font-family: 'Poppins', sans-serif; color: white;">
+  Meet the visionaries guiding Brahma Valley Engineering toward excellence
+</p>
+        </div>
+</section><br>
+
+    
+ <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="aicte-tab" data-toggle="tab" href="#aicte" role="tab">AICTE APPROVAL</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="sppu-tab" data-toggle="tab" href="#sppu" role="tab">SPPU AFFILIATION</a>
+  </li>
+</ul>
+
+<!-- Tabs Content -->
+<div class="tab-content mt-4" id="myTabContent">
+  <!-- AICTE Tab -->
+ 
+<div class="tab-pane fade show active" id="aicte" role="tabpanel">
+  <div class="custom-card">
+    <h5 class="text-center mb-4">AICTE Approval Details</h5>
+    <div class="table-responsive">
+      <table class="table table-bordered custom-table mb-0">
+        <thead>
+          <tr>
+            <th>Sr. No.</th>
+            <th>Academic Year</th>
+            <th>Document</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>AICTE 2008-2009</td>
+            <td><a href="img/pdf/Aicte 2008-09.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2009-2010</td>
+            <td><a href="img/pdf/Aicte 2009-10.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>2010-2011</td>
+            <td><a href="img/pdf/AICTE 2010-11.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>2011-2012</td>
+            <td><a href="img/pdf/AICTE 2011-12.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>2012-2013</td>
+            <td><a href="img/pdf/AICTE 2012-13.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>2013-2014</td>
+            <td><a href="img/pdf/AICTE 2013-14.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>2014-2015</td>
+            <td><a href="img/pdf/AICTE 2014-15.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>2015-2016</td>
+            <td><a href="img/pdf/AICTE 2015-16.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>2016-2017</td>
+            <td><a href="img/pdf/AICTE 2016-17.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>2017-2018</td>
+            <td><a href="img/pdf/AICTE 2017-18.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>2018-2019</td>
+            <td><a href="img/pdf/AICTE 2018-19.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>2020-2021</td>
+            <td><a href="img/pdf/Aicte 2020-21.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>2021-2022</td>
+            <td><a href="img/pdf/Aicte 2021-22.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>2022-2023</td>
+            <td><a href="img/pdf/AICTE 2022-23.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>2023-2024</td>
+            <td><a href="img/pdf/EOA-Report--2023-24.PDF" target="_blank">Download PDF</a></td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>2024-2025</td>
+            <td><a href="img/pdf/EOA Report 2024-2025.pdf" target="_blank">Download PDF</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+  <!-- SPPU Tab -->
+  <div class="tab-pane fade" id="sppu" role="tabpanel">
+    <div class="custom-card">
+    <h5 class="text-center mb-4">SPPU Affiliation Details</h5>
+    <!-- <div class="card-table"> -->
+      <div class="table-responsive">
+        <table class="table table-bordered custom-table mb-0">
+          <thead>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Academic Year</th>
+              <th>Document</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>2008-2009</td>
+              <td><a href="img/pdf/Uni pune 2008-09.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>2009-2010</td>
+              <td><a href="img/pdf/uni pune Affiliation 2009-10.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>2010-2011</td>
+              <td><a href="img/pdf/Uni Pune 2010-11.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>2011-2012</td>
+              <td><a href="img/pdf/uni pune Affiliation 2011-12.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>2012-2013</td>
+              <td><a href="img/pdf/uni pune Affiliation 2012-13.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>2013-2014</td>
+              <td><a href="img/pdf/uni pune Affiliation 2013-14.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>2014-2015</td>
+              <td><a href="img/pdf/uni pune Affiliation 2014-15.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>2015-2016</td>
+              <td><a href="img/pdf/uni pune Affiliation 2015-16.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>2016-2017</td>
+              <td><a href="img/pdf/uni pune Affiliation 2016-17.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>2017-2018</td>
+              <td><a href="img/pdf/uni pune Affiliation 2017-18.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>2018-2019</td>
+              <td><a href="img/pdf/uni pune Affiliation 2018-19.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>2019-2020</td>
+              <td><a href="img/pdf/uni pune Affiliation 2019-20.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>2020-2021</td>
+              <td><a href="img/pdf/uni pune Affiliation 2020-21 ..pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>2021-2022</td>
+              <td><a href="img/pdf/uni pune Affiliation 2021-22.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>2024-2025</td>
+              <td><a href="img/pdf/2024-25.pdf" target="_blank">Download PDF</a></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    <!-- </div> -->
+  </div>
+  </div>
+</div>
+           
+
+
+  <!--================ Start footer Area  =================-->
+  <footer class="footer-area section_gap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 single-footer-widget">
+          <h4 style=" font-family: 'Poppins'">Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Event Gallery</a></li>
+            <li><a href="#">Course</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 single-footer-widget">
+          <h4 style=" font-family: 'Poppins'">Additional Links</h4>
+          <ul>
+            <li><a href="#">DTE Code</a></li>
+            <li><a href="#">Publication</a></li>
+            <li><a href="#">Hostel Overview</a></li>
+            <li><a href="#">Student Login</a></li>
+            <li><a href="#">Staff Login</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 single-footer-widget contact-info-widget">
+          <h4 style=" font-family: 'Poppins'">CONTACT INFO</h4>
+          <ul>
+            <li><i class="fa fa-envelope"></i> reply@bestinstituteeducation.com</li>
+            <li><i class="fa fa-phone"></i> +91 9923072990</li>
+            <li><i class="fa fa-fax"></i> +91 9923072990</li>
+            <li><i class="fa fa-globe"></i> www.brahmavalley.com</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 single-footer-widget">
+          <h4 style=" font-family: 'Poppins'">Newsletter</h4>
+          <p>You can trust us. we only send promo offers,</p>
+          <div class="form-wrap" id="mc_embed_signup">
+            <form target="_blank"
+              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+              method="get" class="form-inline">
+              <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Your Email Address'" required="" type="email" />
+              <button class="click-btn btn btn-default">
+                <span>subscribe</span>
+              </button>
+              <div style="position: absolute; left: -5000px;">
+                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text" />
+              </div>
+
+              <div class="info"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom d-flex justify-content-between">
+        <p class="col-lg-6 col-sm-12 footer-text m-0 text-white" style=" font-family: 'Poppins'">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> Bramha Vallay University. All University Reserved
+          <!-- <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+        <div class="col-lg-6 col-sm-12 footer-social">
+          <a href="#"><i class="ti-facebook"></i></a>
+          <a href="#"><i class="ti-twitter"></i></a>
+          <a href="#"><i class="ti-dribbble"></i></a>
+          <a href="#"><i class="ti-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--================ End footer Area  =================-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/owl-carousel-thumb.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script> -->
+  <!--gmaps Js-->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+  <!-- Popper.js (2nd) -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
+
+  <!-- Bootstrap JS (3rd) -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/owl-carousel-thumb.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <!--gmaps Js-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/theme.js"></script>
+  <!-- Search Filter Function -->
+  <script>
+    function filterFunction(input, event) {
+      const filter = input.value.toLowerCase();
+      const ul = document.getElementById("programmeList");
+      const li = ul.getElementsByTagName("li");
+
+      ul.classList.toggle("show", filter.length > 0);
+
+      for (let i = 0; i < li.length; i++) {
+        const a = li[i].getElementsByTagName("a")[0];
+        const txtValue = a.textContent || a.innerText;
+        li[i].style.display = txtValue.toLowerCase().includes(filter) ? "" : "none";
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      const searchContainer = document.querySelector(".search-home");
+      if (!searchContainer.contains(event.target)) {
+        document.getElementById("programmeList").classList.remove("show");
+        document.querySelector("input[name=search_course]").value = "";
+      }
+    });
+  </script>
+  <script>
+    function toggleSubmenu(event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      // Close others
+      document.querySelectorAll('.dropdown-submenu').forEach(el => {
+        if (el !== event.target.closest('.dropdown-submenu')) el.classList.remove('show');
+      });
+
+      // Toggle current
+      const parent = event.target.closest('.dropdown-submenu');
+      parent.classList.toggle('show');
+    }
+
+    // Close submenu when clicking outside or closing main menu
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.dropdown-submenu').forEach(el => el.classList.remove('show'));
+    });
+    $('.dropdown').on('hide.bs.dropdown', function () {
+      document.querySelectorAll('.dropdown-submenu').forEach(el => el.classList.remove('show'));
+    });
+  </script>
+
+
+
+</body>
+
+</html>
