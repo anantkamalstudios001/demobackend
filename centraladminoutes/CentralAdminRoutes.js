@@ -598,25 +598,25 @@ router.delete('/delete-department-card/:id', attachDb, deleteDepartmentCard);
 
 
 
-const boardManagementController = require('../controllers/centralAdmin/boardManagementController');
+// const boardManagementController = require('../controllers/centralAdmin/boardManagementController');
 
-const boardStorage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, 'uploads/boardManagement/'),
-  filename: (req, file, cb) => cb(null, Date.now() + '-' + file.originalname)
-});
+// const boardStorage = multer.diskStorage({
+//   destination: (req, file, cb) => cb(null, 'uploads/boardManagement/'),
+//   filename: (req, file, cb) => cb(null, Date.now() + '-' + file.originalname)
+// });
 
-const boardManagementUpload = multer({ storage: boardStorage });
+// const boardManagementUpload = multer({ storage: boardStorage });
 
-router.post(
-  '/add-board-management',
-  attachDb,
-  boardManagementUpload.any(),
-  boardManagementController.addBoardManagement
-);
+// router.post(
+//   '/add-board-management',
+//   attachDb,
+//   boardManagementUpload.any(),
+//   boardManagementController.addBoardManagement
+// );
 
-router.get('/board-management', attachDb, boardManagementController.getBoardManagement);
-router.put('/update-board-management/:id', attachDb, upload.any(), boardManagementController.updateBoardManagement);
-router.delete('/delete-board-management/:id', attachDb, boardManagementController.deleteBoardManagement);
+// router.get('/board-management', attachDb, boardManagementController.getBoardManagement);
+// router.put('/update-board-management/:id', attachDb, upload.any(), boardManagementController.updateBoardManagement);
+// router.delete('/delete-board-management/:id', attachDb, boardManagementController.deleteBoardManagement);
 
 
 
