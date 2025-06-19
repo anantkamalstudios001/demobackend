@@ -7,8 +7,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // DB connection
-const connectDB = require('./config/db.js');
-connectDB();
+// const connectDB = require('./config/db.js');
+// connectDB();
 
 // CORS setup
 app.use(cors({

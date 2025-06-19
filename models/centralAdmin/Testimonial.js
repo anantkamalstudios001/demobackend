@@ -8,4 +8,4 @@ const testimonialSchema = new mongoose.Schema({
   image: { type: String, required: true },
 }, { timestamps: true });
 
-module.exports = mongoose.model('central_Testimonial', testimonialSchema);
+module.exports = testimonialSchema;

@@ -7,4 +7,4 @@ const centralContactUsSchema = new mongoose.Schema({
   message: String
 }, { timestamps: true });
 
-module.exports = mongoose.model('central_contact_us_queries', centralContactUsSchema, 'central_contact_us_queries');
+module.exports = centralContactUsSchema;

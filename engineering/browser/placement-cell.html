@@ -21,9 +21,14 @@
   <!-- Bootstrap 4 CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <style>
-    
-  </style>
+  <!-- Bootstrap 4.5.2 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Lightcase CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/css/lightcase.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body class="index-page">
@@ -87,362 +92,493 @@
     </div>
   </div>
   <!--================ Start Header Menu Area =================-->
-   <header class="header_area">
-
+  <header class="header_area">
     <div class="main_menu">
-
-
-     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <a class="navbar-brand logo_h" href="index.html">
-      <img src="img/bramha-valley-logo.jpg" alt="Logo" height="80">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span> 
-    </button>
-
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-
-        <!-- About Us Dropdown -->
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About Us
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="index.html">
+            <img src="img/bramha-valley-logo.jpg" alt="Logo" height="100">
           </a>
-          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-            <a class="dropdown-item" href="board-members.html">Board of Members</a>
-            <a class="dropdown-item" href="president.html">President Desk</a>
-            <a class="dropdown-item" href="general-secretary.html" style="white-space: nowrap;">General Secretary Desk</a>
-            <a class="dropdown-item" href="vice-president.html">Vice President Desk</a>
-            <a class="dropdown-item" href="principal-desk.html">Principal Desk</a>
-            <a class="dropdown-item" href="local-committees.html">Local Managing Committee</a>
-            <a class="dropdown-item" href="vision-mission.html">Vision & Mission</a>
-            <a class="dropdown-item" href="approvals-affiliation.html">Approvals & Affiliation</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <!-- About Us Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <a class="dropdown-item" href="board-members.html">Board of Members</a>
+                  <a class="dropdown-item" href="president.html">President Desk</a>
+                  <a class="dropdown-item" href="general-secretary.html" style="white-space: nowrap;">General Secretary
+                    Desk</a>
+                  <a class="dropdown-item" href="vice-president.html">Vice President Desk</a>
+                  <a class="dropdown-item" href="principal-desk.html">Principal Desk</a>
+                  <a class="dropdown-item" href="local-committees.html">Local Managing Committee</a>
+                  <a class="dropdown-item" href="vision-mission.html">Vision & Mission</a>
+                  <a class="dropdown-item" href="approvals-affiliation.html">Approvals & Affiliation</a>
+                </div>
+              </li>
+
+              <!-- Departments Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Departments
+                </a>
+                <div class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                  <a class="dropdown-item" href="mechanical.html">Mechanical Engg</a>
+                  <a class="dropdown-item" href="computer.html">Computer Engg</a>
+                  <a class="dropdown-item" href="civil.html">Civil Engg</a>
+                  <a class="dropdown-item" href="electrical.html">Electrical Engg</a>
+                  <a class="dropdown-item" href="firstyrengg.html">First Year Engg</a>
+                  <a class="dropdown-item" href="mba.html">M.B.A</a>
+                </div>
+              </li>
+
+              <!-- Admissions Dropdown -->
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Admissions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                  <a class="dropdown-item" href="admission.html">Admission</a>
+                  <a class="dropdown-item" href="#">Program Details</a>
+                  <a class="dropdown-item" href="eligibility.html">Eligibility</a>
+                  <a class="dropdown-item" href="#">Academics Overview</a>
+                  <a class="dropdown-item" href="fee-structure.html">Fee Structure</a>
+                  <a class="dropdown-item" href="information-brochure.html">Information Brochure</a>
+                  <a class="dropdown-item" href="rules-regulation.html">Rules & Regulations</a>
+                  <a class="dropdown-item" href="admission-form.html">Admission Form</a>
+                  <a class="dropdown-item" href="required-document.html">Required Documents</a>
+                </div>
+              </li>
+
+              <!-- NAAC Dropdown with Submenus -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="naacDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  NAAC
+                </a>
+                <div class="dropdown-menu" aria-labelledby="naacDropdown">
+                  <a class="dropdown-item" href="iqac.html">IQAC</a>
+                  <a class="dropdown-item" href="#">IIQA</a>
+                  <a class="dropdown-item" href="best-practice.html">Best Practices</a>
+                  <a class="dropdown-item" href="feedback.html">Feedback</a>
+
+                  <!-- NAAC SSR Submenu -->
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">NAAC SSR</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">2023-2024</a>
+                      <a class="dropdown-item" href="#">2024-2025</a>
+                    </div>
+                  </div>
+
+                  <a class="dropdown-item" href="naac-documents.html">NAAC Documents</a>
+
+                  <!-- AQAR Submenu -->
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">AQAR</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">2023-2024</a>
+                      <a class="dropdown-item" href="#">2024-2025</a>
+                    </div>
+                  </div>
+
+                  <a class="dropdown-item" href="aqar-documents.html">AQAR Documents</a>
+                </div>
+              </li>
+
+              <!-- Training & Placement Dropdown -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="trainingDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Training & Placement
+                </a>
+                <div class="dropdown-menu" aria-labelledby="trainingDropdown">
+                  <a class="dropdown-item" href="training-placement.html">Training & Placement</a>
+                  <a class="dropdown-item" href="placement-cell.html">Placement Cell</a>
+                  <a class="dropdown-item" href="#">Career Guidance</a>
+                  <a class="dropdown-item" href="placement.html">Placement</a>
+                  <a class="dropdown-item" href="placement-drive.html">Placement Drive</a>
+                </div>
+              </li> -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="placement-cell.html">Placement Cell</a>
+              </li>
+
+              <!-- Student Corner Dropdown with Submenu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="studentCornerDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Student Corner
+                </a>
+                <div class="dropdown-menu" aria-labelledby="studentCornerDropdown">
+                  <a class="dropdown-item" href="notices.html">Notices</a>
+                  <a class="dropdown-item" href="#">Course Structure</a>
+                  <a class="dropdown-item" href="examination.html">Examination</a>
+                  <a class="dropdown-item" href="rules-regulation.html">Rules & Regulations</a>
+                  <a class="dropdown-item" href="important-contact.html">Important Contacts</a>
+                  <a class="dropdown-item" href="#">Code of Conduct</a>
+                  <a class="dropdown-item" href="photos-students.html">Photos for Students</a>
+                  <a class="dropdown-item" href="scholarship-section.html">Scholarship Section</a>
+                  <a class="dropdown-item" href="stu-council-comites.html">Student Council Committee</a>
+
+                  <!-- Alumni Submenu -->
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">Alumni</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="alumini-student-details.html">Alumni Student Details</a>
+                      <a class="dropdown-item" href="registration-form-details.html">Registration Form Details</a>
+                      <a class="dropdown-item" href="alumini-meet-details.html">Alumni Meet Details</a>
+                      <a class="dropdown-item" href="alumini-stu-diff-countries.html">Alumni in Different Countries</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+
+              <!-- Facilities Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Facilities
+                </a>
+                <div class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                  <a class="dropdown-item" href="library.html">Library</a>
+                  <a class="dropdown-item" href="hostel.html">Hostel</a>
+                  <a class="dropdown-item" href="transport.html">Transport</a>
+                  <a class="dropdown-item" href="cafeteria.html">Cafeteria</a>
+                  <a class="dropdown-item" href="sports.html">Sports</a>
+                  <a class="dropdown-item" href="club.html">Club</a>
+                </div>
+              </li>
+
+              <!-- Media Coverage Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Media Coverage
+                </a>
+                <div class="dropdown-menu" aria-labelledby="mediaDropdown">
+                  <a class="dropdown-item" href="events.html">Events</a>
+                  <a class="dropdown-item" href="news.html">News</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+
+            </ul>
           </div>
-        </li>
-
-        <!-- Departments Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Departments
-          </a>
-          <div class="dropdown-menu" aria-labelledby="departmentsDropdown">
-            <a class="dropdown-item" href="mechanical.html">Mechanical Engg</a>
-            <a class="dropdown-item" href="computer.html">Computer Engg</a>
-            <a class="dropdown-item" href="civil.html">Civil Engg</a>
-            <a class="dropdown-item" href="electrical.html">Electrical Engg</a>
-            <a class="dropdown-item" href="firstyrengg.html">First Year Engg</a>
-            <a class="dropdown-item" href="mba.html">M.B.A</a>
-          </div>
-        </li>
-
-        <!-- Admissions Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Admissions
-          </a>
-          <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
-            <a class="dropdown-item" href="admission.html">Admission</a>
-            <a class="dropdown-item" href="#">Program Details</a>
-            <a class="dropdown-item" href="eligibility.html">Eligibility</a>
-            <a class="dropdown-item" href="#">Academics Overview</a>
-            <a class="dropdown-item" href="#">Fee Structure</a>
-            <a class="dropdown-item" href="information-brochure.html">Information Brochure</a>
-            <a class="dropdown-item" href="rules-regulation.html">Rules & Regulations</a>
-            <a class="dropdown-item" href="admission-form.html">Admission Form</a>
-            <a class="dropdown-item" href="#">Required Documents</a>
-          </div>
-        </li>
-
-        <!-- NAAC Dropdown with Submenus -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="naacDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            NAAC
-          </a>
-          <div class="dropdown-menu" aria-labelledby="naacDropdown">
-            <a class="dropdown-item" href="iqac.html">IQAC</a>
-            <a class="dropdown-item" href="#">IIQA</a>
-            <a class="dropdown-item" href="best-practice.html">Best Practices</a>
-            <a class="dropdown-item" href="feedback.html">Feedback</a>
-
-            <!-- NAAC SSR Submenu -->
-            <div class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">NAAC SSR</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">2023-2024</a>
-                <a class="dropdown-item" href="#">2024-2025</a>
-              </div>
-            </div>
-
-            <a class="dropdown-item" href="naac-documents.html">NAAC Documents</a>
-
-            <!-- AQAR Submenu -->
-            <div class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">AQAR</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">2023-2024</a>
-                <a class="dropdown-item" href="#">2024-2025</a>
-              </div>
-            </div>
-
-            <a class="dropdown-item" href="aqar-documents.html">AQAR Documents</a>
-          </div>
-        </li>
-
-        <!-- Training & Placement Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="trainingDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Training & Placement
-          </a>
-          <div class="dropdown-menu" aria-labelledby="trainingDropdown">
-            <a class="dropdown-item" href="training-placement.html">Training & Placement</a>
-            <a class="dropdown-item" href="placement-cell.html">Placement Cell</a>
-            <a class="dropdown-item" href="#">Career Guidance</a>
-            <a class="dropdown-item" href="placement.html">Placement</a>
-            <a class="dropdown-item" href="placement-drive.html">Placement Drive</a>
-          </div>
-        </li>
-
-        <!-- Student Corner Dropdown with Submenu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="studentCornerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Student Corner
-          </a>
-          <div class="dropdown-menu" aria-labelledby="studentCornerDropdown">
-            <a class="dropdown-item" href="notices.html">Notices</a>
-            <a class="dropdown-item" href="#">Course Structure</a>
-            <a class="dropdown-item" href="examination.html">Examination</a>
-            <a class="dropdown-item" href="rules-regulation.html">Rules & Regulations</a>
-            <a class="dropdown-item" href="important-contact.html">Important Contacts</a>
-            <a class="dropdown-item" href="#">Code of Conduct</a>
-            <a class="dropdown-item" href="photos-students.html">Photos for Students</a>
-            <a class="dropdown-item" href="scholarship-section.html">Scholarship Section</a>
-            <a class="dropdown-item" href="stu-council-comites.html">Student Council Committee</a>
-
-            <!-- Alumni Submenu -->
-            <div class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">Alumni</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="alumini-student-details.html">Alumni Student Details</a>
-                <a class="dropdown-item" href="registration-form-details.html">Registration Form Details</a>
-                <a class="dropdown-item" href="alumini-meet-details.html">Alumni Meet Details</a>
-                <a class="dropdown-item" href="alumini-stu-diff-countries.html">Alumni in Different Countries</a>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-
-        <!-- Facilities Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Facilities
-          </a>
-          <div class="dropdown-menu" aria-labelledby="facilitiesDropdown">
-            <a class="dropdown-item" href="facilities-title.html">Facilities Title</a>
-            <a class="dropdown-item" href="facilities-details.html">Facilities Details</a>
-            <a class="dropdown-item" href="library.html">Library</a>
-            <a class="dropdown-item" href="hostel.html">Hostel</a>
-            <a class="dropdown-item" href="#">Club</a>
-          </div>
-        </li>
-
-        <!-- Media Coverage Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Media Coverage
-          </a>
-          <div class="dropdown-menu" aria-labelledby="mediaDropdown">
-            <a class="dropdown-item" href="events.html">Events</a>
-            <a class="dropdown-item" href="news.html">News</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Us</a>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</nav>
+        </div>
+        <a class="navbar-brand logo_h naac" href="index.html">
+          <img src="img/naac.jpg" alt="Logo" height="100">
+        </a>
+      </nav>
 
     </div>
   </header>
   <!--================ End Header Menu Area =================-->
 
-  <!--================ Start Banner Area =================-->
- <div id="banner">
-  <div id="banner-caption">
-    
-   placement Cell
-  </div>
-</div>
+  <!-- Banner Section -->
+  <section id="banner" class="position-relative text-white text-center">
+    <img src="img/1920x800.jpg" alt="Placement Cell Banner" data-aos="fade-in">
+    <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+      <div class="container" id="banner-caption">
+        <h1 data-aos="fade-up" data-aos-delay="100" class="display-4 font-weight-bold text-light">Placement Cell</h1>
+        <p data-aos="fade-up" data-aos-delay="200" class="lead">Empowering students with career opportunities and
+          industry connections.</p>
+      </div>
+    </div>
+  </section>
 
-
-
-
- <div class="popular_courses section_gap_top">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-5">
-            <div class="main_title">
-              <h2 class="mb-3">Our Placement Student</h2>
-              <p>
-                <!-- Replenish man have thing gathering lights yielding shall you -->
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- single course -->
-          <div class="col-lg-12">
-            <div class="owl-carousel active_course">
-              <div class="single_course">
-                <div class="course_head">
-                  <img class="img-fluid" src="img/courses/c1.jpg" alt="" />
-                </div>
-                <div class="course_content">
-                  <span class="price">$25</span>
-                  <span class="tag mb-4 d-inline-block">design</span>
-                  <h4 class="mb-3">
-                    <a href="course-details.html">Custom Product Design</a>
-                  </h4>
-                  <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
-                  </p>
-                  <div
-                    class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
-                  >
-                    <div class="authr_meta">
-                      <img src="img/courses/author1.png" alt="" />
-                      <span class="d-inline-block ml-2">Cameron</span>
-                    </div>
-                    <div class="mt-lg-0 mt-3">
-                      <span class="meta_info mr-4">
-                        <a href="#"> <i class="ti-user mr-2"></i>25 </a>
-                      </span>
-                      <span class="meta_info"
-                        ><a href="#"> <i class="ti-heart mr-2"></i>35 </a></span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="single_course">
-                <div class="course_head">
-                  <img class="img-fluid" src="img/courses/c2.jpg" alt="" />
-                </div>
-                <div class="course_content">
-                  <span class="price">$25</span>
-                  <span class="tag mb-4 d-inline-block">design</span>
-                  <h4 class="mb-3">
-                    <a href="course-details.html">Social Media Network</a>
-                  </h4>
-                  <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
-                  </p>
-                  <div
-                    class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
-                  >
-                    <div class="authr_meta">
-                      <img src="img/courses/author2.png" alt="" />
-                      <span class="d-inline-block ml-2">Cameron</span>
-                    </div>
-                    <div class="mt-lg-0 mt-3">
-                      <span class="meta_info mr-4">
-                        <a href="#"> <i class="ti-user mr-2"></i>25 </a>
-                      </span>
-                      <span class="meta_info"
-                        ><a href="#"> <i class="ti-heart mr-2"></i>35 </a></span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="single_course">
-                <div class="course_head">
-                  <img class="img-fluid" src="img/courses/c3.jpg" alt="" />
-                </div>
-                <div class="course_content">
-                  <span class="price">$25</span>
-                  <span class="tag mb-4 d-inline-block">design</span>
-                  <h4 class="mb-3">
-                    <a href="course-details.html">Computer Engineering</a>
-                  </h4>
-                  <p>
-                    One make creepeth man bearing their one firmament won't fowl
-                    meat over sea
-                  </p>
-                  <div
-                    class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4"
-                  >
-                    <div class="authr_meta">
-                      <img src="img/courses/author3.png" alt="" />
-                      <span class="d-inline-block ml-2">Cameron</span>
-                    </div>
-                    <div class="mt-lg-0 mt-3">
-                      <span class="meta_info mr-4">
-                        <a href="#"> <i class="ti-user mr-2"></i>25 </a>
-                      </span>
-                      <span class="meta_info"
-                        ><a href="#"> <i class="ti-heart mr-2"></i>35 </a></span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <!-- Placement Cell Description Section -->
+  <section class="placement-section">
+    <div class="container">
+      <h3 class="text-center mb-4" data-aos="fade-up">About Our Placement Cell</h3>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="placement-text" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              The Placement Cell at Brahma Valley College of Engineering & Research Institute is dedicated to bridging
+              the gap between students and industry. Our mission is to ensure every student is equipped with the skills,
+              confidence, and opportunities to excel in their chosen career paths.
+            </p>
+            <p>
+              We organize regular training sessions, including resume building, mock interviews, and soft skills
+              development, to prepare students for the competitive job market. Our strong industry connections enable us
+              to invite top-tier companies for campus placements, offering roles in fields like IT, Mechanical, Civil,
+              Electrical, and more.
+            </p>
+            <p>
+              The Placement Cell also facilitates internships, industry visits, and guest lectures to provide hands-on
+              exposure. With a focus on holistic development, we aim to produce not just skilled engineers but also
+              confident professionals ready to contribute to the global workforce.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-  <!--================ End Home Banner Area =================-->
+  <!-- Placement Contacts Section -->
+  <section class="placement-section">
+    <div class="container">
+      <div class="card" data-aos="fade-up">
+        <div class="card-header">
+          <h5>Placement Cell Contacts</h5>
+        </div>
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-hover table-bordered mb-0">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Designation</th>
+                  <th scope="col">Contact Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-aos="fade-up" data-aos-delay="100">
+                  <td data-label="Name">Mr. V. S. Pawar</td>
+                  <td data-label="Designation">Placement Officer</td>
+                  <td data-label="Contact Number">+91 97654 32101</td>
+                </tr>
+                <tr data-aos="fade-up" data-aos-delay="200">
+                  <td data-label="Name">Ms. P. R. Joshi</td>
+                  <td data-label="Designation">Training Coordinator</td>
+                  <td data-label="Contact Number">+91 90123 45678</td>
+                </tr>
+                <tr data-aos="fade-up" data-aos-delay="300">
+                  <td data-label="Name">Mr. R. M. Bhosale</td>
+                  <td data-label="Designation">Industry Liaison</td>
+                  <td data-label="Contact Number">+91 98765 54321</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  
-  <!--================ End Feature Area =================-->
+  <!-- Placed Students Slider Section -->
+  <section class="placement-section">
+    <div class="container">
+      <h4 class="slider-title text-center mb-4" data-aos="fade-up">Recently Placed Students</h4>
+      <div class="swiper-container students-slider" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="students-slider-card">
+              <img src="img/user.png" alt="Amit S. Patil" />
+              <p><strong>Student Name:</strong> Amit S. Patil</p>
+              <p><strong>Branch:</strong> Computer Engineering</p>
+              <p><strong>Company:</strong> TechCorp Solutions</p>
+              <p><strong>Package:</strong> 8.5 LPA</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="students-slider-card">
+              <img src="img/user.png" alt="Priya R. Sharma" />
+              <p><strong>Student Name:</strong> Priya R. Sharma</p>
+              <p><strong>Branch:</strong> Information Technology</p>
+              <p><strong>Company:</strong> InfoSys Ltd.</p>
+              <p><strong>Package:</strong> 7.2 LPA</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="students-slider-card">
+              <img src="img/user.png" alt="Rahul K. Deshmukh" />
+              <p><strong>Student Name:</strong> Rahul K. Deshmukh</p>
+              <p><strong>Branch:</strong> Mechanical Engineering</p>
+              <p><strong>Company:</strong> AutoTech Industries</p>
+              <p><strong>Package:</strong> 6.8 LPA</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="students-slider-card">
+              <img src="img/user.png" alt="Sneha V. Kulkarni" />
+              <p><strong>Student Name:</strong> Sneha V. Kulkarni</p>
+              <p><strong>Branch:</strong> Civil Engineering</p>
+              <p><strong>Company:</strong> BuildCon Pvt. Ltd.</p>
+              <p><strong>Package:</strong> 6.0 LPA</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
 
-  <!--================ Start Popular Courses Area =================-->
-  <!--================ End Popular Courses Area =================-->
+  <!-- Top Recruiters Slider Section -->
+ <section class="placement-section">
+    <div class="container">
+      <h4 class="slider-title text-center mb-4" data-aos="fade-up">Top Recruiters</h4>
+      <div class="swiper-container recruiters-slider" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-apolo-hospitals-200x200-jpeg.jpg" class="recruiter-img" alt="apolo-hospitals">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-ASHOKA-BUILDCON-200x200-jpeg.jpg" class="recruiter-img" alt="ASHOKA-BUILDCON">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-cipla-200x200-jpeg.jpg" class="recruiter-img" alt="cipla">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-hdfc-bank-200x200-jpeg.jpg" class="recruiter-img" alt="hdfc-bank">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-icicibank-200x200-jpeg.jpg" class="recruiter-img" alt="icicibank">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-godrej-200x200-jpeg.jpg" class="recruiter-img" alt="godrej">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-lokmatl-200x200-jpeg.jpg" class="recruiter-img" alt="lokmatl">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-nitor-200x200-jpeg.jpg" class="recruiter-img" alt="nitor">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-quick-heal-200x200-jpeg.jpg" class="recruiter-img" alt="quick-heal">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-sbilife-200x200-jpeg.jpg" class="recruiter-img" alt="sbilife">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-Tata-Consultancy-Services-200x200-jpeg.jpg" class="recruiter-img" alt="Tata-Consultancy-Services">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card recruiter-card shadow-sm mx-auto">
+              <img src="img/brahmavalley-placement-UMS-Techlabsl-200x200-jpeg.jpg" class="recruiter-img" alt="Techlabsl">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
 
- <!-- Accordion Starts -->
+  <!-- Placement Activities Gallery Slider Section -->
+  <section class="placement-section">
+    <div class="container">
+      <h4 class="slider-title text-center mb-4" data-aos="fade-up">Placement Activities Gallery</h4>
+      <div class="swiper-container gallery-slider" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card gallery-card shadow-sm mx-auto">
+              <a href="img/placement_training.jpg" data-rel="lightcase:placement-gallery" title="Training Session">
+                <img src="img/placement_act_gallery/1.jpg" class="gallery-img" alt="Training Session" style="width:100%; height:100%; object-fit:cover;">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card gallery-card shadow-sm mx-auto">
+              <a href="img/campus_drive.jpg" data-rel="lightcase:placement-gallery" title="Campus Recruitment Drive">
+                <img src="img/placement_act_gallery/2.jpg" class="gallery-img" alt="Campus Recruitment Drive" style="width:100%; height:100%; object-fit:cover;">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card gallery-card shadow-sm mx-auto">
+              <a href="img/industry_visit.jpg" data-rel="lightcase:placement-gallery" title="Industry Visit">
+                <img src="img/placement_act_gallery/3.jpg" class="gallery-img" alt="Industry Visit" style="width:100%; height:100%; object-fit:cover;">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card gallery-card shadow-sm mx-auto">
+              <a href="img/guest_lecture.jpg" data-rel="lightcase:placement-gallery" title="Guest Lecture">
+                <img src="img/placement_act_gallery/1.jpg" class="gallery-img" alt="Guest Lecture" style="width:100%; height:100%; object-fit:cover;">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
 
-
-
-<!-- Accordion Ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <!--================ End Milestone Placements Section =================-->
-
-  <!--================ End Testimonial Area =================-->
-
+  <!-- Contact to Placement Cell Section -->
+  <section class="placement-section">
+    <div class="container">
+      <div class="card" data-aos="fade-up">
+        <div class="card-header">
+          <h4>Contact to Placement Cell</h4>
+        </div>
+        <div class="card-body">
+          <form class="contact-form" id="placementContactForm">
+            <div class="form-group mb-3">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group mb-3">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group mb-4">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   <!--================ Start footer Area  =================-->
   <footer class="footer-area section_gap">
     <div class="container">
@@ -518,35 +654,7 @@
     </div>
   </footer>
   <!--================ End footer Area  =================-->
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <!-- <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="js/owl-carousel-thumb.min.js"></script>
-  <script src="js/jquery.ajaxchimp.min.js"></script>
-  <script src="js/mail-script.js"></script> -->
-  <!--gmaps Js-->
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
-  <script src="js/gmaps.min.js"></script>
-  <script src="js/theme.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-
-  <!-- Popper.js (2nd) -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
-
-  <!-- Bootstrap JS (3rd) -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
- <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/stellar.js"></script>
@@ -562,29 +670,7 @@
   <script src="js/contact.js"></script>
   <script src="js/theme.js"></script>
   <!-- Search Filter Function -->
-  <script>
-    function filterFunction(input, event) {
-      const filter = input.value.toLowerCase();
-      const ul = document.getElementById("programmeList");
-      const li = ul.getElementsByTagName("li");
 
-      ul.classList.toggle("show", filter.length > 0);
-
-      for (let i = 0; i < li.length; i++) {
-        const a = li[i].getElementsByTagName("a")[0];
-        const txtValue = a.textContent || a.innerText;
-        li[i].style.display = txtValue.toLowerCase().includes(filter) ? "" : "none";
-      }
-    }
-
-    document.addEventListener("click", function (event) {
-      const searchContainer = document.querySelector(".search-home");
-      if (!searchContainer.contains(event.target)) {
-        document.getElementById("programmeList").classList.remove("show");
-        document.querySelector("input[name=search_course]").value = "";
-      }
-    });
-  </script>
   <script>
     function toggleSubmenu(event) {
       event.preventDefault();
@@ -609,7 +695,132 @@
     });
   </script>
 
+  <!-- Bootstrap 4.5.2 JS and dependencies -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Lightcase JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/js/lightcase.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+    $(document).ready(function () {
+      $('a[data-rel^=lightcase]').lightcase({
+        transition: 'fade',
+        showSequenceInfo: false,
+        showCaption: true,
+        slideshow: true,
+        maxWidth: '90vw',
+        maxHeight: '90vh'
+      });
+      // Students Slider
+      new Swiper('.students-slider', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+        }
+      });
 
+      // Recruiters Slider
+      new Swiper('.recruiters-slider', {
+        slidesPerView: 1.5,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+        }
+      });
+
+      // Gallery Slider
+      new Swiper('.gallery-slider', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+        }
+      });
+
+    });
+
+    function submitForm() {
+      const form = document.getElementById('placementContactForm');
+      if (form.checkValidity()) {
+        alert('Thank you for your message! The Placement Cell will get back to you soon.');
+        form.reset();
+      } else {
+        form.reportValidity();
+      }
+    }
+  </script>
 
 </body>
 

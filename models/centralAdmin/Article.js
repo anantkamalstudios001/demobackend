@@ -7,12 +7,12 @@ const articleSchema = new mongoose.Schema({
   postDate: { type: Date, required: true },
   subSections: [
     {
-      subheading: String,
-      paragraph: String,
+      subheading: { type: String },
+      paragraph: { type: String },
     },
   ],
   articleImage: { type: String, required: true },
   authorImage: { type: String, required: true },
 }, { timestamps: true });
 
-module.exports = mongoose.model('central_Article', articleSchema);
+module.exports = articleSchema;

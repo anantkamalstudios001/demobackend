@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
+
 const campusGallerySchema = new mongoose.Schema({
-  image: String
+  image: { type: String, required: true }
 }, { timestamps: true });
-module.exports = mongoose.model('central_CampusGallery', campusGallerySchema);
+
+module.exports = campusGallerySchema;

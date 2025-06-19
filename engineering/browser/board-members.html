@@ -20,132 +20,6 @@
   <!-- Bootstrap 4 CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <style>
-    .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/board-hero.jpg') no-repeat center center/cover;
-            height: 50vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .board-members-section {
-            padding: 60px 0;
-            background: linear-gradient(135deg, #ffffff, #f0f0f0);
-        }
-
-         .member-card {
-                background: #fff;
-                border-radius: 12px;
-                overflow: hidden;
-                transition: transform 0.3s ease;
-                margin-bottom: 20px;
-                padding: 10px;
-                max-width: 320px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-        .member-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .member-card img {
-    width: 100%;
-    height: 180px; /* smaller image */
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-        .member-card:hover img {
-            transform: scale(1.05);
-        }
-
-        .member-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: hwb(0 61% 37% / 0.31);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .member-card:hover .member-overlay {
-            opacity: 1;
-        }
-
-        .member-overlay p {
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-        }
-
-        .social-links a {
-            color: white;
-            margin: 0 8px;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: #ffd700;
-        }
-
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #ea1f28;
-            color: white;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-            z-index: 1000;
-        }
-
-        .back-to-top.show {
-            opacity: 1;
-        }
-
-        @media (max-width: 768px) {
-            .hero-section {
-                height: 40vh;
-            }
-
-            .hero-section h1 {
-                font-size: 1.8rem;
-            }
-
-            .member-card img {
-                height: 200px;
-            }
-
-            .member-overlay {
-                padding: 10px;
-            }
-
-            .member-overlay p {
-                font-size: 0.8rem;
-            }
-        }
-    </style>
 </head>
 
 <body class="index-page">
@@ -209,310 +83,328 @@
     </div>
   </div>
   <!--================ Start Header Menu Area =================-->
-   <header class="header_area">
-
+  <header class="header_area">
     <div class="main_menu">
-
-
-     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <a class="navbar-brand logo_h" href="index.html">
-      <img src="img/bramha-valley-logo.jpg" alt="Logo" height="80">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span> 
-    </button>
-
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-
-        <!-- About Us Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About Us
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand logo_h" href="index.html">
+            <img src="img/bramha-valley-logo.jpg" alt="Logo" height="100">
           </a>
-          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-            <a class="dropdown-item" href="board-members.html">Board of Members</a>
-            <a class="dropdown-item" href="president.html">President Desk</a>
-            <a class="dropdown-item" href="general-secretary.html" style="white-space: nowrap;">General Secretary Desk</a>
-            <a class="dropdown-item" href="vice-president.html">Vice President Desk</a>
-            <a class="dropdown-item" href="principal-desk.html">Principal Desk</a>
-            <a class="dropdown-item" href="local-committees.html">Local Managing Committee</a>
-            <a class="dropdown-item" href="vision-mission.html">Vision & Mission</a>
-            <a class="dropdown-item" href="approvals-affiliation.html">Approvals & Affiliation</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <!-- About Us Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                  <a class="dropdown-item" href="board-members.html">Board of Members</a>
+                  <a class="dropdown-item" href="president.html">President Desk</a>
+                  <a class="dropdown-item" href="general-secretary.html" style="white-space: nowrap;">General Secretary
+                    Desk</a>
+                  <a class="dropdown-item" href="vice-president.html">Vice President Desk</a>
+                  <a class="dropdown-item" href="principal-desk.html">Principal Desk</a>
+                  <a class="dropdown-item" href="local-committees.html">Local Managing Committee</a>
+                  <a class="dropdown-item" href="vision-mission.html">Vision & Mission</a>
+                  <a class="dropdown-item" href="approvals-affiliation.html">Approvals & Affiliation</a>
+                </div>
+              </li>
+
+              <!-- Departments Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Departments
+                </a>
+                <div class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                  <a class="dropdown-item" href="mechanical.html">Mechanical Engg</a>
+                  <a class="dropdown-item" href="computer.html">Computer Engg</a>
+                  <a class="dropdown-item" href="civil.html">Civil Engg</a>
+                  <a class="dropdown-item" href="electrical.html">Electrical Engg</a>
+                  <a class="dropdown-item" href="firstyrengg.html">First Year Engg</a>
+                  <a class="dropdown-item" href="mba.html">M.B.A</a>
+                </div>
+              </li>
+
+              <!-- Admissions Dropdown -->
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Admissions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                  <a class="dropdown-item" href="admission.html">Admission</a>
+                  <a class="dropdown-item" href="#">Program Details</a>
+                  <a class="dropdown-item" href="eligibility.html">Eligibility</a>
+                  <a class="dropdown-item" href="#">Academics Overview</a>
+                  <a class="dropdown-item" href="fee-structure.html">Fee Structure</a>
+                  <a class="dropdown-item" href="information-brochure.html">Information Brochure</a>
+                  <a class="dropdown-item" href="rules-regulation.html">Rules & Regulations</a>
+                  <a class="dropdown-item" href="admission-form.html">Admission Form</a>
+                  <a class="dropdown-item" href="required-document.html">Required Documents</a>
+                </div>
+              </li>
+
+              <!-- NAAC Dropdown with Submenus -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="naacDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  NAAC
+                </a>
+                <div class="dropdown-menu" aria-labelledby="naacDropdown">
+                  <a class="dropdown-item" href="iqac.html">IQAC</a>
+                  <a class="dropdown-item" href="#">IIQA</a>
+                  <a class="dropdown-item" href="best-practice.html">Best Practices</a>
+                  <a class="dropdown-item" href="feedback.html">Feedback</a>
+
+                  <!-- NAAC SSR Submenu -->
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">NAAC SSR</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">2023-2024</a>
+                      <a class="dropdown-item" href="#">2024-2025</a>
+                    </div>
+                  </div>
+
+                  <a class="dropdown-item" href="naac-documents.html">NAAC Documents</a>
+
+                  <!-- AQAR Submenu -->
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">AQAR</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">2023-2024</a>
+                      <a class="dropdown-item" href="#">2024-2025</a>
+                    </div>
+                  </div>
+
+                  <a class="dropdown-item" href="aqar-documents.html">AQAR Documents</a>
+                </div>
+              </li>
+
+              <!-- Training & Placement Dropdown -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="trainingDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Training & Placement
+                </a>
+                <div class="dropdown-menu" aria-labelledby="trainingDropdown">
+                  <a class="dropdown-item" href="training-placement.html">Training & Placement</a>
+                  <a class="dropdown-item" href="placement-cell.html">Placement Cell</a>
+                  <a class="dropdown-item" href="#">Career Guidance</a>
+                  <a class="dropdown-item" href="placement.html">Placement</a>
+                  <a class="dropdown-item" href="placement-drive.html">Placement Drive</a>
+                </div>
+              </li> -->
+
+              <li class="nav-item">
+                <a class="nav-link" href="placement-cell.html">Placement Cell</a>
+              </li>
+
+              <!-- Student Corner Dropdown with Submenu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="studentCornerDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Student Corner
+                </a>
+                <div class="dropdown-menu" aria-labelledby="studentCornerDropdown">
+                  <a class="dropdown-item" href="notices.html">Notices</a>
+                  <a class="dropdown-item" href="#">Course Structure</a>
+                  <a class="dropdown-item" href="examination.html">Examination</a>
+                  <a class="dropdown-item" href="rules-regulation.html">Rules & Regulations</a>
+                  <a class="dropdown-item" href="important-contact.html">Important Contacts</a>
+                  <a class="dropdown-item" href="#">Code of Conduct</a>
+                  <a class="dropdown-item" href="photos-students.html">Photos for Students</a>
+                  <a class="dropdown-item" href="scholarship-section.html">Scholarship Section</a>
+                  <a class="dropdown-item" href="stu-council-comites.html">Student Council Committee</a>
+
+                  <!-- Alumni Submenu -->
+                  <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#">Alumni</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="alumini-student-details.html">Alumni Student Details</a>
+                      <a class="dropdown-item" href="registration-form-details.html">Registration Form Details</a>
+                      <a class="dropdown-item" href="alumini-meet-details.html">Alumni Meet Details</a>
+                      <a class="dropdown-item" href="alumini-stu-diff-countries.html">Alumni in Different Countries</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+
+              <!-- Facilities Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Facilities
+                </a>
+                <div class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                  <a class="dropdown-item" href="library.html">Library</a>
+                  <a class="dropdown-item" href="hostel.html">Hostel</a>
+                  <a class="dropdown-item" href="transport.html">Transport</a>
+                  <a class="dropdown-item" href="cafeteria.html">Cafeteria</a>
+                  <a class="dropdown-item" href="sports.html">Sports</a>
+                  <a class="dropdown-item" href="club.html">Club</a>
+                </div>
+              </li>
+
+              <!-- Media Coverage Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Media Coverage
+                </a>
+                <div class="dropdown-menu" aria-labelledby="mediaDropdown">
+                  <a class="dropdown-item" href="events.html">Events</a>
+                  <a class="dropdown-item" href="news.html">News</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+
+            </ul>
           </div>
-        </li>
-
-        <!-- Departments Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Departments
-          </a>
-          <div class="dropdown-menu" aria-labelledby="departmentsDropdown">
-            <a class="dropdown-item" href="mechanical.html">Mechanical Engg</a>
-            <a class="dropdown-item" href="computer.html">Computer Engg</a>
-            <a class="dropdown-item" href="civil.html">Civil Engg</a>
-            <a class="dropdown-item" href="electrical.html">Electrical Engg</a>
-            <a class="dropdown-item" href="firstyrengg.html">First Year Engg</a>
-            <a class="dropdown-item" href="mba.html">M.B.A</a>
-          </div>
-        </li>
-
-        <!-- Admissions Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Admissions
-          </a>
-          <div class="dropdown-menu" aria-labelledby="admissionsDropdown">
-            <a class="dropdown-item" href="admission.html">Admission</a>
-            <a class="dropdown-item" href="#">Program Details</a>
-            <a class="dropdown-item" href="eligibility.html">Eligibility</a>
-            <a class="dropdown-item" href="#">Academics Overview</a>
-            <a class="dropdown-item" href="#">Fee Structure</a>
-            <a class="dropdown-item" href="information-brochure.html">Information Brochure</a>
-            <a class="dropdown-item" href="rules-regulation.html">Rules & Regulations</a>
-            <a class="dropdown-item" href="admission-form.html">Admission Form</a>
-            <a class="dropdown-item" href="#">Required Documents</a>
-          </div>
-        </li>
-
-        <!-- NAAC Dropdown with Submenus -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="naacDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            NAAC
-          </a>
-          <div class="dropdown-menu" aria-labelledby="naacDropdown">
-            <a class="dropdown-item" href="iqac.html">IQAC</a>
-            <a class="dropdown-item" href="#">IIQA</a>
-            <a class="dropdown-item" href="best-practice.html">Best Practices</a>
-            <a class="dropdown-item" href="feedback.html">Feedback</a>
-
-            <!-- NAAC SSR Submenu -->
-            <div class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">NAAC SSR</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">2023-2024</a>
-                <a class="dropdown-item" href="#">2024-2025</a>
-              </div>
-            </div>
-
-            <a class="dropdown-item" href="naac-documents.html">NAAC Documents</a>
-
-            <!-- AQAR Submenu -->
-            <div class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">AQAR</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">2023-2024</a>
-                <a class="dropdown-item" href="#">2024-2025</a>
-              </div>
-            </div>
-
-            <a class="dropdown-item" href="aqar-documents.html">AQAR Documents</a>
-          </div>
-        </li>
-
-        <!-- Training & Placement Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="trainingDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Training & Placement
-          </a>
-          <div class="dropdown-menu" aria-labelledby="trainingDropdown">
-            <a class="dropdown-item" href="training-placement.html">Training & Placement</a>
-            <a class="dropdown-item" href="placement-cell.html">Placement Cell</a>
-            <a class="dropdown-item" href="#">Career Guidance</a>
-            <a class="dropdown-item" href="placement.html">Placement</a>
-            <a class="dropdown-item" href="placement-drive.html">Placement Drive</a>
-          </div>
-        </li>
-
-        <!-- Student Corner Dropdown with Submenu -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="studentCornerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Student Corner
-          </a>
-          <div class="dropdown-menu" aria-labelledby="studentCornerDropdown">
-            <a class="dropdown-item" href="notices.html">Notices</a>
-            <a class="dropdown-item" href="#">Course Structure</a>
-            <a class="dropdown-item" href="examination.html">Examination</a>
-            <a class="dropdown-item" href="rules-regulation.html">Rules & Regulations</a>
-            <a class="dropdown-item" href="important-contact.html">Important Contacts</a>
-            <a class="dropdown-item" href="#">Code of Conduct</a>
-            <a class="dropdown-item" href="photos-students.html">Photos for Students</a>
-            <a class="dropdown-item" href="scholarship-section.html">Scholarship Section</a>
-            <a class="dropdown-item" href="stu-council-comites.html">Student Council Committee</a>
-
-            <!-- Alumni Submenu -->
-            <div class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">Alumni</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="alumini-student-details.html">Alumni Student Details</a>
-                <a class="dropdown-item" href="registration-form-details.html">Registration Form Details</a>
-                <a class="dropdown-item" href="alumini-meet-details.html">Alumni Meet Details</a>
-                <a class="dropdown-item" href="alumini-stu-diff-countries.html">Alumni in Different Countries</a>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-
-        <!-- Facilities Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="facilitiesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Facilities
-          </a>
-          <div class="dropdown-menu" aria-labelledby="facilitiesDropdown">
-            <a class="dropdown-item" href="facilities-title.html">Facilities Title</a>
-            <a class="dropdown-item" href="facilities-details.html">Facilities Details</a>
-            <a class="dropdown-item" href="library.html">Library</a>
-            <a class="dropdown-item" href="hostel.html">Hostel</a>
-            <a class="dropdown-item" href="#">Club</a>
-          </div>
-        </li>
-
-        <!-- Media Coverage Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Media Coverage
-          </a>
-          <div class="dropdown-menu" aria-labelledby="mediaDropdown">
-            <a class="dropdown-item" href="events.html">Events</a>
-            <a class="dropdown-item" href="news.html">News</a>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact Us</a>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</nav>
+        </div>
+        <a class="navbar-brand logo_h naac" href="index.html">
+          <img src="img/naac.jpg" alt="Logo" height="100">
+        </a>
+      </nav>
 
     </div>
   </header>
   <!--================ End Header Menu Area =================-->
+  <section id="banner" class="text-white text-center">
+    <img src="img/1920x800.jpg" alt="Banner Image">
+    <div class="container" id="banner-caption">
+      <h1 data-aos="fade-up" class="display-4 font-weight-bold text-white">Our Board Members</h1>
+      <p>Discover excellence in education and innovation.</p>
+    </div>
+  </section>
 
- <section class="hero-section">
-        <div class="container">
-           <h1 data-aos="fade-up" style="font-family: 'Poppins', sans-serif; color: white;">
-  Our Board Members
-</h1>
-<p data-aos="fade-up" data-aos-delay="200" style="font-family: 'Poppins', sans-serif; color: white;">
-  Meet the visionaries guiding Brahma Valley Polytechnic toward excellence
-</p>
-        </div>
-</section>
+  <section class="board-members-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 font-weight-bold" data-aos="fade-up">Our Board Members</h2>
 
-    <!-- Board Members Section -->
-   <section class="board-members-section">
-  <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">Our Board Members</h2>
-
-    <!-- Row 1: 4 Members -->
-    <div class="row g-4 mb-3">
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in">
-        <div class="member-card">
-          <img src="img/female.webp" alt="Member 1">
-          <div class="member-overlay">
-            <p>Dr. Kulkarni brings 25 years of experience in technical education.</p>
+      <div class="row mb-4">
+        <!-- Member 1 -->
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
+          <div class="member-card">
+            <img src="img/female.webp" alt="Mr. Rajaram Pangavhane (Patil)">
+            <div class="member-overlay">
+              <p>Dr. Kulkarni brings 25 years of experience in technical education.</p>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Mr. Rajaram Pangavhane (Patil)</h5>
+              <p class="card-text">Founder President</p>
+            </div>
           </div>
-          <div class="card-body text-center">
-            <h5 class="card-title">Mr. Rajaram Pangavhane(Patil)</h5>
-            <p class="card-text">Founder President</p>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="member-card">
+            <img src="img/female.webp" alt="Smt. Nalini Yahod">
+            <div class="member-overlay">
+              <p>Mrs. Deshmukh oversees financial planning and campus development.</p>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Smt. Nalini Yahod</h5>
+              <p class="card-text">Vice President</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="member-card">
+            <img src="img/female.webp" alt="Miss. Ashwini R. Pangavhane">
+            <div class="member-overlay">
+              <p>Miss. Ashwini R. Pangavhane drives industry collaborations and placements.</p>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Miss. Ashwini R. Pangavhane</h5>
+              <p class="card-text">Vice President</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="member-card">
+            <img src="img/female.webp" alt="Mr. Gaurav R. Pangavhane">
+            <div class="member-overlay">
+              <p>Dr. Sharma focuses on curriculum development and academics.</p>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Mr. Gaurav R. Pangavhane</h5>
+              <p class="card-text">General Secretary</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-        <div class="member-card">
-          <img src="img/female.webp" alt="Member 2">
-          <div class="member-overlay">
-            <p>Mrs. Deshmukh oversees financial planning and campus development.</p>
-          </div>
-          <div class="card-body text-center">
-            <h5 class="card-title">Smt. Nalini Yahod</h5>
-            <p class="card-text">Vice President</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-        <div class="member-card">
-          <img src="img/female.webp" alt="Member 3">
-          <div class="member-overlay">
-            <p>Mr. Patil drives industry collaborations and placements.</p>
-          </div>
-          <div class="card-body text-center">
-            <h5 class="card-title">Miss. Ashwini R. Pangavhane</h5>
-            <p class="card-text">Vice President</p>
+
+      <div class="row">
+        <!-- Member 5 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="member-card">
+            <img src="img/female.webp" alt="Mrs. Prabhavati R. Pangavhane">
+            <div class="member-overlay">
+              <p>Mrs. Prabhavati R. Pangavhane enhances infrastructure for student growth.</p>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Mrs. Prabhavati R. Pangavhane</h5>
+              <p class="card-text">Joint Secretary</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-        <div class="member-card">
-          <img src="img/female.webp" alt="Member 4">
-          <div class="member-overlay">
-            <p>Dr. Sharma focuses on curriculum development and academics.</p>
+
+        <!-- Member 6 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+          <div class="member-card">
+            <img src="img/female.webp" alt="Shri. Dnyaneshwar Pangavhane">
+            <div class="member-overlay">
+              <p>Shri. Dnyaneshwar Pangavhane promotes student welfare and extracurriculars.</p>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Shri. Dnyaneshwar Pangavhane</h5>
+              <p class="card-text">Director</p>
+            </div>
           </div>
-          <div class="card-body text-center">
-            <h5 class="card-title">Mr. Gaurav R. Pangavhane</h5>
-            <p class="card-text">General Secretary</p>
+        </div>
+
+        <!-- Member 7 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
+          <div class="member-card">
+            <img src="img/female.webp" alt="Mrs. Sheetal Y. Mule">
+            <div class="member-overlay">
+              <p>Mrs. Sheetal Y. Mule champions student welfare and academic excellence.</p>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Mrs. Sheetal Y. Mule</h5>
+              <p class="card-text">Director</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Row 2: 3 Members -->
-    <div class="row g-4">
-      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-        <div class="member-card">
-          <img src="img/female.webp" alt="Member 5">
-          <div class="member-overlay">
-            <p>Mr. Singh enhances infrastructure for student growth.</p>
-          </div>
-          <div class="card-body text-center">
-            <h5 class="card-title">Mrs. Prabhavati R. Pangavhane</h5>
-            <p class="card-text">Joint Secretary</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
-        <div class="member-card">
-          <img src="img/female.webp" alt="Member 6">
-          <div class="member-overlay">
-            <p>Ms. Joshi promotes student welfare and extracurriculars.</p>
-          </div>
-          <div class="card-body text-center">
-            <h5 class="card-title">Shri. Dnyaneshwar Pangavhane</h5>
-            <p class="card-text">Director</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
-        <div class="member-card">
-          <img src="img/female.webp" alt="Member 7">
-          <div class="member-overlay">
-            <p>>Ms. Joshi promotes student welfare and extracurriculars.</p>
-          </div>
-          <div class="card-body text-center">
-            <h5 class="card-title"> Mrs. Sheetal Y. Mule</h5>
-            <p class="card-text">Director</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
+  </section>
 
 
   <!--================ Start footer Area  =================-->

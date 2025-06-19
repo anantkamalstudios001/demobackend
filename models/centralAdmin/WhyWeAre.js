@@ -5,4 +5,4 @@ const whyWeAreSchema = new mongoose.Schema({
   description: { type: String, required: true },
 }, { timestamps: true });
 
-module.exports = mongoose.model('central_WhyWeAre', whyWeAreSchema);
+module.exports = whyWeAreSchema;

@@ -5,4 +5,4 @@ const highlightedCaseSchema = new mongoose.Schema({
   paragraph: { type: String, required: true },
 }, { timestamps: true });
 
-module.exports = mongoose.model('central_HighlightedCase', highlightedCaseSchema);
+module.exports = highlightedCaseSchema;

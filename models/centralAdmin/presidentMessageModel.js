@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
 const altPresidentMessageSchema = new mongoose.Schema({
-  heading: String,
+  paragraph1: String,
+paragraph2: String,
   presidentName: String,
   image: String,
   biographyParagraphs: [String],
-  visionParagraphs: [String]
-});
+  visionParagraphs: [String],
+}, { timestamps: true });
 
-module.exports = mongoose.model('central_about_president', altPresidentMessageSchema);
+module.exports = altPresidentMessageSchema;

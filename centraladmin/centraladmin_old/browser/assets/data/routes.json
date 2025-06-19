@@ -27,43 +27,7 @@
       "submenu": [
         {
           "path": "/admin/brahmavalley-main/edit-pages",
-          "title": "MENUITEMS.BRAHMAVALLEY-MAIN.LIST.EDIT-PAGES",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/brahmavalley-main/media-uploads",
-          "title": "MENUITEMS.BRAHMAVALLEY-MAIN.LIST.MEDIA-UPLOADS",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/brahmavalley-main/seo-settings",
-          "title": "MENUITEMS.BRAHMAVALLEY-MAIN.LIST.SEO-SETTINGS",
-          "iconType": "",
-          "icon": "",
-          "class": "ml-menu",
-          "groupTitle": false,
-          "badge": "",
-          "badgeClass": "",
-          "role": [""],
-          "submenu": []
-        },
-        {
-          "path": "/admin/brahmavalley-main/quick-links-manager",
-          "title": "MENUITEMS.BRAHMAVALLEY-MAIN.LIST.QUICK-LINKS-MANAGER",
+          "title": "MENUITEMS.BRAHMAVALLEY-MAIN.LIST.HOME-PAGE-MANAGEMENT",
           "iconType": "",
           "icon": "",
           "class": "ml-menu",
@@ -75,6 +39,408 @@
         }
       ]
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+    "path": "",
+    "title": "MENUITEMS.ABOUT-US.TEXT",
+    "iconType": "material-icons-outlined",
+    "icon": "people_alt",
+    "class": "menu-toggle",
+    "groupTitle": false,
+    "badge": "",
+    "badgeClass": "",
+    "role": ["Admin"],
+    "submenu": [
+      {
+        "path": "",
+        "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-ABOUT-US",
+        "iconType": "",
+        "icon": "",
+        "class": "ml-menu",
+        "groupTitle": false,
+        "badge": "",
+        "badgeClass": "",
+        "role": [""],
+        "submenu": [
+          {
+            "path": "/admin/about-us/add-about-us-image",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.ADD-ABOUT-US-IMAGE",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          },
+          {
+            "path": "/admin/about-us/manage-about-us-image",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.MANAGE-ABOUT-US-IMAGE",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          }
+        ]
+      },
+      {
+        "path": "",
+        "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-WHO-WE-ARE",
+        "iconType": "",
+        "icon": "",
+        "class": "ml-menu",
+        "groupTitle": false,
+        "badge": "",
+        "badgeClass": "",
+        "role": [""],
+        "submenu": [
+          {
+            "path": "/admin/about-us/add-who-we-are",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.ADD-WHO-WE-ARE-IMAGE",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          },
+          {
+            "path": "/admin/about-us/manage-who-we-are",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.MANAGE-WHO-WE-ARE-IMAGE",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          }
+        ]
+      },
+      {
+        "path": "",
+        "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-VISION-MISSION",
+        "iconType": "",
+        "icon": "",
+        "class": "ml-menu",
+        "groupTitle": false,
+        "badge": "",
+        "badgeClass": "",
+        "role": [""],
+        "submenu": [
+          {
+            "path": "/admin/about-us/add-vision-mission",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.ADD-VISION-MISSION-IMAGE",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          },
+          {
+            "path": "/admin/about-us/manage-vision-mission",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.MANAGE-VISION-MISSION-IMAGE",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          }
+        ]
+      },
+      {
+        "path": "",
+        "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-CAMPUS-GALLERY",
+        "iconType": "",
+        "icon": "",
+        "class": "ml-menu",
+        "groupTitle": false,
+        "badge": "",
+        "badgeClass": "",
+        "role": [""],
+        "submenu": [
+          {
+            "path": "/admin/about-us/add-campus-gallery",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.ADD-CAMPUS-GALLERY-IMAGE",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          },
+          {
+            "path": "/admin/about-us/manage-campus-gallery",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.MANAGE-CAMPUS-GALLERY-IMAGE",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          }
+        ]
+      },
+      {
+        "path": "",
+        "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-PLACEMENTS-DESCRIPTION",
+        "iconType": "",
+        "icon": "",
+        "class": "ml-menu",
+        "groupTitle": false,
+        "badge": "",
+        "badgeClass": "",
+        "role": [""],
+        "submenu": [
+          {
+            "path": "/admin/about-us/add-Placements-Description",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.ADD-PLACEMENTS-DESCRIPTION",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          },
+          {
+            "path": "/admin/about-us/manage-Placements-Description",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.MANAGE-PLACEMENTS-DESCRIPTION",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          }
+        ]
+      },
+      {
+        "path": "",
+        "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-HIGHLIGHT-CASE",
+        "iconType": "",
+        "icon": "",
+        "class": "ml-menu",
+        "groupTitle": false,
+        "badge": "",
+        "badgeClass": "",
+        "role": [""],
+        "submenu": [
+          {
+            "path": "/admin/about-us/add-Highlight-Case",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.ADD-HIGHLIGHT-CASE",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          },
+          {
+            "path": "/admin/about-us/manage-Highlight-Case",
+            "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.MANAGE-HIGHLIGHT-CASE",
+            "iconType": "",
+            "icon": "",
+            "class": "",
+            "groupTitle": false,
+            "badge": "",
+            "badgeClass": "",
+            "role": [""],
+            "submenu": []
+          }
+        ]
+      },
+{
+  "path": "",
+  "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-DISTRIBUTOR",
+  "iconType": "",
+  "icon": "",
+  "class": "",
+  "groupTitle": false,
+  "badge": "",
+  "badgeClass": "",
+  "role": [""],
+  "submenu": [
+  ]
+},
+
+{
+  "path": "",
+  "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-CORE-VALUES",
+  "iconType": "",
+  "icon": "",
+  "class": "ml-menu",
+  "groupTitle": false,
+  "badge": "",
+  "badgeClass": "",
+  "role": [""],
+  "submenu": [
+    {
+      "path": "/admin/about-us/add-core-values",
+      "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.ADD-OUR-CORE-VALUES",
+      "iconType": "",
+      "icon": "",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": [""],
+      "submenu": []
+    },
+    {
+      "path": "/admin/about-us/manage-core-values",
+      "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.MANAGE-OUR-CORE-VALUES",
+      "iconType": "",
+      "icon": "",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": [""],
+      "submenu": []
+    }
+  ]
+}
+
+,
+{
+  "path": "",
+  "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-DISTRIBUTOR2",
+  "iconType": "",
+  "icon": "",
+  "class": "",
+  "groupTitle": false,
+  "badge": "",
+  "badgeClass": "",
+  "role": [""],
+  "submenu": [
+  ]
+}
+
+
+,{
+  "path": "",
+  "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-PRESIDENT-PAGE",
+  "iconType": "",
+  "icon": "",
+  "class": "ml-menu",
+  "groupTitle": false,
+  "badge": "",
+  "badgeClass": "",
+  "role": [""],
+  "submenu": [
+    {
+      "path": "/admin/about-us/add-president-data",
+      "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.ADD-PRESIDENT-DATA",
+      "iconType": "",
+      "icon": "",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": [""],
+      "submenu": []
+    },
+    {
+      "path": "/admin/about-us/manage-president-data",
+      "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.MANAGE-PRESIDENT-DATA",
+      "iconType": "",
+      "icon": "",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": [""],
+      "submenu": []
+    }
+  ]
+},
+
+
+{
+  "path": "",
+  "title": "MENUITEMS.ABOUT-US.LIST.MANAGE-CHAIRMAN-PAGE",
+  "iconType": "",
+  "icon": "",
+  "class": "ml-menu",
+  "groupTitle": false,
+  "badge": "",
+  "badgeClass": "",
+  "role": [""],
+  "submenu": [
+    {
+      "path": "/admin/about-us/add-chairman-data",
+      "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.ADD-CHAIRMAN-DATA",
+      "iconType": "",
+      "icon": "",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": [""],
+      "submenu": []
+    },
+    {
+      "path": "/admin/about-us/manage-chairman-data",
+      "title": "MENUITEMS.ABOUT-US.LIST.SUBLIST.MANAGE-CHAIRMAN-DATA",
+      "iconType": "",
+      "icon": "",
+      "class": "",
+      "groupTitle": false,
+      "badge": "",
+      "badgeClass": "",
+      "role": [""],
+      "submenu": []
+    }
+  ]
+}
+
+    ]
+  }
+
+
+,
+
+
+
+
+
+
     {
       "path": "",
       "title": "MENUITEMS.INSTITUTES.TEXT",

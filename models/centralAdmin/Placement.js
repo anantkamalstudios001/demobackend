@@ -6,4 +6,4 @@ const placementSchema = new mongoose.Schema({
   sign: { type: String, required: true },
 }, { timestamps: true });
 
-module.exports = mongoose.model('central_Placement', placementSchema);
+module.exports = placementSchema;

@@ -1,11 +1,13 @@
-const Placement = require('../../models/centralAdmin/placementParagraphModel');
+const placementParagraphSchema = require('../../models/centralAdmin/placementParagraphModel');
 
 exports.addPlacementParagraph = async (req, res) => {
   try {
+    const Placement = req.db.model('PlacementParagraph', placementParagraphSchema);
     const { paragraph } = req.body;
-    console.log(paragraph)
+
     const placement = new Placement({ paragraph });
     await placement.save();
+
     res.json({ status: true, message: 'Placement paragraph added', data: placement });
   } catch (error) {
     res.status(500).json({ status: false, message: error.message });
@@ -14,7 +16,9 @@ exports.addPlacementParagraph = async (req, res) => {
 
 exports.getPlacements = async (req, res) => {
   try {
-    const placements = await Placement.find();
+    const Placement = req.db.model('PlacementParagraph', placementParagraphSchema);
+    const placements = await Placement.find().sort({ createdAt: -1 });
+
     res.json({ status: true, data: placements });
   } catch (error) {
     res.status(500).json({ status: false, message: error.message });
@@ -23,12 +27,14 @@ exports.getPlacements = async (req, res) => {
 
 exports.updatePlacementParagraph = async (req, res) => {
   try {
-    const updatedPlacement = await Placement.findByIdAndUpdate(
+    const Placement = req.db.model('PlacementParagraph', placementParagraphSchema);
+    const updated = await Placement.findByIdAndUpdate(
       req.params.id,
       { paragraph: req.body.paragraph },
       { new: true }
     );
-    res.json({ status: true, message: 'Placement paragraph updated', data: updatedPlacement });
+
+    res.json({ status: true, message: 'Placement paragraph updated', data: updated });
   } catch (error) {
     res.status(500).json({ status: false, message: error.message });
   }
@@ -36,7 +42,9 @@ exports.updatePlacementParagraph = async (req, res) => {
 
 exports.deletePlacementParagraph = async (req, res) => {
   try {
+    const Placement = req.db.model('PlacementParagraph', placementParagraphSchema);
     await Placement.findByIdAndDelete(req.params.id);
+
     res.json({ status: true, message: 'Placement paragraph deleted' });
   } catch (error) {
     res.status(500).json({ status: false, message: error.message });

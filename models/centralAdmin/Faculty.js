@@ -10,4 +10,4 @@ const facultySchema = new mongoose.Schema({
   image: { type: String, required: true },
 }, { timestamps: true });
 
-module.exports = mongoose.model('central_Faculty', facultySchema);
+module.exports = facultySchema;

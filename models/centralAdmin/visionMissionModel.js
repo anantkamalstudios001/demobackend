@@ -10,4 +10,4 @@ const visionMissionSchema = new mongoose.Schema({
   ]
 }, { timestamps: true });
 
-module.exports = mongoose.model('central_VisionMission', visionMissionSchema);
+module.exports = visionMissionSchema;

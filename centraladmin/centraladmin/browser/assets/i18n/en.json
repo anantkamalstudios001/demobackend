@@ -5,9 +5,39 @@
   "MENUITEMS": {
     "BRAHMAVALLEY-MAIN": {
       "TEXT": "Home",
-      "LIST": {
-        "HOME-PAGE-MANAGEMENT": "Home Page Management"
-      }
+       "LIST": {
+        "MANAGE-ADD-SLIDER": "Slider Content",
+        "MANAGE-HOME-ABOUT-SECTION": "Home page About",
+        "MANAGE-FUTURE-READY-PROGRAMS": "Future-Ready Programmes",
+        "MANAGE-CAMPUS-PLACMENTS": "Campus Placements",
+        "MANAGE-BEST-PLACEMNTS-SLIDERS": "Best Placements Slider",
+        "MANAGE-SERVICES-HOME": "Services-Home Page",
+        "MANAGE-UPLOAD-TESTIMONIALS": "Upload Testimonial",
+        "MANAGE-FACULTY-MEMBERS": "Faculty Member",
+        "MANAGE-Blog-Posts": "Manage Blog Posts",
+
+        "SUBLIST": {
+          "ADD-ADD-SLIDER": "Add Slider Content",
+          "MANAGE-ADD-SLIDER": "Manage Slider Content",
+          "ADD-HOME-ABOUT-SECTION": "Add Home page About",
+          "MANAGE-HOME-ABOUT-SECTION": "Manage Home page About",
+          "ADD-VFUTURE-READY-PROGRAMS": "Add Future-Ready Programmes",
+          "MANAGE-VFUTURE-READY-PROGRAMS": "Manage Future-Ready Programmes",
+          "ADD-CAMPUS-PLACMENTS": "Add Campus Placements",
+          "MANAGE-CAMPUS-PLACMENTS": "Manage Campus Placements",
+          "ADD-BEST-PLACEMNTS-SLIDERS": "Add Best Placements Slider",
+          "MANAGE-BEST-PLACEMNTS-SLIDERS": "Manage Best Placements Slider",
+          "ADD-SERVICES-HOME": "Add Services-Home Page",
+          "MANAGE-SERVICES-HOME": "Manage Services-Home Page",
+          "ADD-UPLOAD-TESTIMONIALS": "Add Upload Testimonial",          
+          "MANAGE-UPLOAD-TESTIMONIALS": "Man ageUpload Testimonial",    
+          "ADD-Faculty-Member": "Add Faculty Member",
+          "MANAGE-Faculty-Member": "Manage Faculty Member",
+          "ADD-Blog-Posts": "Add Blog Posts",
+          "MANAGE-Blog-Posts": "Manage Blog Posts"
+        }
+
+  }
     },
     "DASHBOARD": {
       "TEXT": "Dashboard"
@@ -28,6 +58,17 @@
     "MANAGE-DISTRIBUTOR2": "----------------------------", 
     "MANAGE-PRESIDENT-PAGE": "Manage President Page",
     "MANAGE-CHAIRMAN-PAGE": "Manage Chairman Page",
+    "MANAGE-VICE-CHANCELLOR": "Manage Vice Chancellor",
+    "MANAGE-APPROVALS-AFFILIATIONS": "Approvals & Affiliations",
+
+    "MANAGE-GOVERNING-BODY": "Governing Body",
+    "MANAGE-BOARD-OF-MANAGEMENT": "Board of Management",
+    "MANAGE-UNIVERSITY-OFFICERS": "University Officers",
+    "MANAGE-COMMITTEES": "Committees",
+    "MANAGE-MOU": "MOU",
+    "MANAGE-MEMBERSHIP": "Membership",
+
+
 
 
     "SUBLIST": {
@@ -52,24 +93,204 @@
       "ADD-PRESIDENT-DATA": "Add President Data",
       "MANAGE-PRESIDENT-DATA": "Manage President Data",
       "ADD-CHAIRMAN-DATA": "Add Chairman Data",
-      "MANAGE-CHAIRMAN-DATA": "Manage Chairman Data"
+      "MANAGE-CHAIRMAN-DATA": "Manage Chairman Data",
+      "ADD-VICE-CHANCELLOR": "Add Vice Chancellor",
+      "MANAGE-VICE-CHANCELLOR": "Manage Vice Chancellor",
+      "ADD-APPROVALS-AFFILIATIONS": "Add Approvals & Affiliations",
+      "MANAGE-APPROVALS-AFFILIATIONS": "Manage Approvals & Affiliations",
+
+            "ADD-GOVERNING-BODY": "Add Governing Body",
+      "MANAGE-GOVERNING-BODY": "Manage Governing Body",
+            "ADD-BOARD-OF-MANAGEMENT": "Add Board Of Management",
+      "MANAGE-BOARD-OF-MANAGEMENT": "Manage Board Of Management",
+            "ADD-UNIVERSITY-OFFICERS": "Add University Officers",
+      "MANAGE-UNIVERSITY-OFFICERS": "Manage University Officers",
+            "ADD-COMMITTEES": "Add Committees",
+      "MANAGE-COMMITTEES": "Manage Committees",
+            "ADD-MOU": "Add Mou",
+      "MANAGE-MOU": "Manage Mou",
+            "ADD-MEMBERSHIP": "Add Membership",
+      "MANAGE-MEMBERSHIP": "Manage Membership"
     }
   }
-}
-,
-  
-    "INSTITUTES": {
-      "TEXT": "Institutes",
-      "LIST": {
-        "MBA": "MBA",
-        "ENGINEERING": "Engineering",
-        "PHARMACY": "Pharmacy",
-        "POLYTECHNIC": "Polytechnic",
-        "ITI": "ITI",
-        "PUBLIC-SCHOOL" : "Public School",
-        "B-ED" : "B.Ed"
-      }
-    },
+},
+
+"ACADEMICS": {
+  "TEXT": "Academics",
+  "LIST": {
+    "MANAGE-ACADEMICS-OVERVIEW": "Academics Overview",
+    "MANAGE-ACADEMIC-CALENDER": "Academic Calender",
+    "MANAGE-LIST-OF-HOLIDAYS": "List of Holidays",
+    "MANAGE-ACADEMICS-REGULATION": "Academics Regulation",
+    "SUBLIST": {
+      "ADD-ACADEMICS-OVERVIEW": "Add Academics Overview",
+      "MANAGE-ACADEMICS-OVERVIEW": "Manage Academics Overview",
+      "ADD-ACADEMIC-CALENDER": "Add Academic Calender",
+      "MANAGE-ACADEMIC-CALENDER": "Manage Academic Calender",
+      "ADD-LIST-OF-HOLIDAYS": "Add List of Holidays",
+      "MANAGE-LIST-OF-HOLIDAYS": "Manage List of Holidays",
+      "ADD-ACADEMICS-REGULATION": "Add Academics Regulation",
+      "MANAGE-ACADEMICS-REGULATION": "Manage Academics Regulation"
+    }
+  }
+},
+"ADMISSION": {
+  "TEXT": "Admission",
+  "LIST": {
+    "APPLY-ONLINE": "Apply-online",
+    "COURSES-OFFERED": "Courses-offered",
+    "RULES-REGULATIONS": "Rules-regulations",
+    "SCHOLARSHIP-DETAILS": "Scholarship-details",
+    "ELIGIBILITY-CRITERIA": "Eligibility-criteria",
+    "DOCUMENTS-REQUIRED": "Documents-required",
+    "FEES-STRUCTURE": "Fees-structure",
+    "FAQS": "Faqs",
+    "E-BROCHURE": "E-brochure",
+    "SUBLIST": {
+      "ADD-APPLY-ONLINE": "Add Apply online",
+      "MANAGE-APPLY-ONLINE": "Manage Apply online",
+      "ADD-COURSES-OFFERED": "Add Courses-offered",
+      "MANAGE-COURSES-OFFERED": "Manage Courses-offered",
+      "ADD-RULES-REGULATIONS": "Add Rules-regulations",
+      "MANAGE-RULES-REGULATIONS": "Manage Rules-regulations",
+      "ADD-SCHOLARSHIP-DETAILS": "Add Scholarship-details",
+      "MANAGE-SCHOLARSHIP-DETAILS": "Manage Scholarship-details",
+      "ADD-ELIGIBILITY-CRITERIA": "Add Eligibility-criteria",
+      "MANAGE-ELIGIBILITY-CRITERIA": "Manage Eligibility-criteria",
+      "ADD-DOCUMENTS-REQUIRED": "Add Documents-required",
+      "MANAGE-DOCUMENTS-REQUIRED": "Manage Documents-required",
+      "ADD-FEES-STRUCTURE": "Add Fees-structure",
+      "MANAGE-FEES-STRUCTURE": "Manage Fees-structure",
+      "ADD-FAQS": "Add Faqs",
+      "MANAGE-FAQS": "Manage Faqs",
+      "ADD-E-BROCHURE": "Add E-brochure",
+      "MANAGE-E-BROCHURE": "Manage E-brochure"
+    }
+  }
+},
+
+    "PLACEMENTS": {
+  "TEXT": "Placements",
+  "LIST": {
+    "MANAGE-PLACEMENTS": "Placements",
+    "SUBLIST": {
+      "ADD-PLACEMENTS": "Add Placements",
+      "MANAGE-PLACEMENTS": "Manage Placements"
+    }
+  }
+},
+    "IQAC": {
+  "TEXT": "IQAC",
+  "LIST": {
+    "MANAGE-IQAC": "IQAC",
+    "SUBLIST": {
+      "ADD-IQAC": "Add IQAC",
+      "MANAGE-IQAC": "Manage IQAC"
+    }
+  }
+},
+
+
+"CAMPUS-LIFE": {
+  "TEXT": "Campus Life",
+  "LIST": {
+    "GALLERY": "Gallery",
+    "EVENTS-GALLERY": "Events Gallery",
+    "ACHIEVEMENT": "Achievement",
+    "SPORTS": "Sports",
+    "MEDIA-COVERAGE": "Media Coverage",
+    "SUBLIST": {
+      "ADD-GALLERY": "Add Gallery",
+      "MANAGE-GALLERY": "Manage Gallery",
+      "ADD-EVENTS-GALLERY": "Add Events Gallery",
+      "MANAGE-EVENTS-GALLERY": "Manage Events Gallery",
+      "ADD-ACHIEVEMENT": "Add Achievement",
+      "MANAGE-ACHIEVEMENT": "Manage Achievement",
+      "ADD-SPORTS": "Add Sports",
+      "MANAGE-SPORTS": "Manage Sports",
+      "ADD-MEDIA-COVERAGE": "Add Media Coverage",
+      "MANAGE-MEDIA-COVERAGE": "Manage Media Coveragen"
+    }
+  }
+},
+    "BLOGS": {
+  "TEXT": "BLOGS",
+  "LIST": {
+    "BLOGS": "BLOGS",
+    "SUBLIST": {
+      "ADD-BLOGS": "Add Blogs",
+      "MANAGE-BLOGS": "Manage Blogs"
+    }
+  }
+},
+    "CONTACT-US-INFO": {
+  "TEXT": "Contact Info",
+  "LIST": {
+    "CONTACT-US-INFO": "Contact Info",
+    "SUBLIST": {
+      "ADD-CONTACT-US-INFO": "Add Contact Info",
+      "MANAGE-CONTACT-US-INFO": "Manage Contact Info"
+    }
+  }
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     "USER-MANAGEMENT": {
       "TEXT": "User Management",
       "LIST": {
@@ -173,7 +394,7 @@
       "TEXT": "Task"
     },
     "CONTACTS": {
-      "TEXT": "Contact US"
+      "TEXT": "Contact US Queries"
     }
   }
 }

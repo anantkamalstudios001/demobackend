@@ -1,26 +1,56 @@
-const Slider = require('../../models/centralAdmin/SliderModel');
+const sliderSchema = require('../../models/centralAdmin/SliderModel');
 
-const addSlider = async (req, res) => {
+// ADD
+exports.addSlider = async (req, res) => {
   try {
-    const { heading, paragraph } = req.body;
-    const imagePath = req.file ? req.file.path : '';
+    const Slider = req.db.model('Slider', sliderSchema);
+    const { heading, paragraph, button } = req.body;
+    const image = req.file ? req.file.filename : '';
 
-    const newSlider = new Slider({ heading, paragraph, image: imagePath });
+    const newSlider = new Slider({ heading, paragraph, button, image });
     await newSlider.save();
 
-    res.status(201).json({ status:true, message: 'Slider added successfully', data: newSlider });
-  } catch (error) {
-    res.status(500).json({ message: 'Error adding slider', error: error.message });
+    res.status(201).json({ status: true, message: 'Slider added', data: newSlider });
+  } catch (err) {
+    res.status(500).json({ status: false, message: 'Add failed', error: err.message });
   }
 };
 
-const getSliders = async (req, res) => {
+// GET ALL
+exports.getSliders = async (req, res) => {
   try {
+    const Slider = req.db.model('Slider', sliderSchema);
     const sliders = await Slider.find().sort({ createdAt: -1 });
-    res.json({ message: 'Fetched sliders successfully', data: sliders });
-  } catch (error) {
-    res.status(500).json({ message: 'Error fetching sliders', error: error.message });
+    res.json({ status: true, message: 'Sliders fetched', data: sliders });
+  } catch (err) {
+    res.status(500).json({ status: false, message: 'Fetch failed', error: err.message });
   }
 };
 
-module.exports = { addSlider, getSliders };
+// UPDATE
+exports.updateSlider = async (req, res) => {
+  try {
+    const Slider = req.db.model('Slider', sliderSchema);
+    const { heading, paragraph, button } = req.body;
+
+    const updateData = { heading, paragraph, button };
+    if (req.file) updateData.image = req.file.filename;
+
+    const updated = await Slider.findByIdAndUpdate(req.params.id, updateData, { new: true });
+
+    res.json({ status: true, message: 'Slider updated', data: updated });
+  } catch (err) {
+    res.status(500).json({ status: false, message: 'Update failed', error: err.message });
+  }
+};
+
+// DELETE
+exports.deleteSlider = async (req, res) => {
+  try {
+    const Slider = req.db.model('Slider', sliderSchema);
+    await Slider.findByIdAndDelete(req.params.id);
+    res.json({ status: true, message: 'Slider deleted' });
+  } catch (err) {
+    res.status(500).json({ status: false, message: 'Delete failed', error: err.message });
+  }
+};

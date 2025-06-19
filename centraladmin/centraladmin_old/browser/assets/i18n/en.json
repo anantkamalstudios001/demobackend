@@ -4,25 +4,60 @@
   },
   "MENUITEMS": {
     "BRAHMAVALLEY-MAIN": {
-      "TEXT": "Brahmavalley Main",
+      "TEXT": "Home",
       "LIST": {
-        "EDIT-PAGES": "Edit Pages",
-        "MEDIA-UPLOADS": "Media Uploads",
-        "SEO-SETTINGS": "SEO Settings",
-        "QUICK-LINKS-MANAGER" : "Quick Links Manager"
+        "HOME-PAGE-MANAGEMENT": "Home Page Management"
       }
     },
     "DASHBOARD": {
       "TEXT": "Dashboard"
     },
-    "BVIM": {
-      "TEXT": "BVIM (Institute of Management)",
-      "LIST": {
-            "EDIT-PAGES" : "Edit Pages",
-            "COURSE-MANAGEMENT": "Course Management",
-            "FACULTY-UPLOADS": "Faculty Uploads"
-      }
-    },
+
+"ABOUT-US": {
+  "TEXT": "About US",
+  "LIST": {
+    "MANAGE-ABOUT-US": "About US",
+    "MANAGE-WHO-WE-ARE": "Who We Are Section",
+    "MANAGE-VISION-MISSION": "Vision & Mission Section",
+    "MANAGE-CAMPUS-GALLERY": "Campus Gallery",
+    "MANAGE-PLACEMENTS-DESCRIPTION": "Placements Description",
+    "MANAGE-HIGHLIGHT-CASE": "Highlight Case",
+    "MANAGE-DISTRIBUTOR": "----------------------------", 
+    "MANAGE-ABOUT-VISION-MISSION": "About Vision-Mission",
+    "MANAGE-CORE-VALUES": "Our Core Values",
+    "MANAGE-DISTRIBUTOR2": "----------------------------", 
+    "MANAGE-PRESIDENT-PAGE": "Manage President Page",
+    "MANAGE-CHAIRMAN-PAGE": "Manage Chairman Page",
+
+
+    "SUBLIST": {
+      "ADD-ABOUT-US-IMAGE": "Add About us Image",
+      "MANAGE-ABOUT-US-IMAGE": "Manage About us Image",
+      "ADD-WHO-WE-ARE-IMAGE": "Add Who We Are Image",
+      "MANAGE-WHO-WE-ARE-IMAGE": "Manage Who We Are",
+      "ADD-VISION-MISSION-IMAGE": "Add Vision & Mission",
+      "MANAGE-VISION-MISSION-IMAGE": "Manage Vision & Mission Image",
+      "ADD-CAMPUS-GALLERY-IMAGE": "Add Campus Gallery Image",
+      "MANAGE-CAMPUS-GALLERY-IMAGE": "Manage Campus Gallery Image",
+      "ADD-PLACEMENTS-DESCRIPTION": "Add Placements Description",
+      "MANAGE-PLACEMENTS-DESCRIPTION": "Manage Placements Description",
+      "ADD-HIGHLIGHT-CASE": "Add Highlight Case",
+      "MANAGE-HIGHLIGHT-CASE": "Manage Highlight Case",
+      "ADD-DISTRIBUTOR": "Add Distributor",          
+      "MANAGE-DISTRIBUTOR": "Manage Distributor",    
+      "ADD-VISION-MISSION": "Add Vision Mission",
+      "MANAGE-VISION-MISSION": "Manage Vision Mission",
+      "ADD-OUR-CORE-VALUES": "Add Core Values",
+      "MANAGE-OUR-CORE-VALUES": "Manage Core Values",
+      "ADD-PRESIDENT-DATA": "Add President Data",
+      "MANAGE-PRESIDENT-DATA": "Manage President Data",
+      "ADD-CHAIRMAN-DATA": "Add Chairman Data",
+      "MANAGE-CHAIRMAN-DATA": "Manage Chairman Data"
+    }
+  }
+}
+,
+  
     "INSTITUTES": {
       "TEXT": "Institutes",
       "LIST": {
@@ -138,7 +173,7 @@
       "TEXT": "Task"
     },
     "CONTACTS": {
-      "TEXT": "Contacts"
+      "TEXT": "Contact US"
     }
   }
 }
