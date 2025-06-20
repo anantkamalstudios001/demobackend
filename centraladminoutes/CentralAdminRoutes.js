@@ -1026,6 +1026,46 @@ router.delete('/membership-community/:id', attachDb, membershipCommunityControll
 
 
 
+const contactDetailsController = require('../controllers/centralAdmin/contactDetails.controller');
+
+router.post(
+  '/add-contact-details',
+  attachDb,
+  contactDetailsController.addContactDetails
+);
+
+router.get(
+  '/contact-details',
+  attachDb,
+  contactDetailsController.getContactDetails
+);
+
+router.put(
+  '/update-contact-details/:id',
+  attachDb,
+  contactDetailsController.updateContactDetails
+);
+
+router.delete(
+  '/delete-contact-details/:id',
+  attachDb,
+  contactDetailsController.deleteContactDetails
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
